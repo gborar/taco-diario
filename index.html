@@ -1,0 +1,1476 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Taco Diario">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="description" content="Una hoja de taco al día para estar al día y estimular el cerebro.">
+<style>
+:root { color-scheme: light; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; font: 14px system-ui, -apple-system, sans-serif; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<title>Taco Diario</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#C8102E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: una hoja de taco de calendario (portada) que se arranca y deja ver la dosis del día en una sola columna de fichas. */
+:root {
+  --bg: #E6E8E4;
+  --paper: #FCFCF9;
+  --paper-2: #F2F3EF;
+  --ink: #1A1C21;
+  --muted: #5C6169;
+  --line: #D3D6D0;
+  --red: #C8102E;
+  --red-soft: #F7E3E5;
+  --binding: #23252B;
+  --shadow: 0 1px 0 rgba(0,0,0,.04), 0 10px 30px -12px rgba(20,22,28,.28);
+  --f-display: "Big Shoulders Display", "Oswald", "Arial Narrow", Impact, sans-serif;
+  --f-body: "Literata", Georgia, "Times New Roman", serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101114; --paper: #1B1C20; --paper-2: #23252A; --ink: #ECEBE6; --muted: #9A9EA6;
+    --line: #30333A; --red: #FF5266; --red-soft: #3A1C21; --binding: #07080A;
+    --shadow: 0 10px 30px -12px rgba(0,0,0,.7); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101114; --paper: #1B1C20; --paper-2: #23252A; --ink: #ECEBE6; --muted: #9A9EA6;
+  --line: #30333A; --red: #FF5266; --red-soft: #3A1C21; --binding: #07080A;
+  --shadow: 0 10px 30px -12px rgba(0,0,0,.7); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 18px calc(96px + env(safe-area-inset-bottom, 0px));
+}
+.wrap { max-width: 520px; margin: 0 auto; display: grid; gap: 28px; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.mono { font-family: var(--f-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+
+/* ---------- Portada: hoja de taco ---------- */
+.taco { position: relative; padding-bottom: 10px; }
+.taco::before, .taco::after {
+  content: ""; position: absolute; left: 10px; right: 10px; height: 100%; bottom: 4px; z-index: 0;
+  background: var(--paper-2); border-radius: 2px 2px 6px 6px; box-shadow: var(--shadow);
+}
+.taco::after { left: 18px; right: 18px; bottom: 0; opacity: .7; }
+.sheet {
+  position: relative; z-index: 1; background: var(--paper); border-radius: 2px 2px 6px 6px;
+  box-shadow: var(--shadow); overflow: hidden; transform-origin: 50% 0;
+  transition: transform .75s cubic-bezier(.5,-0.2,.6,1), opacity .75s ease;
+}
+.sheet.torn { transform: translateY(-115%) rotate(-9deg); opacity: 0; }
+.binding { height: 30px; background: var(--binding); display: flex; justify-content: center; gap: 120px; align-items: center; }
+.binding span { width: 12px; height: 12px; border-radius: 50%; background: var(--bg); box-shadow: inset 0 2px 2px rgba(0,0,0,.35); }
+.perf { height: 8px; background: radial-gradient(circle at 5px 0, var(--binding) 2.2px, transparent 2.6px) 0 0 / 10px 8px repeat-x; opacity: .35; }
+.sheet-in { padding: 14px 22px 22px; display: grid; gap: 6px; text-align: center; }
+.sheet-top { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--ink); padding-bottom: 6px; }
+.month { font-family: var(--f-display); font-weight: 800; font-size: 26px; letter-spacing: .06em; text-transform: uppercase; color: var(--red); line-height: 1; }
+.daynum {
+  font-family: var(--f-display); font-weight: 900; line-height: .82; font-size: clamp(150px, 48vw, 220px);
+  letter-spacing: -.02em; color: var(--ink); margin-top: 10px; font-variant-numeric: lining-nums;
+}
+.daynum.festivo { color: var(--red); }
+.weekday { font-family: var(--f-display); font-weight: 800; font-size: 30px; text-transform: uppercase; letter-spacing: .14em; line-height: 1; }
+.almanac { display: flex; justify-content: space-between; gap: 10px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 8px 0; margin-top: 10px; color: var(--muted); }
+.almanac div { display: grid; gap: 2px; text-align: left; }
+.almanac div:last-child { text-align: right; }
+.almanac b { font-family: var(--f-body); font-weight: 600; font-size: 14px; letter-spacing: 0; text-transform: none; color: var(--ink); }
+.cover-refran { font-style: italic; font-size: 19px; line-height: 1.35; text-wrap: balance; margin: 12px 4px 2px; }
+.cover-refran::before { content: "«"; color: var(--red); }
+.cover-refran::after { content: "»"; color: var(--red); }
+.cover-sub { color: var(--muted); }
+.tear {
+  margin-top: 14px; border: 0; background: var(--red); color: #fff; border-radius: 999px; padding: 13px 18px;
+  font-family: var(--f-mono); font-weight: 700; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+  display: inline-flex; gap: 10px; align-items: center; justify-content: center;
+}
+.tear svg { width: 16px; height: 16px; }
+.daynav { display: flex; justify-content: space-between; align-items: center; }
+.daynav button { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 8px 14px; }
+.daynav button[disabled] { opacity: .35; cursor: default; }
+
+/* Cabecera compacta tras arrancar */
+.mast { display: flex; align-items: center; gap: 14px; background: var(--paper); border-radius: 8px; padding: 12px 16px; box-shadow: var(--shadow); animation: drop .5s ease both; }
+.mast .n { font-family: var(--f-display); font-weight: 900; font-size: 54px; line-height: .85; }
+.mast .n.festivo { color: var(--red); }
+.mast .t { display: grid; gap: 2px; flex: 1; min-width: 0; }
+.mast .w { font-family: var(--f-display); font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: .1em; line-height: 1; }
+.mast button { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 7px 12px; }
+@keyframes drop { from { transform: translateY(-10px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* Progreso y racha */
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.stat { background: var(--paper); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; }
+.stat .v { font-family: var(--f-display); font-weight: 800; font-size: 34px; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat .v small { font-size: 18px; color: var(--muted); }
+.bar { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--red); transition: width .4s ease; }
+
+/* ---------- Fichas ---------- */
+.group { display: grid; gap: 12px; }
+.group h2 { font-family: var(--f-display); font-weight: 800; font-size: 28px; text-transform: uppercase; letter-spacing: .06em; line-height: 1; margin: 0; display: flex; align-items: baseline; gap: 10px; }
+.group h2 span { color: var(--muted); }
+.card { background: var(--paper); border-radius: 8px; padding: 16px 16px 14px; display: grid; gap: 10px; min-width: 0; border: 1px solid transparent; transition: border-color .2s, opacity .2s; }
+.card.done { border-color: var(--line); background: var(--paper-2); }
+.card-h { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+.card-h .lab { flex: 1; min-width: 0; color: var(--red); }
+.icon-btn { border: 0; background: transparent; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; color: var(--muted); }
+.icon-btn:hover { background: var(--paper-2); }
+.icon-btn svg { width: 18px; height: 18px; }
+.icon-btn.on { color: var(--red); }
+.icon-btn.on svg path { fill: currentColor; }
+.card h3 { margin: 0; font-family: var(--f-body); font-weight: 600; font-size: 21px; line-height: 1.25; text-wrap: balance; }
+.card .meta { color: var(--muted); font-size: 14px; }
+.card p { margin: 0; }
+.card .big { font-size: 22px; line-height: 1.35; font-style: italic; text-wrap: balance; }
+.card .en { font-family: var(--f-mono); font-size: 13px; color: var(--muted); }
+.card .why { font-size: 15px; color: var(--ink); }
+.card .why b { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-right: 6px; }
+.word { font-family: var(--f-display); font-weight: 800; font-size: 44px; line-height: .95; letter-spacing: .01em; }
+.tag { display: inline-block; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 4px; padding: 2px 6px; color: var(--muted); }
+details { border-top: 1px dashed var(--line); padding-top: 8px; }
+summary { cursor: pointer; font-family: var(--f-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+details p { margin-top: 8px !important; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+.btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 8px 13px; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; }
+.btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.btn.check[aria-pressed="true"] { background: var(--red-soft); border-color: var(--red); color: var(--red); }
+.btn svg { width: 14px; height: 14px; }
+
+.connect { background: var(--ink); color: var(--paper); border-radius: 8px; padding: 18px; display: grid; gap: 10px; }
+.connect h2 { color: var(--paper); }
+.connect p { margin: 0; opacity: .85; }
+.connect .btn { border-color: currentColor; color: var(--paper); }
+
+/* ---------- Guardados ---------- */
+.saved-list { display: grid; gap: 10px; }
+.saved-item { background: var(--paper); border-radius: 8px; padding: 12px 14px; display: flex; gap: 10px; align-items: center; }
+.saved-item .t { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.saved-item .t b { font-weight: 600; overflow-wrap: anywhere; }
+.empty { background: var(--paper); border-radius: 8px; padding: 22px; color: var(--muted); text-align: center; }
+
+/* ---------- Barra inferior ---------- */
+.tabbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--paper); border-top: 1px solid var(--line);
+  display: flex; justify-content: center; gap: 6px;
+  padding: 8px max(16px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+}
+.tabbar button { flex: 1; max-width: 170px; border: 0; background: transparent; border-radius: 10px; padding: 8px; display: grid; justify-items: center; gap: 2px; color: var(--muted); }
+.tabbar button[aria-current="page"] { color: var(--red); background: var(--red-soft); }
+.tabbar svg { width: 20px; height: 20px; }
+
+/* ---------- Hoja de Claude ---------- */
+.scrim { position: fixed; inset: 0; background: rgba(10,10,12,.45); z-index: 30; }
+.sheet-ai {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 31; max-height: 82%; overflow-y: auto; background: var(--paper);
+  border-radius: 16px 16px 0 0; box-shadow: 0 -10px 40px rgba(0,0,0,.25);
+  padding: 18px max(18px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px));
+  animation: up .3s ease both;
+}
+.sheet-ai .in { max-width: 560px; margin: 0 auto; display: grid; gap: 12px; }
+.sheet-ai h3 { margin: 0; font-family: var(--f-display); font-weight: 800; font-size: 26px; text-transform: uppercase; letter-spacing: .04em; line-height: 1.05; }
+.ai-text { white-space: pre-wrap; font-size: 16.5px; line-height: 1.6; }
+.ai-text.wait { color: var(--muted); font-style: italic; }
+@keyframes up { from { transform: translateY(30px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(80px + env(safe-area-inset-bottom, 0px)); z-index: 40; background: var(--ink); color: var(--paper); padding: 9px 16px; border-radius: 999px; font-size: 14px; }
+.foot { color: var(--muted); text-align: center; font-size: 13px; }
+
+/* ---------- Color por bloque ---------- */
+:root {
+  --c-ver: #2445C8; --c-pensar: #7A3FB0; --c-mundo: #2C7A47; --c-lengua: #A86B05; --c-cuerpo: #D24B28;
+  --on-g: #FFFFFF; --sun-bg: #FFE27A; --sun-ink: #2A2306; --sun-line: #E9C445;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --c-ver: #8299FF; --c-pensar: #C49BFF; --c-mundo: #6FCB8E; --c-lengua: #F2B544; --c-cuerpo: #FF8A6B;
+    --on-g: #121317; --sun-bg: #3A3110; --sun-ink: #FFE9A3; --sun-line: #5C4D16;
+  }
+}
+:root[data-theme="dark"] {
+  --c-ver: #8299FF; --c-pensar: #C49BFF; --c-mundo: #6FCB8E; --c-lengua: #F2B544; --c-cuerpo: #FF8A6B;
+  --on-g: #121317; --sun-bg: #3A3110; --sun-ink: #FFE9A3; --sun-line: #5C4D16;
+}
+.group { --g: var(--red); }
+.group h2::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--g); flex: none; align-self: center; }
+.group h2 { color: var(--ink); flex-wrap: wrap; }
+.card-h .lab { color: var(--g, var(--red)); display: inline-flex; align-items: center; gap: 6px; }
+.card-h .lab::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--g, var(--red)); }
+.card .tag { border-color: color-mix(in srgb, var(--g, var(--muted)) 45%, transparent); color: var(--g, var(--muted)); }
+.btn.primary { background: var(--g, var(--ink)); border-color: var(--g, var(--ink)); color: var(--on-g); }
+.group .btn.check[aria-pressed="true"] { background: color-mix(in srgb, var(--g) 16%, transparent); border-color: var(--g); color: var(--g); }
+
+/* Carrusel deslizable para "Ver, leer y escuchar" */
+.rail {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 84%; gap: 12px; overflow-x: auto;
+  scroll-snap-type: x mandatory; scrollbar-width: none; margin-inline: -16px; padding: 2px 16px 6px; scroll-padding-inline: 16px;
+}
+.rail::-webkit-scrollbar { display: none; }
+.rail > .card { scroll-snap-align: start; }
+.swipe { color: var(--muted); display: flex; justify-content: space-between; align-items: center; }
+.poster-art {
+  margin: -16px -16px 4px; height: 132px; border-radius: 8px 8px 0 0; background: var(--g); color: var(--on-g);
+  display: flex; align-items: flex-end; justify-content: space-between; padding: 14px 16px; position: relative; overflow: hidden;
+}
+.poster-art svg { width: 64px; height: 64px; opacity: .95; }
+.poster-art .num { font-family: var(--f-display); font-weight: 900; font-size: 110px; line-height: .7; opacity: .18; position: absolute; right: -6px; top: 6px; }
+.poster-art .kind { font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; }
+.poster .card-h { margin-top: 2px; }
+
+/* Tratamientos especiales */
+.card.fill { background: var(--g); color: var(--on-g); }
+.card.fill .card-h, .card.fill .card-h .lab, .card.fill .icon-btn, .card.fill .en { color: var(--on-g); }
+.card.fill .card-h .lab::before { background: var(--on-g); }
+.card.fill .btn { border-color: color-mix(in srgb, var(--on-g) 45%, transparent); color: var(--on-g); }
+.card.fill .btn.primary { background: var(--on-g); color: var(--g); }
+.card.fill .big { font-size: 26px; }
+.card.inkcard { background: var(--ink); color: var(--paper); }
+.card.inkcard .card-h, .card.inkcard .icon-btn, .card.inkcard .tag { color: color-mix(in srgb, var(--paper) 75%, transparent); border-color: color-mix(in srgb, var(--paper) 30%, transparent); }
+.card.inkcard .btn { border-color: color-mix(in srgb, var(--paper) 35%, transparent); color: var(--paper); }
+.card.inkcard .big { font-style: normal; font-family: var(--f-body); font-weight: 600; font-size: 22px; }
+.card.quote .big { font-size: 25px; }
+.card.quote .big::first-letter { color: var(--g); }
+.wrap > *, .group > * { min-width: 0; }
+
+/* Imagen del día */
+.art { margin: 0; display: grid; gap: 10px; }
+.art canvas { width: 100%; max-width: 100%; aspect-ratio: 4 / 5; display: block; border-radius: 10px; box-shadow: var(--shadow); background: var(--paper-2); }
+.art figcaption { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.art figcaption b { font-family: var(--f-display); font-weight: 800; font-size: 24px; text-transform: uppercase; letter-spacing: .04em; line-height: 1; display: block; }
+.art figcaption span { color: var(--muted); }
+
+/* Buena noticia */
+.news { background: var(--sun-bg); color: var(--sun-ink); border-radius: 10px; padding: 18px; display: grid; gap: 10px; position: relative; overflow: hidden; }
+.news::after { content: ""; position: absolute; right: -40px; top: -40px; width: 140px; height: 140px; border-radius: 50%; border: 18px solid var(--sun-line); opacity: .7; }
+.news .mono { position: relative; z-index: 1; }
+.news h3 { margin: 0; font-family: var(--f-body); font-weight: 600; font-size: 22px; line-height: 1.25; text-wrap: balance; position: relative; z-index: 1; }
+.news p { margin: 0; position: relative; z-index: 1; }
+.news .src { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; }
+.news .btn { border-color: color-mix(in srgb, var(--sun-ink) 35%, transparent); color: var(--sun-ink); }
+
+/* Instalar en el móvil */
+.install { background: var(--paper); border: 1px dashed var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 8px; }
+.install ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.install .row { display: flex; justify-content: space-between; align-items: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<div class="wrap" id="app">
+  <section id="view-hoy" class="wrap" style="gap:28px">
+    <div id="cover"></div>
+    <div class="stats" id="stats"></div>
+    <div id="feed" class="wrap" style="gap:34px"></div>
+  </section>
+  <section id="view-guardados" class="wrap" hidden>
+    <div class="group">
+      <h2>Guardados <span class="mono" id="saved-count"></span></h2>
+      <div class="saved-list" id="saved-list"></div>
+    </div>
+  </section>
+  <p class="foot">Cada día, una hoja nueva. Vuelve mañana.</p>
+</div>
+
+<nav class="tabbar" aria-label="Secciones">
+  <button id="tab-hoy" aria-current="page" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="1.5"/><path d="M4 9h16M9 3v4M15 3v4"/></svg>
+    <span class="mono">Hoy</span>
+  </button>
+  <button id="tab-guardados" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+    <span class="mono">Guardados</span>
+  </button>
+</nav>
+
+<script>
+/* =================== CONTENIDO =================== */
+const enc = encodeURIComponent;
+const L = {
+  yt: q => "https://www.youtube.com/results?search_query=" + enc(q),
+  g: q => "https://www.google.com/search?q=" + enc(q),
+  tt: q => "https://www.tiktok.com/search?q=" + enc(q),
+  ig: h => "https://www.instagram.com/" + h + "/",
+  book: q => "https://www.google.com/search?tbm=bks&q=" + enc(q),
+  film: q => "https://www.justwatch.com/es/buscar?q=" + enc(q),
+  wiki: q => "https://es.wikipedia.org/w/index.php?search=" + enc(q),
+  spotify: q => "https://open.spotify.com/search/" + enc(q),
+};
+
+const VIDEOS = [
+  ["But what is a neural network?", "3Blue1Brown", "IA", "La mejor explicación visual de qué hace una red neuronal por dentro. Ver una red como una función gigante con millones de perillas cambia cómo entiendes cualquier IA."],
+  ["Attention in transformers, visually explained", "3Blue1Brown", "IA", "El mecanismo que hay detrás de ChatGPT y Claude: cómo cada palabra «mira» a las demás para decidir qué significa."],
+  ["Intro to Large Language Models", "Andrej Karpathy", "IA", "Una hora con uno de los fundadores de OpenAI explicando qué es un LLM, cómo se entrena y dónde falla. Sin humo."],
+  ["AlphaFold - The Most Useful Thing AI Has Ever Done", "Veritasium", "IA · Biología", "Cómo una IA resolvió un problema de 50 años: predecir la forma de las proteínas. Medicina, física e IA en un solo vídeo."],
+  ["The Most Important Algorithm Of All Time", "Veritasium", "Matemáticas", "La transformada rápida de Fourier, la historia de cómo casi evitó la carrera nuclear y por qué está en tu móvil."],
+  ["Quantum Physics for 7 Year Olds", "Dominic Walliman · TEDx", "Física cuántica", "Cuántica desde cero, con dibujos y sin ecuaciones. Ideal para fijar los fundamentos antes de leer nada serio."],
+  ["Double Slit Experiment explained", "Jim Al-Khalili · Royal Institution", "Física cuántica", "El experimento que Feynman llamó «el único misterio» de la cuántica, explicado por un físico que sabe contarlo."],
+  ["The Map of Physics", "Domain of Science", "Física", "Toda la física en un mapa: dónde encaja la cuántica, la relatividad y la termodinámica. Perfecto para ordenar ideas."],
+  ["The Map of Mathematics", "Domain of Science", "Matemáticas", "Las ramas de las matemáticas y cómo se conectan entre sí, en un solo mapa ilustrado."],
+  ["The Immune System Explained I – Bacteria Infection", "Kurzgesagt", "Medicina", "Qué ocurre minuto a minuto cuando te cortas un dedo. Inmunología contada como una batalla."],
+  ["The Egg", "Kurzgesagt", "Filosofía", "Un relato de Andy Weir animado. Siete minutos que dan para una conversación larga."],
+  ["How the food you eat affects your brain", "Mia Nacamulli · TED-Ed", "Nutrición", "Grasas, proteínas, glucosa y micronutrientes: qué necesita el cerebro y por qué."],
+  ["Why do we sleep?", "Russell Foster · TED", "Medicina", "Un neurocientífico de Oxford repasa las teorías sobre el sueño y lo que sabemos con certeza."],
+  ["What makes a good life? Lessons from the longest study on happiness", "Robert Waldinger · TED", "Bienestar", "El estudio de Harvard que siguió a 724 hombres durante 75 años. La conclusión no es dinero ni fama."],
+  ["Inside the mind of a master procrastinator", "Tim Urban · TED", "Psicología", "El mono de la gratificación instantánea y el monstruo del pánico. Te vas a reconocer."],
+  ["Do schools kill creativity?", "Ken Robinson · TED", "Educación", "La charla TED más vista de la historia. Aguanta muy bien el paso del tiempo."],
+  ["The surprising habits of original thinkers", "Adam Grant · TED", "Creatividad", "Por qué procrastinar un poco puede mejorar las ideas, con datos y buen humor."],
+  ["How To Speak", "Patrick Winston · MIT", "Comunicación", "Una clase mítica del MIT sobre cómo dar una charla, explicar una idea o defender un trabajo."],
+  ["El entrelazamiento cuántico", "QuantumFracture", "Física cuántica", "José Luis Crespo explica en español y con pizarra animada uno de los fenómenos más raros de la física."],
+  ["¿Qué es la mecánica cuántica?", "Date un Vlog", "Física cuántica", "Javier Santaolalla, físico que trabajó en el CERN, desde los fundamentos y con mucho entusiasmo."],
+  ["Historia de la inteligencia artificial", "DotCSV", "IA", "Carlos Santana repasa en español cómo hemos llegado a la IA actual, de Turing a los transformers."],
+];
+
+const ARTICLES = [
+  ["Centaurs and Cyborgs on the Jagged Frontier", "Ethan Mollick · One Useful Thing", "IA", "El estudio con consultores de BCG que mostró dónde la IA ayuda y dónde empeora el trabajo. Clave para usarla bien."],
+  ["Which AI should I use? Superpowers and the State of Play", "Ethan Mollick · One Useful Thing", "IA", "Guía práctica de un profesor de Wharton sobre qué herramienta usar para qué. Mollick la actualiza cada pocos meses."],
+  ["The rise and fall of peer review", "Adam Mastroianni · Experimental History", "Ciencia", "Un psicólogo argumenta que la revisión por pares es un experimento fallido. Provocador y muy bien escrito."],
+  ["Science is a strong-link problem", "Adam Mastroianni · Experimental History", "Ciencia", "Por qué en ciencia importa lo mejor y no lo peor, y qué implica eso para financiar investigación."],
+  ["Heuristics That Almost Always Work", "Scott Alexander · Astral Codex Ten", "Pensamiento", "El vigilante que siempre dice «no hay ladrones» acierta el 99,9 % de las veces. Sobre el valor real de los expertos."],
+  ["Why we stopped making Einsteins", "Erik Hoel · The Intrinsic Perspective", "Educación", "La hipótesis de que la tutoría aristocrática producía genios. Discutible y estimulante."],
+  ["Where are the robotic bricklayers?", "Brian Potter · Construction Physics", "Tecnología", "Por qué automatizar la construcción es tan difícil. Un ejemplo perfecto de pensar desde los fundamentos."],
+  ["A blog post is a very long and complex search query to find fascinating people", "Henrik Karlsson · Escaping Flatland", "Escritura", "Por qué escribir en público atrae a las personas adecuadas. Te dan ganas de escribir."],
+  ["Your Local Epidemiologist", "Katelyn Jetelina", "Medicina", "Salud pública explicada por una epidemióloga, con datos y sin alarmismo. Lee su último artículo."],
+  ["Sensible Medicine", "Vinay Prasad, Adam Cifu y John Mandrola", "Medicina", "Tres médicos que leen los ensayos clínicos con lupa. Muy útil para aprender a desconfiar bien."],
+  ["Ground Truths", "Eric Topol", "Medicina · IA", "Un cardiólogo de Scripps sigue lo último en medicina e IA. Rigor y entusiasmo a partes iguales."],
+  ["Import AI", "Jack Clark", "IA", "El boletín semanal de un cofundador de Anthropic sobre investigación en IA. Lee el número más reciente."],
+  ["Marcus on AI", "Gary Marcus", "IA", "El crítico más conocido de los grandes modelos de lenguaje. Útil para contrastar el entusiasmo."],
+  ["The Honest Broker", "Ted Gioia", "Cultura", "Música, cultura y tecnología por un historiador del jazz. Sus ensayos sobre la cultura del scroll son excelentes."],
+  ["Culture Study", "Anne Helen Petersen", "Sociedad", "Trabajo, ocio y vida cotidiana analizados con profundidad. Elige cualquier ensayo largo."],
+  ["Uncharted Territories", "Tomás Pueyo", "Geografía · Historia", "Un ingeniero español explica el mundo con mapas. Su serie sobre por qué las ciudades están donde están es brillante."],
+  ["Noahpinion", "Noah Smith", "Economía", "Economía y tecnología explicadas con claridad y opinión propia."],
+  ["Simon Willison's Newsletter", "Simon Willison", "IA práctica", "Un programador que prueba cada herramienta de IA nada más salir y cuenta qué funciona de verdad."],
+];
+
+const REELS = [
+  ["QuantumFracture", "TikTok · Instagram", "quantumfracture física", "Física explicada en un minuto con animaciones propias, en español.", L.tt("quantumfracture")],
+  ["Date un Vlog", "TikTok · Instagram", "date un vlog física", "Física de partículas y cosmología con energía de profesor favorito.", L.tt("date un vlog javier santaolalla")],
+  ["CdeCiencia", "TikTok · YouTube Shorts", "cdeciencia", "Ciencia rigurosa en español, con buenas metáforas visuales.", L.tt("cdeciencia")],
+  ["DotCSV", "TikTok · YouTube Shorts", "dotcsv inteligencia artificial", "Las novedades de IA comentadas por alguien que entiende la técnica.", L.tt("dotcsv inteligencia artificial")],
+  ["Boticaria García", "Instagram · TikTok", "boticaria garcía nutrición", "Farmacéutica y nutricionista: mitos de salud desmontados con humor.", L.tt("boticaria garcia")],
+  ["Aitor Sánchez · Mi dieta cojea", "Instagram · TikTok", "aitor sanchez mi dieta cojea", "Dietista-nutricionista que analiza etiquetas y modas alimentarias.", L.tt("mi dieta cojea aitor sanchez")],
+  ["Dr. Karan Raj", "TikTok", "dr karan raj", "Cirujano del NHS que explica el cuerpo humano en 60 segundos, en inglés.", L.tt("dr karan raj")],
+  ["NASA", "Instagram", "nasa", "Imágenes reales del espacio con la historia que hay detrás.", L.ig("nasa")],
+  ["Kurzgesagt", "Instagram", "kurzgesagt", "Ciencia ilustrada con el estilo inconfundible de sus vídeos.", L.ig("kurzgesagt")],
+  ["Quanta Magazine", "Instagram", "quanta magazine", "Matemáticas, física y biología de frontera, en clips cortos y bien editados.", L.ig("quantamag")],
+  ["Cleo Abram · Huge If True", "Instagram · TikTok", "cleo abram", "Tecnología optimista: fusión, IA, medicina. Buena para salir de la doom-scroll.", L.tt("cleo abram huge if true")],
+  ["Steve Mould", "YouTube Shorts", "steve mould", "Experimentos físicos caseros que no te esperas. Muy de «¿cómo puede ser?».", L.yt("steve mould shorts")],
+  ["Sabine Hossenfelder", "YouTube Shorts", "sabine hossenfelder", "Una física teórica que cuenta la actualidad científica sin adornos.", L.yt("sabine hossenfelder shorts")],
+  ["English with Lucy", "TikTok · Instagram", "english with lucy", "Vocabulario, pronunciación y expresiones británicas en píldoras.", L.tt("english with lucy")],
+  ["Real Academia Española", "TikTok · Instagram", "rae dudas", "Dudas del español resueltas por la propia Academia.", L.tt("real academia española dudas")],
+  ["Neil deGrasse Tyson", "Instagram", "neil degrasse tyson", "Astrofísica divulgativa con la voz más reconocible del género.", L.ig("neiltyson")],
+];
+
+const REFRANES = [
+  ["A quien madruga, Dios le ayuda.", "El esfuerzo y la diligencia tienen recompensa.", "The early bird catches the worm."],
+  ["Más vale pájaro en mano que ciento volando.", "Mejor algo seguro que mucho incierto.", "A bird in the hand is worth two in the bush."],
+  ["No por mucho madrugar amanece más temprano.", "Hay cosas que no se aceleran por más prisa que tengas.", "Good things take time."],
+  ["Dime con quién andas y te diré quién eres.", "Las compañías revelan cómo es una persona.", "A man is known by the company he keeps."],
+  ["En casa de herrero, cuchillo de palo.", "Falta algo justo donde más debería abundar.", "The shoemaker's children go barefoot."],
+  ["A caballo regalado no le mires el diente.", "No pongas pegas a lo que te regalan.", "Don't look a gift horse in the mouth."],
+  ["Ojos que no ven, corazón que no siente.", "Lo que no se sabe no duele.", "Out of sight, out of mind."],
+  ["Camarón que se duerme se lo lleva la corriente.", "Quien se descuida pierde oportunidades.", "You snooze, you lose."],
+  ["Quien mucho abarca, poco aprieta.", "Querer hacerlo todo impide hacer nada bien.", "Jack of all trades, master of none."],
+  ["Al mal tiempo, buena cara.", "Ante la adversidad, actitud.", "Keep your chin up."],
+  ["Del dicho al hecho hay mucho trecho.", "Decir es fácil; cumplir, no tanto.", "Easier said than done."],
+  ["Más vale tarde que nunca.", "Mejor llegar tarde que no llegar.", "Better late than never."],
+  ["A buen entendedor, pocas palabras bastan.", "A quien sabe interpretar no hace falta explicarle mucho.", "A word to the wise is enough."],
+  ["Cuando el río suena, agua lleva.", "Si se rumorea algo, algo de verdad habrá.", "Where there's smoke, there's fire."],
+  ["No hay mal que por bien no venga.", "De lo malo también sale algo bueno.", "Every cloud has a silver lining."],
+  ["Perro ladrador, poco mordedor.", "Quien mucho amenaza rara vez actúa.", "His bark is worse than his bite."],
+  ["El que la sigue, la consigue.", "La constancia da resultados.", "If at first you don't succeed, try, try again."],
+  ["Hablando del rey de Roma, por la puerta asoma.", "Aparece justo la persona de la que se hablaba.", "Speak of the devil."],
+  ["Lo cortés no quita lo valiente.", "Ser educado no te resta firmeza.", "Manners cost nothing."],
+  ["Quien siembra vientos recoge tempestades.", "Las malas acciones traen peores consecuencias.", "Sow the wind, reap the whirlwind."],
+  ["Cada maestrillo tiene su librillo.", "Cada persona tiene su manera de hacer las cosas.", "Everyone has their own way of doing things."],
+  ["De tal palo, tal astilla.", "Los hijos se parecen a sus padres.", "A chip off the old block."],
+  ["Zapatero, a tus zapatos.", "Cada cual a lo suyo, a lo que sabe.", "Cobbler, stick to your last."],
+  ["A falta de pan, buenas son tortas.", "Cuando no hay lo ideal, lo que hay sirve.", "Beggars can't be choosers."],
+  ["Obras son amores, que no buenas razones.", "Lo que cuenta son los hechos.", "Actions speak louder than words."],
+  ["Quien tiene boca se equivoca.", "Todo el mundo comete errores.", "To err is human."],
+  ["Poco a poco se va lejos.", "La constancia lenta llega más lejos que la prisa.", "Slow and steady wins the race."],
+  ["Agua que no has de beber, déjala correr.", "No te metas en lo que no te va a servir ni te concierne.", "Mind your own business."],
+  ["En abril, aguas mil.", "Abril es mes de lluvias.", "April showers bring May flowers."],
+  ["Cría cuervos y te sacarán los ojos.", "Quien cría mal acaba sufriendo a quien crió.", "Bite the hand that feeds you."],
+  ["Muerto el perro, se acabó la rabia.", "Eliminada la causa, desaparece el problema.", "Remove the cause and the problem goes away."],
+];
+
+const FRASES = [
+  ["Irse por los cerros de Úbeda", "Divagar, salirse del tema.", "Según la tradición, un caballero llegó tarde a la toma de Úbeda (1233) por Fernando III y se excusó diciendo que se había perdido por esos cerros."],
+  ["Estar en Babia", "Estar distraído, ausente.", "Babia es una comarca de León donde los reyes leoneses se retiraban a descansar y cazar. Si el rey no atendía asuntos, «estaba en Babia»."],
+  ["Poner los puntos sobre las íes", "Aclarar algo con precisión.", "En la escritura gótica, la «i» se confundía con los trazos de la «u», «m» o «n». Los copistas añadieron un punto para distinguirla."],
+  ["Hacer el agosto", "Obtener un gran beneficio de golpe.", "Agosto era el mes de la cosecha del cereal, cuando el campesino ganaba lo del año."],
+  ["Armarse la de San Quintín", "Organizarse un gran alboroto.", "La batalla de San Quintín (1557), en la que las tropas de Felipe II derrotaron a Francia. El Escorial se dedicó a San Lorenzo en recuerdo de aquel día."],
+  ["A buenas horas, mangas verdes", "Llega tarde una ayuda que ya no sirve.", "Los cuadrilleros de la Santa Hermandad llevaban mangas verdes y tenían fama de aparecer cuando el delito ya se había cometido."],
+  ["Ser un cero a la izquierda", "No contar para nada.", "Un cero a la izquierda de una cifra no cambia su valor: 07 vale lo mismo que 7."],
+  ["Dormirse en los laureles", "Confiarse tras un éxito.", "En Grecia y Roma se coronaba con laurel a los vencedores. Quien se queda sobre sus laureles deja de esforzarse."],
+  ["Meterse en camisa de once varas", "Complicarse con lo que no te corresponde.", "Una vara castellana medía unos 83,5 cm: una camisa de once varas tendría más de nueve metros."],
+  ["Tener más cuento que Calleja", "Exagerar o inventar excusas.", "Saturnino Calleja fue un editor madrileño de finales del siglo XIX que llenó España de cuentos infantiles baratos."],
+  ["Estar sin blanca", "No tener dinero.", "La «blanca» era una moneda castellana de vellón de muy poco valor. No tener ni una era estar arruinado."],
+  ["Más se perdió en Cuba", "Quitar importancia a una pérdida.", "Alude al Desastre de 1898, cuando España perdió Cuba, Puerto Rico y Filipinas."],
+  ["Quemar las naves", "Tomar una decisión sin vuelta atrás.", "Se atribuye a Hernán Cortés en 1519. En realidad no las quemó: las hizo varar y desguazar para que nadie pudiera volver."],
+  ["A ojo de buen cubero", "Calcular sin medir, de forma aproximada.", "Los cuberos fabricaban cubas y toneles calculando la capacidad a simple vista."],
+  ["Salvado por la campana", "Librarse en el último momento.", "Viene del boxeo: la campana que cierra el asalto salva al púgil en apuros. La historia de los ataúdes con campanilla es un mito."],
+  ["Cortar el bacalao", "Ser quien manda.", "La explicación más citada: en los colmados, quien cortaba el bacalao en salazón decidía el tamaño de cada ración."],
+  ["Rizar el rizo", "Complicar algo que ya era difícil.", "Viene de la aviación acrobática: el «rizo» es el giro completo en vertical. Rizarlo es hacer otro encima."],
+  ["Dar gato por liebre", "Engañar dando algo peor.", "En las ventas de caminos se servía a veces gato guisado haciéndolo pasar por liebre."],
+  ["Ir de punta en blanco", "Ir muy arreglado.", "El caballero armado «de punta en blanco» llevaba la armadura completa y las armas blancas relucientes."],
+  ["Brillar por su ausencia", "Notarse precisamente porque falta.", "Tácito cuenta en sus Anales que en el funeral de Junia faltaban los retratos de Bruto y Casio, y que «brillaban precisamente porque no se veían»."],
+  ["Tirar la casa por la ventana", "Gastar sin medida.", "Una explicación popular la relaciona con la costumbre de que quien ganaba la lotería tiraba sus enseres viejos a la calle."],
+  ["Ponerse las botas", "Disfrutar o comer en abundancia.", "Las botas de montar eran signo de riqueza: quien se las ponía podía permitirse más que el resto."],
+  ["Estar entre la espada y la pared", "No tener escapatoria.", "La imagen es la de un combatiente acorralado: delante el arma enemiga, detrás un muro."],
+];
+
+const BOOKS = [
+  ["Sapiens", "Yuval Noah Harari", 2011, "Historia", "La historia de la humanidad desde la revolución cognitiva. Discutible en partes, por eso da para pensar."],
+  ["Pensar rápido, pensar despacio", "Daniel Kahneman", 2011, "Psicología", "Los dos sistemas del pensamiento y los sesgos que nos engañan. Un clásico que cambia cómo decides."],
+  ["El gen egoísta", "Richard Dawkins", 1976, "Biología", "La evolución vista desde el gen. Aquí nació la palabra «meme»."],
+  ["Gödel, Escher, Bach", "Douglas Hofstadter", 1979, "Mente · IA", "Lógica, arte, música y conciencia entrelazados. Exigente, enorme y único."],
+  ["El emperador de todos los males", "Siddhartha Mukherjee", 2010, "Medicina", "Una biografía del cáncer escrita por un oncólogo. Premio Pulitzer."],
+  ["Co-Inteligencia", "Ethan Mollick", 2024, "IA", "Cómo trabajar y aprender con IA, con ejemplos de aula y empresa."],
+  ["Siete breves lecciones de física", "Carlo Rovelli", 2014, "Física", "La física moderna en 80 páginas bellamente escritas."],
+  ["Helgoland", "Carlo Rovelli", 2020, "Física cuántica", "La interpretación relacional de la cuántica, contada desde la isla donde Heisenberg la intuyó."],
+  ["El hombre que confundió a su mujer con un sombrero", "Oliver Sacks", 1985, "Neurología", "Casos clínicos que parecen relatos. Medicina con humanidad."],
+  ["Cien años de soledad", "Gabriel García Márquez", 1967, "Novela", "Si hace años que no la relees, toca."],
+  ["El infinito en un junco", "Irene Vallejo", 2019, "Ensayo", "La historia del libro en el mundo antiguo. Erudición que se lee como una novela."],
+  ["Klara y el Sol", "Kazuo Ishiguro", 2021, "Novela · IA", "Una «amiga artificial» observa a la familia que la compra. Delicada y perturbadora."],
+  ["El proceso", "Franz Kafka", 1925, "Novela · Derecho", "Un hombre acusado sin saber de qué. El derecho visto como laberinto."],
+  ["Matar a un ruiseñor", "Harper Lee", 1960, "Novela · Derecho", "Un juicio en el sur de EE. UU. de los años treinta, visto por una niña."],
+  ["Factfulness", "Hans Rosling", 2018, "Datos", "Por qué el mundo va mejor de lo que crees y cómo leer los datos sin dramatismo."],
+  ["El dilema del omnívoro", "Michael Pollan", 2006, "Nutrición", "Sigue cuatro comidas hasta su origen. Cambia cómo miras el plato."],
+  ["The Alignment Problem", "Brian Christian", 2020, "IA", "Cómo conseguir que las máquinas hagan lo que queremos. La mejor introducción a la ética de la IA."],
+  ["Breve historia del tiempo", "Stephen Hawking", 1988, "Cosmología", "Del big bang a los agujeros negros. Releerlo hoy es otra experiencia."],
+  ["El sistema periódico", "Primo Levi", 1975, "Memoria · Química", "Veintiún relatos, cada uno con un elemento químico. Ciencia y vida."],
+  ["Ficciones", "Jorge Luis Borges", 1944, "Cuentos", "«La biblioteca de Babel» anticipó los modelos de lenguaje. Léelo con eso en mente."],
+  ["Ser mortal", "Atul Gawande", 2014, "Medicina", "Un cirujano sobre lo que la medicina hace mal al final de la vida."],
+  ["El mundo de ayer", "Stefan Zweig", 1942, "Memorias", "La Europa que se derrumbó, contada por quien la vivió."],
+  ["Crimen y castigo", "Fiódor Dostoievski", 1866, "Novela", "Culpa, justificación y castigo. Derecho penal desde dentro de la cabeza del culpable."],
+  ["La Regenta", "Leopoldo Alas «Clarín»", 1885, "Novela", "La gran novela española del XIX. Vetusta es cualquier ciudad pequeña."],
+];
+
+const FILMS = [
+  ["La llegada", "Denis Villeneuve", 2016, "Ciencia ficción · Lenguaje", "Una lingüista intenta comunicarse con extraterrestres. El idioma como forma de pensar el tiempo."],
+  ["Her", "Spike Jonze", 2013, "IA", "Un hombre se enamora de un sistema operativo. Se ha vuelto más actual que cuando se estrenó."],
+  ["Ex Machina", "Alex Garland", 2014, "IA", "Un test de Turing a puerta cerrada. Inteligente y tensa."],
+  ["Doce hombres sin piedad", "Sidney Lumet", 1957, "Derecho", "Un jurado, una habitación y la duda razonable. Imprescindible."],
+  ["Anatomía de una caída", "Justine Triet", 2023, "Derecho", "Un juicio donde la verdad parece imposible de alcanzar. Palma de Oro."],
+  ["AlphaGo", "Greg Kohs", 2017, "Documental · IA", "La IA de DeepMind contra Lee Sedol. El famoso movimiento 37."],
+  ["Oppenheimer", "Christopher Nolan", 2023, "Historia · Física", "Física cuántica, ética y política en tres horas que se pasan volando."],
+  ["Interstellar", "Christopher Nolan", 2014, "Ciencia ficción", "Relatividad general en pantalla grande, con asesoría de Kip Thorne."],
+  ["El secreto de sus ojos", "Juan José Campanella", 2009, "Thriller", "Un caso judicial que dura toda una vida. Óscar a mejor película extranjera."],
+  ["Parásitos", "Bong Joon-ho", 2019, "Drama", "La desigualdad contada como thriller. Primera película no inglesa en ganar el Óscar a mejor película."],
+  ["Perfect Days", "Wim Wenders", 2023, "Drama", "Un limpiador de baños en Tokio y la belleza de la rutina."],
+  ["Figuras ocultas", "Theodore Melfi", 2016, "Historia · Ciencia", "Las matemáticas negras que calcularon las órbitas de la NASA."],
+  ["Despertares", "Penny Marshall", 1990, "Medicina", "Basada en los casos reales de Oliver Sacks con pacientes catatónicos."],
+  ["Testigo de cargo", "Billy Wilder", 1957, "Derecho", "Uno de los mejores dramas judiciales jamás rodados. No cuentes el final."],
+  ["La sociedad de la nieve", "J. A. Bayona", 2023, "Drama", "La tragedia de los Andes contada desde las víctimas."],
+  ["Gattaca", "Andrew Niccol", 1997, "Ciencia ficción", "Una sociedad que decide tu destino por tus genes."],
+  ["El show de Truman", "Peter Weir", 1998, "Drama", "Antes de las redes sociales, ya lo vio venir."],
+  ["Todo a la vez en todas partes", "Daniel Kwan y Daniel Scheinert", 2022, "Fantasía", "Multiversos, una lavandería y una declaración de impuestos."],
+  ["Matar a un ruiseñor", "Robert Mulligan", 1962, "Derecho", "Gregory Peck como Atticus Finch, el abogado que todos queríamos ser."],
+  ["Spotlight", "Tom McCarthy", 2015, "Periodismo", "Cómo se construye una investigación periodística, paso a paso."],
+  ["Vivir", "Akira Kurosawa", 1952, "Drama", "Un funcionario con cáncer busca sentido a su vida. Kurosawa en estado puro."],
+  ["Contact", "Robert Zemeckis", 1997, "Ciencia ficción", "Basada en Carl Sagan: ciencia, fe y una señal desde Vega."],
+  ["Primer", "Shane Carruth", 2004, "Ciencia ficción", "Viajes en el tiempo con presupuesto mínimo. Necesitarás verla dos veces."],
+];
+
+const DATOS = [
+  ["El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.", "Biología"],
+  ["Si el núcleo de un átomo fuera una canica en el centro de un estadio, los electrones estarían por las gradas. Casi todo es vacío.", "Física"],
+  ["Cleopatra vivió más cerca en el tiempo de la llegada a la Luna que de la construcción de la Gran Pirámide de Guiza.", "Historia"],
+  ["«Ojalá» viene del árabe andalusí «law šá lláh», que significa «si Dios quiere».", "Idiomas"],
+  ["Los plátanos son ligeramente radiactivos por su potasio-40. Harían falta millones a la vez para que fuera peligroso.", "Física"],
+  ["Tu corazón late unas 100.000 veces al día y bombea unos 7.000 litros de sangre.", "Medicina"],
+  ["La luz del Sol tarda unos 8 minutos y 20 segundos en llegar a la Tierra. Ves el Sol como era hace ocho minutos.", "Astronomía"],
+  ["En Venus un día dura más que un año: tarda 243 días terrestres en girar sobre sí mismo y 225 en dar la vuelta al Sol.", "Astronomía"],
+  ["Hay unos 3 billones de árboles en la Tierra, muchos más que estrellas en la Vía Láctea (entre 100.000 y 400.000 millones).", "Naturaleza"],
+  ["El ADN de una sola de tus células, estirado, mediría unos 2 metros.", "Biología"],
+  ["El cerebro pesa alrededor del 2 % del cuerpo pero consume cerca del 20 % de la energía en reposo.", "Medicina"],
+  ["La palabra «robot» la popularizó Karel Čapek en 1920 en su obra R.U.R. La sugirió su hermano Josef, a partir de «robota», trabajo forzado.", "IA · Idiomas"],
+  ["El Código de Hammurabi (hacia 1750 a. C.) ya regulaba la responsabilidad de los constructores: si una casa se derrumbaba y mataba a su dueño, el constructor podía ser condenado a muerte.", "Derecho"],
+  ["Los flamencos son rosas por los carotenoides de las algas y crustáceos que comen. Nacen grises.", "Biología"],
+  ["Sin el efecto túnel cuántico el Sol no brillaría: los protones de su núcleo no tienen energía suficiente para fusionarse según la física clásica.", "Física cuántica"],
+  ["Los relojes de los satélites GPS se adelantan unos 38 microsegundos al día por la relatividad. Sin corregirlo, tu GPS fallaría kilómetros en un día.", "Física"],
+  ["«Algoritmo» viene de al-Juarismi, matemático persa del siglo IX. «Álgebra» sale del título de uno de sus libros.", "Matemáticas · Idiomas"],
+  ["El hueso más pequeño del cuerpo es el estribo, en el oído medio. Mide unos 3 milímetros.", "Medicina"],
+  ["Cervantes y Shakespeare no murieron el mismo día. Inglaterra usaba el calendario juliano: Shakespeare murió el 3 de mayo gregoriano de 1616.", "Historia"],
+  ["La Gran Muralla china no se ve a simple vista desde la Luna. Es larga, pero estrecha.", "Mitos"],
+  ["Fleming descubrió la penicilina en 1928 porque un moho contaminó por accidente sus placas de estafilococos.", "Medicina"],
+  ["Tu médula ósea fabrica unos 2 millones de glóbulos rojos por segundo.", "Medicina"],
+  ["El hielo flota porque el agua sólida es cerca de un 9 % menos densa que la líquida. Por eso los lagos se congelan desde arriba y la vida sobrevive debajo.", "Química"],
+  ["Lo de que solo usamos el 10 % del cerebro es un mito: las imágenes cerebrales muestran actividad en prácticamente todas las regiones.", "Mitos"],
+  ["Deep Blue venció a Garri Kaspárov en 1997. AlphaGo hizo lo mismo con Lee Sedol en el go en 2016, un juego con más posiciones posibles que átomos en el universo observable.", "IA"],
+  ["El intestino tiene su propio sistema nervioso, el entérico, con cientos de millones de neuronas. Por eso se le llama «segundo cerebro».", "Medicina"],
+  ["La Real Academia Española se fundó en 1713 con el lema «Limpia, fija y da esplendor».", "Idiomas"],
+  ["La nutria marina duerme flotando boca arriba y a veces se agarra de la pata con otras para que la corriente no las separe.", "Naturaleza"],
+  ["Un rayo calienta el aire que atraviesa a unos 30.000 °C, unas cinco veces la temperatura de la superficie del Sol.", "Física"],
+  ["La miel bien cerrada casi no se estropea: es tan concentrada en azúcar y tan ácida que las bacterias no pueden crecer en ella.", "Química"],
+];
+
+const PALABRAS = [
+  ["Arrebol", "es", "Color rojizo que toman las nubes iluminadas por el sol al amanecer o al atardecer.", "«El cielo se encendió de arreboles antes de la tormenta.»"],
+  ["Sobremesa", "es", "Tiempo que se pasa en la mesa charlando después de comer.", "Sin traducción directa al inglés: «after-meal conversation» se queda corto."],
+  ["Petricor", "es", "Olor que desprende la tierra seca cuando empieza a llover.", "Lo bautizaron dos científicos australianos en 1964 (petrichor)."],
+  ["Ataraxia", "es", "Serenidad del ánimo, ausencia de turbación. Ideal de epicúreos y estoicos.", "«Buscaba la ataraxia en sus paseos por el campo.»"],
+  ["Desasosiego", "es", "Falta de calma o de tranquilidad.", "«Libro del desasosiego» es la obra más famosa de Pessoa."],
+  ["Inefable", "es", "Que no se puede explicar con palabras.", "Viene del latín «ineffabilis»: que no se puede decir."],
+  ["Apofenia", "es", "Tendencia a ver patrones o conexiones en datos aleatorios.", "Ver caras en los enchufes es pareidolia, un tipo de apofenia."],
+  ["Bonhomía", "es", "Afabilidad, sencillez, bondad en el carácter.", "Préstamo del francés «bonhomie»."],
+  ["Melifluo", "es", "Dulce, suave y delicado, sobre todo al hablar.", "Literalmente: «que fluye miel»."],
+  ["Sempiterno", "es", "Que durará siempre, que no tiene fin.", "«Su sempiterna sonrisa desarmaba a cualquiera.»"],
+  ["Albricias", "es", "Expresión de júbilo; regalo que se da a quien trae una buena noticia.", "Del árabe hispánico «albúšra», buena noticia."],
+  ["Serendipia", "es", "Hallazgo valioso que se produce de manera accidental.", "Del inglés «serendipity», que inventó Horace Walpole en 1754 a partir de un cuento persa."],
+  ["Quixotic", "en", "Exceedingly idealistic; unrealistic and impractical.", "Sí: viene de don Quijote. «A quixotic attempt to fix the system.»"],
+  ["Apricity", "en", "The warmth of the sun in winter.", "Palabra inglesa en desuso desde el siglo XVII, rescatada por los amantes de las palabras raras."],
+  ["Mellifluous", "en", "Sweet or musical; pleasant to hear.", "Prima hermana de «melifluo». «Her mellifluous voice filled the room.»"],
+  ["Sesquipedalian", "en", "Characterised by long words; long-winded.", "Literalmente «de pie y medio» de largo. Se describe a sí misma."],
+  ["Defenestration", "en", "The act of throwing someone out of a window.", "Las defenestraciones de Praga (1419 y 1618) desencadenaron guerras."],
+  ["Ubiquitous", "en", "Present, appearing, or found everywhere.", "«Smartphones have become ubiquitous.»"],
+  ["Gobbledygook", "en", "Language that is meaningless or made unintelligible by excessive use of technical terms.", "La acuñó un congresista de EE. UU. en 1944 imitando a un pavo."],
+  ["Tsundoku", "ja", "Comprar libros y dejarlos apilados sin leer.", "Japonés: «tsunde» (apilar) + «doku» (leer). ¿Te suena?"],
+  ["Komorebi", "ja", "La luz del sol que se filtra entre las hojas de los árboles.", "Aparece en la película «Perfect Days», de Wim Wenders."],
+  ["Saudade", "pt", "Nostalgia profunda por algo o alguien ausente, que quizá no vuelva.", "Emparentada con «soledad», del latín «solitas»."],
+  ["Schadenfreude", "de", "Alegría por la desgracia ajena.", "Alemán: «Schaden» (daño) + «Freude» (alegría)."],
+  ["Hygge", "da", "Sensación de bienestar acogedor y sencillo, en buena compañía.", "Danés. Velas, manta y una conversación larga."],
+  ["Hiraeth", "cy", "Añoranza de un hogar al que no se puede volver, o que quizá nunca existió.", "Galés. Pariente emocional de «saudade»."],
+  ["Wanderlust", "en", "A strong desire to travel.", "Préstamo del alemán: «wandern» (caminar) + «Lust» (deseo)."],
+];
+
+const CONCEPTOS = [
+  ["Superposición cuántica", "Física cuántica", "Un sistema cuántico puede estar en una combinación de estados a la vez hasta que se mide. Analogía imperfecta: una nota musical que es a la vez do y mi, como un acorde, hasta que alguien la escucha y suena solo una. Lo que se superpone no son «posibilidades que ignoramos», sino amplitudes que pueden sumarse o anularse."],
+  ["Entrelazamiento", "Física cuántica", "Dos partículas comparten un único estado: medir una determina al instante el resultado de la otra, aunque estén lejos. Parece el caso de dos guantes separados en cajas (si uno es el izquierdo, el otro es el derecho), pero los experimentos de Bell demostraron que no es solo eso: no había un resultado escrito de antemano."],
+  ["Principio de incertidumbre", "Física cuántica", "No es un problema de instrumentos torpes. Es como el sonido: una nota muy corta no tiene un tono bien definido, y para tener un tono preciso necesitas una nota larga. Posición y momento de una partícula se reparten la precisión igual."],
+  ["Decoherencia", "Física cuántica", "Por qué no vemos gatos vivos y muertos a la vez: un objeto grande interactúa con billones de fotones y moléculas, que «filtran» su información al entorno. Como un susurro en un estadio lleno: la superposición se diluye en el ruido."],
+  ["Atención (transformers)", "IA", "Al leer «el banco estaba lleno de patos», sabes que «banco» es un asiento por «patos». La atención hace eso: cada palabra calcula cuánto debe fijarse en cada una de las demás para decidir qué significa en ese contexto."],
+  ["Descenso del gradiente", "IA", "Estás en una montaña con niebla y quieres bajar al valle. Tanteas con el pie hacia dónde baja más el terreno y das un paso. Repites millones de veces. Así aprenden las redes neuronales: ajustan sus parámetros en la dirección que más reduce el error."],
+  ["Sobreajuste", "IA · Estadística", "Un estudiante memoriza las respuestas de los exámenes antiguos y saca un 10, pero suspende uno nuevo. Un modelo sobreajustado aprende el ruido de sus datos de entrenamiento en lugar del patrón general."],
+  ["Tokens", "IA", "Un modelo de lenguaje no lee letras ni palabras, sino trozos: «desafortunadamente» puede ser «des», «afortunada», «mente». Como piezas de Lego del texto. Por eso a veces falla contando letras."],
+  ["Presunción de inocencia", "Derecho", "No es que el acusado sea inocente: es que la carga de probar la culpa recae en quien acusa. Como en un partido donde el marcador empieza 1-0 a favor de la defensa, la acusación tiene que remontar."],
+  ["In dubio pro reo", "Derecho", "Si tras la prueba al juez le queda una duda razonable, debe absolver. Es la regla de desempate del proceso penal. Se prefiere que un culpable quede libre a que un inocente sea condenado."],
+  ["Habeas corpus", "Derecho", "Literalmente «que tengas el cuerpo»: el derecho de un detenido a ser llevado ante un juez para que este compruebe si la detención es legal. En España lo regula la Ley Orgánica 6/1984."],
+  ["Non bis in idem", "Derecho", "Nadie puede ser castigado dos veces por el mismo hecho con el mismo fundamento. Como un partido que ya terminó: no se vuelve a jugar para cambiar el resultado."],
+  ["Homeostasis", "Medicina", "El cuerpo funciona como un termostato con cientos de sensores: temperatura, glucosa, pH, sodio. Cuando algo se desvía, activa mecanismos que lo devuelven al rango. Muchas enfermedades son termostatos averiados."],
+  ["Efecto placebo y nocebo", "Medicina", "La expectativa cambia la experiencia: un comprimido de azúcar puede aliviar el dolor si crees que es un analgésico. El nocebo es lo contrario: leer los efectos secundarios puede provocarlos. Por eso los ensayos son a doble ciego."],
+  ["Sensibilidad y especificidad", "Medicina", "Sensibilidad: de los enfermos, cuántos detecta la prueba (red con agujeros pequeños). Especificidad: de los sanos, cuántos descarta bien (no pesca lo que no debe). Una red de malla muy fina lo atrapa todo, peces y basura."],
+  ["Resistencia a la insulina", "Medicina · Nutrición", "La insulina es la llave que abre las células para que entre la glucosa. Con resistencia, la cerradura está oxidada: hace falta más llave para lo mismo. El páncreas acaba produciendo de más hasta que no da abasto."],
+  ["Índice y carga glucémica", "Nutrición", "La sandía tiene un índice glucémico alto, pero poca cantidad de azúcar por ración. La carga glucémica tiene en cuenta cuánto comes, y por eso es más útil en la práctica que el índice solo."],
+  ["Sarcopenia", "Medicina · Ejercicio", "Pérdida de masa y fuerza muscular con la edad. El músculo funciona como una cuenta de ahorro: lo que acumulas antes de los 50 es lo que te protege después. El entrenamiento de fuerza es la mejor inversión."],
+  ["Microbiota", "Medicina · Nutrición", "Billones de bacterias en tu intestino que digieren fibra y fabrican compuestos útiles. Funciona como un jardín: lo que comes decide qué especies prosperan. La fibra es su abono."],
+  ["Ley de Goodhart", "Economía · Pensamiento", "«Cuando una medida se convierte en objetivo, deja de ser una buena medida.» Si pagas por número de líneas de código, tendrás código larguísimo. Pasa con las notas, las visitas web y los modelos de IA."],
+  ["Sesgo de supervivencia", "Pensamiento", "En la Segunda Guerra Mundial querían blindar los aviones donde volvían con más agujeros. Abraham Wald señaló lo contrario: había que blindar donde no había agujeros, porque los aviones tocados ahí nunca volvían."],
+  ["Teorema de Bayes", "Matemáticas · Medicina", "Una prueba con 99 % de acierto da positivo para una enfermedad que tiene 1 de cada 1.000 personas. ¿Probabilidad real de estar enfermo? Mucho menos de lo que crees, porque los falsos positivos entre tantos sanos superan a los verdaderos."],
+  ["Neuroplasticidad", "Neurociencia", "El cerebro se recablea con el uso, como los caminos de un parque: los que más se pisan se vuelven sendas marcadas. Aprender un idioma o un instrumento literalmente cambia tu anatomía cerebral."],
+  ["Navaja de Ockham", "Pensamiento", "Entre explicaciones que encajan igual de bien con los hechos, quédate con la que necesita menos suposiciones. No dice que lo simple sea verdad; dice por dónde empezar a buscar."],
+];
+
+const RETOS = [
+  ["Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?", "5 céntimos. Si fuera 10, el bate costaría 1,10 y el total 1,20. Tu cerebro rápido quería decir 10."],
+  ["Los nenúfares de un lago doblan su superficie cada día. Tardan 48 días en cubrir todo el lago. ¿Cuántos días tardan en cubrir la mitad?", "47 días. Al día siguiente se duplica y lo cubren entero."],
+  ["Si 5 máquinas tardan 5 minutos en hacer 5 piezas, ¿cuánto tardan 100 máquinas en hacer 100 piezas?", "5 minutos. Cada máquina tarda 5 minutos en hacer una pieza."],
+  ["Hay tres interruptores fuera de una habitación cerrada con una bombilla dentro. Solo puedes entrar una vez. ¿Cómo sabes qué interruptor la enciende?", "Enciende el primero unos minutos y apágalo. Enciende el segundo y entra. Encendida: el segundo. Apagada y caliente: el primero. Apagada y fría: el tercero."],
+  ["Concursas: tres puertas, un coche detrás de una. Eliges la 1. El presentador, que sabe dónde está, abre la 3 y hay una cabra. ¿Te conviene cambiar a la 2?", "Sí. Cambiando ganas 2 de cada 3 veces. Tu primera elección acertó solo 1 de cada 3, y el presentador no abre al azar."],
+  ["¿Cuántas personas tiene que haber en una sala para que sea más probable que no que dos cumplan años el mismo día?", "Solo 23. Con 70 personas la probabilidad supera el 99,9 %. Cuentan las parejas posibles, no las personas."],
+  ["Continúa la serie: 1, 11, 21, 1211, 111221, …", "312211. Cada término describe en voz alta el anterior: «tres unos, dos doses, un uno»."],
+  ["Un caracol está en el fondo de un pozo de 10 metros. Cada día sube 3 metros y cada noche resbala 2. ¿Cuántos días tarda en salir?", "8 días. Al final del séptimo día-noche está a 7 metros; el octavo día sube 3 y sale sin resbalar."],
+  ["Tienes una jarra de 3 litros y otra de 5, y un grifo. ¿Cómo mides exactamente 4 litros?", "Llena la de 5 y vierte en la de 3: quedan 2. Vacía la de 3, pasa los 2. Llena la de 5 y completa la de 3 (cabe 1 litro). Quedan 4."],
+  ["¿Qué palabra española contiene las cinco vocales una sola vez y significa un mamífero volador?", "Murciélago. Otras con las cinco vocales una vez: euforia, aurícula, abuelito."],
+  ["Dos padres y dos hijos van de pesca. Cada uno pesca un pez y vuelven con tres peces. ¿Cómo es posible?", "Son tres personas: abuelo, padre e hijo. El padre es a la vez padre e hijo."],
+  ["¿Cuántos meses tienen 28 días?", "Todos."],
+  ["Lanzas dos monedas. Te dicen que al menos una salió cara. ¿Qué probabilidad hay de que las dos sean cara?", "1/3. Los casos posibles son CC, CX y XC; solo uno es doble cara."],
+  ["Una enfermedad afecta a 1 de cada 1.000 personas. La prueba detecta al 99 % de los enfermos y da falso positivo al 5 % de los sanos. Das positivo. ¿Probabilidad de estar enferma?", "Alrededor del 2 %. De 1.000 personas, 1 enferma da positivo y unas 50 sanas también. Bayes en acción."],
+  ["Si me nombras, desaparezco. ¿Qué soy?", "El silencio."],
+  ["Cuanto más le quitas, más grande se hace. ¿Qué es?", "Un agujero."],
+  ["Estimación de Fermi: ¿cuántas veces late tu corazón en un año?", "Unos 37 millones: 70 latidos × 60 minutos × 24 horas × 365 días."],
+  ["Con las letras de ROMA, ¿cuántas palabras españolas puedes formar?", "Al menos cuatro: amor, mora, ramo, armo. Y Omar, si vale un nombre."],
+  ["Un hombre empuja su coche hasta un hotel y anuncia que está arruinado. ¿Qué ha pasado?", "Está jugando al Monopoly."],
+  ["¿Qué número sigue? 2, 3, 5, 7, 11, 13, …", "17. Son los números primos."],
+  ["Un ladrillo pesa 1 kilo más medio ladrillo. ¿Cuánto pesa un ladrillo entero?", "2 kilos. Si medio ladrillo pesa 1 kilo, el ladrillo entero pesa 2."],
+];
+
+const PREGUNTAS = [
+  "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
+  "Si tuvieras que explicar tu trabajo a una niña de siete años, ¿qué frase usarías?",
+  "¿Qué sabes hacer hoy que hace diez años te habría parecido imposible?",
+  "¿Qué tarea delegarías a una IA mañana mismo, y cuál no le darías nunca?",
+  "¿Qué libro te gustaría haber leído a los veinte años?",
+  "¿De qué tema podrías dar una charla de una hora sin preparar nada?",
+  "¿Qué hábito pequeño tendría el mayor efecto en tu salud dentro de diez años?",
+  "Si pudieras aprender un idioma al instante, ¿cuál sería y para qué lo usarías?",
+  "¿Qué crees que la gente de 2100 verá como una barbaridad de nuestra época?",
+  "¿Qué pregunta te gustaría que te hicieran más a menudo?",
+  "¿Cuál es la mejor decisión que tomaste con información incompleta?",
+  "¿Qué disciplina que no es la tuya te ayudaría más en tu trabajo?",
+  "¿Qué consejo te dieron que al principio te pareció malo y luego resultó bueno?",
+  "Si mañana tuvieras una hora libre sin pantallas, ¿en qué la gastarías?",
+  "¿Qué ley cambiarías si pudieras cambiar solo una?",
+  "¿A quién no le has dado las gracias todavía por algo importante?",
+  "¿Qué cosa haces por costumbre que no harías si empezaras de cero?",
+  "¿Qué te sorprendería descubrir que es verdad?",
+  "¿Qué parte de tu rutina disfrutarías más si le prestaras atención?",
+];
+
+const HABITOS = [
+  ["Camina 10 minutos después de comer", "Los músculos de las piernas captan glucosa al moverse y aplanan el pico de azúcar posterior a la comida."],
+  ["Proteína en el desayuno", "Unos 25-30 g (huevos, yogur griego, queso fresco) reducen el picoteo de media mañana y ayudan a mantener músculo."],
+  ["Regla 20-20-20", "Cada 20 minutos de pantalla, mira algo a unos 6 metros durante 20 segundos. Tus músculos oculares lo agradecen."],
+  ["Sentadillas a la silla", "Diez repeticiones: siéntate y levántate sin ayudarte de las manos. Fuerza de piernas sin cargar los hombros."],
+  ["Elevaciones de talones", "Tres series de 15 mientras esperas el café. Gemelos fuertes, mejor circulación y equilibrio."],
+  ["Equilibrio sobre un pie", "30 segundos por pierna mientras te lavas los dientes. El equilibrio se entrena como cualquier otra capacidad."],
+  ["Respiración 4-6", "Inhala 4 segundos y exhala 6, durante dos minutos. Exhalar más largo activa el sistema parasimpático."],
+  ["Un puñado de legumbres", "Garbanzos, lentejas o alubias: fibra, proteína y alimento para tu microbiota. Apunta a 3-4 raciones por semana."],
+  ["Luz natural por la mañana", "10 minutos de luz exterior al despertar ayudan a sincronizar el reloj circadiano y a dormir mejor por la noche."],
+  ["Cena 2-3 horas antes de dormir", "Digestión terminada, mejor sueño y menos reflujo."],
+  ["Puente de glúteo", "Boca arriba, con las rodillas dobladas, eleva la cadera 12 veces con los brazos estirados a los lados. Sin carga en los hombros."],
+  ["Paseo a paso ligero", "20 minutos a un ritmo que te permita hablar pero no cantar. Es ejercicio aeróbico de verdad."],
+  ["Agua antes del café", "Un vaso de agua al levantarte, antes de cualquier otra cosa."],
+  ["Aprende 5 palabras", "Elige cinco palabras de otro idioma y úsalas hoy en una frase escrita. La memoria se fija al usar, no al leer."],
+  ["10 minutos de lectura en papel", "Sin notificaciones. Entrena la atención sostenida, que el scroll erosiona."],
+  ["Estiramiento de cadera", "Zancada con la rodilla trasera apoyada, 30 segundos por lado. Contrarresta las horas de silla."],
+  ["Una ración de pescado azul", "Sardinas, caballa o salmón: omega-3 para el corazón y el cerebro. Apunta a dos veces por semana."],
+  ["Escribe tres líneas", "Antes de dormir, anota tres cosas que has aprendido hoy. Recordarlas activamente las consolida."],
+  ["Subir escaleras", "Hoy, en lugar del ascensor. Es de los ejercicios de fuerza y cardio más accesibles que existen."],
+  ["Fruta entera en vez de zumo", "La fibra de la fruta entera frena la absorción del azúcar. El zumo la pierde."],
+];
+
+const CITAS = [
+  ["Caminante, no hay camino, se hace camino al andar.", "Antonio Machado", "«Proverbios y cantares», en Campos de Castilla (1912)."],
+  ["Toda la vida es sueño, y los sueños, sueños son.", "Pedro Calderón de la Barca", "Cierre del monólogo de Segismundo en La vida es sueño (1635)."],
+  ["Una vida sin examen no merece ser vivida.", "Sócrates", "Lo dice ante el tribunal que lo condenó, según la Apología de Platón."],
+  ["Pienso, luego existo.", "René Descartes", "Discurso del método (1637). La única certeza que resiste la duda radical."],
+  ["Si he visto más lejos es porque estoy sentado sobre hombros de gigantes.", "Isaac Newton", "Carta a Robert Hooke (1675). La imagen ya la usaba Bernardo de Chartres en el siglo XII."],
+  ["La imaginación es más importante que el conocimiento.", "Albert Einstein", "Entrevista en The Saturday Evening Post (1929)."],
+  ["Yo soy yo y mi circunstancia, y si no la salvo a ella no me salvo yo.", "José Ortega y Gasset", "Meditaciones del Quijote (1914)."],
+  ["Los límites de mi lenguaje significan los límites de mi mundo.", "Ludwig Wittgenstein", "Tractatus logico-philosophicus (1921), proposición 5.6."],
+  ["El hombre es la medida de todas las cosas.", "Protágoras", "Recogida por Platón en el Teeteto. El origen del relativismo."],
+  ["Primum non nocere. (Lo primero, no hacer daño.)", "Tradición hipocrática", "La idea está en los textos hipocráticos; la fórmula latina es muy posterior."],
+  ["Propongo considerar la pregunta: ¿pueden pensar las máquinas?", "Alan Turing", "Primera frase de «Computing Machinery and Intelligence» (1950), donde planteó el juego de la imitación."],
+  ["Dios no juega a los dados.", "Albert Einstein", "Paráfrasis de una carta a Max Born (1926), contra el azar de la mecánica cuántica."],
+  ["Creo que puedo decir con seguridad que nadie entiende la mecánica cuántica.", "Richard Feynman", "The Character of Physical Law (1965), sus conferencias en Cornell."],
+  ["La justicia es la constante y perpetua voluntad de dar a cada uno su derecho.", "Ulpiano", "Recogida en el Digesto de Justiniano. Sigue en los manuales de Derecho."],
+  ["El que lee mucho y anda mucho, ve mucho y sabe mucho.", "Miguel de Cervantes", "Don Quijote, segunda parte, capítulo 25."],
+  ["Lo esencial es invisible a los ojos.", "Antoine de Saint-Exupéry", "El principito (1943). Se lo dice el zorro al principito."],
+  ["Conócete a ti mismo.", "Inscripción de Delfos", "Estaba grabada en el templo de Apolo. Sócrates la convirtió en programa filosófico."],
+  ["Una nueva verdad científica no triunfa convenciendo a sus oponentes, sino porque estos acaban muriendo.", "Max Planck", "Autobiografía científica (1948). De ahí el «la ciencia avanza funeral a funeral»."],
+  ["Lo que no me mata me hace más fuerte.", "Friedrich Nietzsche", "Crepúsculo de los ídolos (1888)."],
+  ["Nada en la vida debe ser temido, solo comprendido.", "Atribuida a Marie Curie", "Circula sin fuente primaria clara. Útil recordarlo: muchas citas célebres son atribuciones."],
+  ["Que tu alimento sea tu medicina.", "Atribuida a Hipócrates", "No aparece en ningún texto hipocrático. Es una atribución moderna muy repetida."],
+  ["El genio es un uno por ciento de inspiración y un noventa y nueve por ciento de transpiración.", "Thomas Edison", "Recogida en una entrevista de 1903 y repetida por él mismo después."],
+];
+
+const CANCIONES = [
+  ["Mediterráneo", "Joan Manuel Serrat", 1971, "Votada muchas veces como la mejor canción española del siglo XX. Escúchala leyendo la letra."],
+  ["Gracias a la vida", "Violeta Parra", 1966, "Un himno latinoamericano. Fíjate en cómo enumera los sentidos, uno por estrofa."],
+  ["Ojalá", "Silvio Rodríguez", 1978, "Y «ojalá» viene del árabe andalusí «si Dios quiere». Idioma y música en una."],
+  ["Bohemian Rhapsody", "Queen", 1975, "Seis minutos, ópera, balada y rock en una sola pieza que la discográfica no quería publicar."],
+  ["Hallelujah", "Leonard Cohen", 1984, "Escucha la original y luego la versión de Jeff Buckley (1994). Dos canciones distintas con la misma letra."],
+  ["Malamente", "Rosalía", 2018, "Flamenco, palmas y producción electrónica. Abrió una puerta nueva al flamenco."],
+  ["Entre dos aguas", "Paco de Lucía", 1973, "Una rumba instrumental casi improvisada que llevó la guitarra flamenca a todo el mundo."],
+  ["Clair de lune", "Claude Debussy", 1905, "Tercer movimiento de la Suite bergamasque. Pianismo impresionista en cinco minutos."],
+  ["So What", "Miles Davis", 1959, "Abre Kind of Blue, el disco de jazz más vendido de la historia. Jazz modal: escalas en lugar de acordes."],
+  ["Space Oddity", "David Bowie", 1969, "Salió nueve días antes de la llegada a la Luna. La BBC la usó en su cobertura."],
+  ["Lucha de gigantes", "Nacha Pop", 1987, "Escrita por Antonio Vega. Una de las letras más hermosas del pop español."],
+  ["Contamíname", "Pedro Guerra", 1995, "Mestizaje cultural cantado con delicadeza. Muy actual."],
+  ["Hoy puede ser un gran día", "Joan Manuel Serrat", 1981, "Para empezar la mañana. Plántale cara."],
+  ["Blackbird", "The Beatles", 1968, "McCartney la escribió pensando en la lucha por los derechos civiles en EE. UU."],
+  ["Bachata rosa", "Juan Luis Guerra", 1990, "Sacó la bachata de los barrios dominicanos y la llevó a las radios del mundo."],
+  ["Volver", "Carlos Gardel", 1934, "«Que veinte años no es nada». El tango que inspiró el título de Almodóvar."],
+  ["Gnossienne n.º 1", "Erik Satie", 1890, "Piano sin compases marcados y con indicaciones extrañas como «muy brillante»."],
+  ["Boléro", "Maurice Ravel", 1928, "Ravel lo llamaba un experimento: una melodía repetida sin desarrollo, solo con crescendo y orquestación."],
+  ["Running Up That Hill", "Kate Bush", 1985, "Volvió a lo más alto en 2022, 37 años después, gracias a Stranger Things."],
+  ["A Day in the Life", "The Beatles", 1967, "Cierra Sgt. Pepper. Atención al crescendo orquestal y al acorde final de piano, que dura más de 40 segundos."],
+  ["La flaca", "Jarabe de Palo", 1996, "Pau Donés y una canción que sonó en todas partes. Escúchala sabiendo que hoy se estudia en clases de español."],
+  ["Harder, Better, Faster, Stronger", "Daft Punk", 2001, "Cuatro palabras recombinadas como un algoritmo. Muy de IA avant la lettre."],
+];
+
+const PERSONAJES = [
+  ["Santiago Ramón y Cajal", "1852–1934", "Neurocientífico", "Demostró que el sistema nervioso está formado por células independientes, las neuronas. Nobel de Medicina en 1906. Además, dibujaba como un artista."],
+  ["Marie Curie", "1867–1934", "Física y química", "La única persona con Nobel en dos ciencias distintas: Física (1903) y Química (1911). Sus cuadernos siguen siendo radiactivos."],
+  ["Alan Turing", "1912–1954", "Matemático", "Definió qué es computar, ayudó a descifrar Enigma y planteó el test que lleva su nombre. Fue perseguido por ser homosexual."],
+  ["Ada Lovelace", "1815–1852", "Matemática", "Escribió el primer algoritmo pensado para una máquina (la Nota G, para la máquina analítica de Babbage) e intuyó que podría componer música."],
+  ["Clara Campoamor", "1888–1972", "Abogada y política", "Defendió en las Cortes el voto femenino, aprobado en 1931. Murió en el exilio en Suiza."],
+  ["Margarita Salas", "1938–2019", "Bioquímica", "Descubrió la ADN polimerasa del virus phi29, base de una técnica para amplificar ADN. Fue la patente más rentable del CSIC."],
+  ["Severo Ochoa", "1905–1993", "Bioquímico", "Nobel de Medicina en 1959 por sus trabajos sobre la síntesis del ARN."],
+  ["Rosalind Franklin", "1920–1958", "Química", "Su Fotografía 51, por difracción de rayos X, fue clave para descubrir la doble hélice del ADN."],
+  ["Hipatia de Alejandría", "c. 360–415", "Matemática y filósofa", "Enseñó matemáticas, astronomía y filosofía en Alejandría. Murió asesinada por una turba."],
+  ["Richard Feynman", "1918–1988", "Físico", "Nobel en 1965 por la electrodinámica cuántica. En la comisión del Challenger demostró el fallo con un vaso de agua helada."],
+  ["Geoffrey Hinton", "n. 1947", "Científico de la IA", "Pionero de las redes neuronales. Nobel de Física en 2024 junto a John Hopfield. Dejó Google en 2023 para hablar libremente de los riesgos de la IA."],
+  ["Demis Hassabis", "n. 1976", "Científico de la IA", "Cofundador de DeepMind. Nobel de Química en 2024 por AlphaFold, junto a John Jumper y David Baker. De niño fue prodigio del ajedrez."],
+  ["Ruth Bader Ginsburg", "1933–2020", "Jueza", "Jueza del Tribunal Supremo de EE. UU. Antes, como abogada, ganó casos clave contra la discriminación por sexo."],
+  ["Emmy Noether", "1882–1935", "Matemática", "Su teorema une simetrías y leyes de conservación: la base de la física moderna. Einstein la llamó genio."],
+  ["Federico García Lorca", "1898–1936", "Poeta y dramaturgo", "Granadino universal. Músico antes que poeta: armonizó canciones populares que grabó al piano con La Argentinita."],
+  ["Hedy Lamarr", "1914–2000", "Actriz e inventora", "Estrella de Hollywood que patentó en 1942, con George Antheil, un sistema de salto de frecuencia, antecesor lejano del wifi y el Bluetooth."],
+  ["Rita Levi-Montalcini", "1909–2012", "Neuróloga", "Descubrió el factor de crecimiento nervioso trabajando en un laboratorio clandestino en su dormitorio durante la guerra. Nobel en 1986."],
+  ["Florence Nightingale", "1820–1910", "Enfermera y estadística", "Usó gráficos polares para demostrar que en Crimea morían más soldados por infecciones que por heridas."],
+  ["Ignaz Semmelweis", "1818–1865", "Médico", "Demostró que lavarse las manos reducía la fiebre puerperal. Sus colegas lo rechazaron."],
+  ["Jane Goodall", "1934–2025", "Primatóloga", "Observó que los chimpancés fabrican herramientas, lo que obligó a redefinir qué es humano."],
+  ["Concepción Arenal", "1820–1893", "Jurista y escritora", "Asistió a clases de Derecho vestida de hombre. Pionera de la reforma penitenciaria: «Odia el delito y compadece al delincuente»."],
+  ["Paco de Lucía", "1947–2014", "Guitarrista", "Revolucionó el flamenco y lo hizo dialogar con el jazz. Premio Príncipe de Asturias de las Artes en 2004."],
+];
+
+const PROGRAMAS = [
+  ["Cosmos: un viaje personal", "Carl Sagan", 1980, "Documental", "La serie de divulgación más influyente de la historia. Envejece mejor de lo que crees."],
+  ["Connections", "James Burke · BBC", 1978, "Documental", "Cómo un invento lleva a otro por caminos inesperados. Pura conexión entre disciplinas."],
+  ["El hombre y la Tierra", "Félix Rodríguez de la Fuente", 1974, "Documental", "La fauna ibérica como nunca se había filmado. Está entera en RTVE Play."],
+  ["Redes", "Eduard Punset · TVE", 1996, "Divulgación", "Entrevistas con científicos sobre mente y emociones. Busca algún episodio suelto."],
+  ["Órbita Laika", "RTVE", 2014, "Divulgación", "Ciencia con humor y experimentos en plató."],
+  ["Planeta Tierra II", "David Attenborough · BBC", 2016, "Documental", "El episodio de las ciudades te hará mirar distinto a las palomas."],
+  ["Black Mirror", "Charlie Brooker", 2011, "Serie", "Episodios independientes sobre tecnología y sus consecuencias. Empieza por «San Junípero» o «Nosedive»."],
+  ["Chernobyl", "Craig Mazin · HBO", 2019, "Miniserie", "Física nuclear, burocracia y el coste de las mentiras, en cinco episodios."],
+  ["Better Call Saul", "Vince Gilligan y Peter Gould", 2015, "Serie", "Un abogado que se tuerce poco a poco. Mucho derecho procesal y mejor guion."],
+  ["The Pitt", "R. Scott Gemmill · HBO Max", 2025, "Serie", "Un turno de urgencias por temporada, hora a hora. Muy elogiada por médicos por su realismo."],
+  ["Separación (Severance)", "Dan Erickson · Apple TV+", 2022, "Serie", "Trabajadores con la memoria dividida entre oficina y casa. Neurociencia ficción y crítica laboral."],
+  ["El Ministerio del Tiempo", "Javier y Pablo Olivares · RTVE", 2015, "Serie", "Funcionarios que viajan por la historia de España. Divertida y documentada."],
+  ["Halt and Catch Fire", "AMC", 2014, "Serie", "La historia de la informática personal y de internet, de los 80 a los 90."],
+  ["Abstract: el arte del diseño", "Netflix", 2017, "Documental", "Cada episodio, un diseñador: tipografía, arquitectura, ilustración."],
+  ["Explained", "Vox · Netflix", 2018, "Divulgación", "Veinte minutos por tema, de la memoria a las criptomonedas."],
+  ["Nuestro planeta", "Netflix · WWF", 2019, "Documental", "Belleza natural con un mensaje claro sobre el clima."],
+  ["Saber y ganar", "La 2", 1997, "Concurso", "El concurso diario más longevo de la televisión española. Juega desde el sofá."],
+  ["Cuéntame cómo pasó", "RTVE", 2001, "Serie", "La historia reciente de España contada a través de una familia."],
+  ["Patria", "Aitor Gabilondo · HBO", 2020, "Miniserie", "Basada en la novela de Fernando Aramburu sobre el terrorismo de ETA."],
+  ["Shōgun", "FX · Disney+", 2024, "Serie", "Japón en 1600, con choque de idiomas y culturas. Récord de premios Emmy en una temporada."],
+];
+
+const PLANTAS = [
+  ["Girasol", "Helianthus annuus", "Solo los girasoles jóvenes siguen al sol. Los adultos miran fijos al este, lo que calienta la flor por la mañana y atrae más polinizadores. Sus semillas se ordenan en espirales de Fibonacci."],
+  ["Azahar", "Citrus × aurantium", "Flor del naranjo amargo que perfuma Sevilla en primavera. La palabra viene del árabe «az-zahr», la flor."],
+  ["Jazmín", "Jasminum officinale", "En Málaga se ensartan sus flores en un cardo seco para hacer biznagas, que se venden por la calle en verano."],
+  ["Olivo", "Olea europaea", "Puede vivir más de mil años. Andalucía produce en torno a un tercio del aceite de oliva del mundo."],
+  ["Mimosa púdica", "Mimosa pudica", "Cierra las hojas al tocarla. En un experimento de 2014 «aprendió» a dejar de cerrarlas ante caídas que no le hacían daño, y lo recordó semanas."],
+  ["Buganvilla", "Bougainvillea", "Lo que ves de color no son pétalos sino brácteas; la flor es pequeña y blanca. La recogió en Brasil Jeanne Baret, primera mujer en dar la vuelta al mundo, disfrazada de hombre."],
+  ["Romero", "Salvia rosmarinus", "En 2017 se reclasificó dentro del género Salvia. Su nombre latino significa «rocío del mar»."],
+  ["Sauce", "Salix", "Su corteza contiene salicina, que inspiró la aspirina. Bayer sintetizó el ácido acetilsalicílico en 1897."],
+  ["Dedalera", "Digitalis purpurea", "De ella se obtiene la digoxina para el corazón. William Withering describió su uso médico en 1785. Toda la planta es tóxica."],
+  ["Tejo", "Taxus", "Del tejo del Pacífico salió el paclitaxel (Taxol), uno de los fármacos contra el cáncer más usados."],
+  ["Adormidera", "Papaver somniferum", "De ella se aisló la morfina en 1804, la primera vez que se extrajo un principio activo puro de una planta. Debe su nombre a Morfeo."],
+  ["Albahaca", "Ocimum basilicum", "Su nombre viene del griego «basilikón», regia. Los aromas se liberan al romper la hoja, no al cortarla con cuidado."],
+  ["Orquídea", "Orchidaceae", "Sus semillas son tan diminutas como el polvo y necesitan un hongo para germinar. Las Ophrys imitan a abejas hembra para atraer a los machos."],
+  ["Loto sagrado", "Nelumbo nucifera", "Sus hojas repelen el agua y la suciedad: el «efecto loto» inspiró pinturas y vidrios autolimpiables. Germinaron semillas de unos 1.300 años."],
+  ["Tulipán", "Tulipa", "En 1637 la tulipomanía holandesa disparó sus precios. Los tulipanes rayados más cotizados lo eran por un virus."],
+  ["Drosera", "Drosera rotundifolia", "Planta carnívora de turberas. Darwin le dedicó años y un libro, Insectivorous Plants (1875)."],
+  ["Secuoya gigante", "Sequoiadendron giganteum", "El ser vivo más grande por volumen: el árbol General Sherman, en California."],
+  ["Welwitschia", "Welwitschia mirabilis", "Vive en el desierto de Namibia más de mil años con solo dos hojas que no dejan de crecer."],
+  ["Cúrcuma", "Curcuma longa", "La curcumina se absorbe mal. La piperina de la pimienta negra aumenta mucho su absorción."],
+  ["Geranio", "Pelargonium", "Los «geranios» de los patios cordobeses son en realidad del género Pelargonium y vienen de Sudáfrica."],
+  ["Lavanda", "Lavandula angustifolia", "Su nombre suele relacionarse con el latín «lavare», porque se usaba para perfumar el agua del baño."],
+  ["Dama de noche", "Cestrum nocturnum", "Huele sobre todo de noche porque la polinizan polillas. Atrae más de lo que su aspecto promete."],
+];
+
+/* =================== CATEGORÍAS =================== */
+const CATS = {
+  video:     { label: "Vídeo",         group: "ver",    pool: VIDEOS,     off: 3 },
+  articulo:  { label: "Artículo",      group: "ver",    pool: ARTICLES,   off: 7 },
+  reel:      { label: "Reel / TikTok", group: "ver",    pool: REELS,      off: 1 },
+  libro:     { label: "Libro",         group: "ver",    pool: BOOKS,      off: 11 },
+  pelicula:  { label: "Película",      group: "ver",    pool: FILMS,      off: 5 },
+  programa:  { label: "Serie / Programa", group: "ver", pool: PROGRAMAS,  off: 10 },
+  cancion:   { label: "Canción",       group: "ver",    pool: CANCIONES,  off: 14 },
+  dato:      { label: "Dato",          group: "pensar", pool: DATOS,      off: 13 },
+  concepto:  { label: "Concepto",      group: "pensar", pool: CONCEPTOS,  off: 2 },
+  cita:      { label: "Frase célebre", group: "pensar", pool: CITAS,      off: 15 },
+  reto:      { label: "Reto mental",   group: "pensar", pool: RETOS,      off: 9 },
+  pregunta:  { label: "Pregunta",      group: "pensar", pool: PREGUNTAS,  off: 4 },
+  personaje: { label: "Personaje",     group: "mundo",  pool: PERSONAJES, off: 16 },
+  planta:    { label: "Planta o flor", group: "mundo",  pool: PLANTAS,    off: 17 },
+  refran:    { label: "Refrán",        group: "lengua", pool: REFRANES,   off: 0 },
+  frase:     { label: "Frase hecha",   group: "lengua", pool: FRASES,     off: 6 },
+  palabra:   { label: "Palabra",       group: "lengua", pool: PALABRAS,   off: 8 },
+  habito:    { label: "Micro-hábito",  group: "cuerpo", pool: HABITOS,    off: 12 },
+};
+const GROUPS = [
+  ["ver", "Ver, leer y escuchar"],
+  ["pensar", "Pensar"],
+  ["mundo", "Gente y naturaleza"],
+  ["lengua", "Lengua"],
+  ["cuerpo", "Cuerpo"],
+];
+const CAT_KEYS = Object.keys(CATS);
+
+/* =================== FECHAS =================== */
+// true cuando la página corre como app instalable (fuera del visor de claude.ai).
+const STANDALONE = !window.claude;
+
+const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+const DIAS = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+const LUNAS = ["Luna nueva","Luna creciente","Cuarto creciente","Gibosa creciente","Luna llena","Gibosa menguante","Cuarto menguante","Luna menguante"];
+const keyOf = d => d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
+const dayNumOf = d => Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 864e5);
+const today = new Date(); today.setHours(12,0,0,0);
+let current = new Date(today);
+
+function moonPhase(d) {
+  const days = (d.getTime() - Date.UTC(2000,0,6,18,14)) / 864e5;
+  const age = ((days % 29.530588853) + 29.530588853) % 29.530588853;
+  return LUNAS[Math.floor(age / 29.530588853 * 8 + 0.5) % 8];
+}
+function dayOfYear(d) {
+  const start = Date.UTC(d.getFullYear(), 0, 1);
+  return Math.round((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - start) / 864e5) + 1;
+}
+const isLeap = y => (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0;
+
+/* =================== ESTADO =================== */
+const LS = "taco-diario-v1";
+let state = { favs: {}, done: {}, visits: [], bumps: {} };
+function lsRead() { try { return JSON.parse(localStorage.getItem(LS) || "null"); } catch { return null; } }
+function lsWrite() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch {} }
+let dbRef = null, saveTimer = null;
+function save() {
+  lsWrite();
+  if (!dbRef) return;
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => { dbRef.set(state).catch(() => {}); }, 600);
+}
+function mergeState(a, b) {
+  const out = { favs: { ...(a.favs||{}), ...(b.favs||{}) }, done: { ...(a.done||{}) }, visits: [], bumps: { ...(a.bumps||{}), ...(b.bumps||{}) } };
+  for (const [k, v] of Object.entries(b.done || {})) out.done[k] = [...new Set([...(out.done[k]||[]), ...v])];
+  out.visits = [...new Set([...(a.visits||[]), ...(b.visits||[])])].sort();
+  return out;
+}
+const local = lsRead(); if (local) state = mergeState(state, local);
+
+function pick(cat, d) {
+  const c = CATS[cat];
+  const bump = (state.bumps[keyOf(d)] || {})[cat] || 0;
+  const n = c.pool.length;
+  const i = ((dayNumOf(d) + c.off + bump) % n + n) % n;
+  return { i, item: c.pool[i] };
+}
+function streak() {
+  const set = new Set(state.visits); let s = 0; const d = new Date(today);
+  while (set.has(keyOf(d))) { s++; d.setDate(d.getDate() - 1); }
+  return s;
+}
+
+/* =================== UTILIDADES DOM =================== */
+function h(tag, attrs = {}, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === "class") el.className = v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else if (k === "html") el.innerHTML = v;
+    else el.setAttribute(k, v === true ? "" : v);
+  }
+  for (const k of kids.flat()) if (k != null && k !== false) el.append(k.nodeType ? k : document.createTextNode(String(k)));
+  return el;
+}
+const ICON = {
+  heart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>',
+  shuffle: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h3c4 0 6 10 10 10h3M4 17h3c1.6 0 2.8-1.6 3.9-3.5M13.1 9.5C14.2 8 15.4 7 17 7h3M18 4l3 3-3 3M18 14l3 3-3 3"/></svg>',
+  out: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>',
+  spark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>',
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12.5 10 17l9-10"/></svg>',
+  tear: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M6 11l6-6 6 6"/></svg>',
+  trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13"/></svg>',
+};
+const POSTER = {
+  video: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="6" y="14" width="52" height="36" rx="8"/><path d="M27 23v18l15-9z" fill="currentColor"/></svg>',
+  articulo: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="12" y="8" width="40" height="48" rx="3"/><path d="M20 20h24M20 28h24M20 36h24M20 44h14"/></svg>',
+  reel: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="18" y="6" width="28" height="52" rx="6"/><path d="M28 24v14l11-7z" fill="currentColor"/><path d="M28 50h8"/></svg>',
+  libro: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M8 14c8-3 16-3 24 2v36c-8-5-16-5-24-2zM56 14c-8-3-16-3-24 2v36c8-5 16-5 24-2z"/></svg>',
+  pelicula: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="8" y="12" width="48" height="40" rx="3"/><path d="M8 22h48M8 42h48M18 12v10M30 12v10M42 12v10M18 42v10M30 42v10M42 42v10"/></svg>',
+  programa: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="6" y="16" width="52" height="34" rx="5"/><path d="M24 6l8 10 8-10M22 56h20"/></svg>',
+  cancion: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M24 46V12l28-6v34"/><circle cx="17" cy="46" r="7" fill="currentColor"/><circle cx="45" cy="40" r="7" fill="currentColor"/></svg>',
+};
+function svgBtn(name, label, onclick, extra = "") {
+  return h("button", { class: "icon-btn " + extra, type: "button", "aria-label": label, title: label, onclick, html: ICON[name] });
+}
+function toast(msg) {
+  const t = h("div", { class: "toast", role: "status" }, msg);
+  document.body.append(t); setTimeout(() => t.remove(), 1800);
+}
+
+/* =================== CONTENIDO DE CADA FICHA =================== */
+// Devuelve { title, sub, link, linkLabel, body: [nodes], prompt }
+function describe(cat, item) {
+  switch (cat) {
+    case "video": {
+      const [t, ch, tema, why] = item;
+      return { title: t, sub: ch + " · " + tema, link: L.yt(t + " " + ch.split(" · ")[0]), linkLabel: "Ver en YouTube",
+        body: [h("h3", {}, t), h("div", { class: "meta" }, ch + " · " + tema), h("p", { class: "why" }, h("b", {}, "Por qué"), why)],
+        prompt: `el vídeo «${t}» de ${ch}, sobre ${tema}` };
+    }
+    case "articulo": {
+      const [t, au, tema, why] = item;
+      return { title: t, sub: au, link: L.g(t + " " + au.split(" · ")[0] + " substack"), linkLabel: "Leer",
+        body: [h("h3", {}, t), h("div", { class: "meta" }, au + " · " + tema), h("p", { class: "why" }, h("b", {}, "Por qué"), why)],
+        prompt: `el artículo o la newsletter «${t}» (${au}), sobre ${tema}` };
+    }
+    case "reel": {
+      const [who, plat, , why, link] = item;
+      return { title: who, sub: plat, link, linkLabel: "Abrir",
+        body: [h("h3", {}, who), h("div", { class: "meta" }, plat), h("p", { class: "why" }, h("b", {}, "Qué verás"), why)],
+        prompt: `el tipo de contenido que publica ${who} en redes (${why})` };
+    }
+    case "libro": {
+      const [t, au, y, tema, why] = item;
+      return { title: t, sub: au + ", " + y, link: L.book(t + " " + au), linkLabel: "Ver libro",
+        body: [h("h3", {}, t), h("div", { class: "meta" }, au + " · " + y + " · " + tema), h("p", { class: "why" }, h("b", {}, "Por qué"), why)],
+        prompt: `el libro «${t}» de ${au} (${y})` };
+    }
+    case "pelicula": {
+      const [t, dir, y, tema, why] = item;
+      return { title: t, sub: dir + ", " + y, link: L.film(t), linkLabel: "Dónde verla",
+        body: [h("h3", {}, t), h("div", { class: "meta" }, dir + " · " + y + " · " + tema), h("p", { class: "why" }, h("b", {}, "Por qué"), why)],
+        prompt: `la película «${t}» de ${dir} (${y})` };
+    }
+    case "programa": {
+      const [t, who, y, tipo, why] = item;
+      return { title: t, sub: who + ", " + y, link: L.film(t.split(" (")[0]), linkLabel: "Dónde verlo",
+        body: [h("h3", {}, t), h("div", { class: "meta" }, who + " · " + y + " · " + tipo), h("p", { class: "why" }, h("b", {}, "Por qué"), why)],
+        prompt: `el programa o la serie «${t}» (${who}, ${y})` };
+    }
+    case "cancion": {
+      const [t, art, y, why] = item;
+      return { title: t, sub: art + ", " + y, link: L.yt(t + " " + art), linkLabel: "Escuchar", link2: L.spotify(t + " " + art), link2Label: "Spotify",
+        body: [h("h3", {}, t), h("div", { class: "meta" }, art + " · " + y), h("p", { class: "why" }, h("b", {}, "Escucha"), why)],
+        prompt: `la canción «${t}» de ${art} (${y}): contexto, música y letra` };
+    }
+    case "cita": {
+      const [q, au, ctx] = item;
+      return { title: q, sub: au, body: [h("p", { class: "big" }, "«" + q + "»"), h("div", { class: "meta" }, "— " + au), h("p", { class: "why" }, h("b", {}, "Contexto"), ctx)],
+        prompt: `la frase «${q}» de ${au}: contexto e interpretación` };
+    }
+    case "personaje": {
+      const [n, yrs, rol, txt] = item;
+      return { title: n, sub: rol + " · " + yrs, link: L.wiki(n), linkLabel: "Saber más",
+        body: [h("h3", {}, n), h("div", { class: "meta" }, rol + " · " + yrs), h("p", {}, txt)],
+        prompt: `${n} (${rol}, ${yrs}): qué aportó y por qué importa hoy` };
+    }
+    case "planta": {
+      const [n, lat, txt] = item;
+      return { title: n, sub: lat, link: L.wiki(lat), linkLabel: "Ver planta",
+        body: [h("h3", {}, n), h("div", { class: "meta", style: "font-style:italic" }, lat), h("p", {}, txt)],
+        prompt: `la planta ${n} (${lat}): biología, usos y curiosidades` };
+    }
+    case "dato": {
+      const [txt, tema] = item;
+      return { title: txt, sub: tema, body: [h("span", { class: "tag" }, tema), h("p", { class: "big" }, txt)],
+        prompt: `este dato: «${txt}»` };
+    }
+    case "concepto": {
+      const [t, tema, txt] = item;
+      return { title: t, sub: tema, body: [h("h3", {}, t), h("span", { class: "tag" }, tema), h("p", {}, txt)],
+        prompt: `el concepto «${t}» (${tema})` };
+    }
+    case "reto": {
+      const [q, a] = item;
+      return { title: q, sub: "Reto", body: [h("p", { class: "big", style: "font-style:normal;font-size:19px" }, q),
+        h("details", {}, h("summary", {}, "Ver solución"), h("p", {}, a))],
+        prompt: `la lógica de este acertijo: «${q}» (solución: ${a})` };
+    }
+    case "pregunta":
+      return { title: item, sub: "Pregunta", body: [h("p", { class: "big" }, item)],
+        prompt: `distintas formas de abordar esta pregunta para reflexionar: «${item}»`, ai: "Ideas para pensarla" };
+    case "refran": {
+      const [r, sig, en] = item;
+      return { title: r, sub: sig, body: [h("p", { class: "big" }, r), h("p", {}, sig), h("p", { class: "en" }, "EN · " + en)],
+        prompt: `el refrán «${r}», su origen y equivalentes en otros idiomas` };
+    }
+    case "frase": {
+      const [f, sig, ori] = item;
+      return { title: f, sub: sig, body: [h("h3", {}, f), h("p", {}, sig),
+        h("p", { class: "why" }, h("b", {}, "Origen"), ori)],
+        prompt: `la expresión «${f}» y su origen` };
+    }
+    case "palabra": {
+      const [w, lang, def, ex] = item;
+      const LANG = { es: "Español", en: "Inglés", ja: "Japonés", pt: "Portugués", de: "Alemán", da: "Danés", cy: "Galés" };
+      return { title: w, sub: LANG[lang] + " · " + def, body: [h("span", { class: "tag" }, LANG[lang]), h("div", { class: "word", lang }, w), h("p", {}, def), h("p", { class: "meta" }, ex)],
+        prompt: `la palabra «${w}» (${LANG[lang]}): etimología, matices y cómo usarla` };
+    }
+    case "habito": {
+      const [t, why] = item;
+      return { title: t, sub: why, body: [h("h3", {}, t), h("p", {}, why)],
+        prompt: `el hábito «${t}»: por qué funciona fisiológicamente (ten en cuenta que tengo la rotación interna del hombro limitada)` };
+    }
+  }
+}
+
+/* =================== RENDER =================== */
+let sample = null;
+
+function renderCover(torn) {
+  const d = current, box = document.getElementById("cover");
+  const festivo = d.getDay() === 0;
+  const isToday = keyOf(d) === keyOf(today);
+  const refran = pick("refran", d).item[0];
+  const doy = dayOfYear(d), total = isLeap(d.getFullYear()) ? 366 : 365;
+  box.replaceChildren();
+  if (torn) {
+    box.append(h("div", { class: "mast" },
+      h("div", { class: "n" + (festivo ? " festivo" : "") }, d.getDate()),
+      h("div", { class: "t" }, h("div", { class: "w" }, DIAS[d.getDay()]), h("div", { class: "mono", style: "color:var(--muted)" }, MESES[d.getMonth()] + " " + d.getFullYear() + " · hoja " + doy)),
+      h("button", { type: "button", class: "mono", onclick: () => renderCover(false) }, "Portada")));
+    return;
+  }
+  const sheet = h("div", { class: "sheet", id: "sheet" },
+    h("div", { class: "binding", "aria-hidden": "true" }, h("span"), h("span")),
+    h("div", { class: "perf", "aria-hidden": "true" }),
+    h("div", { class: "sheet-in" },
+      h("div", { class: "sheet-top" },
+        h("span", { class: "month" }, MESES[d.getMonth()]),
+        h("span", { class: "mono", style: "color:var(--muted)" }, d.getFullYear())),
+      h("div", { class: "daynum" + (festivo ? " festivo" : ""), "aria-label": d.getDate() + " de " + MESES[d.getMonth()] }, d.getDate()),
+      h("div", { class: "weekday" }, DIAS[d.getDay()]),
+      h("div", { class: "almanac mono" },
+        h("div", {}, "Hoja", h("b", {}, doy + " de " + total)),
+        h("div", {}, "Faltan", h("b", {}, (total - doy) + " días")),
+        h("div", {}, "Luna", h("b", {}, moonPhase(d)))),
+      h("p", { class: "cover-refran" }, refran),
+      h("div", { class: "cover-sub mono" }, isToday ? CAT_KEYS.length + " piezas para hoy" : "Hoja de un día anterior"),
+      h("div", {}, h("button", { class: "tear", type: "button", onclick: tear, html: ICON.tear + "<span>Arranca la hoja</span>" }))));
+  const prev = new Date(d); prev.setDate(d.getDate() - 1);
+  const next = new Date(d); next.setDate(d.getDate() + 1);
+  box.append(h("div", { class: "taco" }, sheet),
+    h("div", { class: "daynav", style: "margin-top:14px" },
+      h("button", { type: "button", class: "mono", onclick: () => goDay(prev) }, "← Ayer"),
+      h("span", { class: "mono", style: "color:var(--muted)" }, isToday ? "Hoy" : d.getDate() + " " + MESES[d.getMonth()].slice(0,3)),
+      h("button", { type: "button", class: "mono", disabled: isToday, onclick: () => goDay(next) }, "Mañana →")));
+}
+
+function tear() {
+  const sheet = document.getElementById("sheet");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  sheet.classList.add("torn");
+  setTimeout(() => {
+    renderCover(true);
+    document.getElementById("stats").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  }, reduce ? 0 : 650);
+}
+
+function goDay(d) {
+  if (d > today) return;
+  current = new Date(d); current.setHours(12,0,0,0);
+  renderAll();
+  window.scrollTo({ top: 0 });
+}
+
+function renderStats() {
+  const k = keyOf(current), done = (state.done[k] || []).length, total = CAT_KEYS.length;
+  const s = streak();
+  document.getElementById("stats").replaceChildren(
+    h("div", { class: "stat" }, h("span", { class: "mono", style: "color:var(--muted)" }, "Dosis del día"),
+      h("div", { class: "v" }, done, h("small", {}, " / " + total)),
+      h("div", { class: "bar", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": total, "aria-valuenow": done }, h("i", { style: `width:${done/total*100}%` }))),
+    h("div", { class: "stat" }, h("span", { class: "mono", style: "color:var(--muted)" }, "Racha"),
+      h("div", { class: "v" }, s, h("small", {}, s === 1 ? " día" : " días")),
+      h("span", { class: "mono", style: "color:var(--muted)" }, s >= 7 ? "Constancia de hierro" : "Vuelve mañana")));
+}
+
+function favKey(cat, i) { return cat + ":" + i; }
+
+function renderCard(cat) {
+  const { i, item } = pick(cat, current);
+  const c = CATS[cat], dsc = describe(cat, item);
+  const k = keyOf(current), fk = favKey(cat, i);
+  const isDone = (state.done[k] || []).includes(cat);
+  const isFav = !!state.favs[fk];
+  const VARIANT = { refran: " fill", dato: " inkcard", cita: " quote", habito: " fill" };
+  const isPoster = !!POSTER[cat];
+  const card = h("article", { class: "card" + (VARIANT[cat] || "") + (isPoster ? " poster" : "") + (isDone ? " done" : ""), id: "card-" + cat });
+  if (isPoster) card.append(h("div", { class: "poster-art", "aria-hidden": "true" },
+    h("span", { class: "num" }, String(i + 1).padStart(2, "0")),
+    h("span", { class: "kind" }, c.label),
+    h("span", { html: POSTER[cat] })));
+  const head = h("div", { class: "card-h" },
+    h("span", { class: "lab mono" }, c.label),
+    svgBtn("shuffle", "Otra sugerencia", () => {
+      state.bumps[k] = state.bumps[k] || {}; state.bumps[k][cat] = (state.bumps[k][cat] || 0) + 1;
+      save(); card.replaceWith(renderCard(cat));
+    }),
+    svgBtn("heart", isFav ? "Quitar de guardados" : "Guardar", () => {
+      if (state.favs[fk]) delete state.favs[fk];
+      else state.favs[fk] = { cat, title: dsc.title, sub: dsc.sub, link: dsc.link || null, at: k };
+      save(); card.replaceWith(renderCard(cat)); renderSaved();
+      toast(state.favs[fk] ? "Guardado" : "Quitado de guardados");
+    }, isFav ? "on" : ""));
+  const actions = h("div", { class: "actions" });
+  if (dsc.link) actions.append(h("a", { class: "btn primary", href: dsc.link, target: "_blank", rel: "noopener", html: ICON.out + "<span>" + dsc.linkLabel + "</span>" }));
+  if (dsc.link2) actions.append(h("a", { class: "btn", href: dsc.link2, target: "_blank", rel: "noopener", html: ICON.out + "<span>" + dsc.link2Label + "</span>" }));
+  if (sample) actions.append(h("button", { class: "btn", type: "button", onclick: () => explain(c.label, dsc), html: ICON.spark + "<span>" + (dsc.ai || "Explícamelo") + "</span>" }));
+  else if (STANDALONE) actions.append(askLink(`Háblame de ${dsc.prompt}.`, dsc.ai || "Explícamelo"));
+  actions.append(h("button", { class: "btn check", type: "button", "aria-pressed": isDone ? "true" : "false", onclick: () => {
+    const arr = new Set(state.done[k] || []); arr.has(cat) ? arr.delete(cat) : arr.add(cat);
+    state.done[k] = [...arr]; save(); card.replaceWith(renderCard(cat)); renderStats();
+  }, html: ICON.check + "<span>" + (isDone ? "Hecho" : "Marcar") + "</span>" }));
+  card.append(head, ...dsc.body, actions);
+  return card;
+}
+
+function renderFeed() {
+  const feed = document.getElementById("feed");
+  feed.replaceChildren();
+  feed.append(renderArt(), renderNews());
+  for (const [g, name] of GROUPS) {
+    const cats = CAT_KEYS.filter(c => CATS[c].group === g);
+    const n = cats.length;
+    const grp = h("section", { class: "group", style: `--g: var(--c-${g})` },
+      h("h2", {}, name, h("span", { class: "mono" }, n + (n === 1 ? " pieza" : " piezas"))));
+    if (g === "ver") {
+      const rail = h("div", { class: "rail", role: "region", "aria-label": name, tabindex: "0" });
+      for (const cat of cats) rail.append(renderCard(cat));
+      grp.append(h("div", { class: "swipe mono" }, h("span", {}, "Desliza para ver las " + n), h("span", {}, "→")), rail);
+    } else {
+      for (const cat of cats) grp.append(renderCard(cat));
+    }
+    feed.append(grp);
+  }
+  const ins = renderInstall(); if (ins) feed.append(ins);
+  if (sample || STANDALONE) {
+    feed.append(h("section", { class: "connect" },
+      h("div", { class: "mono", style: "opacity:.7" }, "Con Claude"),
+      h("h2", { style: "margin:0;font-family:var(--f-display);font-size:28px;text-transform:uppercase;letter-spacing:.05em;line-height:1" }, "Une los puntos"),
+      h("p", {}, "Claude busca una conexión sorprendente entre tres piezas de hoy de disciplinas distintas."),
+      h("div", {}, sample ? h("button", { class: "btn", type: "button", onclick: connectDots, html: ICON.spark + "<span>Conectar</span>" })
+        : askLink(connectPrompt(), "Conectar"))));
+  }
+}
+
+function renderSaved() {
+  const list = document.getElementById("saved-list");
+  const items = Object.entries(state.favs).sort((a, b) => (b[1].at || "").localeCompare(a[1].at || ""));
+  document.getElementById("saved-count").textContent = items.length ? items.length : "";
+  list.replaceChildren();
+  if (!items.length) {
+    list.append(h("div", { class: "empty" }, "Aún no has guardado nada. Toca el corazón de cualquier ficha para tenerla aquí."));
+    return;
+  }
+  for (const [fk, f] of items) {
+    const row = h("div", { class: "saved-item" },
+      h("div", { class: "t" }, h("span", { class: "mono", style: "color:var(--red)" }, CATS[f.cat]?.label || f.cat), h("b", {}, f.title), h("span", { class: "meta" }, f.sub)),
+      f.link ? h("a", { class: "icon-btn", href: f.link, target: "_blank", rel: "noopener", "aria-label": "Abrir", html: ICON.out }) : null,
+      svgBtn("trash", "Quitar", () => { delete state.favs[fk]; save(); renderSaved(); renderFeed(); }));
+    list.append(row);
+  }
+}
+
+function renderAll() { renderCover(false); renderStats(); renderFeed(); renderSaved(); }
+
+/* =================== IMAGEN DEL DÍA =================== */
+// Una ilustración generativa distinta cada día: misma fecha, misma imagen.
+function rng(a) {
+  return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+}
+function noise1(r, n = 64) {
+  const v = Array.from({ length: n + 1 }, r);
+  return x => { const i = Math.floor(x) % n, f = x - Math.floor(x), s = f * f * (3 - 2 * f); return v[i] * (1 - s) + v[i + 1] * s; };
+}
+function mix(a, b, t) {
+  const p = c => [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16));
+  const A = p(a), B = p(b);
+  return "rgb(" + A.map((v, i) => Math.round(v + (B[i] - v) * t)).join(",") + ")";
+}
+const ART = [
+  { style: "Paisaje", names: ["Sierra Nevada al alba", "La Alpujarra", "Sierra de Grazalema", "Despeñaperros", "Sierra de Cazorla", "Valle del Genal"],
+    pals: [["#2B1B3D", "#5B2A57", "#B4436C", "#F08A5D", "#F9D77E"], ["#1D1A2F", "#3E2A4F", "#8C3B4A", "#D9693F", "#F2B35B"],
+           ["#24324A", "#3D5A73", "#7D9DAF", "#C9D6D8", "#F4EFE4"], ["#16302B", "#2D5245", "#6E8F6A", "#D9C58E", "#F6E7B8"]], draw: drawPaisaje },
+  { style: "Azulejo", names: ["Triana", "Real Alcázar", "Patio cordobés", "Alhambra", "Casa de Pilatos", "Plaza de España"],
+    pals: [["#F6F3EA", "#1F4E9C", "#E3A72F", "#2E7D5B", "#B23A2E"], ["#F4EFE2", "#123C69", "#AC3B61", "#EDC7B7", "#2F6F73"], ["#FBF7EE", "#0F5257", "#E07A1F", "#F2C14E", "#3A2E39"]], draw: drawAzulejo },
+  { style: "Olas", names: ["Tarifa", "Bolonia", "Mar de Alborán", "Caños de Meca", "Cabo de Gata", "Maro"],
+    pals: [["#F4EEDF", "#0B2545", "#1F5F8B", "#7FB2D5", "#C8553D"], ["#F7F0E6", "#102542", "#1B6B80", "#9CD3D8", "#E07A5F"]], draw: drawOlas },
+  { style: "Jardín", names: ["Generalife", "Patio de mayo", "La Concepción", "Jardines de Murillo", "Carmen granadino"],
+    pals: [["#163B2F", "#2F6B4F", "#F3C6CF", "#E86A8E", "#FFD166"], ["#1E2A3A", "#3A6351", "#F2E8CF", "#E76F51", "#F4A261"]], draw: drawJardin },
+  { style: "Cielo", names: ["Calar Alto", "Sierra de los Filabres", "Desierto de Tabernas", "Doñana de noche", "Roque de Sierra Morena"],
+    pals: [["#05081A", "#0E1F44", "#24467F", "#8FB3E8", "#FFF4D6"], ["#0B0614", "#24123A", "#4B2C6E", "#B79CED", "#FFE9C7"]], draw: drawCielo },
+];
+function artFor(d) {
+  const bump = (state.bumps[keyOf(d)] || {}).art || 0;
+  const seed = dayNumOf(d) * 7919 + bump * 104729;
+  const r = rng(seed);
+  const def = ART[(dayNumOf(d) + bump) % ART.length];
+  return { def, r, pal: def.pals[Math.floor(r() * def.pals.length)], name: def.names[Math.floor(r() * def.names.length)] };
+}
+function drawPaisaje(g, W, H, r, P, d) {
+  const sky = g.createLinearGradient(0, 0, 0, H * .7);
+  sky.addColorStop(0, P[1]); sky.addColorStop(.6, P[3]); sky.addColorStop(1, P[4]);
+  g.fillStyle = sky; g.fillRect(0, 0, W, H);
+  const sx = W * (.25 + r() * .5), sy = H * (.25 + r() * .2), sr = W * (.09 + r() * .05);
+  const glow = g.createRadialGradient(sx, sy, 0, sx, sy, sr * 4);
+  glow.addColorStop(0, "rgba(255,245,220,.55)"); glow.addColorStop(1, "rgba(255,245,220,0)");
+  g.fillStyle = glow; g.fillRect(0, 0, W, H);
+  g.fillStyle = P[4]; g.beginPath(); g.arc(sx, sy, sr, 0, 7); g.fill();
+  const layers = 6;
+  for (let l = 0; l < layers; l++) {
+    const n = noise1(r), base = H * (.42 + l * .1), amp = H * (.16 - l * .018), freq = 2 + l * 1.4, off = r() * 30;
+    g.fillStyle = mix(P[2], P[0], l / (layers - 1));
+    g.beginPath(); g.moveTo(0, H);
+    for (let x = 0; x <= W; x += W / 160) g.lineTo(x, base - amp * (n(off + x / W * freq) * .8 + n(off + x / W * freq * 4) * .2));
+    g.lineTo(W, H); g.fill();
+  }
+}
+function drawAzulejo(g, W, H, r, P) {
+  g.fillStyle = P[0]; g.fillRect(0, 0, W, H);
+  const cols = 4 + Math.floor(r() * 3), s = W / cols, rows = Math.ceil(H / s);
+  const c = [P[1], P[2], P[3], P[4]].sort(() => r() - .5), variant = Math.floor(r() * 3);
+  for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) {
+    const cx = x * s + s / 2, cy = y * s + s / 2;
+    g.save(); g.translate(cx, cy);
+    g.fillStyle = c[0];
+    for (const q of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) { g.beginPath(); g.arc(q[0] * s / 2, q[1] * s / 2, s * .3, 0, 7); g.fill(); }
+    g.fillStyle = c[1];
+    for (const a of [0, Math.PI / 4]) { g.save(); g.rotate(a); g.fillRect(-s * .27, -s * .27, s * .54, s * .54); g.restore(); }
+    g.fillStyle = P[0]; g.beginPath(); g.arc(0, 0, s * .2, 0, 7); g.fill();
+    g.fillStyle = c[2];
+    if (variant === 0) { g.beginPath(); g.arc(0, 0, s * .12, 0, 7); g.fill(); }
+    else if (variant === 1) { for (let k = 0; k < 8; k++) { g.save(); g.rotate(k * Math.PI / 4); g.beginPath(); g.ellipse(0, -s * .1, s * .035, s * .08, 0, 0, 7); g.fill(); g.restore(); } }
+    else { g.save(); g.rotate(Math.PI / 4); g.fillRect(-s * .09, -s * .09, s * .18, s * .18); g.restore(); }
+    g.restore();
+  }
+}
+function drawOlas(g, W, H, r, P) {
+  g.fillStyle = P[0]; g.fillRect(0, 0, W, H);
+  g.fillStyle = P[4]; g.beginPath(); g.arc(W * (.2 + r() * .6), H * (.14 + r() * .08), W * .1, 0, 7); g.fill();
+  const lines = 26;
+  for (let i = 0; i < lines; i++) {
+    const n = noise1(r), t = i / (lines - 1), y0 = H * (.32 + t * .72), amp = H * (.05 + (1 - t) * .05), off = r() * 40;
+    g.beginPath(); g.moveTo(0, H);
+    for (let x = 0; x <= W; x += W / 140) g.lineTo(x, y0 - amp * Math.sin(x / W * 6 + i * .7) * .5 - amp * n(off + x / W * 5));
+    g.lineTo(W, H); g.closePath();
+    g.fillStyle = mix(P[3], P[1], t); g.fill();
+    g.strokeStyle = P[0]; g.lineWidth = W / 300; g.globalAlpha = .7; g.stroke(); g.globalAlpha = 1;
+  }
+}
+function drawJardin(g, W, H, r, P) {
+  const bg = g.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, P[0]); bg.addColorStop(1, P[1]);
+  g.fillStyle = bg; g.fillRect(0, 0, W, H);
+  const flowers = 16 + Math.floor(r() * 10);
+  for (let i = 0; i < flowers; i++) {
+    const x = r() * W, y = H * (.12 + r() * .8), size = W * (.04 + r() * .07), k = [3, 4, 5, 6, 7][Math.floor(r() * 5)], rot = r() * 6;
+    g.strokeStyle = mix(P[1], "#FFFFFF", .15); g.lineWidth = W / 260;
+    g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + (r() - .5) * W * .1, (y + H) / 2, x + (r() - .5) * W * .05, H); g.stroke();
+    g.fillStyle = [P[2], P[3], P[4]][Math.floor(r() * 3)];
+    g.beginPath();
+    for (let a = 0; a <= Math.PI * 2 + .01; a += .02) { const rr = size * Math.abs(Math.cos(k * a / 2)) + size * .15; g.lineTo(x + rr * Math.cos(a + rot), y + rr * Math.sin(a + rot)); }
+    g.fill();
+    g.fillStyle = P[0]; g.beginPath(); g.arc(x, y, size * .18, 0, 7); g.fill();
+  }
+}
+function drawCielo(g, W, H, r, P, d) {
+  const bg = g.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, P[0]); bg.addColorStop(.7, P[1]); bg.addColorStop(1, P[2]);
+  g.fillStyle = bg; g.fillRect(0, 0, W, H);
+  for (let i = 0; i < 700; i++) { g.fillStyle = "rgba(255,255,255," + (.2 + r() * .7) + ")"; g.beginPath(); g.arc(r() * W, r() * H * .85, r() * r() * W / 220 + .4, 0, 7); g.fill(); }
+  const pts = Array.from({ length: 7 }, () => [W * (.15 + r() * .7), H * (.1 + r() * .5)]).sort((a, b) => a[0] - b[0]);
+  g.strokeStyle = P[3]; g.lineWidth = W / 400; g.globalAlpha = .7; g.beginPath(); pts.forEach((p, i) => i ? g.lineTo(...p) : g.moveTo(...p)); g.stroke(); g.globalAlpha = 1;
+  for (const p of pts) { g.fillStyle = P[4]; g.beginPath(); g.arc(p[0], p[1], W / 130, 0, 7); g.fill(); }
+  // Luna con la fase real del día
+  const mx = W * .78, my = H * .16, mr = W * .07;
+  const age = (((d.getTime() - Date.UTC(2000, 0, 6, 18, 14)) / 864e5) % 29.530588853 + 29.530588853) % 29.530588853;
+  g.fillStyle = P[4]; g.beginPath(); g.arc(mx, my, mr, 0, 7); g.fill();
+  const ph = age / 29.530588853, off = Math.cos(ph * Math.PI * 2) * mr * 2 * (ph < .5 ? -1 : 1);
+  g.fillStyle = P[0]; g.beginPath(); g.arc(mx + off, my, mr * 1.02, 0, 7); g.fill();
+  g.fillStyle = mix(P[2], "#000000", .35);
+  g.beginPath(); g.moveTo(0, H);
+  const n = noise1(r);
+  for (let x = 0; x <= W; x += W / 120) g.lineTo(x, H * .9 - H * .08 * n(x / W * 4));
+  g.lineTo(W, H); g.fill();
+}
+function paintArt(canvas) {
+  const w = canvas.clientWidth || 360, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.round(w * dpr); canvas.height = Math.round(w * 1.25 * dpr);
+  const { def, r, pal } = artFor(current);
+  def.draw(canvas.getContext("2d"), canvas.width, canvas.height, r, pal, current);
+}
+function renderArt() {
+  const { def, name } = artFor(current);
+  const canvas = h("canvas", { role: "img", "aria-label": def.style + ": " + name });
+  const fig = h("figure", { class: "art" }, canvas,
+    h("figcaption", {},
+      h("div", {}, h("span", { class: "mono" }, "Imagen del día · " + def.style), h("b", {}, name)),
+      svgBtn("shuffle", "Otra variación", () => {
+        const k = keyOf(current); state.bumps[k] = state.bumps[k] || {}; state.bumps[k].art = (state.bumps[k].art || 0) + 1;
+        save(); fig.replaceWith(renderArt());
+      })));
+  requestAnimationFrame(() => paintArt(canvas));
+  return fig;
+}
+let resizeT = null;
+addEventListener("resize", () => { clearTimeout(resizeT); resizeT = setTimeout(() => document.querySelectorAll(".art canvas").forEach(paintArt), 200); });
+
+/* =================== BUENA NOTICIA =================== */
+// La tarea programada de cada mañana busca una buena noticia verificada y la guarda en noticias/<fecha>.
+// Si ese día no hay, se muestra la más reciente; si no hay ninguna, un avance de fondo de esta lista.
+const BUENAS = [
+  ["El lince ibérico ya no está «en peligro»", "Ha pasado de 94 ejemplares en 2002 a más de 2.000 en 2023. En 2024 la UICN lo rebajó a «vulnerable». Buena parte de la recuperación se ha hecho en Andalucía.", "UICN"],
+  ["La mortalidad infantil se ha reducido a menos de la mitad", "Las muertes de menores de cinco años pasaron de 12,8 millones en 1990 a unos 4,9 millones en 2022.", "UNICEF"],
+  ["La capa de ozono se está recuperando", "Gracias al Protocolo de Montreal, la ONU calcula que sobre la Antártida volverá a los niveles de 1980 hacia 2066.", "OMM / PNUMA"],
+  ["La polio, casi erradicada", "Los casos de polio salvaje han caído más de un 99 % desde 1988.", "Iniciativa Mundial de Erradicación de la Poliomielitis"],
+  ["Vivimos casi treinta años más", "La esperanza de vida mundial pasó de unos 46 años en 1950 a más de 73 hoy.", "ONU, World Population Prospects"],
+  ["El quebrantahuesos volvió a Andalucía", "En 2015 nació en la sierra de Cazorla el primer pollo en libertad en Andalucía desde que la especie desapareció de allí hace décadas.", "Fundación Gypaetus"],
+  ["La pobreza extrema ha caído en picado", "Del 38 % de la población mundial en 1990 a en torno al 9 % antes de la pandemia.", "Banco Mundial"],
+  ["Las ballenas jorobadas se han recuperado", "Tras la prohibición de la caza comercial, la mayoría de sus poblaciones ya no se consideran en peligro.", "NOAA"],
+  ["La energía limpia domina lo nuevo", "En 2023 las renovables supusieron alrededor del 86 % de la nueva capacidad eléctrica instalada en el mundo.", "IRENA"],
+  ["La viruela ya no existe", "Mató a cientos de millones de personas y en 1980 se declaró erradicada gracias a la vacunación.", "OMS"],
+];
+let news = null;
+function renderNews() {
+  const k = keyOf(current);
+  const live = news && news.date <= k ? news : null;
+  const fb = BUENAS[dayNumOf(current) % BUENAS.length];
+  const isToday = live && live.date === k;
+  const label = live ? (isToday ? "Buena noticia de hoy" : "Buena noticia · " + live.date.split("-").reverse().slice(0, 2).join("/")) : "Buena noticia de fondo";
+  const title = live ? live.titulo : fb[0], body = live ? live.resumen : fb[1], src = live ? live.fuente : fb[2];
+  const box = h("section", { class: "news" },
+    h("span", { class: "mono" }, label),
+    h("h3", {}, title), h("p", {}, body),
+    h("span", { class: "src" }, "Fuente: " + src));
+  const actions = h("div", { class: "actions" });
+  if (live && live.url) actions.append(h("a", { class: "btn", href: live.url, target: "_blank", rel: "noopener", html: ICON.out + "<span>Leer la noticia</span>" }));
+  if (sample) actions.append(h("button", { class: "btn", type: "button", onclick: () => explain("Buena noticia", { title, prompt: `esta buena noticia: «${title}. ${body}» (fuente: ${src}). Explica el contexto y por qué importa` }), html: ICON.spark + "<span>Contexto</span>" }));
+  else if (STANDALONE) actions.append(askLink(`Háblame de esta buena noticia: «${title}. ${body}» (fuente: ${src}). Explica el contexto y por qué importa.`, "Contexto"));
+  if (actions.childNodes.length) box.append(actions);
+  return box;
+}
+
+/* =================== INSTALAR EN EL MÓVIL =================== */
+const INSTALL_KEY = "taco-diario-install-hidden";
+let installEvt = null;
+addEventListener("beforeinstallprompt", e => { e.preventDefault(); installEvt = e; document.querySelector(".install")?.replaceWith(renderInstall() || ""); });
+function renderInstall() {
+  try { if (localStorage.getItem(INSTALL_KEY)) return null; } catch {}
+  if (matchMedia("(display-mode: standalone)").matches || navigator.standalone) return null;
+  const ios = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (STANDALONE && installEvt) {
+    const box = h("section", { class: "install" },
+      h("span", { class: "mono", style: "color:var(--red)" }, "Instálala como app"),
+      h("p", { style: "margin:0" }, "Tendrás su icono en el móvil y se abrirá a pantalla completa, también sin conexión."),
+      h("div", {}, h("button", { class: "btn primary", type: "button", style: "background:var(--red);border-color:var(--red);color:#fff", onclick: async () => { installEvt.prompt(); await installEvt.userChoice.catch(() => {}); installEvt = null; box.remove(); } }, "Instalar")));
+    return box;
+  }
+  const box = h("section", { class: "install" },
+    h("div", { class: "row" }, h("span", { class: "mono", style: "color:var(--red)" }, "Tenla en el móvil"),
+      h("button", { type: "button", class: "icon-btn", "aria-label": "Ocultar", title: "Ocultar", onclick: () => { try { localStorage.setItem(INSTALL_KEY, "1"); } catch {} box.remove(); }, html: "✕" })),
+    h("ol", {},
+      ios ? [h("li", {}, STANDALONE ? "Estás en el sitio correcto: usa Safari." : "Abre este enlace en Safari."), h("li", {}, "Toca Compartir (el cuadrado con la flecha)."), h("li", {}, "Elige «Añadir a pantalla de inicio».")]
+          : [h("li", {}, "Abre este enlace en Chrome."), h("li", {}, "Toca el menú ⋮ de arriba a la derecha."), h("li", {}, "Elige «Añadir a pantalla de inicio».")]),
+    STANDALONE ? h("p", { class: "meta", style: "margin:0" }, "Aparecerá con su propio icono y se abrirá a pantalla completa.")
+      : h("p", { class: "meta", style: "margin:0" }, "También la tienes fijada en la barra lateral de la app de Claude."));
+  return box;
+}
+
+/* =================== CLAUDE =================== */
+let aiAbort = null;
+function openAiSheet(title) {
+  closeAi();
+  const text = h("div", { class: "ai-text wait", "aria-live": "polite" }, "Pensando…");
+  const scrim = h("div", { class: "scrim", onclick: closeAi });
+  const panel = h("div", { class: "sheet-ai", role: "dialog", "aria-modal": "true", "aria-label": title },
+    h("div", { class: "in" },
+      h("div", { class: "mono", style: "color:var(--red)" }, "Claude explica"),
+      h("h3", {}, title), text,
+      h("div", {}, h("button", { class: "btn", type: "button", onclick: closeAi }, "Cerrar"))));
+  scrim.id = "ai-scrim"; panel.id = "ai-panel";
+  document.body.append(scrim, panel);
+  return text;
+}
+function closeAi() {
+  if (aiAbort) { aiAbort.abort(); aiAbort = null; }
+  document.getElementById("ai-scrim")?.remove(); document.getElementById("ai-panel")?.remove();
+}
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeAi(); });
+
+async function runSample(title, prompt) {
+  const out = openAiSheet(title);
+  aiAbort = new AbortController();
+  try {
+    await sample(prompt, { signal: aiAbort.signal, modelTier: "default",
+      onText: ({ text }) => { out.classList.remove("wait"); out.textContent = text; } });
+  } catch (e) {
+    if (e && e.name === "AbortError") return;
+    out.classList.add("wait");
+    out.textContent = e?.code === "rate_limited" ? "Demasiadas preguntas seguidas. Prueba de nuevo en un rato."
+      : e?.code === "not_granted" ? "Para usar esta función, permite que la página consulte a Claude."
+      : (e?.text || "No he podido obtener la explicación. Inténtalo otra vez.");
+  }
+}
+const STYLE = "Responde en español. Explica desde los fundamentos, con un ejemplo concreto y una analogía de la vida real. Sé directo, sin relleno ni frases de cortesía. Unas 180-230 palabras, en párrafos cortos, sin títulos ni markdown. Termina con una conexión con otra disciplina (ciencia, derecho, medicina, idiomas, IA o nutrición).";
+function explain(label, dsc) {
+  runSample(dsc.title.length > 70 ? label : dsc.title, `Háblame de ${dsc.prompt}. ${STYLE}`);
+}
+function connectPrompt() {
+  const pool = ["dato", "concepto", "palabra", "frase", "libro", "pelicula", "video", "refran", "cita", "cancion", "personaje", "planta"];
+  const chosen = pool.sort(() => Math.random() - .5).slice(0, 3).map(c => describe(c, pick(c, current).item));
+  const list = chosen.map(d => "- " + d.prompt).join("\n");
+  return `Estas son tres piezas de mi dosis diaria de curiosidad:\n${list}\n\nEncuentra una conexión sorprendente pero rigurosa entre las tres, que me haga pensar. Si alguna conexión es forzada, dilo.`;
+}
+function connectDots() { runSample("Une los puntos", connectPrompt() + " " + STYLE); }
+// Fuera de claude.ai no hay capacidad «sample»: el botón abre Claude con la pregunta ya escrita.
+function askLink(prompt, label) {
+  return h("a", { class: "btn", href: "https://claude.ai/new?q=" + enc(prompt + " " + STYLE), target: "_blank", rel: "noopener", html: ICON.spark + "<span>" + label + "</span>" });
+}
+
+/* =================== NAVEGACIÓN =================== */
+function show(view) {
+  document.getElementById("view-hoy").hidden = view !== "hoy";
+  document.getElementById("view-guardados").hidden = view !== "guardados";
+  document.getElementById("tab-hoy").setAttribute("aria-current", view === "hoy" ? "page" : "false");
+  document.getElementById("tab-guardados").setAttribute("aria-current", view === "guardados" ? "page" : "false");
+  window.scrollTo({ top: 0 });
+}
+document.getElementById("tab-hoy").addEventListener("click", () => show("hoy"));
+document.getElementById("tab-guardados").addEventListener("click", () => show("guardados"));
+if (location.hash === "#guardados") show("guardados");
+
+/* =================== ARRANQUE =================== */
+const tk = keyOf(today);
+if (!state.visits.includes(tk)) { state.visits.push(tk); lsWrite(); }
+renderAll();
+
+(async () => {
+  if (STANDALONE) {
+    fetch("noticias.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(list => {
+      const latest = (Array.isArray(list) ? list : []).filter(n => n && n.date).sort((a, b) => b.date.localeCompare(a.date))[0];
+      if (latest) { news = latest; document.querySelector(".news")?.replaceWith(renderNews()); }
+    }).catch(() => {});
+    return;
+  }
+  try {
+    sample = await claude.use("sample");
+    if (sample) renderFeed();
+  } catch {}
+  try {
+    const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+    if (db) {
+      db.collection("noticias").orderBy("date", "desc").limit(1).get().then(q => {
+        if (!q.empty) { news = q.docs[0].data(); document.querySelector(".news")?.replaceWith(renderNews()); }
+      }).catch(() => {});
+    }
+    const uid = user ? await user.id() : null;
+    if (!db || !uid) return;
+    const ref = db.doc("data/users/" + uid + "/taco");
+    const snap = await ref.get();
+    if (snap.exists) state = mergeState(state, snap.data());
+    if (!state.visits.includes(tk)) state.visits.push(tk);
+    dbRef = ref; save();
+    renderStats(); renderFeed(); renderSaved();
+  } catch {}
+})();
+</script>
+
+<script>
+if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+</script>
+</body>
+</html>
