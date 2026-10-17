@@ -148,7 +148,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .card .why { font-size: 15px; color: var(--ink); }
 .card .why b { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-right: 6px; }
 .word { font-family: var(--f-display); font-weight: 800; font-size: 44px; line-height: .95; letter-spacing: .01em; }
-.tag { display: inline-block; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 4px; padding: 2px 6px; color: var(--muted); }
+.tag { justify-self: start; display: inline-block; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 4px; padding: 2px 6px; color: var(--muted); }
 details { border-top: 1px dashed var(--line); padding-top: 8px; }
 summary { cursor: pointer; font-family: var(--f-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
 details p { margin-top: 8px !important; }
@@ -341,6 +341,14 @@ const VIDEOS = [
   ["El entrelazamiento cuántico", "QuantumFracture", "Física cuántica", "José Luis Crespo explica en español y con pizarra animada uno de los fenómenos más raros de la física."],
   ["¿Qué es la mecánica cuántica?", "Date un Vlog", "Física cuántica", "Javier Santaolalla, físico que trabajó en el CERN, desde los fundamentos y con mucho entusiasmo."],
   ["Historia de la inteligencia artificial", "DotCSV", "IA", "Carlos Santana repasa en español cómo hemos llegado a la IA actual, de Turing a los transformers."],
+  ["Learning how to learn", "Barbara Oakley · TEDx", "Aprender", "La ingeniera que suspendía matemáticas explica los modos de pensamiento enfocado y difuso. Base del curso más seguido de Coursera."],
+  ["The first 20 hours: how to learn anything", "Josh Kaufman · TEDx", "Aprender", "Por qué no necesitas 10.000 horas para ser decente en algo, y cómo aprovechar las primeras 20."],
+  ["All it takes is 10 mindful minutes", "Andy Puddicombe · TED", "Meditación", "El exmonje que fundó Headspace explica la meditación sin incienso ni misticismo, haciendo malabares."],
+  ["Quit social media", "Cal Newport · TEDx", "Productividad", "El autor de Deep Work defiende la atención profunda como ventaja competitiva. Incómodo y convincente."],
+  ["The Science of Productivity", "AsapSCIENCE", "Productividad", "Lo que dicen los estudios sobre la fuerza de voluntad, las pausas y la multitarea, en tres minutos."],
+  ["Why should you read Don Quixote?", "Ilan Stavans · TED-Ed", "Literatura", "Cinco minutos animados para entender por qué la primera novela moderna sigue siendo moderna."],
+  ["Why should you read One Hundred Years of Solitude?", "Francisco Díez-Buzo · TED-Ed", "Literatura", "Macondo, los Buendía y el realismo mágico explicados sin destripar nada."],
+  ["Why should you read Kafka's The Metamorphosis?", "Michael S. Roth · TED-Ed", "Literatura", "Gregor Samsa se despierta convertido en insecto. Por qué esa primera frase cambió la literatura."],
 ];
 
 const ARTICLES = [
@@ -362,6 +370,13 @@ const ARTICLES = [
   ["Uncharted Territories", "Tomás Pueyo", "Geografía · Historia", "Un ingeniero español explica el mundo con mapas. Su serie sobre por qué las ciudades están donde están es brillante."],
   ["Noahpinion", "Noah Smith", "Economía", "Economía y tecnología explicadas con claridad y opinión propia."],
   ["Simon Willison's Newsletter", "Simon Willison", "IA práctica", "Un programador que prueba cada herramienta de IA nada más salir y cuenta qué funciona de verdad."],
+  ["How to Do Great Work", "Paul Graham", "Aprender · Creatividad", "Un ensayo largo sobre curiosidad, obsesión y elegir en qué trabajar. Ideal para mentes inquietas."],
+  ["The Bus Ticket Theory of Genius", "Paul Graham", "Altas capacidades", "La tesis de que el genio necesita sobre todo un interés obsesivo y desinteresado, como coleccionar billetes de autobús."],
+  ["Maker's Schedule, Manager's Schedule", "Paul Graham", "Productividad", "Por qué una sola reunión puede arruinar una tarde de trabajo creativo. Te explicará tus propias frustraciones."],
+  ["Why Books Don't Work", "Andy Matuschak", "Aprender · Literatura", "Por qué olvidamos casi todo lo que leemos y qué haría falta para que los libros enseñen de verdad."],
+  ["Spaced Repetition for Efficient Learning", "Gwern Branwen", "Aprender", "La revisión más completa de la investigación sobre repetición espaciada. Larga; léela por partes."],
+  ["The Marginalian", "Maria Popova", "Literatura · Filosofía", "Ensayos que cruzan literatura, ciencia y filosofía, con citas memorables. Elige cualquiera de la portada."],
+  ["The Imperfectionist", "Oliver Burkeman", "Productividad", "El autor de «Cuatro mil semanas» sobre hacer lo importante sin la tiranía de la lista infinita."],
 ];
 
 const REELS = [
@@ -381,6 +396,13 @@ const REELS = [
   ["English with Lucy", "TikTok · Instagram", "english with lucy", "Vocabulario, pronunciación y expresiones británicas en píldoras.", L.tt("english with lucy")],
   ["Real Academia Española", "TikTok · Instagram", "rae dudas", "Dudas del español resueltas por la propia Academia.", L.tt("real academia española dudas")],
   ["Neil deGrasse Tyson", "Instagram", "neil degrasse tyson", "Astrofísica divulgativa con la voz más reconocible del género.", L.ig("neiltyson")],
+  ["Ali Abdaal", "TikTok · Instagram · YouTube", "ali abdaal productividad", "Productividad basada en estudios, explicada por un médico que dejó la medicina para enseñar.", L.tt("ali abdaal productivity")],
+  ["Headspace", "Instagram", "headspace", "Micro-meditaciones y consejos de atención plena en clips de un minuto.", L.ig("headspace")],
+  ["Gentle Whispering ASMR", "YouTube", "gentle whispering asmr", "Uno de los canales de ASMR más veteranos: susurros, sonidos suaves y mucha calma.", L.yt("Gentle Whispering ASMR")],
+  ["Javier Ruescas", "TikTok · YouTube", "javier ruescas libros", "Escritor y booktuber español: recomendaciones de libros con entusiasmo contagioso.", L.tt("javier ruescas libros")],
+  ["BookTok en español", "TikTok", "booktok español", "Recomendaciones de lectores de todo el mundo hispanohablante. Ideal para encontrar la próxima novela.", L.tt("booktok recomendaciones libros español")],
+  ["Altas capacidades en adultos", "TikTok", "altas capacidades adultos", "Psicólogos y personas con altas capacidades cuentan cómo se vive de adulto. Contrasta lo que veas.", L.tt("altas capacidades adultos psicóloga")],
+  ["Abao in Tokyo", "YouTube", "abao in tokyo study with me", "Sesiones de estudio en Tokio con estética cuidada: luz cálida, lluvia y concentración.", L.yt("Abao in Tokyo study with me")],
 ];
 
 const REFRANES = [
@@ -468,6 +490,19 @@ const BOOKS = [
   ["El mundo de ayer", "Stefan Zweig", 1942, "Memorias", "La Europa que se derrumbó, contada por quien la vivió."],
   ["Crimen y castigo", "Fiódor Dostoievski", 1866, "Novela", "Culpa, justificación y castigo. Derecho penal desde dentro de la cabeza del culpable."],
   ["La Regenta", "Leopoldo Alas «Clarín»", 1885, "Novela", "La gran novela española del XIX. Vetusta es cualquier ciudad pequeña."],
+  ["Pedro Páramo", "Juan Rulfo", 1955, "Novela", "Ciento y pico páginas que inventaron media literatura latinoamericana. Se lee en una tarde y no se olvida."],
+  ["Nada", "Carmen Laforet", 1945, "Novela", "Barcelona de posguerra vista por una estudiante de 18 años. Premio Nadal con 23 años."],
+  ["Rayuela", "Julio Cortázar", 1963, "Novela", "Se puede leer en orden o saltando capítulos. Un juego literario que sigue sorprendiendo."],
+  ["La señora Dalloway", "Virginia Woolf", 1925, "Novela", "Un solo día en Londres contado desde dentro de las cabezas de sus personajes."],
+  ["Stoner", "John Williams", 1965, "Novela", "La vida discreta de un profesor de literatura. Pasó desapercibida 50 años y ahora es de culto."],
+  ["Hábitos atómicos", "James Clear", 2018, "Productividad", "Cambios del 1 % que se acumulan. El libro de hábitos más práctico que hay."],
+  ["Enfócate (Deep Work)", "Cal Newport", 2016, "Productividad", "Cómo recuperar la concentración profunda en un mundo de notificaciones."],
+  ["Cuatro mil semanas", "Oliver Burkeman", 2021, "Productividad", "Una vida media dura unas 4.000 semanas. Productividad para cuando la productividad ya agota."],
+  ["Fluir (Flow)", "Mihaly Csikszentmihalyi", 1990, "Psicología", "El estado en el que pierdes la noción del tiempo haciendo algo difícil. Qué es y cómo provocarlo."],
+  ["Mindfulness en la vida cotidiana", "Jon Kabat-Zinn", 1994, "Meditación", "El médico que llevó la meditación a los hospitales, en capítulos cortos para leer despacio."],
+  ["Demasiado inteligente para ser feliz", "Jeanne Siaud-Facchin", 2008, "Altas capacidades", "Una psicóloga francesa sobre cómo viven los adultos con altas capacidades. Muy reconocible."],
+  ["Ultralearning", "Scott H. Young", 2019, "Aprender", "Estrategias para aprender rápido por tu cuenta, con casos reales de autodidactas extremos."],
+  ["Make It Stick", "Brown, Roediger y McDaniel", 2014, "Aprender", "La ciencia del aprendizaje: por qué releer no funciona y qué sí funciona."],
 ];
 
 const FILMS = [
@@ -583,6 +618,21 @@ const CONCEPTOS = [
   ["Teorema de Bayes", "Matemáticas · Medicina", "Una prueba con 99 % de acierto da positivo para una enfermedad que tiene 1 de cada 1.000 personas. ¿Probabilidad real de estar enfermo? Mucho menos de lo que crees, porque los falsos positivos entre tantos sanos superan a los verdaderos."],
   ["Neuroplasticidad", "Neurociencia", "El cerebro se recablea con el uso, como los caminos de un parque: los que más se pisan se vuelven sendas marcadas. Aprender un idioma o un instrumento literalmente cambia tu anatomía cerebral."],
   ["Navaja de Ockham", "Pensamiento", "Entre explicaciones que encajan igual de bien con los hechos, quédate con la que necesita menos suposiciones. No dice que lo simple sea verdad; dice por dónde empezar a buscar."],
+  ["Curva del olvido", "Aprender", "Hermann Ebbinghaus se aprendió listas de sílabas sin sentido y midió cuánto olvidaba: en un día, más de la mitad. Cada repaso aplana la curva. Como regar una planta: mejor poco y a menudo que mucho una vez."],
+  ["Recuperación activa", "Aprender", "Intentar recordar fortalece más la memoria que releer. Roediger y Karpicke (2006) lo mostraron: quien se examinaba recordaba mucho más una semana después. El músculo se entrena levantando peso, no mirándolo."],
+  ["Dificultades deseables", "Aprender", "Robert Bjork acuñó la idea: lo que hace el estudio más incómodo (mezclar temas, espaciar, examinarse) lo hace más duradero. Si aprender te resulta demasiado fácil, quizá no estás aprendiendo."],
+  ["Técnica Feynman", "Aprender", "Explica un concepto como si se lo contaras a un niño. Donde te atascas o usas jerga, ahí está lo que no entiendes. Vuelve a la fuente y repite."],
+  ["Ley de Parkinson", "Productividad", "«El trabajo se expande hasta llenar el tiempo disponible para completarlo.» La formuló C. Northcote Parkinson en The Economist en 1955. Por eso los plazos cortos y concretos funcionan."],
+  ["Técnica Pomodoro", "Productividad", "Francesco Cirillo, estudiante a finales de los 80, usó un temporizador de cocina con forma de tomate: 25 minutos de foco, 5 de pausa. Funciona porque convierte una tarea enorme en bloques que puedes empezar."],
+  ["Efecto Zeigarnik", "Productividad", "Bluma Zeigarnik observó en 1927 que recordamos mejor las tareas interrumpidas que las terminadas. Las réplicas posteriores son irregulares, pero la idea útil se mantiene: anotar lo pendiente libera la mente."],
+  ["Red neuronal por defecto", "Meditación · Neurociencia", "Es la red cerebral que se activa cuando la mente divaga: recuerdos, planes, rumiación. En meditadores experimentados aparece menos activa. Meditar es entrenar el darse cuenta de que te has ido."],
+  ["Modelo de los tres anillos", "Altas capacidades", "Joseph Renzulli (1978) propuso que la superdotación surge del cruce de tres cosas: capacidad por encima de la media, creatividad y compromiso con la tarea. Un CI alto solo es uno de los anillos."],
+  ["Desarrollo asincrónico", "Altas capacidades", "En las altas capacidades, la mente puede ir por delante de la edad emocional o motriz: razonar como un adulto y sentir como un niño de su edad. Explica muchos desajustes."],
+  ["Doble excepcionalidad", "Altas capacidades", "Altas capacidades y a la vez TDAH, dislexia o autismo. Una cosa enmascara a la otra, y a menudo ninguna se detecta."],
+  ["ASMR", "Neurociencia", "Respuesta sensorial meridiana autónoma: un hormigueo agradable ante susurros o sonidos suaves. El nombre lo inventó Jennifer Allen en 2010. Un estudio de 2018 midió que a quienes lo sienten les baja el pulso unos 3 latidos por minuto."],
+  ["La pistola de Chéjov", "Literatura", "«Si en el primer acto hay un rifle colgado en la pared, en el último debe dispararse.» Todo elemento de una historia debe tener una función. Aplica también a las presentaciones."],
+  ["Teoría del iceberg", "Literatura", "Hemingway defendía mostrar solo la punta: si el escritor sabe lo que omite, el lector lo siente igual. Siete octavos del iceberg van bajo el agua."],
+  ["Flujo de conciencia", "Literatura", "Técnica que reproduce el pensamiento tal como fluye, sin orden lógico. El término es del psicólogo William James (1890); Woolf y Joyce lo llevaron a la novela."],
 ];
 
 const RETOS = [
@@ -629,6 +679,9 @@ const PREGUNTAS = [
   "¿Qué cosa haces por costumbre que no harías si empezaras de cero?",
   "¿Qué te sorprendería descubrir que es verdad?",
   "¿Qué parte de tu rutina disfrutarías más si le prestaras atención?",
+  "¿Qué estabas haciendo la última vez que perdiste la noción del tiempo?",
+  "¿Qué te gustaría aprender si nadie fuera a evaluarte nunca?",
+  "¿Qué libro te cambió la forma de pensar, y en qué exactamente?",
 ];
 
 const HABITOS = [
@@ -652,6 +705,11 @@ const HABITOS = [
   ["Escribe tres líneas", "Antes de dormir, anota tres cosas que has aprendido hoy. Recordarlas activamente las consolida."],
   ["Subir escaleras", "Hoy, en lugar del ascensor. Es de los ejercicios de fuerza y cardio más accesibles que existen."],
   ["Fruta entera en vez de zumo", "La fibra de la fruta entera frena la absorción del azúcar. El zumo la pierde."],
+  ["Repaso espaciado", "Repasa hoy algo que aprendiste hace tres días, sin mirar primero. Recordar con esfuerzo es lo que fija la memoria."],
+  ["Un pomodoro", "25 minutos con el móvil en otra habitación y una sola tarea. Luego 5 minutos de pausa de verdad."],
+  ["Técnica Feynman en voz alta", "Explica en voz alta, en dos minutos, algo que creas saber. Donde te atasques, ahí tienes qué repasar."],
+  ["Monotarea", "Durante una hora, una sola pestaña y una sola tarea. Observa cuántas veces quieres cambiar."],
+  ["20 páginas", "Lee 20 páginas de una novela antes de dormir. Son unos 30 libros al año."],
 ];
 
 const CITAS = [
@@ -777,6 +835,26 @@ const PLANTAS = [
   ["Dama de noche", "Cestrum nocturnum", "Huele sobre todo de noche porque la polinizan polillas. Atrae más de lo que su aspecto promete."],
 ];
 
+
+const PAUSAS = [
+  ["Tres respiraciones conscientes", "Meditación", "Para ahora mismo. Inspira por la nariz notando el aire frío; espira despacio notando el aire tibio. Tres veces. Solo eso cuenta como meditar.", null],
+  ["Escaneo corporal de 3 minutos", "Meditación", "Con los brazos apoyados, recorre con la atención pies, piernas, abdomen, pecho, cuello y cara. No cambies nada; solo observa.", null],
+  ["Anclaje 5-4-3-2-1", "Meditación", "Nombra 5 cosas que ves, 4 que oyes, 3 que tocas, 2 que hueles y 1 que saboreas. Saca a la mente del bucle y la trae al presente.", null],
+  ["Respiración de caja", "Meditación", "Inspira 4 segundos, retén 4, espira 4, retén 4. Cuatro rondas. La usan pilotos y equipos de emergencias para calmarse bajo presión.", null],
+  ["Bondad amorosa (metta)", "Meditación", "Tres minutos repitiendo por dentro: «Que esté bien, que esté en paz». Primero para ti, luego para alguien querido y luego para alguien con quien te cueste.", null],
+  ["Caminata consciente", "Meditación", "Cinco minutos caminando más despacio de lo normal, fijándote en cómo apoyas cada pie. Vale en el pasillo de casa.", null],
+  ["Mirar por la ventana", "Pausa", "Dos minutos mirando árboles o nubes. Según la teoría de la restauración de la atención (Kaplan, 1989), la naturaleza recarga la atención cansada.", null],
+  ["Páginas matutinas", "Escritura", "Escribe tres páginas a mano, sin pensar ni corregir. Es la técnica de Julia Cameron en «El camino del artista» (1992) para vaciar la mente.", null],
+  ["Lofi para estudiar", "Aesthetic", "La emisión continua de Lofi Girl: ritmos suaves para concentrarte, con su famosa chica estudiando junto a la ventana.", "lofi hip hop radio beats to relax study to Lofi Girl"],
+  ["Lluvia en una biblioteca", "Aesthetic", "Ambiente de biblioteca antigua con lluvia y chimenea. Ponlo de fondo mientras lees o trabajas.", "library ambience rain fireplace"],
+  ["Café con lluvia", "Aesthetic", "Murmullo de cafetería y lluvia en el cristal: el ruido de fondo ideal para un pomodoro.", "coffee shop ambience rain study"],
+  ["Ruido marrón", "Concentración", "Más grave y suave que el ruido blanco. Mucha gente lo usa para concentrarse o dormir.", "brown noise 1 hour"],
+  ["ASMR de pasar páginas", "ASMR", "El sonido de hojear libros antiguos, sin voces. Para quien disfruta del olor a librería.", "ASMR page turning old books no talking"],
+  ["Bob Ross pinta un paisaje", "ASMR", "Un episodio de «The Joy of Painting». Su voz pausada y el rasgar del pincel son ASMR antes de que existiera la palabra.", "Bob Ross The Joy of Painting full episode"],
+  ["Cocina japonesa sin palabras", "ASMR", "Cortar, freír y emplatar con sonido nítido y nada más. Hipnótico.", "Japanese cooking ASMR no talking"],
+  ["Lluvia en Kioto", "Aesthetic", "Paseo por calles de Kioto bajo la lluvia, a pie de calle y sin narración.", "Kyoto rain walk 4K ambience"],
+];
+
 /* =================== CATEGORÍAS =================== */
 const CATS = {
   video:     { label: "Vídeo",         group: "ver",    pool: VIDEOS,     off: 3 },
@@ -797,13 +875,14 @@ const CATS = {
   frase:     { label: "Frase hecha",   group: "lengua", pool: FRASES,     off: 6 },
   palabra:   { label: "Palabra",       group: "lengua", pool: PALABRAS,   off: 8 },
   habito:    { label: "Micro-hábito",  group: "cuerpo", pool: HABITOS,    off: 12 },
+  pausa:     { label: "Pausa",         group: "cuerpo", pool: PAUSAS,     off: 18 },
 };
 const GROUPS = [
   ["ver", "Ver, leer y escuchar"],
   ["pensar", "Pensar"],
   ["mundo", "Gente y naturaleza"],
   ["lengua", "Lengua"],
-  ["cuerpo", "Cuerpo"],
+  ["cuerpo", "Cuerpo y calma"],
 ];
 const CAT_KEYS = Object.keys(CATS);
 
@@ -914,7 +993,7 @@ function describe(cat, item) {
     }
     case "articulo": {
       const [t, au, tema, why] = item;
-      return { title: t, sub: au, link: L.g(t + " " + au.split(" · ")[0] + " substack"), linkLabel: "Leer",
+      return { title: t, sub: au, link: L.g(t + " " + au.split(" · ")[0]), linkLabel: "Leer",
         body: [h("h3", {}, t), h("div", { class: "meta" }, au + " · " + tema), h("p", { class: "why" }, h("b", {}, "Por qué"), why)],
         prompt: `el artículo o la newsletter «${t}» (${au}), sobre ${tema}` };
     }
@@ -1000,6 +1079,12 @@ function describe(cat, item) {
       const LANG = { es: "Español", en: "Inglés", ja: "Japonés", pt: "Portugués", de: "Alemán", da: "Danés", cy: "Galés" };
       return { title: w, sub: LANG[lang] + " · " + def, body: [h("span", { class: "tag" }, LANG[lang]), h("div", { class: "word", lang }, w), h("p", {}, def), h("p", { class: "meta" }, ex)],
         prompt: `la palabra «${w}» (${LANG[lang]}): etimología, matices y cómo usarla` };
+    }
+    case "pausa": {
+      const [t, tipo, txt, q] = item;
+      return { title: t, sub: tipo, link: q ? L.yt(q) : null, linkLabel: tipo === "ASMR" || tipo === "Aesthetic" || tipo === "Concentración" ? "Escuchar" : "Abrir",
+        body: [h("span", { class: "tag" }, tipo), h("h3", {}, t), h("p", {}, txt)],
+        prompt: `esta pausa de ${tipo.toLowerCase()}: «${t}». ${txt} Explica qué dice la investigación sobre por qué funciona` };
     }
     case "habito": {
       const [t, why] = item;
