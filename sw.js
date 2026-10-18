@@ -1,4 +1,4 @@
-const CACHE = "taco-d14df1611b";
+const CACHE = "taco-3bf0f1cb70";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
@@ -8,7 +8,7 @@ self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET") return;
   const same = url.origin === location.origin;
-  const fresh = same && (url.pathname.endsWith("noticias.json") || e.request.mode === "navigate");
+  const fresh = same && ((url.pathname.endsWith("noticias.json") || url.pathname.includes("/hojas/")) || e.request.mode === "navigate");
   if (fresh) {
     e.respondWith(fetch(e.request).then(r => { const c = r.clone(); caches.open(CACHE).then(k => k.put(e.request, c)); return r; })
       .catch(() => caches.match(e.request).then(r => r || caches.match("index.html"))));

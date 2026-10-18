@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-18",
+  "items": {
+    "video": ["The art of stillness", "Pico Iyer · TED", "Meditación", "Un escritor de viajes explica por qué el viaje más emocionante puede ser quedarse quieto. Ocho minutos de calma."],
+    "articulo": ["The Tail End", "Tim Urban · Wait But Why", "Productividad", "Cuenta cuántos veranos, libros y visitas a tus padres te quedan. Cambia cómo repartes el tiempo."],
+    "reel": ["The School of Life", "Instagram · TikTok", "the school of life", "Filosofía y psicología para la vida diaria en piezas cortas e ilustradas.", "https://www.tiktok.com/search?q=the%20school%20of%20life"],
+    "libro": ["Persuasión", "Jane Austen", 1817, "Literatura", "La novela más madura de Austen: una segunda oportunidad ocho años después. Más melancólica y más sabia que Orgullo y prejuicio."],
+    "pelicula": ["Los chicos del coro", "Christophe Barratier", 2004, "Educación · Música", "Un profesor de música transforma un internado con un coro. Tierna y con una banda sonora preciosa."],
+    "programa": ["The Repair Shop", "BBC", 2017, "Documental", "Artesanos restauran objetos con historia familiar. El programa más reconfortante de la televisión."],
+    "cancion": ["Vincent", "Don McLean", 1971, "Una canción dedicada a Van Gogh que empieza con «Starry, starry night». Escúchala mirando el cuadro."],
+    "dato": ["El ajolote puede regenerar patas enteras, parte del corazón y hasta zonas del cerebro sin dejar cicatriz.", "Biología"],
+    "concepto": ["Efecto de generación", "Aprender", "Recordamos mejor lo que producimos nosotros que lo que solo leemos: completar «c_ _ _ _ d_» para escribir «calor-frío» fija más que leer el par entero (Slamecka y Graf, 1978). Por eso resumir con tus palabras vale más que subrayar."],
+    "cita": ["Si tienes un jardín y una biblioteca, tienes todo lo que necesitas.", "Cicerón", "Carta a su amigo Varrón (Ad Familiares IX, 4). En latín: «si hortum in bibliotheca habes, deerit nihil»."],
+    "reto": ["Un reloj marca las 3:15. ¿Qué ángulo forman las dos agujas?", "7,5 grados. El minutero está justo en el 3, pero la aguja horaria ya ha avanzado un cuarto del camino hacia el 4: 30° ÷ 4 = 7,5°."],
+    "pregunta": "Si pudieras cenar con un personaje de un libro, ¿a quién elegirías y qué le preguntarías?",
+    "personaje": ["Emilia Pardo Bazán", "1851–1921", "Escritora", "Trajo el naturalismo a España con «La cuestión palpitante» y en 1916 fue la primera mujer catedrática de universidad del país."],
+    "planta": ["Ginkgo", "Ginkgo biloba", "Un fósil viviente: apenas ha cambiado en unos 200 millones de años. Varios ginkgos sobrevivieron a la bomba de Hiroshima y siguen vivos."],
+    "refran": ["Más vale maña que fuerza.", "La habilidad consigue más que la fuerza bruta.", "Brain over brawn."],
+    "frase": ["Tomar las de Villadiego", "Huir de repente.", "Hay varias explicaciones. La más citada alude a unas calzas fabricadas en Villadiego (Burgos): quien «tomaba las calzas de Villadiego» se las ponía para salir corriendo."],
+    "palabra": ["Querencia", "es", "Inclinación a volver al lugar donde uno se ha criado; sitio donde alguien se siente a salvo.", "En los toros es el lugar al que vuelve el animal. En la vida, tu rincón favorito del sofá."],
+    "habito": ["Lee en voz alta", "Lee en voz alta la página más importante de lo que estés estudiando. Se recuerda mejor lo dicho que lo leído en silencio (el «efecto de producción»)."],
+    "pausa": ["Lluvia sobre una cabaña", "ASMR", "Lluvia sobre un tejado de madera, sin voces. Para leer, estudiar o dormir.", "rain on wooden cabin roof sounds no music"]
+  }
+}

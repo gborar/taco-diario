@@ -960,9 +960,27 @@ function mergeState(a, b) {
 }
 const local = lsRead(); if (local) state = mergeState(state, local);
 
+// Hojas diarias generadas por la tarea de la mañana: piezas nuevas que no se repiten.
+// Cada pieza tiene la misma forma que las de las listas fijas; si falta o está mal, se usa la lista fija.
+const HOJAS = {};
+function hojaItem(cat, d) {
+  const items = HOJAS[keyOf(d)];
+  const it = items && items[cat];
+  const ref = CATS[cat].pool[0];
+  if (it == null) return null;
+  if (typeof ref === "string") return typeof it === "string" && it.trim() ? it : null;
+  if (!Array.isArray(it) || it.length < ref.length - (cat === "pausa" ? 1 : 0)) return null;
+  for (let k = 0; k < ref.length; k++) {
+    if (cat === "pausa" && k === 3) continue;
+    if (typeof ref[k] === "string" && typeof it[k] !== "string") return null;
+  }
+  return it;
+}
 function pick(cat, d) {
   const c = CATS[cat];
   const bump = (state.bumps[keyOf(d)] || {})[cat] || 0;
+  const fresh = bump === 0 && hojaItem(cat, d);
+  if (fresh) return { i: "h" + keyOf(d), item: fresh };
   const n = c.pool.length;
   const i = ((dayNumOf(d) + c.off + bump) % n + n) % n;
   return { i, item: c.pool[i] };
@@ -1178,6 +1196,7 @@ function tear() {
 }
 
 function goDay(d) {
+  setTimeout(() => loadHoja(current), 0);
   if (d > today) return;
   current = new Date(d); current.setHours(12,0,0,0);
   renderAll();
@@ -1208,7 +1227,7 @@ function renderCard(cat) {
   const isPoster = !!POSTER[cat];
   const card = h("article", { class: "card" + (VARIANT[cat] || "") + (isPoster ? " poster" : "") + (isDone ? " done" : ""), id: "card-" + cat });
   if (isPoster) card.append(h("div", { class: "poster-art", "aria-hidden": "true" },
-    h("span", { class: "num" }, String(i + 1).padStart(2, "0")),
+    h("span", { class: "num" }, typeof i === "number" ? String(i + 1).padStart(2, "0") : "★"),
     h("span", { class: "kind" }, c.label),
     h("span", { html: POSTER[cat] })));
   const head = h("div", { class: "card-h" },
@@ -1441,6 +1460,14 @@ const BUENAS = [
   ["La viruela ya no existe", "Mató a cientos de millones de personas y en 1980 se declaró erradicada gracias a la vacunación.", "OMS"],
 ];
 let news = null;
+let hojaSource = null;   // función (clave de fecha) => Promise<items | null>
+async function loadHoja(d) {
+  const k = keyOf(d);
+  if (!hojaSource || k in HOJAS) return;
+  HOJAS[k] = null;
+  try { HOJAS[k] = await hojaSource(k); } catch { HOJAS[k] = null; }
+  if (HOJAS[k] && keyOf(current) === k) { renderCover(!document.getElementById("sheet")); renderFeed(); }
+}
 function renderNews() {
   const k = keyOf(current);
   const live = news && news.date <= k ? news : null;
@@ -1556,6 +1583,8 @@ renderAll();
 
 (async () => {
   if (STANDALONE) {
+    hojaSource = k => fetch("hojas/" + k + ".json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(j => j && j.items || null);
+    loadHoja(current);
     fetch("noticias.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(list => {
       const latest = (Array.isArray(list) ? list : []).filter(n => n && n.date).sort((a, b) => b.date.localeCompare(a.date))[0];
       if (latest) { news = latest; document.querySelector(".news")?.replaceWith(renderNews()); }
@@ -1569,6 +1598,8 @@ renderAll();
   try {
     const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
     if (db) {
+      hojaSource = k => db.doc("hojas/" + k).get().then(sn => { if (!sn.exists) return null; const v = sn.data(); return typeof v.json === "string" ? JSON.parse(v.json).items : null; });
+      loadHoja(current);
       db.collection("noticias").orderBy("date", "desc").limit(1).get().then(q => {
         if (!q.empty) { news = q.docs[0].data(); document.querySelector(".news")?.replaceWith(renderNews()); }
       }).catch(() => {});
