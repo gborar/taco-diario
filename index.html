@@ -1664,6 +1664,16 @@ renderAll();
 </script>
 
 <script>
+// iPhone «despierta» la app sin recargarla: al volver a ella, comprueba si hay versión nueva y recarga.
+async function tacoCheckUpdate() {
+  try {
+    const r = await fetch("version.json?" + Date.now(), { cache: "no-store" });
+    const v = (await r.json()).version;
+    if (v && v !== window.TACO_VERSION) location.reload();
+  } catch {}
+}
+document.addEventListener("visibilitychange", () => { if (!document.hidden) tacoCheckUpdate(); });
+addEventListener("pageshow", tacoCheckUpdate);
 if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(() => {}));
 </script>
 </body>
