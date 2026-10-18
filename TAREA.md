@@ -8,6 +8,7 @@ Una persona curiosa con intereses amplios: inteligencia artificial, derecho, med
 
 Restricciones:
 - **Nada de películas ni series violentas, thrillers ni policiacas.** Las bélicas y las históricas sí le gustan.
+- **Música de todo tipo, salvo heavy metal.** Alterna clásicos y canciones actuales (de los últimos cinco años) y varía géneros e idiomas.
 - Tiene la **rotación interna del hombro limitada**. Ningún micro-hábito puede implicar llevar la mano a la espalda, estiramientos de tríceps por detrás ni cargas por encima de la cabeza.
 - Todo en español, salvo los títulos originales.
 
