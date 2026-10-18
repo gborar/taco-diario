@@ -28,11 +28,13 @@ Archivo `hojas/AAAA-MM-DD.json`:
 ```json
 {
   "date": "AAAA-MM-DD",
+  "santo":  "San Lucas, evangelista",
   "items":  { "video": [...], "articulo": [...], ... },
   "extras": { "video": [[...], [...]], "articulo": [[...], [...]], ... }
 }
 ```
 
+- `santo`: el santoral del día, como en los tacos de calendario. Búscalo con WebSearch (por ejemplo «santoral 20 de octubre») y confírmalo en dos fuentes, como el Martirologio o santopedia y ACI Prensa. Da uno o dos santos principales separados por « · », por ejemplo «Santa Irene · San Andrés de Creta». Si coincide con una fiesta del calendario litúrgico de España, pon esa.
 - `items`: la pieza principal de cada categoría.
 - `extras`: exactamente 2 alternativas por categoría, con el mismo formato. Son las que salen al pulsar «Otra». Tampoco pueden repetir nada del historial, ni entre sí, ni con `items`.
 
