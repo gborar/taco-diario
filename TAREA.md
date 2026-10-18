@@ -1,10 +1,10 @@
 # Tarea diaria: hoja nueva de Taco Diario
 
-Cada mañana se prepara la hoja del día con 19 piezas **que no hayan salido nunca**, más 2 alternativas por categoría para el botón «Otra» (57 piezas en total). Este archivo es la referencia que sigue la tarea programada.
+Cada mañana se prepara la hoja del día con 21 piezas **que no hayan salido nunca**, más 2 alternativas por categoría para el botón «Otra» (63 piezas en total). Este archivo es la referencia que sigue la tarea programada.
 
 ## Para quién es
 
-Una persona curiosa con intereses amplios: inteligencia artificial, derecho, medicina, idiomas, física cuántica, nutrición y bienestar. Sus temas favoritos son **literatura, productividad, meditación, altas capacidades, ASMR, la estética «aesthetic» y aprender a aprender**. Haz que al menos 6 de las 19 piezas toquen esos temas favoritos.
+Una persona curiosa con intereses amplios: inteligencia artificial, derecho, medicina, idiomas, física cuántica, nutrición y bienestar. Sus temas favoritos son **literatura, productividad, meditación, altas capacidades, ASMR, la estética «aesthetic» y aprender a aprender**. Haz que al menos 6 de las 21 piezas toquen esos temas favoritos.
 
 Restricciones:
 - **Nada de películas ni series violentas, thrillers ni policiacas.** Las bélicas y las históricas sí le gustan.
@@ -17,6 +17,15 @@ Restricciones:
 - Solo obras, personas, canales y datos **reales y verificables**. Si dudas de un título, un año o una cifra, compruébalo con WebSearch o elige otra pieza.
 - Los datos curiosos, conceptos, frases célebres y orígenes de expresiones tienen que ser correctos. Si una cita es de atribución dudosa, dilo en el contexto.
 - No inventes enlaces: la app construye las búsquedas a partir del título.
+
+## Prensa y revistas
+
+- `prensa`: un artículo **publicado en los últimos siete días** en un periódico español. Alterna: un día un diario nacional (El País, El Mundo, ABC, La Vanguardia, elDiario.es, El Confidencial…) y al siguiente uno andaluz (Diario de Sevilla, ABC de Sevilla, Diario Sur, Ideal, Diario de Cádiz, Diario Córdoba, Málaga Hoy, Granada Hoy, Huelva Información, Diario de Almería, Diario Jaén…). Mira el día anterior en `hojas/` para alternar.
+- `revista`: un artículo de una revista española (Jot Down, Letras Libres, Revista de Occidente, Muy Interesante, National Geographic España, Historia National Geographic, Mercurio, Ethic, Yorokobu, 5W, Clío, Cuadernos Hispanoamericanos, CTXT…). Puede ser de las últimas semanas.
+- Prefiere reportajes, entrevistas, columnas y piezas de cultura o ciencia que sigan valiendo dentro de un mes, mejor que la noticia del día.
+- La URL tiene que ser la del artículo y **comprobada con WebFetch o WebSearch**: que exista, que sea de ese medio y que el titular coincida. Si no puedes comprobarla, pon `null` y la app hará una búsqueda.
+- Las 2 alternativas de `extras` siguen las mismas reglas y no repiten medio con la principal.
+- Si el artículo está tras un muro de pago, dilo al final del «por qué» («Requiere suscripción.») y, si hay una alternativa abierta igual de buena, elige esa.
 
 ## Sin repeticiones
 
@@ -46,6 +55,8 @@ Cada pieza es un array con estos campos, en este orden. Todos son textos salvo l
 | `video` | título del vídeo, canal o autor, tema, por qué verlo |
 | `articulo` | título, autor y publicación separados por « · », tema, por qué leerlo |
 | `reel` | creador o cuenta, plataformas, consulta de búsqueda, qué verás, URL de búsqueda en TikTok (`https://www.tiktok.com/search?q=` + consulta codificada) o de perfil de Instagram si estás seguro de la cuenta |
+| `prensa` | titular, autor y periódico separados por « · », tema, por qué leerlo, URL del artículo |
+| `revista` | titular, autor y revista separados por « · », tema, por qué leerlo, URL del artículo |
 | `libro` | título, autor, año, tema, por qué leerlo |
 | `pelicula` | título, director, año, género, por qué verla |
 | `programa` | título, cadena o creador, año, tipo, por qué verlo |
@@ -65,7 +76,7 @@ Cada pieza es un array con estos campos, en este orden. Todos son textos salvo l
 
 Ejemplo: `hojas/2026-10-18.json`.
 
-Antes de guardarla, comprueba que el JSON es válido, que `items` tiene las 19 claves y que `extras` tiene 2 piezas en cada una.
+Antes de guardarla, comprueba que el JSON es válido, que `items` tiene las 21 claves y que `extras` tiene 2 piezas en cada una.
 
 ## Pasos
 

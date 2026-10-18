@@ -19,7 +19,7 @@ img { max-width: 100%; }
 </style>
 </head>
 <body>
-<script>window.TACO_VERSION = "10174221e9";</script>
+<script>window.TACO_VERSION = "e7033e035d";</script>
 <title>Taco Diario</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#C8102E">
@@ -382,6 +382,41 @@ const ARTICLES = [
   ["Spaced Repetition for Efficient Learning", "Gwern Branwen", "Aprender", "La revisión más completa de la investigación sobre repetición espaciada. Larga; léela por partes."],
   ["The Marginalian", "Maria Popova", "Literatura · Filosofía", "Ensayos que cruzan literatura, ciencia y filosofía, con citas memorables. Elige cualquiera de la portada."],
   ["The Imperfectionist", "Oliver Burkeman", "Productividad", "El autor de «Cuatro mil semanas» sobre hacer lo importante sin la tiranía de la lista infinita."],
+];
+
+// Prensa y revistas: cada día la tarea de la mañana elige un artículo real y reciente, con su enlace.
+// Estas listas solo se usan los días sin hoja: secciones y cabeceras que merece la pena abrir cualquier día.
+// Campos: título, autor y medio separados por « · », tema, por qué leerlo, URL del artículo (o null: se busca).
+const PRENSA = [
+  ["La Contra", "La Vanguardia", "Entrevistas", "La contraportada de cada día: una conversación breve con alguien que tiene algo que contar. Perfecta para el café.", null],
+  ["Cultura", "Diario de Sevilla", "Andalucía", "Exposiciones, libros, flamenco y escena andaluza contados desde Sevilla.", null],
+  ["Babelia", "El País", "Cultura", "El suplemento cultural del sábado: críticas de libros, ensayos y entrevistas con escritores.", null],
+  ["Opinión", "Diario Sur", "Andalucía", "Las columnas del diario de Málaga: la actualidad mirada desde la Costa del Sol.", null],
+  ["La Tercera", "ABC", "Opinión", "La tribuna de la tercera página de ABC, una de las más veteranas de la prensa española, con firmas invitadas.", null],
+  ["Cultura", "Ideal", "Andalucía", "El diario de Granada, Jaén y Almería: patrimonio, libros y vida cultural del oriente andaluz.", null],
+  ["La Lectura", "El Mundo", "Cultura", "La revista cultural de El Mundo: libros, ideas y debates en reportajes largos.", null],
+  ["Opinión", "Diario de Cádiz", "Andalucía", "Columnas sobre Cádiz y su provincia, con voces muy ligadas a la ciudad.", null],
+  ["Materia", "El País", "Ciencia", "La sección de ciencia de El País: descubrimientos explicados por periodistas especializados.", null],
+  ["Cultura", "Diario Córdoba", "Andalucía", "Patrimonio, libros y escena cultural de Córdoba.", null],
+  ["Ciencia", "elDiario.es", "Ciencia", "Investigación y salud contadas con contexto y sin alarmismo.", null],
+  ["Opinión", "ABC de Sevilla", "Andalucía", "La edición sevillana de ABC, con columnistas que miran la actualidad andaluza.", null],
+  ["Cultura", "Málaga Hoy", "Andalucía", "Museos, música y libros de una ciudad que se ha reinventado a través de la cultura.", null],
+  ["Cultura", "Granada Hoy", "Andalucía", "La vida cultural de Granada: Alhambra, festivales, universidad y libros.", null],
+];
+
+const REVISTAS = [
+  ["Entrevistas largas", "Jot Down", "Cultura", "Conversaciones sin prisa con científicos, escritores y artistas. Lectura de fin de semana.", null],
+  ["Ensayos", "Revista de Occidente", "Pensamiento", "La revista que fundó José Ortega y Gasset en 1923: pensamiento, ciencia y letras en ensayos rigurosos.", null],
+  ["Reportajes", "Muy Interesante", "Divulgación", "Ciencia para todos: salud, espacio y tecnología explicados con claridad.", null],
+  ["Ensayos y reseñas", "Letras Libres", "Literatura", "Crítica literaria y ensayo político y cultural en su edición española.", null],
+  ["Reportajes", "National Geographic España", "Naturaleza", "Naturaleza, ciencia y viajes con algunas de las mejores fotografías del periodismo.", null],
+  ["Reseñas", "Mercurio", "Literatura", "La revista de libros de la Fundación José Manuel Lara, editada en Sevilla: novedades contadas por escritores.", null],
+  ["Reportajes", "Historia National Geographic", "Historia", "Historia rigurosa y muy bien ilustrada, de Egipto a la Guerra Civil.", null],
+  ["Artículos", "Ethic", "Sociedad", "Sostenibilidad, ética y pensamiento con análisis pausados y sin estridencias.", null],
+  ["Artículos", "Yorokobu", "Creatividad", "Diseño, lenguaje y curiosidades con un estilo desenfadado y muy cuidado.", null],
+  ["Crónicas", "5W", "Periodismo", "Crónica internacional en reportajes largos y fotografía. Periodismo narrativo del bueno.", null],
+  ["Ensayos y crítica", "Cuadernos Hispanoamericanos", "Literatura", "Revista literaria veterana que une las letras de España y Latinoamérica.", null],
+  ["Reportajes", "Clío", "Historia", "Divulgación histórica amena: grandes episodios y vidas poco conocidas.", null],
 ];
 
 const REELS = [
@@ -905,6 +940,8 @@ const PAUSAS = [
 const CATS = {
   video:     { label: "Vídeo",         group: "ver",    pool: VIDEOS,     off: 3 },
   articulo:  { label: "Artículo",      group: "ver",    pool: ARTICLES,   off: 7 },
+  prensa:    { label: "Prensa",        group: "ver",    pool: PRENSA,     off: 19 },
+  revista:   { label: "Revista",       group: "ver",    pool: REVISTAS,   off: 20 },
   reel:      { label: "Reel / TikTok", group: "ver",    pool: REELS,      off: 1 },
   libro:     { label: "Libro",         group: "ver",    pool: BOOKS,      off: 11 },
   pelicula:  { label: "Película",      group: "ver",    pool: FILMS,      off: 5 },
@@ -993,13 +1030,14 @@ const local = lsRead(); if (local) state = mergeState(state, local);
 // Hojas diarias generadas por la tarea de la mañana: piezas nuevas que no se repiten.
 // Cada pieza tiene la misma forma que las de las listas fijas; si falta o está mal, se usa la lista fija.
 const HOJAS = {};
+const OPCIONAL = { pausa: 3, prensa: 4, revista: 4 };   // último campo, que puede faltar o ser null
 function validItem(cat, it) {
   const ref = CATS[cat].pool[0];
   if (it == null) return null;
   if (typeof ref === "string") return typeof it === "string" && it.trim() ? it : null;
-  if (!Array.isArray(it) || it.length < ref.length - (cat === "pausa" ? 1 : 0)) return null;
+  if (!Array.isArray(it) || it.length < ref.length - (cat in OPCIONAL ? 1 : 0)) return null;
   for (let k = 0; k < ref.length; k++) {
-    if (cat === "pausa" && k === 3) continue;
+    if (OPCIONAL[cat] === k) continue;
     if (typeof ref[k] === "string" && typeof it[k] !== "string") return null;
   }
   return it;
@@ -1067,6 +1105,8 @@ const ICON = {
 };
 const POSTER = {
   video: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="6" y="14" width="52" height="36" rx="8"/><path d="M27 23v18l15-9z" fill="currentColor"/></svg>',
+  prensa: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M10 12h38v40H16a6 6 0 0 1-6-6z"/><path d="M48 22h6v24a6 6 0 0 1-6 6"/><rect x="17" y="19" width="12" height="10"/><path d="M34 20h8M34 27h8M17 36h25M17 43h25"/></svg>',
+  revista: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="14" y="6" width="36" height="52" rx="2"/><path d="M20 15h24" stroke-width="5"/><circle cx="32" cy="34" r="9"/><path d="M20 50h24"/></svg>',
   articulo: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="12" y="8" width="40" height="48" rx="3"/><path d="M20 20h24M20 28h24M20 36h24M20 44h14"/></svg>',
   reel: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><rect x="18" y="6" width="28" height="52" rx="6"/><path d="M28 24v14l11-7z" fill="currentColor"/><path d="M28 50h8"/></svg>',
   libro: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M8 14c8-3 16-3 24 2v36c-8-5-16-5-24-2zM56 14c-8-3-16-3-24 2v36c8-5 16-5 24-2z"/></svg>',
@@ -1097,6 +1137,15 @@ function describe(cat, item) {
       return { title: t, sub: au, link: L.g(t + " " + au.split(" · ")[0]), linkLabel: "Leer",
         body: [h("h3", {}, t), h("div", { class: "meta" }, au + " · " + tema), h("p", { class: "why" }, h("b", {}, "Por qué"), why)],
         prompt: `el artículo o la newsletter «${t}» (${au}), sobre ${tema}` };
+    }
+    case "prensa":
+    case "revista": {
+      const [t, au, tema, why, url] = item;
+      const medio = au.split(" · ").pop();
+      const propio = typeof url === "string" && /^https:\/\//.test(url);
+      return { title: t, sub: au, link: propio ? url : L.g(t + " " + medio), linkLabel: propio ? "Leer" : "Buscar",
+        body: [h("h3", {}, t), h("div", { class: "meta" }, au + " · " + tema), h("p", { class: "why" }, h("b", {}, "Por qué"), why)],
+        prompt: `el artículo «${t}» publicado en ${medio} (${au}), sobre ${tema}` };
     }
     case "reel": {
       const [who, plat, , why, link] = item;

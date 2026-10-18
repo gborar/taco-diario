@@ -612,5 +612,25 @@
   "Lluvia sobre una cabaña",
   "Respiración 4-7-8",
   "Librería antigua con lluvia"
+ ],
+ "prensa": [
+  "La Contra",
+  "Cultura",
+  "Babelia",
+  "Opinión",
+  "La Tercera",
+  "La Lectura",
+  "Materia",
+  "Ciencia"
+ ],
+ "revista": [
+  "Entrevistas largas",
+  "Ensayos",
+  "Reportajes",
+  "Ensayos y reseñas",
+  "Reseñas",
+  "Artículos",
+  "Crónicas",
+  "Ensayos y crítica"
  ]
 }
