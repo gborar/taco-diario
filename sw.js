@@ -1,4 +1,4 @@
-const CACHE = "taco-5182f52b95";
+const CACHE = "taco-11c343df13";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
@@ -10,7 +10,7 @@ self.addEventListener("fetch", e => {
   const same = url.origin === location.origin;
   const fresh = same && ((url.pathname.endsWith("noticias.json") || url.pathname.includes("/hojas/")) || e.request.mode === "navigate");
   if (fresh) {
-    e.respondWith(fetch(e.request).then(r => { const c = r.clone(); caches.open(CACHE).then(k => k.put(e.request, c)); return r; })
+    e.respondWith(fetch(e.request, { cache: "no-cache" }).then(r => { const c = r.clone(); caches.open(CACHE).then(k => k.put(e.request, c)); return r; })
       .catch(() => caches.match(e.request).then(r => r || caches.match("index.html"))));
   } else if (same || url.hostname.endsWith("fonts.googleapis.com") || url.hostname.endsWith("fonts.gstatic.com")) {
     e.respondWith(caches.match(e.request).then(r => r || fetch(e.request).then(res => { const c = res.clone(); caches.open(CACHE).then(k => k.put(e.request, c)); return res; })));
