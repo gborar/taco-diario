@@ -1,24 +1,351 @@
 {
-  "date": "2026-10-18",
-  "items": {
-    "video": ["The art of stillness", "Pico Iyer · TED", "Meditación", "Un escritor de viajes explica por qué el viaje más emocionante puede ser quedarse quieto. Ocho minutos de calma."],
-    "articulo": ["The Tail End", "Tim Urban · Wait But Why", "Productividad", "Cuenta cuántos veranos, libros y visitas a tus padres te quedan. Cambia cómo repartes el tiempo."],
-    "reel": ["The School of Life", "Instagram · TikTok", "the school of life", "Filosofía y psicología para la vida diaria en piezas cortas e ilustradas.", "https://www.tiktok.com/search?q=the%20school%20of%20life"],
-    "libro": ["Persuasión", "Jane Austen", 1817, "Literatura", "La novela más madura de Austen: una segunda oportunidad ocho años después. Más melancólica y más sabia que Orgullo y prejuicio."],
-    "pelicula": ["Los chicos del coro", "Christophe Barratier", 2004, "Educación · Música", "Un profesor de música transforma un internado con un coro. Tierna y con una banda sonora preciosa."],
-    "programa": ["The Repair Shop", "BBC", 2017, "Documental", "Artesanos restauran objetos con historia familiar. El programa más reconfortante de la televisión."],
-    "cancion": ["Vincent", "Don McLean", 1971, "Una canción dedicada a Van Gogh que empieza con «Starry, starry night». Escúchala mirando el cuadro."],
-    "dato": ["El ajolote puede regenerar patas enteras, parte del corazón y hasta zonas del cerebro sin dejar cicatriz.", "Biología"],
-    "concepto": ["Efecto de generación", "Aprender", "Recordamos mejor lo que producimos nosotros que lo que solo leemos: completar «c_ _ _ _ d_» para escribir «calor-frío» fija más que leer el par entero (Slamecka y Graf, 1978). Por eso resumir con tus palabras vale más que subrayar."],
-    "cita": ["Si tienes un jardín y una biblioteca, tienes todo lo que necesitas.", "Cicerón", "Carta a su amigo Varrón (Ad Familiares IX, 4). En latín: «si hortum in bibliotheca habes, deerit nihil»."],
-    "reto": ["Un reloj marca las 3:15. ¿Qué ángulo forman las dos agujas?", "7,5 grados. El minutero está justo en el 3, pero la aguja horaria ya ha avanzado un cuarto del camino hacia el 4: 30° ÷ 4 = 7,5°."],
-    "pregunta": "Si pudieras cenar con un personaje de un libro, ¿a quién elegirías y qué le preguntarías?",
-    "personaje": ["Emilia Pardo Bazán", "1851–1921", "Escritora", "Trajo el naturalismo a España con «La cuestión palpitante» y en 1916 fue la primera mujer catedrática de universidad del país."],
-    "planta": ["Ginkgo", "Ginkgo biloba", "Un fósil viviente: apenas ha cambiado en unos 200 millones de años. Varios ginkgos sobrevivieron a la bomba de Hiroshima y siguen vivos."],
-    "refran": ["Más vale maña que fuerza.", "La habilidad consigue más que la fuerza bruta.", "Brain over brawn."],
-    "frase": ["Tomar las de Villadiego", "Huir de repente.", "Hay varias explicaciones. La más citada alude a unas calzas fabricadas en Villadiego (Burgos): quien «tomaba las calzas de Villadiego» se las ponía para salir corriendo."],
-    "palabra": ["Querencia", "es", "Inclinación a volver al lugar donde uno se ha criado; sitio donde alguien se siente a salvo.", "En los toros es el lugar al que vuelve el animal. En la vida, tu rincón favorito del sofá."],
-    "habito": ["Lee en voz alta", "Lee en voz alta la página más importante de lo que estés estudiando. Se recuerda mejor lo dicho que lo leído en silencio (el «efecto de producción»)."],
-    "pausa": ["Lluvia sobre una cabaña", "ASMR", "Lluvia sobre un tejado de madera, sin voces. Para leer, estudiar o dormir.", "rain on wooden cabin roof sounds no music"]
-  }
+ "date": "2026-10-18",
+ "items": {
+  "video": [
+   "The art of stillness",
+   "Pico Iyer · TED",
+   "Meditación",
+   "Un escritor de viajes explica por qué el viaje más emocionante puede ser quedarse quieto. Ocho minutos de calma."
+  ],
+  "articulo": [
+   "The Tail End",
+   "Tim Urban · Wait But Why",
+   "Productividad",
+   "Cuenta cuántos veranos, libros y visitas a tus padres te quedan. Cambia cómo repartes el tiempo."
+  ],
+  "reel": [
+   "The School of Life",
+   "Instagram · TikTok",
+   "the school of life",
+   "Filosofía y psicología para la vida diaria en piezas cortas e ilustradas.",
+   "https://www.tiktok.com/search?q=the%20school%20of%20life"
+  ],
+  "libro": [
+   "Persuasión",
+   "Jane Austen",
+   1817,
+   "Literatura",
+   "La novela más madura de Austen: una segunda oportunidad ocho años después. Más melancólica y más sabia que Orgullo y prejuicio."
+  ],
+  "pelicula": [
+   "Los chicos del coro",
+   "Christophe Barratier",
+   2004,
+   "Educación · Música",
+   "Un profesor de música transforma un internado con un coro. Tierna y con una banda sonora preciosa."
+  ],
+  "programa": [
+   "The Repair Shop",
+   "BBC",
+   2017,
+   "Documental",
+   "Artesanos restauran objetos con historia familiar. El programa más reconfortante de la televisión."
+  ],
+  "cancion": [
+   "Vincent",
+   "Don McLean",
+   1971,
+   "Una canción dedicada a Van Gogh que empieza con «Starry, starry night». Escúchala mirando el cuadro."
+  ],
+  "dato": [
+   "El ajolote puede regenerar patas enteras, parte del corazón y hasta zonas del cerebro sin dejar cicatriz.",
+   "Biología"
+  ],
+  "concepto": [
+   "Efecto de generación",
+   "Aprender",
+   "Recordamos mejor lo que producimos nosotros que lo que solo leemos: completar «c_ _ _ _ d_» para escribir «calor-frío» fija más que leer el par entero (Slamecka y Graf, 1978). Por eso resumir con tus palabras vale más que subrayar."
+  ],
+  "cita": [
+   "Si tienes un jardín y una biblioteca, tienes todo lo que necesitas.",
+   "Cicerón",
+   "Carta a su amigo Varrón (Ad Familiares IX, 4). En latín: «si hortum in bibliotheca habes, deerit nihil»."
+  ],
+  "reto": [
+   "Un reloj marca las 3:15. ¿Qué ángulo forman las dos agujas?",
+   "7,5 grados. El minutero está justo en el 3, pero la aguja horaria ya ha avanzado un cuarto del camino hacia el 4: 30° ÷ 4 = 7,5°."
+  ],
+  "pregunta": "Si pudieras cenar con un personaje de un libro, ¿a quién elegirías y qué le preguntarías?",
+  "personaje": [
+   "Emilia Pardo Bazán",
+   "1851–1921",
+   "Escritora",
+   "Trajo el naturalismo a España con «La cuestión palpitante» y en 1916 fue la primera mujer catedrática de universidad del país."
+  ],
+  "planta": [
+   "Ginkgo",
+   "Ginkgo biloba",
+   "Un fósil viviente: apenas ha cambiado en unos 200 millones de años. Varios ginkgos sobrevivieron a la bomba de Hiroshima y siguen vivos."
+  ],
+  "refran": [
+   "Más vale maña que fuerza.",
+   "La habilidad consigue más que la fuerza bruta.",
+   "Brain over brawn."
+  ],
+  "frase": [
+   "Tomar las de Villadiego",
+   "Huir de repente.",
+   "Hay varias explicaciones. La más citada alude a unas calzas fabricadas en Villadiego (Burgos): quien «tomaba las calzas de Villadiego» se las ponía para salir corriendo."
+  ],
+  "palabra": [
+   "Querencia",
+   "es",
+   "Inclinación a volver al lugar donde uno se ha criado; sitio donde alguien se siente a salvo.",
+   "En los toros es el lugar al que vuelve el animal. En la vida, tu rincón favorito del sofá."
+  ],
+  "habito": [
+   "Lee en voz alta",
+   "Lee en voz alta la página más importante de lo que estés estudiando. Se recuerda mejor lo dicho que lo leído en silencio (el «efecto de producción»)."
+  ],
+  "pausa": [
+   "Lluvia sobre una cabaña",
+   "ASMR",
+   "Lluvia sobre un tejado de madera, sin voces. Para leer, estudiar o dormir.",
+   "rain on wooden cabin roof sounds no music"
+  ]
+ },
+ "extras": {
+  "video": [
+   [
+    "How to make stress your friend",
+    "Kelly McGonigal · TED",
+    "Bienestar",
+    "Una psicóloga de Stanford explica por qué cómo piensas el estrés cambia su efecto en tu cuerpo."
+   ],
+   [
+    "The happy secret to better work",
+    "Shawn Achor · TED",
+    "Productividad",
+    "Una charla divertidísima sobre por qué la felicidad viene antes del rendimiento, y no al revés."
+   ]
+  ],
+  "articulo": [
+   [
+    "The Age of the Essay",
+    "Paul Graham",
+    "Literatura · Escritura",
+    "Por qué el ensayo escolar no se parece al ensayo de verdad, que nace de intentar entender algo."
+   ],
+   [
+    "Why Procrastinators Procrastinate",
+    "Tim Urban · Wait But Why",
+    "Productividad",
+    "El origen del famoso mono de la gratificación instantánea, con dibujos y mucha verdad."
+   ]
+  ],
+  "reel": [
+   [
+    "Anne-Laure Le Cunff · Ness Labs",
+    "Instagram · LinkedIn",
+    "ness labs",
+    "Una neurocientífica sobre productividad y creatividad sin culpa ni rigidez.",
+    "https://www.tiktok.com/search?q=ness%20labs%20anne-laure%20le%20cunff"
+   ],
+   [
+    "Andreo Rowling",
+    "YouTube · TikTok",
+    "andreo rowling",
+    "Uno de los booktubers españoles más conocidos: fantasía, clásicos y muchas recomendaciones.",
+    "https://www.tiktok.com/search?q=andreo%20rowling%20libros"
+   ]
+  ],
+  "libro": [
+   [
+    "Las olas",
+    "Virginia Woolf",
+    1931,
+    "Literatura",
+    "Seis voces desde la infancia hasta la madurez, escritas como un poema en prosa. La Woolf más experimental."
+   ],
+   [
+    "El arte de la quietud",
+    "Pico Iyer",
+    2014,
+    "Meditación",
+    "El libro breve que amplía la charla TED de hoy: aventuras en ninguna parte."
+   ]
+  ],
+  "pelicula": [
+   [
+    "Billy Elliot",
+    "Stephen Daldry",
+    2000,
+    "Drama · Danza",
+    "Un niño de un pueblo minero descubre el ballet. Sobre el talento y el valor de seguirlo."
+   ],
+   [
+    "La vida secreta de Walter Mitty",
+    "Ben Stiller",
+    2013,
+    "Aventura",
+    "Un archivista soñador se lanza por fin a vivir. Paisajes de Islandia para enmarcar."
+   ]
+  ],
+  "programa": [
+   [
+    "Detectorists",
+    "Mackenzie Crook · BBC",
+    2014,
+    "Comedia",
+    "Dos amigos buscan tesoros con detector de metales en la campiña inglesa. Lenta, tierna y preciosa."
+   ],
+   [
+    "Imprescindibles",
+    "La 2",
+    2010,
+    "Documental",
+    "Documentales sobre grandes figuras de la cultura española, de Gloria Fuertes a Antonio Machado."
+   ]
+  ],
+  "cancion": [
+   [
+    "Gymnopédie n.º 1",
+    "Erik Satie",
+    1888,
+    "Piano lento y suspendido. La música de fondo perfecta para leer."
+   ],
+   [
+    "Take This Waltz",
+    "Leonard Cohen",
+    1986,
+    "Versión en inglés del «Pequeño vals vienés» de García Lorca. Literatura hecha canción."
+   ]
+  ],
+  "dato": [
+   [
+    "Las abejas melíferas indican dónde están las flores con una danza: el ángulo respecto a la vertical marca la dirección respecto al sol. Lo descubrió Karl von Frisch, Nobel en 1973.",
+    "Biología"
+   ],
+   [
+    "Se decía que una hoja de papel no se puede doblar por la mitad más de siete veces. En 2002 la estudiante Britney Gallivan la dobló doce veces con un papel larguísimo y una fórmula propia.",
+    "Matemáticas"
+   ]
+  ],
+  "concepto": [
+   [
+    "Práctica intercalada",
+    "Aprender",
+    "Mezclar tipos de problemas en una misma sesión, en vez de hacer veinte iguales seguidos, cuesta más pero se recuerda mejor. Como un partido frente a repetir el mismo tiro: obliga a decidir qué estrategia usar."
+   ],
+   [
+    "Ley de Hofstadter",
+    "Productividad",
+    "«Siempre lleva más tiempo del que esperas, incluso teniendo en cuenta la ley de Hofstadter.» Aparece en Gödel, Escher, Bach (1979) y resume por qué fallan casi todas las planificaciones."
+   ]
+  ],
+  "cita": [
+   [
+    "La lectura es a la mente lo que el ejercicio es al cuerpo.",
+    "Richard Steele",
+    "The Tatler, n.º 147 (1710). A menudo se atribuye a Joseph Addison, su compañero en la revista."
+   ],
+   [
+    "No es que tengamos poco tiempo, sino que perdemos mucho.",
+    "Séneca",
+    "Sobre la brevedad de la vida, capítulo I. Productividad dos mil años antes de que existiera la palabra."
+   ]
+  ],
+  "reto": [
+   [
+    "¿Qué número sigue? 1, 4, 9, 16, 25, …",
+    "36: son los cuadrados de 1, 2, 3, 4, 5 y 6."
+   ],
+   [
+    "En una carrera adelantas a quien va en segundo lugar. ¿En qué posición vas ahora?",
+    "En segundo lugar: ocupas su puesto. Para ir en cabeza tendrías que adelantar a quien va primero."
+   ]
+  ],
+  "pregunta": [
+   "¿Qué hábito pequeño te gustaría tener dentro de un año, y qué paso mínimo podrías dar hoy?",
+   "¿Sobre qué tema podrías leer durante horas sin cansarte?"
+  ],
+  "personaje": [
+   [
+    "Mary Shelley",
+    "1797–1851",
+    "Escritora",
+    "Escribió Frankenstein con 18 años, en un verano de tormentas junto al lago de Ginebra. Se considera la primera novela de ciencia ficción."
+   ],
+   [
+    "María Moliner",
+    "1900–1981",
+    "Bibliotecaria y lexicógrafa",
+    "Escribió sola, en su casa y durante unos quince años, el Diccionario de uso del español. La RAE nunca la admitió como académica."
+   ]
+  ],
+  "planta": [
+   [
+    "Jacaranda",
+    "Jacaranda mimosifolia",
+    "Llega de Sudamérica y a finales de primavera tiñe de violeta calles de Sevilla, Granada o Córdoba."
+   ],
+   [
+    "Helecho",
+    "Polypodiopsida",
+    "Los helechos existen desde hace unos 360 millones de años, antes que los dinosaurios. No tienen flores ni semillas: se reproducen por esporas."
+   ]
+  ],
+  "refran": [
+   [
+    "No hay mal que cien años dure.",
+    "Las desgracias acaban pasando.",
+    "This too shall pass."
+   ],
+   [
+    "En boca cerrada no entran moscas.",
+    "A veces es mejor callar.",
+    "Silence is golden."
+   ]
+  ],
+  "frase": [
+   [
+    "Pasar la noche en blanco",
+    "No dormir en toda la noche.",
+    "Se relaciona con la vela de armas: antes de ser armados caballeros, los aspirantes pasaban la noche en vela vestidos de blanco."
+   ],
+   [
+    "Írsele a alguien el santo al cielo",
+    "Olvidar lo que se iba a decir o hacer.",
+    "La explicación más citada habla de predicadores que perdían el hilo del sermón en mitad de la misa."
+   ]
+  ],
+  "palabra": [
+   [
+    "Ikigai",
+    "ja",
+    "Aquello que da sentido a tu vida y por lo que merece la pena levantarse.",
+    "Popularizada en Occidente como cruce de pasión, talento y utilidad, aunque en japonés es algo más cotidiano."
+   ],
+   [
+    "Fernweh",
+    "de",
+    "Nostalgia de lugares en los que nunca has estado.",
+    "Lo contrario de «Heimweh», la nostalgia del hogar."
+   ]
+  ],
+  "habito": [
+   [
+    "Libreta de preguntas",
+    "Apunta cada pregunta que se te ocurra hoy, por pequeña que sea. Al final del día, busca la respuesta a una."
+   ],
+   [
+    "Paseo sin auriculares",
+    "Diez minutos caminando sin estímulos. La mente divaga y suelen aparecer ideas: es la red neuronal por defecto trabajando."
+   ]
+  ],
+  "pausa": [
+   [
+    "Respiración 4-7-8",
+    "Meditación",
+    "Inspira por la nariz 4 segundos, retén 7 y espira por la boca 8. Tres ciclos, sin tensar los hombros.",
+    null
+   ],
+   [
+    "Librería antigua con lluvia",
+    "Aesthetic",
+    "Ambiente de librería de viejo con lluvia y crujir de madera. Para leer con calma.",
+    "old bookstore ambience rain"
+   ]
+  ]
+ }
 }

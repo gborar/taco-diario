@@ -29,7 +29,9 @@
   "Why should you read Don Quixote?",
   "Why should you read One Hundred Years of Solitude?",
   "Why should you read Kafka's The Metamorphosis?",
-  "The art of stillness"
+  "The art of stillness",
+  "How to make stress your friend",
+  "The happy secret to better work"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -57,7 +59,9 @@
   "Spaced Repetition for Efficient Learning",
   "The Marginalian",
   "The Imperfectionist",
-  "The Tail End"
+  "The Tail End",
+  "The Age of the Essay",
+  "Why Procrastinators Procrastinate"
  ],
  "reel": [
   "QuantumFracture",
@@ -83,7 +87,9 @@
   "BookTok en español",
   "Altas capacidades en adultos",
   "Abao in Tokyo",
-  "The School of Life"
+  "The School of Life",
+  "Anne-Laure Le Cunff · Ness Labs",
+  "Andreo Rowling"
  ],
  "libro": [
   "Sapiens",
@@ -123,7 +129,9 @@
   "Demasiado inteligente para ser feliz",
   "Ultralearning",
   "Make It Stick",
-  "Persuasión"
+  "Persuasión",
+  "Las olas",
+  "El arte de la quietud"
  ],
  "pelicula": [
   "La llegada",
@@ -172,7 +180,9 @@
   "Amadeus",
   "El último emperador",
   "Lincoln",
-  "Los chicos del coro"
+  "Los chicos del coro",
+  "Billy Elliot",
+  "La vida secreta de Walter Mitty"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -203,7 +213,9 @@
   "Carlos, rey emperador",
   "Roma",
   "Downton Abbey",
-  "The Repair Shop"
+  "The Repair Shop",
+  "Detectorists",
+  "Imprescindibles"
  ],
  "cancion": [
   "Mediterráneo",
@@ -228,7 +240,9 @@
   "A Day in the Life",
   "La flaca",
   "Harder, Better, Faster, Stronger",
-  "Vincent"
+  "Vincent",
+  "Gymnopédie n.º 1",
+  "Take This Waltz"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -261,7 +275,9 @@
   "La nutria marina duerme flotando boca arriba y a veces se agarra de la pata con otras para que la corriente no las separe.",
   "Un rayo calienta el aire que atraviesa a unos 30.000 °C, unas cinco veces la temperatura de la superficie del Sol.",
   "La miel bien cerrada casi no se estropea: es tan concentrada en azúcar y tan ácida que las bacterias no pueden crecer en ella.",
-  "El ajolote puede regenerar patas enteras, parte del corazón y hasta zonas del cerebro sin dejar cicatriz."
+  "El ajolote puede regenerar patas enteras, parte del corazón y hasta zonas del cerebro sin dejar cicatriz.",
+  "Las abejas melíferas indican dónde están las flores con una danza: el ángulo respecto a la vertical marca la dirección respecto al sol. Lo descubrió Karl von Frisch, Nobel en 1973.",
+  "Se decía que una hoja de papel no se puede doblar por la mitad más de siete veces. En 2002 la estudiante Britney Gallivan la dobló doce veces con un papel larguísimo y una fórmula propia."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -303,7 +319,9 @@
   "La pistola de Chéjov",
   "Teoría del iceberg",
   "Flujo de conciencia",
-  "Efecto de generación"
+  "Efecto de generación",
+  "Práctica intercalada",
+  "Ley de Hofstadter"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -328,7 +346,9 @@
   "Nada en la vida debe ser temido, solo comprendido.",
   "Que tu alimento sea tu medicina.",
   "El genio es un uno por ciento de inspiración y un noventa y nueve por ciento de transpiración.",
-  "Si tienes un jardín y una biblioteca, tienes todo lo que necesitas."
+  "Si tienes un jardín y una biblioteca, tienes todo lo que necesitas.",
+  "La lectura es a la mente lo que el ejercicio es al cuerpo.",
+  "No es que tengamos poco tiempo, sino que perdemos mucho."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -352,7 +372,9 @@
   "Un hombre empuja su coche hasta un hotel y anuncia que está arruinado. ¿Qué ha pasado?",
   "¿Qué número sigue? 2, 3, 5, 7, 11, 13, …",
   "Un ladrillo pesa 1 kilo más medio ladrillo. ¿Cuánto pesa un ladrillo entero?",
-  "Un reloj marca las 3:15. ¿Qué ángulo forman las dos agujas?"
+  "Un reloj marca las 3:15. ¿Qué ángulo forman las dos agujas?",
+  "¿Qué número sigue? 1, 4, 9, 16, 25, …",
+  "En una carrera adelantas a quien va en segundo lugar. ¿En qué posición vas ahora?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -377,7 +399,9 @@
   "¿Qué estabas haciendo la última vez que perdiste la noción del tiempo?",
   "¿Qué te gustaría aprender si nadie fuera a evaluarte nunca?",
   "¿Qué libro te cambió la forma de pensar, y en qué exactamente?",
-  "Si pudieras cenar con un personaje de un libro, ¿a quién elegirías y qué le preguntarías?"
+  "Si pudieras cenar con un personaje de un libro, ¿a quién elegirías y qué le preguntarías?",
+  "¿Qué hábito pequeño te gustaría tener dentro de un año, y qué paso mínimo podrías dar hoy?",
+  "¿Sobre qué tema podrías leer durante horas sin cansarte?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -402,7 +426,9 @@
   "Jane Goodall",
   "Concepción Arenal",
   "Paco de Lucía",
-  "Emilia Pardo Bazán"
+  "Emilia Pardo Bazán",
+  "Mary Shelley",
+  "María Moliner"
  ],
  "planta": [
   "Girasol",
@@ -427,7 +453,9 @@
   "Geranio",
   "Lavanda",
   "Dama de noche",
-  "Ginkgo"
+  "Ginkgo",
+  "Jacaranda",
+  "Helecho"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -461,7 +489,9 @@
   "En abril, aguas mil.",
   "Cría cuervos y te sacarán los ojos.",
   "Muerto el perro, se acabó la rabia.",
-  "Más vale maña que fuerza."
+  "Más vale maña que fuerza.",
+  "No hay mal que cien años dure.",
+  "En boca cerrada no entran moscas."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -487,7 +517,9 @@
   "Tirar la casa por la ventana",
   "Ponerse las botas",
   "Estar entre la espada y la pared",
-  "Tomar las de Villadiego"
+  "Tomar las de Villadiego",
+  "Pasar la noche en blanco",
+  "Írsele a alguien el santo al cielo"
  ],
  "palabra": [
   "Arrebol",
@@ -516,7 +548,9 @@
   "Hygge",
   "Hiraeth",
   "Wanderlust",
-  "Querencia"
+  "Querencia",
+  "Ikigai",
+  "Fernweh"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -544,7 +578,9 @@
   "Técnica Feynman en voz alta",
   "Monotarea",
   "20 páginas",
-  "Lee en voz alta"
+  "Lee en voz alta",
+  "Libreta de preguntas",
+  "Paseo sin auriculares"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -563,6 +599,8 @@
   "Bob Ross pinta un paisaje",
   "Cocina japonesa sin palabras",
   "Lluvia en Kioto",
-  "Lluvia sobre una cabaña"
+  "Lluvia sobre una cabaña",
+  "Respiración 4-7-8",
+  "Librería antigua con lluvia"
  ]
 }

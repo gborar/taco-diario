@@ -1,6 +1,6 @@
 # Tarea diaria: hoja nueva de Taco Diario
 
-Cada mañana se prepara la hoja del día con 19 piezas **que no hayan salido nunca**. Este archivo es la referencia que sigue la tarea programada.
+Cada mañana se prepara la hoja del día con 19 piezas **que no hayan salido nunca**, más 2 alternativas por categoría para el botón «Otra» (57 piezas en total). Este archivo es la referencia que sigue la tarea programada.
 
 ## Para quién es
 
@@ -26,8 +26,15 @@ Restricciones:
 Archivo `hojas/AAAA-MM-DD.json`:
 
 ```json
-{ "date": "AAAA-MM-DD", "items": { "video": [...], "articulo": [...], ... } }
+{
+  "date": "AAAA-MM-DD",
+  "items":  { "video": [...], "articulo": [...], ... },
+  "extras": { "video": [[...], [...]], "articulo": [[...], [...]], ... }
+}
 ```
+
+- `items`: la pieza principal de cada categoría.
+- `extras`: exactamente 2 alternativas por categoría, con el mismo formato. Son las que salen al pulsar «Otra». Tampoco pueden repetir nada del historial, ni entre sí, ni con `items`.
 
 Cada pieza es un array con estos campos, en este orden. Todos son textos salvo los años, que son números.
 
@@ -55,11 +62,11 @@ Cada pieza es un array con estos campos, en este orden. Todos son textos salvo l
 
 Ejemplo: `hojas/2026-10-18.json`.
 
-Antes de guardarla, comprueba que el JSON es válido y que están las 19 claves.
+Antes de guardarla, comprueba que el JSON es válido, que `items` tiene las 19 claves y que `extras` tiene 2 piezas en cada una.
 
 ## Pasos
 
 1. Escribe `hojas/<fecha>.json`.
-2. Añade a `historial.json` el primer campo de cada pieza nueva, en su categoría. Para `pregunta`, la pregunta entera.
+2. Añade a `historial.json` el primer campo de cada pieza nueva, tanto de `items` como de `extras`, en su categoría. Para `pregunta`, la pregunta entera.
 3. Guarda la misma hoja en la base de datos de la app de claude.ai con ArtifactData: action `set`, url `https://claude.ai/artifact/CZjewHcYAhL4BCUHejg6Xp`, collection `hojas`, doc_id = la fecha, data = `{"date": fecha, "json": <el contenido del archivo como texto>}`. Si ya existe, léelo con `get` y pasa su `version` como `if_version`.
 4. Haz commit de `hojas/<fecha>.json`, `historial.json` y, si toca, `noticias.json`, con el mensaje `Hoja del <fecha>`, y súbelo a `main`.

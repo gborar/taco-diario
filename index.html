@@ -139,6 +139,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .icon-btn:hover { background: var(--paper-2); }
 .icon-btn svg { width: 18px; height: 18px; }
 .icon-btn.on { color: var(--red); }
+.icon-btn.spent { opacity: .35; }
 .icon-btn.on svg path { fill: currentColor; }
 .card h3 { margin: 0; font-family: var(--f-body); font-weight: 600; font-size: 21px; line-height: 1.25; text-wrap: balance; }
 .card .meta { color: var(--muted); font-size: 14px; }
@@ -942,7 +943,7 @@ const isLeap = y => (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0;
 
 /* =================== ESTADO =================== */
 const LS = "taco-diario-v1";
-let state = { favs: {}, done: {}, visits: [], bumps: {} };
+let state = { favs: {}, done: {}, visits: [], bumps: {}, seen: {} };
 function lsRead() { try { return JSON.parse(localStorage.getItem(LS) || "null"); } catch { return null; } }
 function lsWrite() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch {} }
 let dbRef = null, saveTimer = null;
@@ -956,6 +957,11 @@ function mergeState(a, b) {
   const out = { favs: { ...(a.favs||{}), ...(b.favs||{}) }, done: { ...(a.done||{}) }, visits: [], bumps: { ...(a.bumps||{}), ...(b.bumps||{}) } };
   for (const [k, v] of Object.entries(b.done || {})) out.done[k] = [...new Set([...(out.done[k]||[]), ...v])];
   out.visits = [...new Set([...(a.visits||[]), ...(b.visits||[])])].sort();
+  out.seen = {};
+  for (const src of [a.seen || {}, b.seen || {}]) for (const [cat, m] of Object.entries(src)) {
+    const o = out.seen[cat] = out.seen[cat] || {};
+    for (const [i, day] of Object.entries(m)) if (!(i in o) || day < o[i]) o[i] = day;
+  }
   return out;
 }
 const local = lsRead(); if (local) state = mergeState(state, local);
@@ -963,9 +969,7 @@ const local = lsRead(); if (local) state = mergeState(state, local);
 // Hojas diarias generadas por la tarea de la mañana: piezas nuevas que no se repiten.
 // Cada pieza tiene la misma forma que las de las listas fijas; si falta o está mal, se usa la lista fija.
 const HOJAS = {};
-function hojaItem(cat, d) {
-  const items = HOJAS[keyOf(d)];
-  const it = items && items[cat];
+function validItem(cat, it) {
   const ref = CATS[cat].pool[0];
   if (it == null) return null;
   if (typeof ref === "string") return typeof it === "string" && it.trim() ? it : null;
@@ -976,14 +980,38 @@ function hojaItem(cat, d) {
   }
   return it;
 }
+// Piezas nuevas del día para una categoría: la principal y las alternativas para «Otra».
+function hojaItems(cat, d) {
+  const h = HOJAS[keyOf(d)];
+  if (!h || !h.items) return [];
+  return [h.items[cat], ...((h.extras || {})[cat] || [])].map(it => validItem(cat, it)).filter(Boolean);
+}
+// Sin hoja del día, las listas fijas: se salta lo que ya se mostró otro día en este dispositivo.
+function poolOrder(cat, d) {
+  const c = CATS[cat], n = c.pool.length, k = keyOf(d), seen = (state.seen || {})[cat] || {};
+  const order = [];
+  for (let j = 0; j < n; j++) {
+    const i = ((dayNumOf(d) + c.off + j) % n + n) % n;
+    if (!(i in seen) || seen[i] === k) order.push(i);
+  }
+  return order;
+}
+function choices(cat, d) {
+  const fresh = hojaItems(cat, d);
+  if (fresh.length) return fresh.map((item, n) => ({ i: "h" + keyOf(d) + (n ? "-" + n : ""), item }));
+  return poolOrder(cat, d).map(i => ({ i, item: CATS[cat].pool[i] }));
+}
 function pick(cat, d) {
-  const c = CATS[cat];
   const bump = (state.bumps[keyOf(d)] || {})[cat] || 0;
-  const fresh = bump === 0 && hojaItem(cat, d);
-  if (fresh) return { i: "h" + keyOf(d), item: fresh };
-  const n = c.pool.length;
-  const i = ((dayNumOf(d) + c.off + bump) % n + n) % n;
-  return { i, item: c.pool[i] };
+  const list = choices(cat, d);
+  if (!list.length) { const c = CATS[cat]; const i = ((dayNumOf(d) + c.off) % c.pool.length + c.pool.length) % c.pool.length; return { i, item: c.pool[i], last: true }; }
+  const n = Math.min(bump, list.length - 1);
+  return { ...list[n], last: n >= list.length - 1 };
+}
+function markSeen(cat, i, d) {
+  if (typeof i !== "number") return;
+  state.seen = state.seen || {}; const s = state.seen[cat] = state.seen[cat] || {};
+  if (!(i in s)) { s[i] = keyOf(d); save(); }
 }
 function streak() {
   const set = new Set(state.visits); let s = 0; const d = new Date(today);
@@ -1218,7 +1246,8 @@ function renderStats() {
 function favKey(cat, i) { return cat + ":" + i; }
 
 function renderCard(cat) {
-  const { i, item } = pick(cat, current);
+  const { i, item, last } = pick(cat, current);
+  markSeen(cat, i, current);
   const c = CATS[cat], dsc = describe(cat, item);
   const k = keyOf(current), fk = favKey(cat, i);
   const isDone = (state.done[k] || []).includes(cat);
@@ -1232,10 +1261,11 @@ function renderCard(cat) {
     h("span", { html: POSTER[cat] })));
   const head = h("div", { class: "card-h" },
     h("span", { class: "lab mono" }, c.label),
-    svgBtn("shuffle", "Otra sugerencia", () => {
+    svgBtn("shuffle", last ? "No hay más alternativas nuevas por hoy" : "Otra sugerencia", () => {
+      if (last) { toast("No hay más alternativas nuevas por hoy"); return; }
       state.bumps[k] = state.bumps[k] || {}; state.bumps[k][cat] = (state.bumps[k][cat] || 0) + 1;
       save(); card.replaceWith(renderCard(cat));
-    }),
+    }, last ? "spent" : ""),
     svgBtn("heart", isFav ? "Quitar de guardados" : "Guardar", () => {
       if (state.favs[fk]) delete state.favs[fk];
       else state.favs[fk] = { cat, title: dsc.title, sub: dsc.sub, link: dsc.link || null, at: k };
@@ -1583,7 +1613,7 @@ renderAll();
 
 (async () => {
   if (STANDALONE) {
-    hojaSource = k => fetch("hojas/" + k + ".json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(j => j && j.items || null);
+    hojaSource = k => fetch("hojas/" + k + ".json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(j => j && j.items ? j : null);
     loadHoja(current);
     fetch("noticias.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(list => {
       const latest = (Array.isArray(list) ? list : []).filter(n => n && n.date).sort((a, b) => b.date.localeCompare(a.date))[0];
@@ -1598,7 +1628,7 @@ renderAll();
   try {
     const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
     if (db) {
-      hojaSource = k => db.doc("hojas/" + k).get().then(sn => { if (!sn.exists) return null; const v = sn.data(); return typeof v.json === "string" ? JSON.parse(v.json).items : null; });
+      hojaSource = k => db.doc("hojas/" + k).get().then(sn => { if (!sn.exists) return null; const v = sn.data(); if (typeof v.json !== "string") return null; const j = JSON.parse(v.json); return j && j.items ? j : null; });
       loadHoja(current);
       db.collection("noticias").orderBy("date", "desc").limit(1).get().then(q => {
         if (!q.empty) { news = q.docs[0].data(); document.querySelector(".news")?.replaceWith(renderNews()); }
