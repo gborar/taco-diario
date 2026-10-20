@@ -31,7 +31,10 @@
   "Why should you read Kafka's The Metamorphosis?",
   "The art of stillness",
   "How to make stress your friend",
-  "The happy secret to better work"
+  "The happy secret to better work",
+  "Grit: the power of passion and perseverance",
+  "Your elusive creative genius",
+  "The power of introverts"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -61,7 +64,10 @@
   "The Imperfectionist",
   "The Tail End",
   "The Age of the Essay",
-  "Why Procrastinators Procrastinate"
+  "Why Procrastinators Procrastinate",
+  "Writes and Write-Nots",
+  "You and Your Research",
+  "Putting Ideas into Words"
  ],
  "reel": [
   "QuantumFracture",
@@ -89,7 +95,10 @@
   "Abao in Tokyo",
   "The School of Life",
   "Anne-Laure Le Cunff · Ness Labs",
-  "Andreo Rowling"
+  "Andreo Rowling",
+  "Matt D'Avella",
+  "Thomas Frank",
+  "Jay Shetty"
  ],
  "libro": [
   "Sapiens",
@@ -131,7 +140,10 @@
   "Make It Stick",
   "Persuasión",
   "Las olas",
-  "El arte de la quietud"
+  "El arte de la quietud",
+  "Orlando",
+  "Una habitación propia",
+  "El poder del ahora"
  ],
  "pelicula": [
   "La llegada",
@@ -182,7 +194,10 @@
   "Lincoln",
   "Los chicos del coro",
   "Billy Elliot",
-  "La vida secreta de Walter Mitty"
+  "La vida secreta de Walter Mitty",
+  "Cinema Paradiso",
+  "Hugo",
+  "Descubriendo Nunca Jamás"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -215,7 +230,10 @@
   "Downton Abbey",
   "The Repair Shop",
   "Detectorists",
-  "Imprescindibles"
+  "Imprescindibles",
+  "Merlí",
+  "The Good Place",
+  "Wolf Hall"
  ],
  "cancion": [
   "Mediterráneo",
@@ -252,7 +270,10 @@
   "Die With A Smile",
   "Espresso",
   "Bad Habit",
-  "Columbia"
+  "Columbia",
+  "Imagine",
+  "Tití me preguntó",
+  "Canon en re mayor"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -287,7 +308,10 @@
   "La miel bien cerrada casi no se estropea: es tan concentrada en azúcar y tan ácida que las bacterias no pueden crecer en ella.",
   "El ajolote puede regenerar patas enteras, parte del corazón y hasta zonas del cerebro sin dejar cicatriz.",
   "Las abejas melíferas indican dónde están las flores con una danza: el ángulo respecto a la vertical marca la dirección respecto al sol. Lo descubrió Karl von Frisch, Nobel en 1973.",
-  "Se decía que una hoja de papel no se puede doblar por la mitad más de siete veces. En 2002 la estudiante Britney Gallivan la dobló doce veces con un papel larguísimo y una fórmula propia."
+  "Se decía que una hoja de papel no se puede doblar por la mitad más de siete veces. En 2002 la estudiante Britney Gallivan la dobló doce veces con un papel larguísimo y una fórmula propia.",
+  "«Ordenador» lo propuso en 1955 el profesor de latín Jacques Perret, a petición de IBM Francia, para el francés «ordinateur». En el latín eclesiástico «ordinator» era quien pone orden.",
+  "Los koalas tienen huellas dactilares tan parecidas a las humanas que, vistas al microscopio, son casi indistinguibles. Es un caso de evolución convergente.",
+  "El Sol concentra aproximadamente el 99,86 % de toda la masa del Sistema Solar. Todo lo demás, planetas incluidos, es el 0,14 % restante."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -331,7 +355,10 @@
   "Flujo de conciencia",
   "Efecto de generación",
   "Práctica intercalada",
-  "Ley de Hofstadter"
+  "Ley de Hofstadter",
+  "Metacognición",
+  "Efecto Dunning-Kruger",
+  "Principio de Pareto"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -358,7 +385,10 @@
   "El genio es un uno por ciento de inspiración y un noventa y nueve por ciento de transpiración.",
   "Si tienes un jardín y una biblioteca, tienes todo lo que necesitas.",
   "La lectura es a la mente lo que el ejercicio es al cuerpo.",
-  "No es que tengamos poco tiempo, sino que perdemos mucho."
+  "No es que tengamos poco tiempo, sino que perdemos mucho.",
+  "Un lector vive mil vidas antes de morir. El que nunca lee vive solo una.",
+  "La vida es aquello que te va sucediendo mientras te empeñas en hacer otros planes.",
+  "Somos lo que hacemos repetidamente. La excelencia no es un acto, sino un hábito."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -384,7 +414,10 @@
   "Un ladrillo pesa 1 kilo más medio ladrillo. ¿Cuánto pesa un ladrillo entero?",
   "Un reloj marca las 3:15. ¿Qué ángulo forman las dos agujas?",
   "¿Qué número sigue? 1, 4, 9, 16, 25, …",
-  "En una carrera adelantas a quien va en segundo lugar. ¿En qué posición vas ahora?"
+  "En una carrera adelantas a quien va en segundo lugar. ¿En qué posición vas ahora?",
+  "Tengo ciudades pero no casas, montañas pero no árboles, agua pero no peces. ¿Qué soy?",
+  "Un granjero tiene 17 ovejas y todas menos 9 mueren. ¿Cuántas le quedan?",
+  "¿Cuántos cuadrados hay en total en un tablero de ajedrez de 8×8?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -411,7 +444,10 @@
   "¿Qué libro te cambió la forma de pensar, y en qué exactamente?",
   "Si pudieras cenar con un personaje de un libro, ¿a quién elegirías y qué le preguntarías?",
   "¿Qué hábito pequeño te gustaría tener dentro de un año, y qué paso mínimo podrías dar hoy?",
-  "¿Sobre qué tema podrías leer durante horas sin cansarte?"
+  "¿Sobre qué tema podrías leer durante horas sin cansarte?",
+  "¿Qué libro de tu infancia o adolescencia recuerdas con más cariño y qué sentías al leerlo?",
+  "¿Qué frase de un libro te gustaría tener a mano cuando un día se tuerce?",
+  "¿Qué te gustaría haber aprendido de otra forma, y cómo lo aprenderías hoy?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -438,7 +474,10 @@
   "Paco de Lucía",
   "Emilia Pardo Bazán",
   "Mary Shelley",
-  "María Moliner"
+  "María Moliner",
+  "Rosalía de Castro",
+  "Isaac Asimov",
+  "Temple Grandin"
  ],
  "planta": [
   "Girasol",
@@ -465,7 +504,10 @@
   "Dama de noche",
   "Ginkgo",
   "Jacaranda",
-  "Helecho"
+  "Helecho",
+  "Pasiflora",
+  "Aloe vera",
+  "Baobab"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -501,7 +543,10 @@
   "Muerto el perro, se acabó la rabia.",
   "Más vale maña que fuerza.",
   "No hay mal que cien años dure.",
-  "En boca cerrada no entran moscas."
+  "En boca cerrada no entran moscas.",
+  "Cuando una puerta se cierra, otra se abre.",
+  "Lo barato sale caro.",
+  "Dios aprieta, pero no ahoga."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -529,7 +574,10 @@
   "Estar entre la espada y la pared",
   "Tomar las de Villadiego",
   "Pasar la noche en blanco",
-  "Írsele a alguien el santo al cielo"
+  "Írsele a alguien el santo al cielo",
+  "Tener sangre azul",
+  "Pasar por el aro",
+  "Salir el tiro por la culata"
  ],
  "palabra": [
   "Arrebol",
@@ -560,7 +608,10 @@
   "Wanderlust",
   "Querencia",
   "Ikigai",
-  "Fernweh"
+  "Fernweh",
+  "Cafuné",
+  "Shinrin-yoku",
+  "Waldeinsamkeit"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -590,7 +641,10 @@
   "20 páginas",
   "Lee en voz alta",
   "Libreta de preguntas",
-  "Paseo sin auriculares"
+  "Paseo sin auriculares",
+  "Una pregunta antes de leer",
+  "Regla de los dos minutos",
+  "Mastica despacio"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -611,7 +665,10 @@
   "Lluvia en Kioto",
   "Lluvia sobre una cabaña",
   "Respiración 4-7-8",
-  "Librería antigua con lluvia"
+  "Librería antigua con lluvia",
+  "Escritorio de estudio al atardecer",
+  "Meditación guiada de 10 minutos",
+  "Carta a tu yo del futuro"
  ],
  "prensa": [
   "La Contra",
@@ -621,7 +678,10 @@
   "La Tercera",
   "La Lectura",
   "Materia",
-  "Ciencia"
+  "Ciencia",
+  "Han Kang, una premio Nobel que reflexiona sobre su escritura y la forma de cultivar su jardín",
+  "El Trineo de Viento parte de nuevo para cruzar la Antártida",
+  "Informe Planeta Vivo: queda aún lugar para la esperanza"
  ],
  "revista": [
   "Entrevistas largas",
@@ -631,6 +691,9 @@
   "Reseñas",
   "Artículos",
   "Crónicas",
-  "Ensayos y crítica"
+  "Ensayos y crítica",
+  "José Castillejo vuelve a casa",
+  "Federico Andahazi: «Dimos una vuelta completa y estamos viviendo una época medio victoriana»",
+  "En defensa de la memoria"
  ]
 }
