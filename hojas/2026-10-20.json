@@ -1,0 +1,398 @@
+{
+ "date": "2026-10-20",
+ "santo": "Santa Irene · San Andrés Calibita",
+ "items": {
+  "video": [
+   "How to gain control of your free time",
+   "Laura Vanderkam · TED",
+   "Productividad",
+   "Una experta en gestión del tiempo explica por qué «no tengo tiempo» suele significar «no es una prioridad», y cómo planificar la semana empezando por lo que de verdad importa."
+  ],
+  "articulo": [
+   "The Need to Read",
+   "Paul Graham · paulgraham.com",
+   "Literatura · Aprender",
+   "Un ensayo corto sobre por qué leer y escribir siguen siendo imprescindibles: escribir no es solo comunicar ideas, es la forma de tenerlas."
+  ],
+  "reel": [
+   "Jade Bowler · UnJadedJade",
+   "YouTube · TikTok",
+   "unjadedjade study",
+   "Vlogs de estudio con estética cuidada, métodos para aprender y la vida de una estudiante que convirtió sus apuntes en un canal.",
+   "https://www.tiktok.com/search?q=unjadedjade%20study"
+  ],
+  "prensa": [
+   "La Feria del Libro de Huelva celebra 50 años con diez días de actividades",
+   "Diario de Huelva",
+   "Literatura",
+   "La feria cumple medio siglo en la Plaza de las Monjas, del 16 al 25 de octubre. Por allí pasan Lola Pons con su ensayo sobre el silencio en la historia del español, Rodrigo Cortés y Ángeles González-Sinde.",
+   "https://www.diariodehuelva.es/cultura/feria-libro-huelva-celebra-50-anos-diez-dias-actividades/20261016134559341718.html"
+  ],
+  "revista": [
+   "Presente y pasado son lo mismo, aunque no lo parezcan",
+   "Bruce Swansey · Letras Libres",
+   "Literatura · Entrevista",
+   "Conversación con el novelista irlandés Sebastian Barry, ganador del Booker con «Prophet Song», sobre la escritura, la historia, Beckett y la inteligencia artificial.",
+   null
+  ],
+  "libro": [
+   "Momo",
+   "Michael Ende",
+   1973,
+   "Literatura · Tiempo",
+   "Una niña que sabe escuchar se enfrenta a los hombres grises, que roban el tiempo a la gente convenciéndola de ahorrarlo. Una fábula sobre la prisa que se lee igual de bien de adulto."
+  ],
+  "pelicula": [
+   "Las horas",
+   "Stephen Daldry",
+   2002,
+   "Drama · Literatura",
+   "Tres mujeres en tres épocas unidas por «La señora Dalloway»: Virginia Woolf escribiéndola, una lectora en los años cincuenta y una editora en Nueva York. Música de Philip Glass."
+  ],
+  "programa": [
+   "Headspace: guía para la meditación",
+   "Netflix",
+   2021,
+   "Docuserie · Meditación",
+   "Ocho episodios de unos 20 minutos, cada uno sobre un tema (estrés, sueño, dolor…), que terminan con una meditación guiada. Para empezar sin teoría de más."
+  ],
+  "cancion": [
+   "La vie en rose",
+   "Édith Piaf",
+   1947,
+   "Piaf escribió la letra y la grabó al acabar la guerra. Fíjate en cómo alarga las erres y en el acordeón que la envuelve."
+  ],
+  "dato": [
+   "Los tardígrados, animales de menos de un milímetro, sobreviven al vacío del espacio. En 2007 la misión FOTON-M3 los expuso fuera de la nave diez días y algunos volvieron vivos y se reprodujeron.",
+   "Ciencia"
+  ],
+  "concepto": [
+   "Carga cognitiva",
+   "Aprender",
+   "La memoria de trabajo solo maneja unos pocos elementos a la vez, como una mesa pequeña en la que no caben todos los papeles. Si una explicación obliga a sostener demasiadas cosas a la vez (un texto lejos de su gráfico, jerga sin definir), la mesa se desborda y no se aprende. Por eso conviene dividir lo difícil en pasos y estudiar ejemplos resueltos antes de resolver solo. La teoría la formuló John Sweller en 1988."
+  ],
+  "cita": [
+   "Leer es soñar de la mano de otro.",
+   "Fernando Pessoa",
+   "Del «Libro del desasosiego», que firmó con el semiheterónimo Bernardo Soares y se publicó póstumo en 1982."
+  ],
+  "reto": [
+   "Tienes 9 monedas iguales y una pesa un poco más que las otras. Con una balanza de dos platos, ¿cuántas pesadas necesitas como mínimo para encontrarla?",
+   "Dos. Pon 3 en cada plato: si se equilibran, la pesada está entre las 3 de fuera; si no, en el plato que baja. De esas 3, pesa 1 contra 1: si se equilibran, es la que queda."
+  ],
+  "pregunta": "¿En qué lugar te concentras mejor y qué tiene de especial?",
+  "personaje": [
+   "Teresa de Jesús",
+   "1515–1582",
+   "Escritora y mística",
+   "Reformó el Carmelo y fundó diecisiete conventos. En «Las moradas» describe la vida interior como un castillo de muchas habitaciones, y su prosa, escrita «como quien habla», es un clásico de la lengua."
+  ],
+  "planta": [
+   "Madroño",
+   "Arbutus unedo",
+   "Florece en otoño mientras maduran los frutos del año anterior, así que tiene flores y madroños rojos a la vez. «Unedo» viene, según Plinio, de «unum edo», «como solo uno»: sus frutos maduros fermentan un poco."
+  ],
+  "refran": [
+   "Mucho ruido y pocas nueces.",
+   "Se dice de lo que aparenta mucha importancia y luego tiene poca sustancia.",
+   "Much ado about nothing."
+  ],
+  "frase": [
+   "Leer entre líneas",
+   "Entender lo que alguien da a entender sin decirlo de forma explícita.",
+   "Se suele relacionar con los mensajes secretos que se escribían entre los renglones de una carta, a veces con tinta invisible, para que solo el destinatario los descubriera."
+  ],
+  "palabra": [
+   "Wabi-sabi",
+   "ja",
+   "La belleza de lo imperfecto, lo sencillo y lo que envejece: un cuenco irregular, madera gastada, musgo en la piedra.",
+   "Está ligada a la ceremonia del té y al budismo zen. Inspira el kintsugi, que repara la cerámica rota con oro en lugar de esconder las grietas."
+  ],
+  "habito": [
+   "Cierra el día con la mesa despejada",
+   "Antes de terminar, recoge el escritorio y apunta la primera tarea de mañana. Cierras los pendientes en la cabeza (efecto Zeigarnik) y al día siguiente empiezas sin decidir nada."
+  ],
+  "pausa": [
+   "ASMR de escritura con pluma",
+   "ASMR",
+   "El sonido de una pluma estilográfica sobre papel grueso, sin voces. Para estudiar, escribir o desconectar diez minutos.",
+   "fountain pen writing asmr no talking"
+  ]
+ },
+ "extras": {
+  "video": [
+   [
+    "The power of vulnerability",
+    "Brené Brown · TED",
+    "Bienestar",
+    "Una investigadora de la vergüenza cuenta cómo descubrió que la vulnerabilidad es el origen de la conexión con los demás. Una de las charlas TED más vistas."
+   ],
+   [
+    "The puzzle of motivation",
+    "Dan Pink · TED",
+    "Productividad",
+    "Por qué las recompensas funcionan en tareas mecánicas y fallan en las creativas, y qué motiva de verdad: autonomía, maestría y propósito."
+   ]
+  ],
+  "articulo": [
+   [
+    "How You Know",
+    "Paul Graham · paulgraham.com",
+    "Literatura · Aprender",
+    "¿Sirve de algo leer libros que luego olvidas? Graham defiende que sí: lo leído cambia el modelo con el que miras el mundo aunque no recuerdes el texto."
+   ],
+   [
+    "The Cook and the Chef: Musk's Secret Sauce",
+    "Tim Urban · Wait But Why",
+    "Pensamiento",
+    "Un largo ensayo ilustrado sobre razonar desde los primeros principios, como un chef, en lugar de seguir recetas, como un cocinero."
+   ]
+  ],
+  "reel": [
+   [
+    "Jack Edwards",
+    "YouTube · TikTok",
+    "jack edwards books",
+    "Reseñas de libros, retos de lectura y recomendaciones con humor británico, desde clásicos a novedades.",
+    "https://www.tiktok.com/search?q=jack%20edwards%20books"
+   ],
+   [
+    "Tingting ASMR",
+    "YouTube · TikTok",
+    "tingting asmr",
+    "ASMR delicado inspirado en la cultura tradicional china: pinceles, peinados antiguos y susurros lentos.",
+    "https://www.tiktok.com/search?q=tingting%20asmr"
+   ]
+  ],
+  "prensa": [
+   [
+    "Nace «Infodoñana»: el canal periodístico que une ciencia, etnografía y cine para defender el mayor humedal de Europa",
+    "Huelva Hoy",
+    "Ciencia · Naturaleza",
+    "Un nuevo portal de Ecoperiodismo contará Doñana con rigor científico y lenguaje de documental: el acuífero, las marismas, las aves migratorias y las especies amenazadas.",
+    "https://www.huelvahoy.com/provincia/nace-infodonana-canal-periodistico-que-une-ciencia-etnografia-cine-defender-mayor-humedal-europa/20261016194953404357.html"
+   ],
+   [
+    "Unas jornadas reflexionan sobre la relación entre literatura, memoria, género, disidencia y derechos humanos",
+    "Teleprensa",
+    "Literatura",
+    "Unas jornadas en Málaga sobre cómo la literatura guarda la memoria de quienes quedaron fuera del relato oficial.",
+    "https://www.teleprensa.com/andalucia/malaga/jornadas-reflexionan-relacion-entre-literatura-memoria-genero-disidencia-derechos-humanos/202610171057292534562.html"
+   ]
+  ],
+  "revista": [
+   [
+    "Las buenas noticias de la semana, según National Geographic: del rescate de un murciélago pelirrojo a la reaparición del 'fantasma de los Andes'",
+    "National Geographic España",
+    "Naturaleza",
+    "Un resumen optimista: el wētāpunga de Nueva Zelanda deja de estar en peligro, un murciélago rescatado en una playa de Maine y el gato andino grabado en Mendoza.",
+    "https://www.nationalgeographic.com.es/ciencia/buenas-noticias-semana-segun-national-geographic-rescate-murcielago-pelirrojo-a-reaparicion-fantasma-andes_29617"
+   ],
+   [
+    "El reactor nuclear que nadie construyó",
+    "María Irastorza · Jot Down",
+    "Ciencia · Historia",
+    "La historia de un proyecto de reactor que se quedó en el papel y lo que dice sobre cómo se decide qué tecnología llega a existir.",
+    null
+   ]
+  ],
+  "libro": [
+   [
+    "Cartas a un joven poeta",
+    "Rainer Maria Rilke",
+    1929,
+    "Literatura",
+    "Diez cartas a un aspirante a escritor sobre la soledad, la paciencia y «vivir las preguntas». Se lee en una tarde y se relee toda la vida."
+   ],
+   [
+    "Siddhartha",
+    "Hermann Hesse",
+    1922,
+    "Meditación · Novela",
+    "Un joven en tiempos de Buda busca la iluminación por su cuenta y la encuentra escuchando un río. Breve, serena y muy citada."
+   ]
+  ],
+  "pelicula": [
+   [
+    "La joven de la perla",
+    "Peter Webber",
+    2003,
+    "Drama histórico · Arte",
+    "Una criada en casa de Vermeer y el cuadro que nace entre ellos. Cada plano parece un lienzo holandés del siglo XVII."
+   ],
+   [
+    "Memorias de África",
+    "Sydney Pollack",
+    1985,
+    "Drama histórico",
+    "La vida de la escritora Karen Blixen en su granja de Kenia. Paisajes enormes, la música de John Barry y siete Óscar."
+   ]
+  ],
+  "programa": [
+   [
+    "Dickinson",
+    "Apple TV+",
+    2019,
+    "Serie · Literatura",
+    "La joven Emily Dickinson contada con humor y música actual, sin perder sus poemas. Cada capítulo toma el título de uno."
+   ],
+   [
+    "Call the Midwife",
+    "BBC",
+    2012,
+    "Serie histórica · Medicina",
+    "Comadronas en el East End de Londres en los años cincuenta. Medicina, comunidad y mucha ternura, basada en las memorias de Jennifer Worth."
+   ]
+  ],
+  "cancion": [
+   [
+    "Birds of a Feather",
+    "Billie Eilish",
+    2024,
+    "Una canción de amor luminosa y tranquila. Escucha cómo la voz susurrada se abre en el estribillo."
+   ],
+   [
+    "Águas de março",
+    "Elis Regina y Tom Jobim",
+    1974,
+    "Una lista de imágenes («es palo, es piedra…») que va cayendo como la lluvia de marzo. Escucha cómo se ríen al final."
+   ]
+  ],
+  "dato": [
+   [
+    "Entre la primera parte del Quijote (1605) y la segunda (1615) apareció en 1614 un Quijote apócrifo firmado por Alonso Fernández de Avellaneda. Cervantes se burla de él en su segunda parte.",
+    "Literatura"
+   ],
+   [
+    "Las uñas de las manos crecen unos 3,5 milímetros al mes, más del doble de rápido que las de los pies.",
+    "Cuerpo humano"
+   ]
+  ],
+  "concepto": [
+   [
+    "Efecto túnel",
+    "Física cuántica",
+    "Una partícula puede atravesar una barrera que, según la física clásica, no tiene energía para superar. Es como si una pelota lanzada sin fuerza contra un muro apareciera a veces al otro lado. Ocurre porque la partícula se describe con una onda que no se anula de golpe en la barrera. Gracias a él funcionan los microscopios de efecto túnel y las memorias flash."
+   ],
+   [
+    "Prescripción",
+    "Derecho",
+    "Es la pérdida de un derecho o de la posibilidad de perseguir un delito por el paso del tiempo. Funciona como la fecha de caducidad de un yogur: pasado el plazo, ya no se puede reclamar. Sirve para dar seguridad jurídica, porque con los años las pruebas se pierden. Por ejemplo, en España muchas deudas entre particulares prescriben a los cinco años si no se reclaman."
+   ]
+  ],
+  "cita": [
+   [
+    "La atención es la forma más rara y pura de generosidad.",
+    "Simone Weil",
+    "De una carta al poeta Joë Bousquet de 1942."
+   ],
+   [
+    "Dime y lo olvido, enséñame y lo recuerdo, involúcrame y lo aprendo.",
+    "Atribuida a Benjamin Franklin",
+    "La atribución es dudosa: no aparece en sus escritos y se parece a un texto del confuciano Xunzi."
+   ]
+  ],
+  "reto": [
+   [
+    "Cuanto más grande es, menos se ve. ¿Qué es?",
+    "La oscuridad: cuanta más hay, menos puedes ver."
+   ],
+   [
+    "Un tren eléctrico va hacia el norte y el viento sopla del este. ¿Hacia dónde va el humo?",
+    "Hacia ningún sitio: un tren eléctrico no echa humo."
+   ]
+  ],
+  "pregunta": [
+   "¿Qué sonido te calma casi al instante?",
+   "¿Qué te gustaría que alguien te explicara desde cero, sin prisas?"
+  ],
+  "personaje": [
+   [
+    "Gabriela Mistral",
+    "1889–1957",
+    "Poeta y maestra",
+    "Primera escritora latinoamericana con el Nobel de Literatura (1945). Fue maestra rural y colaboró en la reforma educativa de México."
+   ],
+   [
+    "Nikola Tesla",
+    "1856–1943",
+    "Inventor e ingeniero",
+    "Desarrolló el motor de inducción y los sistemas de corriente alterna que usamos hoy. Decía que visualizaba sus máquinas completas antes de construirlas."
+   ]
+  ],
+  "planta": [
+   [
+    "Azafrán",
+    "Crocus sativus",
+    "Florece en octubre y noviembre. Cada flor da solo tres estigmas, así que hacen falta unas 150 flores para un gramo de azafrán seco: por eso es la especia más cara."
+   ],
+   [
+    "Castaño",
+    "Castanea sativa",
+    "Sus castañas maduran en octubre dentro de un erizo de púas. Hay castaños de más de mil años, como el de los Cien Caballos, en Sicilia."
+   ]
+  ],
+  "refran": [
+   [
+    "Las apariencias engañan.",
+    "Lo que algo parece por fuera no siempre coincide con lo que es.",
+    "Don't judge a book by its cover."
+   ],
+   [
+    "Quien no arriesga, no gana.",
+    "Para conseguir algo valioso hay que asumir algún riesgo.",
+    "Nothing ventured, nothing gained."
+   ]
+  ],
+  "frase": [
+   [
+    "Tener mano izquierda",
+    "Saber tratar con tacto los asuntos o a las personas difíciles.",
+    "Se suele atribuir a la tauromaquia: el torero maneja la muleta con la izquierda en los pases más delicados y de mayor dominio."
+   ],
+   [
+    "Dar en el clavo",
+    "Acertar justo en lo importante.",
+    "Las dianas antiguas tenían un clavo en el centro: acertar en él era el mejor tiro posible."
+   ]
+  ],
+  "palabra": [
+   [
+    "Sehnsucht",
+    "de",
+    "Un anhelo intenso y algo melancólico por algo lejano o que quizá no existe.",
+    "Muy presente en el Romanticismo alemán. C. S. Lewis la usó para describir su búsqueda de la alegría."
+   ],
+   [
+    "Cwtch",
+    "cy",
+    "Un abrazo cálido y protector, y también un rincón acogedor para guardarse.",
+    "Los galeses dicen que un «cwtch» es más que un abrazo: es sentirse a salvo."
+   ]
+  ],
+  "habito": [
+   [
+    "Tres cosas que aprendiste hoy",
+    "Antes de dormir, anota tres cosas nuevas que hayas aprendido. Recuperarlas de memoria las afianza y te acostumbras a fijarte en lo que aprendes cada día."
+   ],
+   [
+    "Mueve el cuello cada hora",
+    "Gira la cabeza despacio a un lado y al otro y acerca la oreja al hombro, sin forzar y con las manos apoyadas en los muslos. Alivia la tensión de estar mucho rato ante la pantalla."
+   ]
+  ],
+  "pausa": [
+   [
+    "Chimenea en una cabaña nevada",
+    "Aesthetic",
+    "Fuego crepitando, ventana con nieve y luz cálida. Para leer o trabajar con calma en una tarde de otoño.",
+    "cozy cabin fireplace snow ambience"
+   ],
+   [
+    "Respiración alterna",
+    "Meditación",
+    "Tapa una fosa nasal con el dedo, inspira por la otra, cambia y espira. Repite cinco minutos con los hombros relajados y el codo apoyado si lo necesitas.",
+    "nadi shodhana respiración alterna guiada"
+   ]
+  ]
+ }
+}
