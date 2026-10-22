@@ -1,0 +1,398 @@
+{
+ "date": "2026-10-22",
+ "santo": "San Juan Pablo II · Santas Nunilón y Alodia",
+ "items": {
+  "video": [
+   "The power of time off",
+   "Stefan Sagmeister · TED",
+   "Productividad · Creatividad",
+   "Un diseñador cierra su estudio un año entero cada siete para recargarse y experimentar. Cuenta por qué esos años sabáticos alimentan todo su trabajo posterior."
+  ],
+  "articulo": [
+   "The Cult of Done Manifesto",
+   "Bre Pettis y Kio Stark · Medium",
+   "Productividad",
+   "Trece reglas breves contra el perfeccionismo, como «fingir que sabes lo que haces es casi lo mismo que saberlo». Se lee en dos minutos y se recuerda mucho tiempo."
+  ],
+  "reel": [
+   "Lofi Girl",
+   "YouTube · TikTok",
+   "lofi girl study",
+   "La chica que estudia junto a su ventana mientras suena música lo-fi sin fin. La retransmisión en directo para concentrarse más famosa de internet.",
+   "https://www.tiktok.com/search?q=lofi%20girl%20study"
+  ],
+  "prensa": [
+   "La UHU reivindica el legado de Zenobia Camprubí y las mujeres del Lyceum Club Femenino",
+   "Huelva Hoy",
+   "Literatura · Historia",
+   "Crónica de las jornadas de la Universidad de Huelva por el centenario del Lyceum Club Femenino, que fundaron en 1926 Zenobia Camprubí, María de Maeztu y otras pioneras de la Edad de Plata.",
+   "https://www.huelvahoy.com/cultura/uhu-reivindica-legado-zenobia-camprubi-mujeres-lyceum-club-femenino/20261021181146404814.html"
+  ],
+  "revista": [
+   "Pintura, literatura y conversación: sobre Vuit de Frederic Amat",
+   "Letras Libres",
+   "Arte · Literatura",
+   "Un texto sobre «Vuit», del pintor Frederic Amat, y el cruce entre pintura, literatura y conversación. Para quien disfruta de los diálogos entre imagen y palabra.",
+   "https://letraslibres.com/arte/pintura-literatura-y-conversacion-sobre-vuit-de-frederic-amat/16/10/2026"
+  ],
+  "libro": [
+   "La elegancia del erizo",
+   "Muriel Barbery",
+   2006,
+   "Literatura · Altas capacidades",
+   "Una portera culta que esconde que lee a Tolstói y una niña superdotada que planea suicidarse a los trece años se encuentran en un edificio burgués de París. Ternura, humor y filosofía."
+  ],
+  "pelicula": [
+   "Coco",
+   "Lee Unkrich",
+   2017,
+   "Animación · Familia",
+   "Un niño mexicano que sueña con ser músico viaja a la Tierra de los Muertos en pleno Día de Muertos. Sobre la memoria familiar; ideal para estas fechas."
+  ],
+  "programa": [
+   "Mozart in the Jungle",
+   "Amazon Prime Video",
+   2014,
+   "Serie · Música",
+   "Una oboísta joven intenta abrirse paso en la Filarmónica de Nueva York, dirigida por un maestro excéntrico interpretado por Gael García Bernal. Comedia ligera y mucha música clásica."
+  ],
+  "cancion": [
+   "Yesterday",
+   "The Beatles",
+   1965,
+   "Paul McCartney la soñó y la grabó solo con una guitarra y un cuarteto de cuerda. Fíjate en cómo los violines entran en la segunda estrofa."
+  ],
+  "dato": [
+   "Las mariposas monarca recorren hasta unos 4.000 kilómetros cada otoño desde Canadá y Estados Unidos hasta los bosques de oyamel de México. Ninguna hace el viaje dos veces: la vuelta la completan sus descendientes en varias generaciones.",
+   "Naturaleza"
+  ],
+  "concepto": [
+   "Modo enfocado y modo difuso",
+   "Aprender",
+   "El cerebro alterna dos formas de pensar: el modo enfocado, concentrado en un problema concreto, y el modo difuso, relajado, que conecta ideas lejanas. Es como una linterna de haz estrecho frente a una lámpara que ilumina toda la habitación. Por eso a veces la solución llega en la ducha o paseando, después de haberte atascado. Barbara Oakley lo popularizó en su curso «Learning How to Learn» y recomienda alternar trabajo concentrado con pausas."
+  ],
+  "cita": [
+   "Los libros son espejos: solo se ve en ellos lo que uno ya lleva dentro.",
+   "Carlos Ruiz Zafón",
+   "De «La sombra del viento» (2001), la novela del Cementerio de los Libros Olvidados."
+  ],
+  "reto": [
+   "Si un huevo tarda 4 minutos en cocerse, ¿cuánto tardan 3 huevos cocidos a la vez en la misma olla?",
+   "Cuatro minutos: se cuecen al mismo tiempo, no uno detrás de otro."
+  ],
+  "pregunta": "¿Qué rincón de tu casa convertirías en tu lugar de lectura y qué pondrías en él?",
+  "personaje": [
+   "Zenobia Camprubí",
+   "1887–1956",
+   "Escritora y traductora",
+   "Tradujo al español a Rabindranath Tagore junto a Juan Ramón Jiménez y cofundó en 1926 el Lyceum Club Femenino de Madrid. Fue también empresaria y defensora de la educación de las mujeres."
+  ],
+  "planta": [
+   "Crisantemo",
+   "Chrysanthemum morifolium",
+   "Florece en otoño, cuando los días se acortan. En España se asocia a Todos los Santos; en Japón es el emblema de la familia imperial, el «Trono del Crisantemo»."
+  ],
+  "refran": [
+   "Cada loco con su tema.",
+   "Cada persona tiene sus manías o asuntos favoritos, y hay que respetarlos.",
+   "To each their own."
+  ],
+  "frase": [
+   "Quedarse en el tintero",
+   "Olvidar decir o hacer algo, dejarlo sin tratar.",
+   "Viene de cuando se escribía con pluma y tintero: lo que quedaba en él era lo que nunca llegó al papel."
+  ],
+  "palabra": [
+   "Duende",
+   "es",
+   "Encanto misterioso e inefable que transmite un artista, sobre todo en el flamenco.",
+   "Lorca lo explicó en la conferencia «Juego y teoría del duende» (1933): no es inspiración ni técnica, sino algo que «sube por dentro desde la planta de los pies»."
+  ],
+  "habito": [
+   "Revisión semanal de 15 minutos",
+   "Un día fijo, repasa la semana: qué terminaste, qué quedó pendiente y cuáles son las tres prioridades de la siguiente. Vacía la cabeza de cabos sueltos y evita que lo urgente tape lo importante."
+  ],
+  "pausa": [
+   "ASMR de encuadernación de libros",
+   "ASMR",
+   "Papel que se dobla, hilo que se cose y cola que se extiende, sin voces. Ver nacer un libro artesanal relaja y engancha a partes iguales.",
+   "bookbinding asmr no talking"
+  ]
+ },
+ "extras": {
+  "video": [
+   [
+    "How to practice effectively...for just about anything",
+    "Annie Bosler y Don Greene · TED-Ed",
+    "Aprender",
+    "Una animación de cinco minutos sobre la práctica deliberada: por qué importa más la calidad que las horas y cómo practicar despacio y sin distracciones."
+   ],
+   [
+    "Want to be happier? Stay in the moment",
+    "Matt Killingsworth · TED",
+    "Bienestar · Meditación",
+    "Con datos de miles de personas a través de una app, muestra que la mente divaga casi la mitad del tiempo y que solemos ser menos felices cuando lo hace."
+   ]
+  ],
+  "articulo": [
+   [
+    "Solitude and Leadership",
+    "William Deresiewicz · The American Scholar",
+    "Pensamiento · Lectura",
+    "Una conferencia a cadetes de West Point sobre por qué pensar por uno mismo exige soledad, concentración y leer libros despacio."
+   ],
+   [
+    "Mental Models: The Best Way to Make Intelligent Decisions",
+    "Farnam Street",
+    "Pensamiento",
+    "Una guía de los modelos mentales básicos de varias disciplinas, de la inversión a la física, para pensar mejor desde los primeros principios."
+   ]
+  ],
+  "reel": [
+   [
+    "Doctor Mike",
+    "YouTube · Instagram · TikTok",
+    "doctor mike",
+    "Un médico de familia que desmonta mitos de salud y analiza escenas médicas de series con rigor y buen humor.",
+    "https://www.tiktok.com/search?q=doctor%20mike"
+   ],
+   [
+    "Elizabeth Filips",
+    "YouTube · TikTok",
+    "elizabeth filips",
+    "Reflexiones sobre aprender, leer y vivir con intención, con estética cuidada y ritmo pausado.",
+    "https://www.tiktok.com/search?q=elizabeth%20filips"
+   ]
+  ],
+  "prensa": [
+   [
+    "La UHU reivindica la amistad entre mujeres a través de la literatura",
+    "Diario de Huelva",
+    "Literatura",
+    "Una lectura pública en el Día de las Escritoras, dedicada al Lyceum y a autoras como Concha Méndez, Concha Espina y Helena Fortún.",
+    "https://www.diariodehuelva.es/area-metropolitana/uhu-reivindica-amistad-entre-mujeres-traves-literatura/20261020120235341786.html"
+   ],
+   [
+    "El Ratoncito Pérez vuelve a la Casa de la Ciencia en Sevilla para recoger dientes de leche destinados a la investigación",
+    "elDiario.es Andalucía",
+    "Ciencia",
+    "Una campaña de ciencia ciudadana en Sevilla: los niños donan sus dientes de leche para la investigación y aprenden de paso cómo trabaja la ciencia.",
+    "https://www.eldiario.es/andalucia/ratoncito-perez-vuelve-casa-ciencia-sevilla-recoger-dientes-leche-destinados-investigacion_1_13596275.html"
+   ]
+  ],
+  "revista": [
+   [
+    "Lo que vio el poeta: la España de Rubén Darío",
+    "Andrea Calamari · Jot Down",
+    "Literatura · Historia",
+    "Cómo vio el poeta nicaragüense la España de principios del siglo XX, que conoció como corresponsal.",
+    null
+   ],
+   [
+    "Años de adoctrinamiento",
+    "Francisco J. Tapiador · Jot Down",
+    "Educación",
+    "Un ensayo de Francisco J. Tapiador sobre el adoctrinamiento en la escuela y cómo influye en la forma de pensar.",
+    "https://www.jotdown.es/2026/10/anos-de-adoctrinamiento/"
+   ]
+  ],
+  "libro": [
+   [
+    "Las ciudades invisibles",
+    "Italo Calvino",
+    1972,
+    "Literatura",
+    "Marco Polo describe al Kublai Kan 55 ciudades imaginarias, cada una en una o dos páginas. Un libro para abrir al azar y soñar."
+   ],
+   [
+    "Cartas a Theo",
+    "Vincent van Gogh",
+    1914,
+    "Arte · Cartas",
+    "Las cartas del pintor a su hermano, publicadas por su cuñada Johanna. Cuenta cómo pintaba, cómo veía la luz y cómo resistía."
+   ]
+  ],
+  "pelicula": [
+   [
+    "Belfast",
+    "Kenneth Branagh",
+    2021,
+    "Drama histórico",
+    "La infancia del director en Belfast en 1969, en blanco y negro y con canciones de Van Morrison. Tierna y con mucho humor familiar."
+   ],
+   [
+    "Sentido y sensibilidad",
+    "Ang Lee",
+    1995,
+    "Drama de época · Literatura",
+    "Las hermanas Dashwood según Jane Austen, con guion de Emma Thompson, que ganó el Óscar. Elegante y emocionante."
+   ]
+  ],
+  "programa": [
+   [
+    "The Marvelous Mrs. Maisel",
+    "Amazon Prime Video",
+    2017,
+    "Serie · Comedia de época",
+    "Un ama de casa de Nueva York en 1958 descubre que tiene talento para la comedia. Vestuario y decorados de pura estética de época."
+   ],
+   [
+    "Our Great National Parks",
+    "Netflix",
+    2022,
+    "Documental · Naturaleza",
+    "Barack Obama narra un recorrido por parques nacionales de todo el mundo, de Kenia a Chile."
+   ]
+  ],
+  "cancion": [
+   [
+    "Too Sweet",
+    "Hozier",
+    2024,
+    "Blues con voz grave y un bajo que no se para. Escucha cómo juega con la ironía de la letra."
+   ],
+   [
+    "La bachata",
+    "Manuel Turizo",
+    2022,
+    "Una bachata pop sobre un desamor. Fíjate en el requinto de guitarra que abre la canción."
+   ]
+  ],
+  "dato": [
+   [
+    "La Biblioteca del Congreso de Estados Unidos es la mayor del mundo: guarda más de 170 millones de objetos, entre libros, mapas, grabaciones y manuscritos.",
+    "Libros"
+   ],
+   [
+    "Los delfines duermen con medio cerebro cada vez: mientras un hemisferio descansa, el otro sigue alerta para respirar y vigilar.",
+    "Naturaleza"
+   ]
+  ],
+  "concepto": [
+   [
+    "Principio de exclusión de Pauli",
+    "Física cuántica",
+    "Dos electrones de un mismo átomo no pueden tener a la vez todos sus números cuánticos iguales. Es como un teatro en el que cada butaca solo admite una persona. Por eso los electrones van llenando capas sucesivas, y de ahí sale la tabla periódica y la química entera. Lo formuló Wolfgang Pauli en 1925."
+   ],
+   [
+    "Carga de la prueba",
+    "Derecho",
+    "Es la regla que decide quién tiene que demostrar un hecho en un juicio y quién pierde si no se demuestra. Funciona como el turno de saque: quien reclama algo debe probarlo. En el proceso penal la carga recae en la acusación, por la presunción de inocencia. En España la regula el artículo 217 de la Ley de Enjuiciamiento Civil."
+   ]
+  ],
+  "cita": [
+   [
+    "Todo lo que somos es el resultado de lo que hemos pensado.",
+    "Dhammapada",
+    "Primer verso de esta colección de enseñanzas atribuidas a Buda, escrita en pali hacia el siglo III a. C."
+   ],
+   [
+    "Educar la mente sin educar el corazón no es educación en absoluto.",
+    "Atribuida a Aristóteles",
+    "La atribución es dudosa: no aparece en sus obras, aunque recoge su idea de que la educación debe formar el carácter."
+   ]
+  ],
+  "reto": [
+   [
+    "¿Qué número sigue? 1, 1, 2, 3, 5, 8, …",
+    "13. Cada número es la suma de los dos anteriores: es la sucesión de Fibonacci."
+   ],
+   [
+    "Una hija tiene tantos hermanos como hermanas, y cada hijo tiene el doble de hermanas que de hermanos. ¿Cuántos hijos e hijas hay?",
+    "Cuatro chicas y tres chicos. Cada chica tiene tres hermanas y tres hermanos; cada chico, cuatro hermanas y dos hermanos."
+   ]
+  ],
+  "pregunta": [
+   "¿Qué persona te enseñó a amar algo que hoy te apasiona?",
+   "¿Qué silencio echas de menos en tu día?"
+  ],
+  "personaje": [
+   [
+    "María Zambrano",
+    "1904–1991",
+    "Filósofa",
+    "Discípula de Ortega, pensó la «razón poética», una forma de conocer que une filosofía y poesía. Vivió casi medio siglo en el exilio y recibió el Premio Cervantes en 1988."
+   ],
+   [
+    "Carl Sagan",
+    "1934–1996",
+    "Astrónomo y divulgador",
+    "Presentó «Cosmos» y escribió «Un punto azul pálido». Convenció a la NASA para que la Voyager 1 fotografiara la Tierra desde 6.000 millones de kilómetros."
+   ]
+  ],
+  "planta": [
+   [
+    "Arce japonés",
+    "Acer palmatum",
+    "Sus hojas palmeadas se vuelven rojo intenso en otoño. En Japón ir a contemplarlo tiene nombre propio: «momijigari», la caza de hojas rojas."
+   ],
+   [
+    "Calabaza",
+    "Cucurbita pepo",
+    "Llegó de América y ahora es el símbolo de Halloween. En Irlanda los faroles se tallaban antes en nabos; en Norteamérica se cambiaron por calabazas."
+   ]
+  ],
+  "refran": [
+   [
+    "Hecha la ley, hecha la trampa.",
+    "En cuanto se dicta una norma, alguien encuentra la forma de saltársela.",
+    "Every law has a loophole."
+   ],
+   [
+    "El saber no ocupa lugar.",
+    "Aprender nunca sobra ni estorba.",
+    "Knowledge is no burden."
+   ]
+  ],
+  "frase": [
+   [
+    "Ir viento en popa",
+    "Avanzar algo muy bien, sin obstáculos.",
+    "Viene de la navegación a vela: el viento que sopla desde la popa empuja el barco en la dirección de la marcha."
+   ],
+   [
+    "Poner pies en polvorosa",
+    "Huir deprisa.",
+    "En la germanía, la jerga de los delincuentes de los siglos XVI y XVII, «polvorosa» significaba calle o camino, por el polvo."
+   ]
+  ],
+  "palabra": [
+   [
+    "Kaizen",
+    "ja",
+    "Mejora continua a base de cambios pequeños y constantes.",
+    "Se hizo famosa con el sistema de producción de Toyota y hoy se aplica a hábitos personales: mejorar un poco cada día."
+   ],
+   [
+    "Eunoia",
+    "en",
+    "Pensamiento bello; buena disposición hacia los demás.",
+    "Viene del griego. Con seis letras, es la palabra inglesa más corta que contiene las cinco vocales."
+   ]
+  ],
+  "habito": [
+   [
+    "Cambia de postura cada 30 minutos",
+    "Levántate, da unos pasos o cambia de silla a sillón. Romper los periodos largos sentada mejora la circulación y la concentración."
+   ],
+   [
+    "Una verdura en cada comida",
+    "Añade algo vegetal a cada plato, aunque sea un puñado de espinacas o unos tomates. Sumas fibra y micronutrientes sin tener que hacer dieta."
+   ]
+  ],
+  "pausa": [
+   [
+    "Respiración diafragmática",
+    "Meditación",
+    "Tumbada o sentada, con una mano en el vientre, inspira llevando el aire abajo para que suba la mano y espira despacio. Cinco minutos bajan las pulsaciones.",
+    "respiración diafragmática guiada 5 minutos"
+   ],
+   [
+    "Dibuja una hoja de otoño",
+    "Pausa",
+    "Coge una hoja caída y dibújala despacio, sin buscar que quede bonita: solo mira bien sus nervios y colores. Diez minutos de atención plena con lápiz.",
+    null
+   ]
+  ]
+ }
+}
