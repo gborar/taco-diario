@@ -55,7 +55,10 @@
   "The habits of happiness",
   "How books can open your mind",
   "The danger of a single story",
-  "How to stay calm when you know you'll be stressed"
+  "How to stay calm when you know you'll be stressed",
+  "The gift and power of emotional courage",
+  "How to build your creative confidence",
+  "The secret to self control"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -109,7 +112,10 @@
   "Self-Reliance",
   "How Should One Read a Book?",
   "How to Write Usefully",
-  "The Top Idea in Your Mind"
+  "The Top Idea in Your Mind",
+  "On Keeping a Notebook",
+  "In Praise of Idleness",
+  "The Psychology of Human Misjudgment"
  ],
  "reel": [
   "QuantumFracture",
@@ -161,7 +167,10 @@
   "Peter McKinnon",
   "Nerdwriter1",
   "Philosophy Tube",
-  "Rachel Maksy"
+  "Rachel Maksy",
+  "Pick Up Limes",
+  "Veritasium",
+  "Zach King"
  ],
  "libro": [
   "Sapiens",
@@ -227,7 +236,10 @@
   "Mientras escribo",
   "El principito",
   "Persépolis",
-  "Kafka en la orilla"
+  "Kafka en la orilla",
+  "Las ventajas de ser invisible",
+  "Frankenstein",
+  "La casa de los espíritus"
  ],
  "pelicula": [
   "La llegada",
@@ -302,7 +314,10 @@
   "Captain Fantastic",
   "Belle",
   "Cuestión de tiempo",
-  "Ratatouille"
+  "Ratatouille",
+  "Paddington 2",
+  "El color del paraíso",
+  "Juno"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -359,7 +374,10 @@
   "Bluey",
   "El cazador de cerebros",
   "Fleabag",
-  "Atención obras"
+  "Atención obras",
+  "Salt Fat Acid Heat",
+  "Mira lo que has hecho",
+  "Seven Worlds, One Planet"
  ],
  "cancion": [
   "Mediterráneo",
@@ -420,7 +438,10 @@
   "Alfonsina y el mar",
   "Por una cabeza",
   "Golden",
-  "Cucurrucucú paloma"
+  "Cucurrucucú paloma",
+  "Volare (Nel blu dipinto di blu)",
+  "Si antes te hubiera conocido",
+  "Somewhere Over the Rainbow"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -479,7 +500,10 @@
   "Algunas tortugas de agua dulce pasan el invierno bajo el hielo y absorben oxígeno del agua a través de la cloaca.",
   "La Torre Eiffel puede crecer hasta unos 15 centímetros en verano: el hierro se dilata con el calor y se contrae con el frío.",
   "El ornitorrinco brilla en tonos verde azulados bajo la luz ultravioleta. Lo descubrió un estudio publicado en 2020.",
-  "A Shakespeare se le atribuye haber inventado o popularizado más de 1.700 palabras inglesas, como «lonely» o «bedroom»."
+  "A Shakespeare se le atribuye haber inventado o popularizado más de 1.700 palabras inglesas, como «lonely» o «bedroom».",
+  "Las ardillas entierran miles de bellotas en otoño y no recuperan muchas de ellas. Las que olvidan germinan, así que son unas grandes plantadoras de árboles.",
+  "El metro de Nueva York se inauguró el 27 de octubre de 1904. Aquel primer día lo usaron más de 100.000 personas.",
+  "El tiburón de Groenlandia puede vivir unos 400 años: es el vertebrado más longevo conocido, según un estudio de 2016."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -547,7 +571,10 @@
   "Principio de legalidad",
   "Zona de desarrollo próximo",
   "Cúbit",
-  "Cosa juzgada"
+  "Cosa juzgada",
+  "Efecto Pigmalión",
+  "Teletransporte cuántico",
+  "Enriquecimiento injusto"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -598,7 +625,10 @@
   "Lee y conducirás; no leas y serás conducido.",
   "Un libro debe ser el hacha que rompa el mar helado que llevamos dentro.",
   "La mejor manera de predecir el futuro es inventarlo.",
-  "Si quieres construir un barco, no empieces por buscar madera; despierta en los hombres el anhelo del mar."
+  "Si quieres construir un barco, no empieces por buscar madera; despierta en los hombres el anhelo del mar.",
+  "Escribo para descubrir lo que pienso.",
+  "La vida es como montar en bicicleta. Para mantener el equilibrio, hay que seguir moviéndose.",
+  "No es la especie más fuerte la que sobrevive, ni la más inteligente, sino la que mejor se adapta al cambio."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -648,7 +678,10 @@
   "¿Qué cosa cuanto más se seca, más moja?",
   "El padre de María tiene cinco hijas: Nana, Nene, Nini y Nono. ¿Cómo se llama la quinta?",
   "¿Cuántos cuadrados de 1 cm de lado caben en un cuadrado de 1 metro de lado?",
-  "Si hoy es lunes, ¿qué día de la semana será dentro de 100 días?"
+  "Si hoy es lunes, ¿qué día de la semana será dentro de 100 días?",
+  "En una carrera adelantas al último. ¿En qué posición quedas?",
+  "¿Cuántas veces puedes restar 5 de 25?",
+  "Un hombre mira un retrato y dice: «No tengo hermanos, pero el padre de ese hombre es el hijo de mi padre». ¿Quién está en el retrato?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -699,7 +732,10 @@
   "¿Qué idea te ronda la cabeza estos días?",
   "¿Qué libro te gustaría haber escrito tú?",
   "¿Qué pequeña costumbre de otra persona te gustaría copiar?",
-  "¿Qué te da paz cuando todo va deprisa?"
+  "¿Qué te da paz cuando todo va deprisa?",
+  "¿Qué aprendiste de algún error reciente?",
+  "¿Qué lugar te gustaría ver en otoño?",
+  "¿Qué canción te devuelve a un momento concreto de tu vida?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -750,7 +786,10 @@
   "Margaret Mead",
   "Antoine de Saint-Exupéry",
   "Maria Montessori",
-  "Hildegarda de Bingen"
+  "Hildegarda de Bingen",
+  "Joan Didion",
+  "Bertrand Russell",
+  "Wangari Maathai"
  ],
  "planta": [
   "Girasol",
@@ -801,7 +840,10 @@
   "Rosal silvestre",
   "Brezo",
   "Higuera",
-  "Muérdago"
+  "Muérdago",
+  "Encina",
+  "Alcornoque",
+  "Avellano"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -861,7 +903,10 @@
   "Las cuentas claras y el chocolate espeso.",
   "No dejes para mañana lo que puedas hacer hoy.",
   "Más vale solo que mal acompañado.",
-  "Aunque la mona se vista de seda, mona se queda."
+  "Aunque la mona se vista de seda, mona se queda.",
+  "A cada cerdo le llega su San Martín.",
+  "Agua pasada no mueve molino.",
+  "El hábito no hace al monje."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -913,7 +958,10 @@
   "Ir hecho un brazo de mar",
   "Llevarse el gato al agua",
   "A troche y moche",
-  "Dar la lata"
+  "Dar la lata",
+  "Estar en la luna",
+  "Hacer castillos en el aire",
+  "Ser uña y carne"
  ],
  "palabra": [
   "Arrebol",
@@ -968,7 +1016,10 @@
   "Halcyon",
   "Embeleso",
   "Natsukashii",
-  "Lieblingsmensch"
+  "Lieblingsmensch",
+  "Lontananza",
+  "Desenrascanço",
+  "Ephemeral"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1022,7 +1073,10 @@
   "Prepara la ropa la noche antes",
   "Un poema al día",
   "Camina mientras hablas por teléfono",
-  "Desayuno sin pantallas"
+  "Desayuno sin pantallas",
+  "Diez minutos de idioma con audio",
+  "Pantallas fuera una hora antes de dormir",
+  "Respira por la nariz al caminar"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1067,7 +1121,10 @@
   "Mirar la llama de una vela",
   "Jardín zen con agua",
   "ASMR de tejido a dos agujas",
-  "Respiración de la abeja"
+  "Respiración de la abeja",
+  "Faro junto al mar",
+  "ASMR de cerámica en el torno",
+  "Paseo de los cinco sentidos"
  ],
  "prensa": [
   "La Contra",
@@ -1101,7 +1158,10 @@
   "Luis Hedo, CEO de día, ‘youtuber’ de noche: “Los ‘influencers’ están haciendo de punta de lanza para el crecimiento del libro”",
   "El telegrama que cambió la historia de la ciencia española: Cajal y el Nobel del 25 de octubre",
   "Dolores Redondo abre una Feria del Libro de Córdoba con 48 casetas y más de cien actividades",
-  "Feria del Libro de Córdoba como plato principal de la agenda cultural del fin de semana"
+  "Feria del Libro de Córdoba como plato principal de la agenda cultural del fin de semana",
+  "El escritor Jesús Zatón presenta \"El despertar del barro\", una novela sobre la resistencia judía en el gueto de Varsovia",
+  "Mohamed Serifi-Villar: \"Ceuta puede ser el eslabón para el impulso estratégico entre España, Marruecos y el resto de África\"",
+  "La sequía lleva al lince a depredar milanos en Doñana"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1135,6 +1195,9 @@
   "«El final» y la geografía de los espacios liminales",
   "El derecho a no ser interesante",
   "Vuelvo enseguida",
-  "Gabriel Zaid y la poesía indígena del norte de México"
+  "Gabriel Zaid y la poesía indígena del norte de México",
+  "De concursos literarios, detectores de IA y caza de brujas",
+  "El frío no aleja a los idiotas",
+  "Museo dinámico: «Fue de día, fue de tarde, fue fantástico»"
  ]
 }
