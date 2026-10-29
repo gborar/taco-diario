@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- CSP: si cambias el texto de cualquier script en línea, recalcula su hash sha256 aquí o el navegador lo bloqueará. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ieSNemA+CZ689dkR4v7n9BeVgYgXFXGcjxt3HvYr2JI=' 'sha256-xj1rSvgssnA7xe7wfFxiGGNDRIEC5f3pd/p3ju6S4IE=' 'sha256-xNM3CsRtZ8tRZ0fzo1zT3muVwGvz0rZ2ernMW5cW09c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self' https://es.wikipedia.org; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-cwxu7GNT/raFWfouxDyW9x1S7RrMhhzB5k6/SEUvWpI=' 'sha256-azxrqjfXbhm5kAttuHToxBvNHWLdhv+L74ar+ZdN5tA=' 'sha256-xNM3CsRtZ8tRZ0fzo1zT3muVwGvz0rZ2ernMW5cW09c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self' https://commons.wikimedia.org https://es.wikipedia.org; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png" type="image/png">
@@ -21,7 +21,7 @@ img { max-width: 100%; }
 </style>
 </head>
 <body>
-<script>window.TACO_VERSION = "s20261029c";</script>
+<script>window.TACO_VERSION = "s20261029d";</script>
 <title>Taco Diario</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#C8102E">
@@ -1548,22 +1548,36 @@ function photoDate(d) {
   const p = new Date(d); p.setDate(p.getDate() - bump * 97);   // «Otra»: la foto de otro día del archivo
   return p;
 }
+// Convierte el HTML de los metadatos en texto plano (DOMParser no ejecuta scripts ni carga nada).
+const plain = html => { const d = new DOMParser().parseFromString(String(html || ""), "text/html"); d.querySelectorAll("script,style").forEach(n => n.remove()); return d.body.textContent.replace(/\s+/g, " ").trim(); };
+const getJSON = url => fetch(url).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
+// 1) API de Commons: la plantilla Potd/AAAA-MM-DD guarda el nombre del archivo del día.
+async function photoFromCommons(k) {
+  const api = "https://commons.wikimedia.org/w/api.php?format=json&formatversion=2&origin=*&";
+  const ex = await getJSON(api + "action=expandtemplates&prop=wikitext&text=" + enc("{{Potd/" + k + "}}"));
+  const file = String(ex.expandtemplates && ex.expandtemplates.wikitext || "").trim();
+  if (!file || /[{}[\]|<>]/.test(file)) throw new Error("sin archivo");
+  const q = await getJSON(api + "action=query&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1280&iiextmetadatalanguage=es&titles=" + enc("File:" + file));
+  const page = q.query && q.query.pages && q.query.pages[0], ii = page && page.imageinfo && page.imageinfo[0];
+  if (!ii || !safeUrl(ii.thumburl || ii.url)) throw new Error("sin imagen");
+  const md = ii.extmetadata || {}, v = key => plain(md[key] && md[key].value);
+  return { src: ii.thumburl || ii.url, desc: v("ImageDescription"), artist: v("Artist"), license: v("LicenseShortName"),
+    page: safeUrl(ii.descriptionurl), title: v("ObjectName") || file.replace(/\.[a-z0-9]+$/i, "").replace(/_/g, " ") };
+}
+// 2) Respaldo: el resumen diario de Wikipedia, que incluye la misma foto.
+async function photoFromWikipedia(k) {
+  const j = await getJSON("https://es.wikipedia.org/api/rest_v1/feed/featured/" + k.replace(/-/g, "/"));
+  const im = j && j.image, th = im && im.thumbnail;
+  if (!th || !safeUrl(th.source)) throw new Error("sin imagen");
+  return { src: th.source, desc: plain(im.description && im.description.text), artist: plain(im.artist && im.artist.text),
+    license: im.license && im.license.type || "", page: safeUrl(im.file_page), title: (im.title || "").replace(/^(File|Archivo):/, "").replace(/\.[a-z0-9]+$/i, "").replace(/_/g, " ") };
+}
 function loadPhoto(d) {
   const k = keyOf(d);
   if (!PHOTOS[k]) {
-    const path = k.replace(/-/g, "/");
-    PHOTOS[k] = fetch("https://es.wikipedia.org/api/rest_v1/feed/featured/" + path)
-      .then(r => r.ok ? r.json() : null)
-      .then(j => {
-        const im = j && j.image, th = im && im.thumbnail;
-        if (!th || !safeUrl(th.source)) return null;
-        // La miniatura del feed es pequeña; pide 1280 px si el original es mayor.
-        const src = im.image && im.image.width > 1280 && /\/\d+px-/.test(th.source) ? th.source.replace(/\/\d+px-/, "/1280px-") : th.source;
-        return { src, desc: (im.description && im.description.text || "").trim(), artist: (im.artist && im.artist.text || "").trim(),
-          license: im.license && im.license.type || "", page: safeUrl(im.file_page), title: (im.title || "").replace(/^File:|^Archivo:/, "").replace(/\.[a-z0-9]+$/i, "").replace(/_/g, " ") };
-      })
-      .catch(() => null);
-    PHOTOS[k].then(p => { if (!p) delete PHOTOS[k]; });   // si falla, se reintenta en la próxima visita
+    PHOTOS[k] = photoFromCommons(k)
+      .catch(e1 => photoFromWikipedia(k).catch(e2 => ({ error: "Commons: " + e1.message + " · Wikipedia: " + e2.message })));
+    PHOTOS[k].then(p => { if (p.error) delete PHOTOS[k]; });   // si falla, se reintenta en la próxima visita
   }
   return PHOTOS[k];
 }
@@ -1578,20 +1592,21 @@ function renderArt() {
   const box = h("div", { class: "photo wait", "aria-busy": "true" });
   const extra = h("div", { class: "photo-meta" });
   const fig = h("figure", { class: "art" }, box, h("figcaption", {}, h("div", {}, label, title), shuffle), extra);
-  const fallback = () => {
+  const fallback = why => {
     const { def, name } = artFor(current);
     const canvas = h("canvas", { role: "img", "aria-label": "Ilustración generada: " + def.style });
     box.replaceWith(canvas); requestAnimationFrame(() => paintArt(canvas));
     label.textContent = "Ilustración generada · " + def.style;
     title.textContent = "Inspirada en " + name;
     shuffle.setAttribute("aria-label", "Otra variación"); shuffle.title = "Otra variación";
-    extra.replaceChildren(h("p", { class: "meta" }, "No es una foto: no se ha podido cargar la foto real del día (¿sin conexión?)."));
+    extra.replaceChildren(h("p", { class: "meta" }, "No es una foto: no se ha podido cargar la foto real del día."),
+      why ? h("p", { class: "meta", style: "font-size:11px;opacity:.7" }, "Detalle: " + why) : null);
   };
-  if (!navigator.onLine) { fallback(); return fig; }
+  if (!navigator.onLine) { fallback("sin conexión"); return fig; }
   loadPhoto(pd).then(p => {
-    if (!p) { fallback(); return; }
-    const img = h("img", { src: p.src, alt: p.desc || p.title, loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" });
-    img.addEventListener("error", fallback, { once: true });
+    if (p.error) { fallback(p.error); return; }
+    const img = h("img", { src: p.src, alt: p.desc || p.title, decoding: "async" });
+    img.addEventListener("error", () => fallback("no carga la imagen " + p.src.split("/").pop()), { once: true });
     box.replaceChildren(img); box.classList.remove("wait"); box.removeAttribute("aria-busy");
     if (keyOf(pd) !== keyOf(current)) label.textContent = "Foto del " + pd.getDate() + " de " + MESES[pd.getMonth()].toLowerCase() + " de " + pd.getFullYear() + " · Wikimedia Commons";
     title.textContent = p.title || "Foto del día";
