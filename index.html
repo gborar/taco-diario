@@ -19,7 +19,7 @@ img { max-width: 100%; }
 </style>
 </head>
 <body>
-<script>window.TACO_VERSION = "e7033e035d";</script>
+<script>window.TACO_VERSION = "s20261029a";</script>
 <title>Taco Diario</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#C8102E">
@@ -313,6 +313,8 @@ details p { margin-top: 8px !important; }
 <script>
 /* =================== CONTENIDO =================== */
 const enc = encodeURIComponent;
+// Solo deja pasar enlaces https:// (evita javascript: y otros esquemas en datos externos).
+const safeUrl = u => typeof u === "string" && /^https:\/\//i.test(u) ? u : null;
 const L = {
   yt: q => "https://www.youtube.com/results?search_query=" + enc(q),
   g: q => "https://www.google.com/search?q=" + enc(q),
@@ -1149,7 +1151,7 @@ function describe(cat, item) {
     }
     case "reel": {
       const [who, plat, , why, link] = item;
-      return { title: who, sub: plat, link, linkLabel: "Abrir",
+      return { title: who, sub: plat, link: safeUrl(link) || L.tt(who), linkLabel: "Abrir",
         body: [h("h3", {}, who), h("div", { class: "meta" }, plat), h("p", { class: "why" }, h("b", {}, "Qué verás"), why)],
         prompt: `el tipo de contenido que publica ${who} en redes (${why})` };
     }
@@ -1348,8 +1350,8 @@ function renderCard(cat) {
       toast(state.favs[fk] ? "Guardado" : "Quitado de guardados");
     }, isFav ? "on" : ""));
   const actions = h("div", { class: "actions" });
-  if (dsc.link) actions.append(h("a", { class: "btn primary", href: dsc.link, target: "_blank", rel: "noopener", html: ICON.out + "<span>" + dsc.linkLabel + "</span>" }));
-  if (dsc.link2) actions.append(h("a", { class: "btn", href: dsc.link2, target: "_blank", rel: "noopener", html: ICON.out + "<span>" + dsc.link2Label + "</span>" }));
+  if (safeUrl(dsc.link)) actions.append(h("a", { class: "btn primary", href: safeUrl(dsc.link), target: "_blank", rel: "noopener", html: ICON.out + "<span>" + dsc.linkLabel + "</span>" }));
+  if (safeUrl(dsc.link2)) actions.append(h("a", { class: "btn", href: safeUrl(dsc.link2), target: "_blank", rel: "noopener", html: ICON.out + "<span>" + dsc.link2Label + "</span>" }));
   if (sample) actions.append(h("button", { class: "btn", type: "button", onclick: () => explain(c.label, dsc), html: ICON.spark + "<span>" + (dsc.ai || "Explícamelo") + "</span>" }));
   else if (STANDALONE) actions.append(askLink(`Háblame de ${dsc.prompt}.`, dsc.ai || "Explícamelo"));
   actions.append(h("button", { class: "btn check", type: "button", "aria-pressed": isDone ? "true" : "false", onclick: () => {
@@ -1401,7 +1403,7 @@ function renderSaved() {
   for (const [fk, f] of items) {
     const row = h("div", { class: "saved-item" },
       h("div", { class: "t" }, h("span", { class: "mono", style: "color:var(--red)" }, CATS[f.cat]?.label || f.cat), h("b", {}, f.title), h("span", { class: "meta" }, f.sub)),
-      f.link ? h("a", { class: "icon-btn", href: f.link, target: "_blank", rel: "noopener", "aria-label": "Abrir", html: ICON.out }) : null,
+      safeUrl(f.link) ? h("a", { class: "icon-btn", href: safeUrl(f.link), target: "_blank", rel: "noopener", "aria-label": "Abrir", html: ICON.out }) : null,
       svgBtn("trash", "Quitar", () => { delete state.favs[fk]; save(); renderSaved(); renderFeed(); }));
     list.append(row);
   }
@@ -1585,7 +1587,7 @@ function renderNews() {
     h("h3", {}, title), h("p", {}, body),
     h("span", { class: "src" }, "Fuente: " + src));
   const actions = h("div", { class: "actions" });
-  if (live && live.url) actions.append(h("a", { class: "btn", href: live.url, target: "_blank", rel: "noopener", html: ICON.out + "<span>Leer la noticia</span>" }));
+  if (live && safeUrl(live.url)) actions.append(h("a", { class: "btn", href: safeUrl(live.url), target: "_blank", rel: "noopener", html: ICON.out + "<span>Leer la noticia</span>" }));
   if (sample) actions.append(h("button", { class: "btn", type: "button", onclick: () => explain("Buena noticia", { title, prompt: `esta buena noticia: «${title}. ${body}» (fuente: ${src}). Explica el contexto y por qué importa` }), html: ICON.spark + "<span>Contexto</span>" }));
   else if (STANDALONE) actions.append(askLink(`Háblame de esta buena noticia: «${title}. ${body}» (fuente: ${src}). Explica el contexto y por qué importa.`, "Contexto"));
   if (actions.childNodes.length) box.append(actions);
