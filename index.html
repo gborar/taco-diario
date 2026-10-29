@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- CSP: si cambias el texto de cualquier script en línea, recalcula su hash sha256 aquí o el navegador lo bloqueará. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-cwxu7GNT/raFWfouxDyW9x1S7RrMhhzB5k6/SEUvWpI=' 'sha256-azxrqjfXbhm5kAttuHToxBvNHWLdhv+L74ar+ZdN5tA=' 'sha256-xNM3CsRtZ8tRZ0fzo1zT3muVwGvz0rZ2ernMW5cW09c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self' https://commons.wikimedia.org https://es.wikipedia.org; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-GbntuwCixVbP49+LI+ceKxpkQlBRqoXB2zmyZ9o/cTk=' 'sha256-xIEQDGW2f/qY12EUW9bEy04rfGcLzQfeS+z7x0db6BA=' 'sha256-xNM3CsRtZ8tRZ0fzo1zT3muVwGvz0rZ2ernMW5cW09c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self' https://commons.wikimedia.org https://es.wikipedia.org; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png" type="image/png">
@@ -21,7 +21,7 @@ img { max-width: 100%; }
 </style>
 </head>
 <body>
-<script>window.TACO_VERSION = "s20261029d";</script>
+<script>window.TACO_VERSION = "s20261029e";</script>
 <title>Taco Diario</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#C8102E">
@@ -1551,17 +1551,27 @@ function photoDate(d) {
 // Convierte el HTML de los metadatos en texto plano (DOMParser no ejecuta scripts ni carga nada).
 const plain = html => { const d = new DOMParser().parseFromString(String(html || ""), "text/html"); d.querySelectorAll("script,style").forEach(n => n.remove()); return d.body.textContent.replace(/\s+/g, " ").trim(); };
 const getJSON = url => fetch(url).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
+// Varias versiones de la misma foto, de la más ligera a la original, por si Wikimedia rechaza algún tamaño.
+function imgVariants(thumb, orig, size) {
+  const list = [];
+  if (thumb) {
+    const bare = thumb.split("?")[0];
+    list.push(thumb, bare, ...[960, 500].map(w => bare.replace(/\/\d+px-/, "/" + w + "px-")));
+  }
+  if (orig && !(size > 20e6)) list.push(orig);
+  return [...new Set(list.filter(u => safeUrl(u)))];
+}
 // 1) API de Commons: la plantilla Potd/AAAA-MM-DD guarda el nombre del archivo del día.
 async function photoFromCommons(k) {
   const api = "https://commons.wikimedia.org/w/api.php?format=json&formatversion=2&origin=*&";
   const ex = await getJSON(api + "action=expandtemplates&prop=wikitext&text=" + enc("{{Potd/" + k + "}}"));
   const file = String(ex.expandtemplates && ex.expandtemplates.wikitext || "").trim();
   if (!file || /[{}[\]|<>]/.test(file)) throw new Error("sin archivo");
-  const q = await getJSON(api + "action=query&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1280&iiextmetadatalanguage=es&titles=" + enc("File:" + file));
+  const q = await getJSON(api + "action=query&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=960&iiextmetadatalanguage=es&titles=" + enc("File:" + file));
   const page = q.query && q.query.pages && q.query.pages[0], ii = page && page.imageinfo && page.imageinfo[0];
   if (!ii || !safeUrl(ii.thumburl || ii.url)) throw new Error("sin imagen");
   const md = ii.extmetadata || {}, v = key => plain(md[key] && md[key].value);
-  return { src: ii.thumburl || ii.url, desc: v("ImageDescription"), artist: v("Artist"), license: v("LicenseShortName"),
+  return { srcs: imgVariants(ii.thumburl, ii.url, ii.size), desc: v("ImageDescription"), artist: v("Artist"), license: v("LicenseShortName"),
     page: safeUrl(ii.descriptionurl), title: v("ObjectName") || file.replace(/\.[a-z0-9]+$/i, "").replace(/_/g, " ") };
 }
 // 2) Respaldo: el resumen diario de Wikipedia, que incluye la misma foto.
@@ -1569,7 +1579,7 @@ async function photoFromWikipedia(k) {
   const j = await getJSON("https://es.wikipedia.org/api/rest_v1/feed/featured/" + k.replace(/-/g, "/"));
   const im = j && j.image, th = im && im.thumbnail;
   if (!th || !safeUrl(th.source)) throw new Error("sin imagen");
-  return { src: th.source, desc: plain(im.description && im.description.text), artist: plain(im.artist && im.artist.text),
+  return { srcs: imgVariants(th.source, im.image && im.image.source, im.image && im.image.size), desc: plain(im.description && im.description.text), artist: plain(im.artist && im.artist.text),
     license: im.license && im.license.type || "", page: safeUrl(im.file_page), title: (im.title || "").replace(/^(File|Archivo):/, "").replace(/\.[a-z0-9]+$/i, "").replace(/_/g, " ") };
 }
 function loadPhoto(d) {
@@ -1605,8 +1615,13 @@ function renderArt() {
   if (!navigator.onLine) { fallback("sin conexión"); return fig; }
   loadPhoto(pd).then(p => {
     if (p.error) { fallback(p.error); return; }
-    const img = h("img", { src: p.src, alt: p.desc || p.title, decoding: "async" });
-    img.addEventListener("error", () => fallback("no carga la imagen " + p.src.split("/").pop()), { once: true });
+    if (!p.srcs.length) { fallback("sin dirección de imagen"); return; }
+    let n = 0;
+    const img = h("img", { src: p.srcs[0], alt: p.desc || p.title, decoding: "async" });
+    img.addEventListener("error", () => {
+      if (++n < p.srcs.length) img.src = p.srcs[n];
+      else fallback("no carga la imagen (" + n + " intentos) " + p.srcs[0].split("?")[0].split("/").pop());
+    });
     box.replaceChildren(img); box.classList.remove("wait"); box.removeAttribute("aria-busy");
     if (keyOf(pd) !== keyOf(current)) label.textContent = "Foto del " + pd.getDate() + " de " + MESES[pd.getMonth()].toLowerCase() + " de " + pd.getFullYear() + " · Wikimedia Commons";
     title.textContent = p.title || "Foto del día";
