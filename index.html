@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<!-- CSP: si cambias el texto de cualquier <script> en línea, recalcula su hash sha256 aquí o el navegador lo bloqueará. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-KKWbeUJ1IQlYoTd5xqZK2Y8i989B2oOpg6r+fTnkxlQ=' 'sha256-lbMCANVQ0sqQzRC+8N8D+QkrKaSAP7Btk6RLOYELL+Y=' 'sha256-+HCq/4WbBdte+3C0G0Ld+YZvjlQb7WRCBWaz0D7EPaY='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<!-- CSP: si cambias el texto de cualquier script en línea, recalcula su hash sha256 aquí o el navegador lo bloqueará. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ieSNemA+CZ689dkR4v7n9BeVgYgXFXGcjxt3HvYr2JI=' 'sha256-xj1rSvgssnA7xe7wfFxiGGNDRIEC5f3pd/p3ju6S4IE=' 'sha256-xNM3CsRtZ8tRZ0fzo1zT3muVwGvz0rZ2ernMW5cW09c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self' https://es.wikipedia.org; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png" type="image/png">
@@ -21,7 +21,7 @@ img { max-width: 100%; }
 </style>
 </head>
 <body>
-<script>window.TACO_VERSION = "s20261029b";</script>
+<script>window.TACO_VERSION = "s20261029c";</script>
 <title>Taco Diario</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#C8102E">
@@ -260,6 +260,11 @@ details p { margin-top: 8px !important; }
 
 /* Imagen del día */
 .art { margin: 0; display: grid; gap: 10px; }
+.art .photo { aspect-ratio: 4 / 5; border-radius: 10px; background: var(--paper-2); box-shadow: var(--shadow); overflow: hidden; display: grid; place-items: center; }
+.art .photo:not(.wait) { aspect-ratio: auto; background: #111; }
+.art .photo img { display: block; width: 100%; height: auto; max-height: 75vh; object-fit: contain; }
+.art .photo-meta { display: grid; gap: 6px; justify-items: start; }
+.art .photo-meta p { margin: 0; }
 .art canvas { width: 100%; max-width: 100%; aspect-ratio: 4 / 5; display: block; border-radius: 10px; box-shadow: var(--shadow); background: var(--paper-2); }
 .art figcaption { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
 .art figcaption b { font-family: var(--f-display); font-weight: 800; font-size: 24px; text-transform: uppercase; letter-spacing: .04em; line-height: 1; display: block; }
@@ -1412,7 +1417,7 @@ function renderSaved() {
 function renderAll() { renderCover(false); renderStats(); renderFeed(); renderSaved(); }
 
 /* =================== IMAGEN DEL DÍA =================== */
-// Una ilustración generativa distinta cada día: misma fecha, misma imagen.
+// Ilustración generativa de reserva, solo si no se puede cargar la foto real (misma fecha, misma imagen).
 function rng(a) {
   return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
 }
@@ -1535,17 +1540,66 @@ function paintArt(canvas) {
   const { def, r, pal } = artFor(current);
   def.draw(canvas.getContext("2d"), canvas.width, canvas.height, r, pal, current);
 }
+// Foto del día: la «Imagen del día» de Wikimedia Commons, una fotografía real elegida por su comunidad,
+// con su autor y su licencia. Sin conexión se muestra la ilustración generada, avisando de que lo es.
+const PHOTOS = {};
+function photoDate(d) {
+  const bump = (state.bumps[keyOf(d)] || {}).art || 0;
+  const p = new Date(d); p.setDate(p.getDate() - bump * 97);   // «Otra»: la foto de otro día del archivo
+  return p;
+}
+function loadPhoto(d) {
+  const k = keyOf(d);
+  if (!PHOTOS[k]) {
+    const path = k.replace(/-/g, "/");
+    PHOTOS[k] = fetch("https://es.wikipedia.org/api/rest_v1/feed/featured/" + path)
+      .then(r => r.ok ? r.json() : null)
+      .then(j => {
+        const im = j && j.image, th = im && im.thumbnail;
+        if (!th || !safeUrl(th.source)) return null;
+        // La miniatura del feed es pequeña; pide 1280 px si el original es mayor.
+        const src = im.image && im.image.width > 1280 && /\/\d+px-/.test(th.source) ? th.source.replace(/\/\d+px-/, "/1280px-") : th.source;
+        return { src, desc: (im.description && im.description.text || "").trim(), artist: (im.artist && im.artist.text || "").trim(),
+          license: im.license && im.license.type || "", page: safeUrl(im.file_page), title: (im.title || "").replace(/^File:|^Archivo:/, "").replace(/\.[a-z0-9]+$/i, "").replace(/_/g, " ") };
+      })
+      .catch(() => null);
+    PHOTOS[k].then(p => { if (!p) delete PHOTOS[k]; });   // si falla, se reintenta en la próxima visita
+  }
+  return PHOTOS[k];
+}
 function renderArt() {
-  const { def, name } = artFor(current);
-  const canvas = h("canvas", { role: "img", "aria-label": def.style + ": " + name });
-  const fig = h("figure", { class: "art" }, canvas,
-    h("figcaption", {},
-      h("div", {}, h("span", { class: "mono" }, "Imagen del día · " + def.style), h("b", {}, name)),
-      svgBtn("shuffle", "Otra variación", () => {
-        const k = keyOf(current); state.bumps[k] = state.bumps[k] || {}; state.bumps[k].art = (state.bumps[k].art || 0) + 1;
-        save(); fig.replaceWith(renderArt());
-      })));
-  requestAnimationFrame(() => paintArt(canvas));
+  const pd = photoDate(current);
+  const shuffle = svgBtn("shuffle", "Otra foto", () => {
+    const k = keyOf(current); state.bumps[k] = state.bumps[k] || {}; state.bumps[k].art = (state.bumps[k].art || 0) + 1;
+    save(); fig.replaceWith(renderArt());
+  });
+  const label = h("span", { class: "mono" }, "Foto del día · Wikimedia Commons");
+  const title = h("b", {}, "Cargando…");
+  const box = h("div", { class: "photo wait", "aria-busy": "true" });
+  const extra = h("div", { class: "photo-meta" });
+  const fig = h("figure", { class: "art" }, box, h("figcaption", {}, h("div", {}, label, title), shuffle), extra);
+  const fallback = () => {
+    const { def, name } = artFor(current);
+    const canvas = h("canvas", { role: "img", "aria-label": "Ilustración generada: " + def.style });
+    box.replaceWith(canvas); requestAnimationFrame(() => paintArt(canvas));
+    label.textContent = "Ilustración generada · " + def.style;
+    title.textContent = "Inspirada en " + name;
+    shuffle.setAttribute("aria-label", "Otra variación"); shuffle.title = "Otra variación";
+    extra.replaceChildren(h("p", { class: "meta" }, "No es una foto: no se ha podido cargar la foto real del día (¿sin conexión?)."));
+  };
+  if (!navigator.onLine) { fallback(); return fig; }
+  loadPhoto(pd).then(p => {
+    if (!p) { fallback(); return; }
+    const img = h("img", { src: p.src, alt: p.desc || p.title, loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" });
+    img.addEventListener("error", fallback, { once: true });
+    box.replaceChildren(img); box.classList.remove("wait"); box.removeAttribute("aria-busy");
+    if (keyOf(pd) !== keyOf(current)) label.textContent = "Foto del " + pd.getDate() + " de " + MESES[pd.getMonth()].toLowerCase() + " de " + pd.getFullYear() + " · Wikimedia Commons";
+    title.textContent = p.title || "Foto del día";
+    extra.replaceChildren(
+      p.desc ? h("p", {}, p.desc) : null,
+      h("p", { class: "meta" }, "Foto: " + (p.artist || "autor en Commons") + (p.license ? " · " + p.license : "")),
+      p.page ? h("a", { class: "btn", href: p.page, target: "_blank", rel: "noopener", html: ICON.out + "<span>Ver en Commons</span>" }) : null);
+  });
   return fig;
 }
 let resizeT = null;
@@ -1730,7 +1784,7 @@ async function tacoCheckUpdate() {
   try {
     const r = await fetch("version.json?" + Date.now(), { cache: "no-store" });
     const v = (await r.json()).version;
-    if (v && v !== window.TACO_VERSION) location.reload();
+    if (v && window.TACO_VERSION && v !== window.TACO_VERSION) location.reload();
   } catch {}
 }
 document.addEventListener("visibilitychange", () => { if (!document.hidden) tacoCheckUpdate(); });
