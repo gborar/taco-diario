@@ -64,7 +64,10 @@
   "How to make hard choices",
   "How to learn any language in six months",
   "The linguistic genius of babies",
-  "How to learn? From mistakes"
+  "How to learn? From mistakes",
+  "How to speak up for yourself",
+  "The art of asking",
+  "The power of listening"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -127,7 +130,10 @@
   "ChatGPT Is a Blurry JPEG of the Web",
   "The Mundanity of Excellence",
   "As We May Think",
-  "How to Get New Ideas"
+  "How to Get New Ideas",
+  "Notes on «Camp»",
+  "The Lesson to Unlearn",
+  "On Bullshit"
  ],
  "reel": [
   "QuantumFracture",
@@ -188,7 +194,10 @@
   "Smarter Every Day",
   "La Hiperactina",
   "Johnny Harris",
-  "Physics Girl"
+  "Physics Girl",
+  "Vsauce",
+  "CGP Grey",
+  "minutephysics"
  ],
  "libro": [
   "Sapiens",
@@ -263,7 +272,10 @@
   "Ana Karénina",
   "Los viajes de Gulliver",
   "Middlemarch",
-  "Los desafíos de la memoria"
+  "Los desafíos de la memoria",
+  "La guerra de los mundos",
+  "El jardín secreto",
+  "Cartas a Lucilio"
  ],
  "pelicula": [
   "La llegada",
@@ -347,7 +359,10 @@
   "Mi vecino Totoro",
   "Lo que queda del día",
   "El festín de Babette",
-  "Mrs. Harris Goes to Paris"
+  "Mrs. Harris Goes to Paris",
+  "Coraline",
+  "Pesadilla antes de Navidad",
+  "La novia cadáver"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -413,7 +428,10 @@
   "Érase una vez... la vida",
   "Lark Rise to Candleford",
   "All Creatures Great and Small",
-  "Tres14"
+  "Tres14",
+  "Good Omens",
+  "Ghosts",
+  "Over the Garden Wall"
  ],
  "cancion": [
   "Mediterráneo",
@@ -483,7 +501,10 @@
   "Hijo de la luna",
   "Nuages",
   "Beautiful Things",
-  "Bésame mucho"
+  "Bésame mucho",
+  "Danse macabre",
+  "Thriller",
+  "Manchild"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -551,7 +572,10 @@
   "El sonido viaja unas cuatro veces más rápido en el agua que en el aire: unos 1.480 metros por segundo frente a 343.",
   "El 29 de octubre de 1969 se envió el primer mensaje por ARPANET, la red precursora de internet, de la UCLA al Instituto de Investigación de Stanford. Iba a ser «LOGIN», pero el sistema se colgó tras las dos primeras letras: «LO».",
   "El primer correo electrónico entre dos ordenadores lo envió Ray Tomlinson en 1971. Él eligió la arroba para separar el nombre del usuario y el de la máquina.",
-  "El kiwi pone un huevo enorme: puede pesar alrededor del 20 % del cuerpo de la hembra, una de las mayores proporciones de todas las aves."
+  "El kiwi pone un huevo enorme: puede pesar alrededor del 20 % del cuerpo de la hembra, una de las mayores proporciones de todas las aves.",
+  "El 30 de octubre de 1938 Orson Welles emitió por radio una adaptación de «La guerra de los mundos» como si fuera un noticiario. Se contó que provocó un pánico masivo, pero los historiadores creen que la prensa lo exageró mucho.",
+  "«Halloween» es una contracción de «All Hallows' Eve», la víspera de Todos los Santos en inglés.",
+  "La palabra «pánico» viene de Pan, el dios griego de los pastores, al que se atribuían los terrores repentinos que asaltaban a la gente en el campo."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -628,7 +652,10 @@
   "Buena fe",
   "Efecto protegido",
   "Conmutación de paquetes",
-  "Fuerza mayor"
+  "Fuerza mayor",
+  "Pareidolia",
+  "Efecto Barnum",
+  "Sesgo de negatividad"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -688,7 +715,10 @@
   "La naturaleza no tiene prisa y, sin embargo, todo lo consigue.",
   "La lectura hace al hombre completo; la conversación, ágil, y la escritura, preciso.",
   "Cuanto más leas, más cosas sabrás. Cuanto más aprendas, a más sitios irás.",
-  "La lectura es una amistad."
+  "La lectura es una amistad.",
+  "La literatura es noticia que sigue siendo noticia.",
+  "La poesía es a la prosa lo que la danza es a la marcha.",
+  "Un poema nunca se termina, solo se abandona."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -747,7 +777,10 @@
   "Entras en una habitación fría y oscura con una cerilla. Hay una vela, una chimenea y un quinqué. ¿Qué enciendes primero?",
   "Un avión se estrella justo en la frontera entre España y Francia. ¿En qué país entierran a los supervivientes?",
   "¿Qué pesa más, un kilo de paja o un kilo de hierro?",
-  "¿Qué tiene agujeros por todas partes y aun así retiene el agua?"
+  "¿Qué tiene agujeros por todas partes y aun así retiene el agua?",
+  "¿Qué tiene cuello pero no tiene cabeza?",
+  "¿Qué tiene dientes pero no muerde?",
+  "¿Qué sube y baja sin moverse del sitio?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -807,7 +840,10 @@
   "¿Qué aprendiste de tus abuelos?",
   "¿Qué habilidad te gustaría dominar dentro de un año?",
   "¿Qué haces cuando nadie te mira que te hace feliz?",
-  "¿Qué conversación reciente te ha hecho cambiar de idea?"
+  "¿Qué conversación reciente te ha hecho cambiar de idea?",
+  "¿Qué te daba miedo de pequeña y hoy te hace sonreír?",
+  "¿Qué historia de tu familia te gustaría que no se perdiera?",
+  "Si pudieras disfrazarte de otra persona por un día, ¿de quién sería?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -867,7 +903,10 @@
   "Jonas Salk",
   "Leonard Kleinrock",
   "Jonathan Swift",
-  "Grace Hopper"
+  "Grace Hopper",
+  "Paul Valéry",
+  "Alfred Sisley",
+  "Orson Welles"
  ],
  "planta": [
   "Girasol",
@@ -927,7 +966,10 @@
   "Rusco",
   "Cardo mariano",
   "Madreselva",
-  "Durillo"
+  "Durillo",
+  "Endrino",
+  "Azufaifo",
+  "Serbal de cazadores"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -996,7 +1038,10 @@
   "A otro perro con ese hueso.",
   "Donde fueres, haz lo que vieres.",
   "Cría fama y échate a dormir.",
-  "Cada oveja con su pareja."
+  "Cada oveja con su pareja.",
+  "Querer es poder.",
+  "Loro viejo no aprende a hablar.",
+  "El que la sigue la consigue."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1057,7 +1102,10 @@
   "Tener pájaros en la cabeza",
   "Estar en las nubes",
   "Quedarse de piedra",
-  "Salirse con la suya"
+  "Salirse con la suya",
+  "Ponerse los pelos de punta",
+  "Dar mala espina",
+  "Tener un esqueleto en el armario"
  ],
  "palabra": [
   "Arrebol",
@@ -1121,7 +1169,10 @@
   "Hanami",
   "Feierabend",
   "Petrichor",
-  "Hwyl"
+  "Hwyl",
+  "Aquelarre",
+  "Torschlusspanik",
+  "Shōganai"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1184,7 +1235,10 @@
   "Ordena un cajón al día",
   "Explica en voz alta una idea nueva",
   "Lee diez páginas antes de dormir",
-  "Bebe un vaso de agua al despertar"
+  "Bebe un vaso de agua al despertar",
+  "Deja el móvil fuera del dormitorio",
+  "Ventila la casa diez minutos",
+  "Tres respiraciones antes de abrir el correo"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1238,7 +1292,10 @@
   "Suelta la mandíbula",
   "Jazz suave para leer",
   "Escritura libre de cinco minutos",
-  "Mira la llama de una vela"
+  "Mira la llama de una vela",
+  "Otoño acogedor con velas",
+  "Ronroneo de gato",
+  "Cuenta hacia atrás de 50 a 1"
  ],
  "prensa": [
   "La Contra",
@@ -1281,7 +1338,10 @@
   "Feria del Libro de Sevilla 2026: toda la programación, autores destacados, fechas y actividades",
   "Paula Klein, ganadora del Premio Lumen 2026: «Leer sólo historias que confirmen lo que pensamos no es informarse»",
   "La novela de horror doméstico de Camila Fabbri que refleja la sociedad pospandemia: «Un vecino es una incógnita»",
-  "Choi Jin-young: el amor en el fin del mundo"
+  "Choi Jin-young: el amor en el fin del mundo",
+  "Feria del Libro de Sevilla 2026: fechas, horarios, autores y firmas desde este 28 de octubre",
+  "Feria del Libro de Sevilla 2026: fechas, programa completo, autores invitados, firmas, casetas y todas las actividades del gran evento literario",
+  "Carmen Mola, Julia Navarro, Manuel Vilas, Alana S. Portero y María Oruña encabezan la programación de FELISE 2026"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1324,6 +1384,9 @@
   "Apuntes sobre Anne Carson",
   "Swift, Orwell y la opinión pública",
   "«Tenemos derecho a envejecer como los hombres», de Amanda Castillo",
-  "El TOC no se cura, pero sí es posible una notable remisión de los síntomas"
+  "El TOC no se cura, pero sí es posible una notable remisión de los síntomas",
+  "Cuadernos Hispanoamericanos. Octubre 2026",
+  "Hitos en la construcción de la fe",
+  "No es solo cuestión de dinero: lo que nadie nos cuenta sobre la jubilación"
  ]
 }
