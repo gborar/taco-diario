@@ -67,7 +67,10 @@
   "How to learn? From mistakes",
   "How to speak up for yourself",
   "The art of asking",
-  "The power of listening"
+  "The power of listening",
+  "What I learned from 100 days of rejection",
+  "How boredom can lead to your most brilliant ideas",
+  "Why you should make useless things"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -133,7 +136,10 @@
   "How to Get New Ideas",
   "Notes on «Camp»",
   "The Lesson to Unlearn",
-  "On Bullshit"
+  "On Bullshit",
+  "On Being Ill",
+  "Consider the Lobster",
+  "Por qué leer los clásicos"
  ],
  "reel": [
   "QuantumFracture",
@@ -197,7 +203,10 @@
   "Physics Girl",
   "Vsauce",
   "CGP Grey",
-  "minutephysics"
+  "minutephysics",
+  "Ter",
+  "El Robot de Platón",
+  "Jaime Altozano"
  ],
  "libro": [
   "Sapiens",
@@ -275,7 +284,10 @@
   "Los desafíos de la memoria",
   "La guerra de los mundos",
   "El jardín secreto",
-  "Cartas a Lucilio"
+  "Cartas a Lucilio",
+  "Drácula",
+  "La leyenda de Sleepy Hollow",
+  "El fantasma de Canterville"
  ],
  "pelicula": [
   "La llegada",
@@ -362,7 +374,10 @@
   "Mrs. Harris Goes to Paris",
   "Coraline",
   "Pesadilla antes de Navidad",
-  "La novia cadáver"
+  "La novia cadáver",
+  "Casper",
+  "Bitelchús",
+  "ParaNorman"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -431,7 +446,10 @@
   "Tres14",
   "Good Omens",
   "Ghosts",
-  "Over the Garden Wall"
+  "Over the Garden Wall",
+  "La familia Addams",
+  "What We Do in the Shadows",
+  "Embrujada"
  ],
  "cancion": [
   "Mediterráneo",
@@ -504,7 +522,10 @@
   "Bésame mucho",
   "Danse macabre",
   "Thriller",
-  "Manchild"
+  "Manchild",
+  "Ghostbusters",
+  "Monster Mash",
+  "Abracadabra"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -575,7 +596,10 @@
   "El kiwi pone un huevo enorme: puede pesar alrededor del 20 % del cuerpo de la hembra, una de las mayores proporciones de todas las aves.",
   "El 30 de octubre de 1938 Orson Welles emitió por radio una adaptación de «La guerra de los mundos» como si fuera un noticiario. Se contó que provocó un pánico masivo, pero los historiadores creen que la prensa lo exageró mucho.",
   "«Halloween» es una contracción de «All Hallows' Eve», la víspera de Todos los Santos en inglés.",
-  "La palabra «pánico» viene de Pan, el dios griego de los pastores, al que se atribuían los terrores repentinos que asaltaban a la gente en el campo."
+  "La palabra «pánico» viene de Pan, el dios griego de los pastores, al que se atribuían los terrores repentinos que asaltaban a la gente en el campo.",
+  "El 31 de octubre de 1517 Martín Lutero envió sus 95 tesis contra la venta de indulgencias, el inicio de la Reforma protestante. Que las clavara en la puerta de la iglesia de Wittenberg es tradición, pero no está documentado.",
+  "Las primeras linternas de Halloween no eran calabazas sino nabos tallados, una costumbre de Irlanda y Escocia. Los emigrantes la llevaron a América, donde la calabaza era más grande y fácil de vaciar.",
+  "El ilusionista Harry Houdini murió un 31 de octubre, el de 1926, de una peritonitis por la rotura del apéndice."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -655,7 +679,10 @@
   "Fuerza mayor",
   "Pareidolia",
   "Efecto Barnum",
-  "Sesgo de negatividad"
+  "Sesgo de negatividad",
+  "Disonancia cognitiva",
+  "Entropía",
+  "Testamento ológrafo"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -718,7 +745,10 @@
   "La lectura es una amistad.",
   "La literatura es noticia que sigue siendo noticia.",
   "La poesía es a la prosa lo que la danza es a la marcha.",
-  "Un poema nunca se termina, solo se abandona."
+  "Un poema nunca se termina, solo se abandona.",
+  "Una cosa bella es una alegría para siempre.",
+  "La belleza es verdad, la verdad, belleza.",
+  "Un clásico es un libro que nunca termina de decir lo que tiene que decir."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -780,7 +810,10 @@
   "¿Qué tiene agujeros por todas partes y aun así retiene el agua?",
   "¿Qué tiene cuello pero no tiene cabeza?",
   "¿Qué tiene dientes pero no muerde?",
-  "¿Qué sube y baja sin moverse del sitio?"
+  "¿Qué sube y baja sin moverse del sitio?",
+  "Me sigues de día y desaparezco de noche; cuanto más baja el sol, más largo me hago. ¿Qué soy?",
+  "¿Qué se puede atrapar pero no lanzar?",
+  "¿Qué tiene ojo pero no ve?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -843,7 +876,10 @@
   "¿Qué conversación reciente te ha hecho cambiar de idea?",
   "¿Qué te daba miedo de pequeña y hoy te hace sonreír?",
   "¿Qué historia de tu familia te gustaría que no se perdiera?",
-  "Si pudieras disfrazarte de otra persona por un día, ¿de quién sería?"
+  "Si pudieras disfrazarte de otra persona por un día, ¿de quién sería?",
+  "¿Qué libro te dio miedo y aun así no pudiste dejar de leer?",
+  "¿Qué tradición de otoño te gustaría recuperar?",
+  "¿Qué historia de miedo te contaban de pequeña?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -906,7 +942,10 @@
   "Grace Hopper",
   "Paul Valéry",
   "Alfred Sisley",
-  "Orson Welles"
+  "Orson Welles",
+  "John Keats",
+  "Johannes Vermeer",
+  "Michael Collins"
  ],
  "planta": [
   "Girasol",
@@ -969,7 +1008,10 @@
   "Durillo",
   "Endrino",
   "Azufaifo",
-  "Serbal de cazadores"
+  "Serbal de cazadores",
+  "Mandrágora otoñal",
+  "Boniato",
+  "Majuelo"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1041,7 +1083,10 @@
   "Cada oveja con su pareja.",
   "Querer es poder.",
   "Loro viejo no aprende a hablar.",
-  "El que la sigue la consigue."
+  "El que la sigue la consigue.",
+  "Donde las dan, las toman.",
+  "Ojo por ojo, diente por diente.",
+  "De noche todos los gatos son pardos."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1105,7 +1150,10 @@
   "Salirse con la suya",
   "Ponerse los pelos de punta",
   "Dar mala espina",
-  "Tener un esqueleto en el armario"
+  "Tener un esqueleto en el armario",
+  "Verle las orejas al lobo",
+  "Tener mal fario",
+  "Ser un alma en pena"
  ],
  "palabra": [
   "Arrebol",
@@ -1172,7 +1220,10 @@
   "Hwyl",
   "Aquelarre",
   "Torschlusspanik",
-  "Shōganai"
+  "Shōganai",
+  "Calan Gaeaf",
+  "Liminal",
+  "Yūrei"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1238,7 +1289,10 @@
   "Bebe un vaso de agua al despertar",
   "Deja el móvil fuera del dormitorio",
   "Ventila la casa diez minutos",
-  "Tres respiraciones antes de abrir el correo"
+  "Tres respiraciones antes de abrir el correo",
+  "Escribe una carta a mano",
+  "Una fruta de temporada al día",
+  "Apunta lo que ya has terminado"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1295,7 +1349,10 @@
   "Mira la llama de una vela",
   "Otoño acogedor con velas",
   "Ronroneo de gato",
-  "Cuenta hacia atrás de 50 a 1"
+  "Cuenta hacia atrás de 50 a 1",
+  "Bosque de otoño con niebla",
+  "Caldero de bruja",
+  "Microrrelato de miedo"
  ],
  "prensa": [
   "La Contra",
@@ -1341,7 +1398,10 @@
   "Choi Jin-young: el amor en el fin del mundo",
   "Feria del Libro de Sevilla 2026: fechas, horarios, autores y firmas desde este 28 de octubre",
   "Feria del Libro de Sevilla 2026: fechas, programa completo, autores invitados, firmas, casetas y todas las actividades del gran evento literario",
-  "Carmen Mola, Julia Navarro, Manuel Vilas, Alana S. Portero y María Oruña encabezan la programación de FELISE 2026"
+  "Carmen Mola, Julia Navarro, Manuel Vilas, Alana S. Portero y María Oruña encabezan la programación de FELISE 2026",
+  "Esta semana en tu quiosco: Sara Barquinero y Elena Medel, en El Cultural",
+  "'La Búsqueda de la Verdad' y las amenazas de la IA",
+  "'No mires': la represión de una dictadura y la memoria familiar"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1387,6 +1447,9 @@
   "El TOC no se cura, pero sí es posible una notable remisión de los síntomas",
   "Cuadernos Hispanoamericanos. Octubre 2026",
   "Hitos en la construcción de la fe",
-  "No es solo cuestión de dinero: lo que nadie nos cuenta sobre la jubilación"
+  "No es solo cuestión de dinero: lo que nadie nos cuenta sobre la jubilación",
+  "Réquiem por los libros que no escribirá Arturo",
+  "HALLOWEENVERTISING: ¿el nuevo Super Bowl de las marcas?",
+  "Carta desde Lima. Una noche de cachascán"
  ]
 }
