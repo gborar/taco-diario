@@ -73,7 +73,10 @@
   "Why you should make useless things",
   "We should all be feminists",
   "Everyday leadership",
-  "The paradox of choice"
+  "The paradox of choice",
+  "Your brain on improv",
+  "Music and emotion through time",
+  "The transformative power of classical music"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -145,7 +148,10 @@
   "Por qué leer los clásicos",
   "On Self-Respect",
   "Goodbye to All That",
-  "The Death of the Moth"
+  "The Death of the Moth",
+  "The Art of Fiction",
+  "Tradition and the Individual Talent",
+  "The Decay of Lying"
  ],
  "reel": [
   "QuantumFracture",
@@ -215,7 +221,10 @@
   "Jaime Altozano",
   "History Matters",
   "Crash Course",
-  "Overly Sarcastic Productions"
+  "Overly Sarcastic Productions",
+  "The Royal Institution",
+  "Tibees",
+  "Numberphile"
  ],
  "libro": [
   "Sapiens",
@@ -299,7 +308,10 @@
   "El fantasma de Canterville",
   "Sinuhé, el egipcio",
   "La historia interminable",
-  "El conde de Montecristo"
+  "El conde de Montecristo",
+  "Una breve historia de casi todo",
+  "El diario de Ana Frank",
+  "Lo que el viento se llevó"
  ],
  "pelicula": [
   "La llegada",
@@ -392,7 +404,10 @@
   "ParaNorman",
   "El príncipe de Egipto",
   "Descubriendo a Forrester",
-  "Una mente maravillosa"
+  "Una mente maravillosa",
+  "Lo que el viento se llevó",
+  "El graduado",
+  "Brooklyn"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -467,7 +482,10 @@
   "Embrujada",
   "Secrets of the Saqqara Tomb",
   "Cranford",
-  "Monty Don's Italian Gardens"
+  "Monty Don's Italian Gardens",
+  "Horizon",
+  "The Great British Sewing Bee",
+  "Antiques Roadshow"
  ],
  "cancion": [
   "Mediterráneo",
@@ -546,7 +564,10 @@
   "Abracadabra",
   "Pavane",
   "Sueño de una noche de verano: obertura",
-  "Ordinary"
+  "Ordinary",
+  "The Sound of Silence",
+  "Bridge over Troubled Water",
+  "The Fate of Ophelia"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -623,7 +644,10 @@
   "El ilusionista Harry Houdini murió un 31 de octubre, el de 1926, de una peritonitis por la rotura del apéndice.",
   "El 4 de noviembre de 1922 el equipo de Howard Carter encontró el primer escalón de la tumba de Tutankamón en el Valle de los Reyes. Fue la única tumba de un faraón hallada casi intacta.",
   "La constitución de la UNESCO entró en vigor el 4 de noviembre de 1946, tras ser ratificada por veinte países. Por eso hoy se celebra su aniversario.",
-  "La «Pasión según san Mateo» de Bach llevaba casi un siglo sin interpretarse completa cuando Felix Mendelssohn, con 20 años, la dirigió en Berlín en 1829. Fue el inicio de la recuperación de Bach."
+  "La «Pasión según san Mateo» de Bach llevaba casi un siglo sin interpretarse completa cuando Felix Mendelssohn, con 20 años, la dirigió en Berlín en 1829. Fue el inicio de la recuperación de Bach.",
+  "El 5 de noviembre de 1605 se descubrió en Londres la Conspiración de la Pólvora: Guy Fawkes custodiaba 36 barriles de pólvora bajo el Parlamento. Desde entonces los británicos encienden hogueras y fuegos artificiales esa noche.",
+  "En 1865 James Clerk Maxwell calculó la velocidad de las ondas electromagnéticas y vio que coincidía con la de la luz. Así descubrió que la luz es una onda electromagnética.",
+  "La primera fotografía en color la presentó Maxwell en 1861: una cinta de tartán fotografiada tres veces con filtros rojo, verde y azul y luego superpuesta."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -709,7 +733,10 @@
   "Testamento ológrafo",
   "Sesgo retrospectivo",
   "Usufructo",
-  "Paralaje"
+  "Paralaje",
+  "Campo electromagnético",
+  "Efecto IKEA",
+  "Servidumbre de paso"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -778,7 +805,10 @@
   "Un clásico es un libro que nunca termina de decir lo que tiene que decir.",
   "Sí, cosas maravillosas.",
   "Nos contamos historias para poder vivir.",
-  "Lo que me dice la música que amo no son pensamientos demasiado imprecisos para las palabras, sino demasiado precisos."
+  "Lo que me dice la música que amo no son pensamientos demasiado imprecisos para las palabras, sino demasiado precisos.",
+  "La verdadera lógica de este mundo es el cálculo de probabilidades.",
+  "Intenta ser una de esas personas en las que nada se pierde.",
+  "La vida imita al arte mucho más que el arte imita a la vida."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -846,7 +876,10 @@
   "¿Qué tiene ojo pero no ve?",
   "¿Qué palabra se escribe mal en todos los diccionarios?",
   "Si me tienes, quieres compartirme; si me compartes, ya no me tienes. ¿Qué soy?",
-  "¿Qué tiene hojas pero no es un árbol?"
+  "¿Qué tiene hojas pero no es un árbol?",
+  "¿Qué es lo que cuanto más seca, más mojado está?",
+  "¿Qué tiene manos pero no puede aplaudir?",
+  "¿Qué va de pueblo en pueblo sin moverse?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -915,7 +948,10 @@
   "¿Qué historia de miedo te contaban de pequeña?",
   "Si pudieras descubrir algo, ¿qué te gustaría que fuera?",
   "¿Qué objeto de tu casa contaría mejor tu historia?",
-  "¿Qué te gustaría aprender a mirar con más atención?"
+  "¿Qué te gustaría aprender a mirar con más atención?",
+  "¿Qué tradición del mundo te gustaría vivir en persona?",
+  "¿Qué idea cambiaste gracias a un libro?",
+  "Si pudieras preguntarle algo a un científico del pasado, ¿a quién y qué le preguntarías?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -984,7 +1020,10 @@
   "Michael Collins",
   "Howard Carter",
   "Felix Mendelssohn",
-  "Gabriel Fauré"
+  "Gabriel Fauré",
+  "James Clerk Maxwell",
+  "Ida Tarbell",
+  "Vivien Leigh"
  ],
  "planta": [
   "Girasol",
@@ -1053,7 +1092,10 @@
   "Majuelo",
   "Papiro",
   "Palmera datilera",
-  "Acanto"
+  "Acanto",
+  "Níspero europeo",
+  "Cornejo",
+  "Bonetero"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1131,7 +1173,10 @@
   "De noche todos los gatos son pardos.",
   "No es oro todo lo que reluce.",
   "Quien busca, encuentra.",
-  "En casa del herrero, cuchillo de palo."
+  "En casa del herrero, cuchillo de palo.",
+  "El tiempo es oro.",
+  "A buen hambre no hay pan duro.",
+  "En el término medio está la virtud."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1201,7 +1246,10 @@
   "Ser un alma en pena",
   "Descubrir el pastel",
   "Estar en el ajo",
-  "Poner la mano en el fuego"
+  "Poner la mano en el fuego",
+  "Echar leña al fuego",
+  "Sacar las castañas del fuego",
+  "Jugar con fuego"
  ],
  "palabra": [
   "Arrebol",
@@ -1274,7 +1322,10 @@
   "Yūrei",
   "Zeitgeist",
   "Arcano",
-  "Fingerspitzengefühl"
+  "Fingerspitzengefühl",
+  "Bonfire",
+  "Hanabi",
+  "Candela"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1346,7 +1397,10 @@
   "Apunta lo que ya has terminado",
   "Aprende una palabra nueva al día",
   "Riega tus plantas y míralas un minuto",
-  "Deja la mesa despejada al acabar el día"
+  "Deja la mesa despejada al acabar el día",
+  "Escucha un álbum entero sin hacer otra cosa",
+  "Mira el cielo cinco minutos al anochecer",
+  "Apunta tres ideas sueltas al día"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1409,7 +1463,10 @@
   "Microrrelato de miedo",
   "Atardecer en el Nilo",
   "Oasis en el desierto",
-  "Postal a tu yo futuro"
+  "Postal a tu yo futuro",
+  "Hoguera crepitante",
+  "Fuegos artificiales a cámara lenta",
+  "Carta a alguien que ya no está"
  ],
  "prensa": [
   "La Contra",
@@ -1461,7 +1518,10 @@
   "'No mires': la represión de una dictadura y la memoria familiar",
   "El escritor almeriense Juanma Gil, Premio Andalucía de las Letras",
   "'Mundo virtual' de Pedro Maestre Herrero, Premio de Poesía Manuel Alcántara",
-  "El Centro del 27 lleva a seis municipios de Málaga una obra de teatro que rinde homenaje a la Imprenta Sur"
+  "El Centro del 27 lleva a seis municipios de Málaga una obra de teatro que rinde homenaje a la Imprenta Sur",
+  "Pedro Almodóvar debuta en la novela con un original rompecabezas sobre el deseo, la soledad y la literatura",
+  "Gonçalo M. Tavares, premio Formentor 2026: \"La inteligencia artificial está pensada para contentar a los perezosos\"",
+  "Gonçalo Tavares, Premio Formentor 2026: «La lectura es un acto revolucionario»"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1513,6 +1573,9 @@
   "Carta desde Lima. Una noche de cachascán",
   "¿Por qué todavía no hemos visto una foto entera de la IA?",
   "Javier Recuenco y Miguel Ángel Uriondo: «El gran invento de la inteligencia artificial es llamar alucinaciones al “no tengo ni puta idea”»",
-  "La revista de noviembre de Yorokobu"
+  "La revista de noviembre de Yorokobu",
+  "¿Los libros vuelven a tomar las aulas?",
+  "Diego Fonseca: \"La democracia ha sido tapada por una enorme sombra\"",
+  "Una política exterior para América Latina"
  ]
 }
