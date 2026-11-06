@@ -76,7 +76,10 @@
   "The paradox of choice",
   "Your brain on improv",
   "Music and emotion through time",
-  "The transformative power of classical music"
+  "The transformative power of classical music",
+  "Go ahead, make up new words!",
+  "Why we love repetition in music",
+  "What makes a word real?"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -151,7 +154,10 @@
   "The Death of the Moth",
   "The Art of Fiction",
   "Tradition and the Individual Talent",
-  "The Decay of Lying"
+  "The Decay of Lying",
+  "The Hedgehog and the Fox",
+  "De la experiencia",
+  "Sobre la brevedad de la vida"
  ],
  "reel": [
   "QuantumFracture",
@@ -224,7 +230,10 @@
   "Overly Sarcastic Productions",
   "The Royal Institution",
   "Tibees",
-  "Numberphile"
+  "Numberphile",
+  "Adam Neely",
+  "Rick Beato",
+  "Polyphonic"
  ],
  "libro": [
   "Sapiens",
@@ -311,7 +320,10 @@
   "El conde de Montecristo",
   "Una breve historia de casi todo",
   "El diario de Ana Frank",
-  "Lo que el viento se llevó"
+  "Lo que el viento se llevó",
+  "Música, sólo música",
+  "El cascanueces y el rey de los ratones",
+  "El ruido eterno"
  ],
  "pelicula": [
   "La llegada",
@@ -407,7 +419,10 @@
   "Una mente maravillosa",
   "Lo que el viento se llevó",
   "El graduado",
-  "Brooklyn"
+  "Brooklyn",
+  "Fantasía",
+  "Soul",
+  "La La Land"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -485,7 +500,10 @@
   "Monty Don's Italian Gardens",
   "Horizon",
   "The Great British Sewing Bee",
-  "Antiques Roadshow"
+  "Antiques Roadshow",
+  "Later... with Jools Holland",
+  "Song Exploder",
+  "Classic Albums"
  ],
  "cancion": [
   "Mediterráneo",
@@ -567,7 +585,10 @@
   "Ordinary",
   "The Sound of Silence",
   "Bridge over Troubled Water",
-  "The Fate of Ophelia"
+  "The Fate of Ophelia",
+  "Vals de las flores",
+  "Take Five",
+  "Messy"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -647,7 +668,10 @@
   "La «Pasión según san Mateo» de Bach llevaba casi un siglo sin interpretarse completa cuando Felix Mendelssohn, con 20 años, la dirigió en Berlín en 1829. Fue el inicio de la recuperación de Bach.",
   "El 5 de noviembre de 1605 se descubrió en Londres la Conspiración de la Pólvora: Guy Fawkes custodiaba 36 barriles de pólvora bajo el Parlamento. Desde entonces los británicos encienden hogueras y fuegos artificiales esa noche.",
   "En 1865 James Clerk Maxwell calculó la velocidad de las ondas electromagnéticas y vio que coincidía con la de la luz. Así descubrió que la luz es una onda electromagnética.",
-  "La primera fotografía en color la presentó Maxwell en 1861: una cinta de tartán fotografiada tres veces con filtros rojo, verde y azul y luego superpuesta."
+  "La primera fotografía en color la presentó Maxwell en 1861: una cinta de tartán fotografiada tres veces con filtros rojo, verde y azul y luego superpuesta.",
+  "Adolphe Sax, el inventor del saxofón, nació el 6 de noviembre de 1814 en Dinant (Bélgica). Patentó el instrumento en 1846 pensando en las bandas militares; el jazz lo haría famoso casi un siglo después.",
+  "James Naismith, que nació el 6 de noviembre de 1861, inventó el baloncesto en 1891 para entretener en invierno a sus alumnos en un gimnasio de Massachusetts. Las primeras canastas eran cestos de melocotones.",
+  "En «El cascanueces» (1892), Chaikovski usó la celesta, un instrumento recién inventado que había descubierto en París, para la «Danza del hada de azúcar». Pidió que nadie más la conociera antes del estreno."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -736,7 +760,10 @@
   "Paralaje",
   "Campo electromagnético",
   "Efecto IKEA",
-  "Servidumbre de paso"
+  "Servidumbre de paso",
+  "Timbre",
+  "Efecto Mozart",
+  "Dominio público"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -808,7 +835,10 @@
   "Lo que me dice la música que amo no son pensamientos demasiado imprecisos para las palabras, sino demasiado precisos.",
   "La verdadera lógica de este mundo es el cálculo de probabilidades.",
   "Intenta ser una de esas personas en las que nada se pierde.",
-  "La vida imita al arte mucho más que el arte imita a la vida."
+  "La vida imita al arte mucho más que el arte imita a la vida.",
+  "La inspiración es una invitada que no visita con gusto a los perezosos.",
+  "El zorro sabe muchas cosas, pero el erizo sabe una sola y grande.",
+  "Cada hombre lleva en sí la forma entera de la condición humana."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -879,7 +909,10 @@
   "¿Qué tiene hojas pero no es un árbol?",
   "¿Qué es lo que cuanto más seca, más mojado está?",
   "¿Qué tiene manos pero no puede aplaudir?",
-  "¿Qué va de pueblo en pueblo sin moverse?"
+  "¿Qué va de pueblo en pueblo sin moverse?",
+  "¿Qué tiene teclas pero no abre ninguna puerta?",
+  "Un número multiplicado por sí mismo da 81, y sumado a sí mismo da 18. ¿Cuál es?",
+  "Si un gallo pone un huevo en lo alto de un tejado, ¿hacia qué lado cae?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -951,7 +984,10 @@
   "¿Qué te gustaría aprender a mirar con más atención?",
   "¿Qué tradición del mundo te gustaría vivir en persona?",
   "¿Qué idea cambiaste gracias a un libro?",
-  "Si pudieras preguntarle algo a un científico del pasado, ¿a quién y qué le preguntarías?"
+  "Si pudieras preguntarle algo a un científico del pasado, ¿a quién y qué le preguntarías?",
+  "¿Qué instrumento te gustaría saber tocar?",
+  "Si pudieras inventar una palabra, ¿qué significaría?",
+  "¿Qué canción pondrías para empezar un buen día?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1023,7 +1059,10 @@
   "Gabriel Fauré",
   "James Clerk Maxwell",
   "Ida Tarbell",
-  "Vivien Leigh"
+  "Vivien Leigh",
+  "Adolphe Sax",
+  "Piotr Ilich Chaikovski",
+  "James Naismith"
  ],
  "planta": [
   "Girasol",
@@ -1095,7 +1134,10 @@
   "Acanto",
   "Níspero europeo",
   "Cornejo",
-  "Bonetero"
+  "Bonetero",
+  "Caña común",
+  "Pícea de Noruega",
+  "Ébano"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1176,7 +1218,10 @@
   "En casa del herrero, cuchillo de palo.",
   "El tiempo es oro.",
   "A buen hambre no hay pan duro.",
-  "En el término medio está la virtud."
+  "En el término medio está la virtud.",
+  "La música amansa a las fieras.",
+  "Unos cardan la lana y otros llevan la fama.",
+  "Dime de qué presumes y te diré de qué careces."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1249,7 +1294,10 @@
   "Poner la mano en el fuego",
   "Echar leña al fuego",
   "Sacar las castañas del fuego",
-  "Jugar con fuego"
+  "Jugar con fuego",
+  "Dar la nota",
+  "Llevar la voz cantante",
+  "Bailar al son que tocan"
  ],
  "palabra": [
   "Arrebol",
@@ -1325,7 +1373,10 @@
   "Fingerspitzengefühl",
   "Bonfire",
   "Hanabi",
-  "Candela"
+  "Candela",
+  "Ohrwurm",
+  "Ma",
+  "Melómano"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1400,7 +1451,10 @@
   "Deja la mesa despejada al acabar el día",
   "Escucha un álbum entero sin hacer otra cosa",
   "Mira el cielo cinco minutos al anochecer",
-  "Apunta tres ideas sueltas al día"
+  "Apunta tres ideas sueltas al día",
+  "Canta o tararea cinco minutos",
+  "Una pieza de música clásica nueva a la semana",
+  "Una canción entre tarea y tarea"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1466,7 +1520,10 @@
   "Postal a tu yo futuro",
   "Hoguera crepitante",
   "Fuegos artificiales a cámara lenta",
-  "Carta a alguien que ya no está"
+  "Carta a alguien que ya no está",
+  "Saxofón nocturno",
+  "ASMR de afinación de piano",
+  "Escucha y nombra cinco sonidos"
  ],
  "prensa": [
   "La Contra",
@@ -1521,7 +1578,10 @@
   "El Centro del 27 lleva a seis municipios de Málaga una obra de teatro que rinde homenaje a la Imprenta Sur",
   "Pedro Almodóvar debuta en la novela con un original rompecabezas sobre el deseo, la soledad y la literatura",
   "Gonçalo M. Tavares, premio Formentor 2026: \"La inteligencia artificial está pensada para contentar a los perezosos\"",
-  "Gonçalo Tavares, Premio Formentor 2026: «La lectura es un acto revolucionario»"
+  "Gonçalo Tavares, Premio Formentor 2026: «La lectura es un acto revolucionario»",
+  "Los Planetas y otras doce figuras e instituciones reciben los II Premios Andalucía de la Cultura",
+  "La diseñadora cordobesa Juana Martín, Premio Andalucía de la Cultura 2026",
+  "La Casa de la Cultura de Martos acoge la exposición 'Libros de artista 2026'"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1576,6 +1636,9 @@
   "La revista de noviembre de Yorokobu",
   "¿Los libros vuelven a tomar las aulas?",
   "Diego Fonseca: \"La democracia ha sido tapada por una enorme sombra\"",
-  "Una política exterior para América Latina"
+  "Una política exterior para América Latina",
+  "Estudian el cerebro de los bebés y descubren que su conciencia podría aparecer mucho antes de lo que creían",
+  "Estrés electoral",
+  "La tragedia y el síntoma"
  ]
 }
