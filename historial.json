@@ -82,7 +82,10 @@
   "What makes a word real?",
   "The genius of Marie Curie",
   "How language shapes the way we think",
-  "The beauty of being a misfit"
+  "The beauty of being a misfit",
+  "How X-rays see through your skin",
+  "Kazuo Ishiguro, Nobel Lecture",
+  "How memories form and how we lose them"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -163,7 +166,10 @@
   "Sobre la brevedad de la vida",
   "El mito de Sísifo",
   "The Discovery of Radium",
-  "Discurso de Suecia"
+  "Discurso de Suecia",
+  "Sobre una nueva clase de rayos",
+  "Mi noche del siglo XX y otros pequeños hallazgos",
+  "Sobre la lectura"
  ],
  "reel": [
   "QuantumFracture",
@@ -242,7 +248,10 @@
   "Polyphonic",
   "Kyle Hill",
   "Periodic Videos",
-  "Up and Atom"
+  "Up and Atom",
+  "Justin Sung",
+  "Medlife Crisis",
+  "Answer in Progress"
  ],
  "libro": [
   "Sapiens",
@@ -335,7 +344,10 @@
   "El ruido eterno",
   "El extranjero",
   "La peste",
-  "La vida de Madame Curie"
+  "La vida de Madame Curie",
+  "Los restos del día",
+  "Biografía del silencio",
+  "Un artista del mundo flotante"
  ],
  "pelicula": [
   "La llegada",
@@ -437,7 +449,10 @@
   "La La Land",
   "Radioactive",
   "Madame Curie",
-  "El primer hombre"
+  "El primer hombre",
+  "Nunca me abandones",
+  "Living",
+  "84 Charing Cross Road"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -521,7 +536,10 @@
   "Classic Albums",
   "Genius",
   "The Big Bang Theory",
-  "Genius: Picasso"
+  "Genius: Picasso",
+  "The Brain with David Eagleman",
+  "Érase una vez... el cuerpo humano",
+  "The Story of Maths"
  ],
  "cancion": [
   "Mediterráneo",
@@ -609,7 +627,10 @@
   "Messy",
   "Both Sides Now",
   "A Case of You",
-  "Saturn"
+  "Saturn",
+  "Lovin' You",
+  "Angel from Montgomery",
+  "Berghain"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -695,7 +716,10 @@
   "En «El cascanueces» (1892), Chaikovski usó la celesta, un instrumento recién inventado que había descubierto en París, para la «Danza del hada de azúcar». Pidió que nadie más la conociera antes del estreno.",
   "Marie Curie nació en Varsovia el 7 de noviembre de 1867. Fue la primera mujer en ganar un Nobel y sigue siendo la única persona premiada en dos ciencias distintas: Física (1903) y Química (1911).",
   "Lise Meitner y su sobrino Otto Frisch explicaron la fisión nuclear en 1939 durante un paseo por la nieve en Suecia, haciendo cálculos sobre un tronco.",
-  "Albert Camus recibió el Premio Nobel de Literatura en 1957 con solo 44 años, uno de los más jóvenes en conseguirlo. Murió en un accidente de coche tres años después."
+  "Albert Camus recibió el Premio Nobel de Literatura en 1957 con solo 44 años, uno de los más jóvenes en conseguirlo. Murió en un accidente de coche tres años después.",
+  "Wilhelm Röntgen descubrió los rayos X el 8 de noviembre de 1895. Ganó el primer Nobel de Física en 1901 y se negó a patentarlos para que cualquiera pudiera usarlos.",
+  "Bram Stoker, el autor de «Drácula», nació en Dublín el 8 de noviembre de 1847. Pasó casi toda su infancia en cama por una enfermedad que nunca se aclaró.",
+  "Edmond Halley, que nació un 8 de noviembre de 1656, predijo que el cometa visto en 1682 volvería en 1758. Volvió, pero él ya había muerto; desde entonces lleva su nombre."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -790,7 +814,10 @@
   "Dominio público",
   "Fisión nuclear",
   "Lo absurdo",
-  "Semivida"
+  "Semivida",
+  "Espectro electromagnético",
+  "Narrador no fiable",
+  "Sinestesia"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -868,7 +895,10 @@
   "Cada hombre lleva en sí la forma entera de la condición humana.",
   "En medio del invierno aprendí por fin que había en mí un verano invencible.",
   "La verdadera generosidad hacia el futuro consiste en entregarlo todo al presente.",
-  "No hay sol sin sombra, y es preciso conocer la noche."
+  "No hay sol sin sombra, y es preciso conocer la noche.",
+  "La mente es su propio lugar, y en sí misma puede hacer un cielo del infierno y un infierno del cielo.",
+  "No pensé; investigué.",
+  "Bienvenido a mi casa. Entre libremente y por su propia voluntad."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -945,7 +975,10 @@
   "Si un gallo pone un huevo en lo alto de un tejado, ¿hacia qué lado cae?",
   "¿Qué tiene cuatro patas pero no puede caminar?",
   "¿Qué se hace más corto cuanto más se usa?",
-  "¿Qué sube cuando baja la lluvia?"
+  "¿Qué sube cuando baja la lluvia?",
+  "¿Qué puedes coger pero nunca lanzar?",
+  "¿Qué tiene ojos pero no ve?",
+  "¿Qué se rompe con solo decir su nombre?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1023,7 +1056,10 @@
   "¿Qué canción pondrías para empezar un buen día?",
   "¿Cuál es tu «verano invencible», lo que te sostiene cuando todo se pone difícil?",
   "Si fueras investigadora, ¿qué misterio te gustaría resolver?",
-  "¿Te sientes distinta cuando hablas en otro idioma?"
+  "¿Te sientes distinta cuando hablas en otro idioma?",
+  "Si pudieras ver por dentro una cosa, como hacen los rayos X, ¿qué te gustaría mirar?",
+  "¿Qué harías hoy si nadie fuera a verlo ni a saberlo?",
+  "¿Qué libro te gustaría leer acompañada de otras personas?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1101,7 +1137,10 @@
   "James Naismith",
   "Lise Meitner",
   "Albert Camus",
-  "Joni Mitchell"
+  "Joni Mitchell",
+  "Hermann Rorschach",
+  "Christiaan Barnard",
+  "Edmond Halley"
  ],
  "planta": [
   "Girasol",
@@ -1179,7 +1218,10 @@
   "Ébano",
   "Algarrobo",
   "Lentisco",
-  "Cardo corredor"
+  "Cardo corredor",
+  "Palmito",
+  "Cornicabra",
+  "Coscoja"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1266,7 +1308,10 @@
   "Dime de qué presumes y te diré de qué careces.",
   "Más vale ser cabeza de ratón que cola de león.",
   "Quien mucho habla, mucho yerra.",
-  "Lo que no mata, engorda."
+  "Lo que no mata, engorda.",
+  "Quien ríe el último ríe mejor.",
+  "Hablando se entiende la gente.",
+  "Quien algo quiere, algo le cuesta."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1345,7 +1390,10 @@
   "Bailar al son que tocan",
   "Ser un culo de mal asiento",
   "Echar una mano",
-  "Ir con pies de plomo"
+  "Ir con pies de plomo",
+  "Hacer de tripas corazón",
+  "Estar hecho polvo",
+  "Ponerse las pilas"
  ],
  "palabra": [
   "Arrebol",
@@ -1427,7 +1475,10 @@
   "Melómano",
   "Radiactividad",
   "Gedankenexperiment",
-  "Weltanschauung"
+  "Weltanschauung",
+  "Shibui",
+  "Sonder",
+  "Mottainai"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1508,7 +1559,10 @@
   "Una canción entre tarea y tarea",
   "Una página al día en otro idioma",
   "Un café sin pantalla",
-  "Pregunta algo a quien sepa más"
+  "Pregunta algo a quien sepa más",
+  "Cinco minutos de silencio",
+  "Un párrafo en voz alta",
+  "Apuntar una cosa aprendida"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1580,7 +1634,10 @@
   "Escucha y nombra cinco sonidos",
   "Ruinas romanas junto al mar",
   "Lluvia en un invernadero",
-  "Tu verano invencible"
+  "Tu verano invencible",
+  "Meditación guiada de diez minutos",
+  "Lluvia en una biblioteca antigua",
+  "Cinco cosas que ves"
  ],
  "prensa": [
   "La Contra",
@@ -1641,7 +1698,10 @@
   "La Casa de la Cultura de Martos acoge la exposición 'Libros de artista 2026'",
   "Los libros más esperados de noviembre: Gonzalo Suárez según Javier Cercas y lo nuevo de Cristina Peri Rossi",
   "Javier López Alós, autor de «Homo postacademicus»: «Hoy el eje de la vida universitaria es la supervivencia»",
-  "Premio Cervantes 2026 para Cristina Fernández Cubas: \"Hay que ir donde crees que tienes que ir\""
+  "Premio Cervantes 2026 para Cristina Fernández Cubas: \"Hay que ir donde crees que tienes que ir\"",
+  "Jaén se engancha a las bibliotecas: récord con casi 200.000 usuarios y 6.000 actividades",
+  "En busca de Pastora Imperio en el retiro malagueño donde se pule la inspiración flamenca: «Aquí el trabajo cristaliza»",
+  "Rafael Amargo: «Sé muchas cosas y todo tiene un precio o un silencio»"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1702,6 +1762,9 @@
   "La tragedia y el síntoma",
   "La persona que soy en inglés",
   "Una nueva teoría sobre la evolución plantea una pregunta que Darwin no llegó a resolver",
-  "Sabrina Pasterski, la 'nueva Einstein' que lidera la idea de unificar la relatividad con la mecánica cuántica"
+  "Sabrina Pasterski, la 'nueva Einstein' que lidera la idea de unificar la relatividad con la mecánica cuántica",
+  "Pablo d’Ors: «Pese a las apariencias, hoy hay mucho más amor y mucha más consciencia»",
+  "Elogio de los clubes de lectura",
+  "Influencers de la soledad"
  ]
 }
