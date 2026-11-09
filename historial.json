@@ -85,7 +85,10 @@
   "The beauty of being a misfit",
   "How X-rays see through your skin",
   "Kazuo Ishiguro, Nobel Lecture",
-  "How memories form and how we lose them"
+  "How memories form and how we lose them",
+  "Pale Blue Dot",
+  "Carl Sagan's last interview",
+  "The fall of the Berlin Wall"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -169,7 +172,10 @@
   "Discurso de Suecia",
   "Sobre una nueva clase de rayos",
   "Mi noche del siglo XX y otros pequeños hallazgos",
-  "Sobre la lectura"
+  "Sobre la lectura",
+  "El arte refinado de detectar camelos",
+  "Un punto azul pálido",
+  "No entres dócilmente en esa buena noche"
  ],
  "reel": [
   "QuantumFracture",
@@ -251,7 +257,10 @@
   "Up and Atom",
   "Justin Sung",
   "Medlife Crisis",
-  "Answer in Progress"
+  "Answer in Progress",
+  "Dr. Becky",
+  "Astrum",
+  "Easy German"
  ],
  "libro": [
   "Sapiens",
@@ -347,7 +356,10 @@
   "La vida de Madame Curie",
   "Los restos del día",
   "Biografía del silencio",
-  "Un artista del mundo flotante"
+  "Un artista del mundo flotante",
+  "El mundo y sus demonios",
+  "Padres e hijos",
+  "Sin destino"
  ],
  "pelicula": [
   "La llegada",
@@ -452,7 +464,10 @@
   "El primer hombre",
   "Nunca me abandones",
   "Living",
-  "84 Charing Cross Road"
+  "84 Charing Cross Road",
+  "Good Bye, Lenin!",
+  "Bombshell: The Hedy Lamarr Story",
+  "El cielo sobre Berlín"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -539,7 +554,10 @@
   "Genius: Picasso",
   "The Brain with David Eagleman",
   "Érase una vez... el cuerpo humano",
-  "The Story of Maths"
+  "The Story of Maths",
+  "Cosmos: A Spacetime Odyssey",
+  "Wonders of the Universe",
+  "How the Universe Works"
  ],
  "cancion": [
   "Mediterráneo",
@@ -630,7 +648,10 @@
   "Saturn",
   "Lovin' You",
   "Angel from Montgomery",
-  "Berghain"
+  "Berghain",
+  "\"Heroes\"",
+  "Himno de la alegría",
+  "Lose Control"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -719,7 +740,10 @@
   "Albert Camus recibió el Premio Nobel de Literatura en 1957 con solo 44 años, uno de los más jóvenes en conseguirlo. Murió en un accidente de coche tres años después.",
   "Wilhelm Röntgen descubrió los rayos X el 8 de noviembre de 1895. Ganó el primer Nobel de Física en 1901 y se negó a patentarlos para que cualquiera pudiera usarlos.",
   "Bram Stoker, el autor de «Drácula», nació en Dublín el 8 de noviembre de 1847. Pasó casi toda su infancia en cama por una enfermedad que nunca se aclaró.",
-  "Edmond Halley, que nació un 8 de noviembre de 1656, predijo que el cometa visto en 1682 volvería en 1758. Volvió, pero él ya había muerto; desde entonces lleva su nombre."
+  "Edmond Halley, que nació un 8 de noviembre de 1656, predijo que el cometa visto en 1682 volvería en 1758. Volvió, pero él ya había muerto; desde entonces lleva su nombre.",
+  "El Muro de Berlín cayó el 9 de noviembre de 1989 por un despiste: el portavoz Günter Schabowski anunció en una rueda de prensa que la nueva ley de viajes entraba en vigor «inmediatamente», cuando no era así. Esa noche miles de personas fueron a la frontera.",
+  "En 1990 la Voyager 1 fotografió la Tierra desde unos 6.000 millones de kilómetros. En la imagen, nuestro planeta ocupa menos de un píxel.",
+  "Hedy Lamarr y George Antheil usaron rollos de pianola para sincronizar los saltos de frecuencia de su invento: había 88 frecuencias, tantas como teclas tiene un piano."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -817,7 +841,10 @@
   "Semivida",
   "Espectro electromagnético",
   "Narrador no fiable",
-  "Sinestesia"
+  "Sinestesia",
+  "Salto de frecuencia",
+  "Año luz",
+  "Pensamiento crítico"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -898,7 +925,10 @@
   "No hay sol sin sombra, y es preciso conocer la noche.",
   "La mente es su propio lugar, y en sí misma puede hacer un cielo del infierno y un infierno del cielo.",
   "No pensé; investigué.",
-  "Bienvenido a mi casa. Entre libremente y por su propia voluntad."
+  "Bienvenido a mi casa. Entre libremente y por su propia voluntad.",
+  "Afirmaciones extraordinarias requieren pruebas extraordinarias.",
+  "No entres dócilmente en esa buena noche.",
+  "El tiempo a veces vuela como un pájaro y a veces se arrastra como un gusano."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -978,7 +1008,10 @@
   "¿Qué sube cuando baja la lluvia?",
   "¿Qué puedes coger pero nunca lanzar?",
   "¿Qué tiene ojos pero no ve?",
-  "¿Qué se rompe con solo decir su nombre?"
+  "¿Qué se rompe con solo decir su nombre?",
+  "¿Qué puede dar la vuelta al mundo sin salir de su esquina?",
+  "¿Qué es tuyo pero lo usan más los demás?",
+  "¿Qué se moja mientras seca?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1059,7 +1092,10 @@
   "¿Te sientes distinta cuando hablas en otro idioma?",
   "Si pudieras ver por dentro una cosa, como hacen los rayos X, ¿qué te gustaría mirar?",
   "¿Qué harías hoy si nadie fuera a verlo ni a saberlo?",
-  "¿Qué libro te gustaría leer acompañada de otras personas?"
+  "¿Qué libro te gustaría leer acompañada de otras personas?",
+  "¿Qué muro, de los que llevas dentro, te gustaría ver caer?",
+  "Si pudieras mandar un mensaje al espacio, ¿qué dirías?",
+  "¿Qué invento te habría gustado crear a ti?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1140,7 +1176,10 @@
   "Joni Mitchell",
   "Hermann Rorschach",
   "Christiaan Barnard",
-  "Edmond Halley"
+  "Edmond Halley",
+  "Iván Turguénev",
+  "Imre Kertész",
+  "Dylan Thomas"
  ],
  "planta": [
   "Girasol",
@@ -1221,7 +1260,10 @@
   "Cardo corredor",
   "Palmito",
   "Cornicabra",
-  "Coscoja"
+  "Coscoja",
+  "Acebuche",
+  "Cantueso",
+  "Jara pringosa"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1311,7 +1353,10 @@
   "Lo que no mata, engorda.",
   "Quien ríe el último ríe mejor.",
   "Hablando se entiende la gente.",
-  "Quien algo quiere, algo le cuesta."
+  "Quien algo quiere, algo le cuesta.",
+  "Quien tiene un amigo tiene un tesoro.",
+  "Mal de muchos, consuelo de tontos.",
+  "A lo hecho, pecho."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1393,7 +1438,10 @@
   "Ir con pies de plomo",
   "Hacer de tripas corazón",
   "Estar hecho polvo",
-  "Ponerse las pilas"
+  "Ponerse las pilas",
+  "Estar como pez en el agua",
+  "Tomar el pelo",
+  "Echar balones fuera"
  ],
  "palabra": [
   "Arrebol",
@@ -1478,7 +1526,10 @@
   "Weltanschauung",
   "Shibui",
   "Sonder",
-  "Mottainai"
+  "Mottainai",
+  "Mauerspecht",
+  "Kummerspeck",
+  "Serendipity"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1562,7 +1613,10 @@
   "Pregunta algo a quien sepa más",
   "Cinco minutos de silencio",
   "Un párrafo en voz alta",
-  "Apuntar una cosa aprendida"
+  "Apuntar una cosa aprendida",
+  "Cinco minutos mirando el cielo",
+  "Preguntar «¿cómo lo sé?»",
+  "Una palabra nueva en otro idioma"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1637,7 +1691,10 @@
   "Tu verano invencible",
   "Meditación guiada de diez minutos",
   "Lluvia en una biblioteca antigua",
-  "Cinco cosas que ves"
+  "Cinco cosas que ves",
+  "Sonidos del espacio",
+  "Paseo bajo las estrellas",
+  "Lluvia nocturna en la ciudad"
  ],
  "prensa": [
   "La Contra",
@@ -1701,7 +1758,10 @@
   "Premio Cervantes 2026 para Cristina Fernández Cubas: \"Hay que ir donde crees que tienes que ir\"",
   "Jaén se engancha a las bibliotecas: récord con casi 200.000 usuarios y 6.000 actividades",
   "En busca de Pastora Imperio en el retiro malagueño donde se pule la inspiración flamenca: «Aquí el trabajo cristaliza»",
-  "Rafael Amargo: «Sé muchas cosas y todo tiene un precio o un silencio»"
+  "Rafael Amargo: «Sé muchas cosas y todo tiene un precio o un silencio»",
+  "Vicente Luis Mora: «La incomodidad es el estado natural de la literatura»",
+  "Rosa María Mateos: «Somos un país con poca cultura geológica»",
+  "Lucía, la salmantina de 23 años que convierte los recuerdos de los mayores en imágenes gracias a la IA"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1765,6 +1825,9 @@
   "Sabrina Pasterski, la 'nueva Einstein' que lidera la idea de unificar la relatividad con la mecánica cuántica",
   "Pablo d’Ors: «Pese a las apariencias, hoy hay mucho más amor y mucha más consciencia»",
   "Elogio de los clubes de lectura",
-  "Influencers de la soledad"
+  "Influencers de la soledad",
+  "Gonçalo Tavares: «Si te asaltan en la calle es bueno saber kárate, pero para defendernos en democracia es mejor saber lengua»",
+  "¿Qué es un niño? El misterio de la literatura",
+  "Fernández Cubas, exploradora de las grietas"
  ]
 }
