@@ -88,7 +88,10 @@
   "How memories form and how we lose them",
   "Pale Blue Dot",
   "Carl Sagan's last interview",
-  "The fall of the Berlin Wall"
+  "The fall of the Berlin Wall",
+  "Ennio Morricone dirige «Gabriel's Oboe» en directo",
+  "The Ecstasy of Gold (live)",
+  "How playing an instrument benefits your brain"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -175,7 +178,10 @@
   "Sobre la lectura",
   "El arte refinado de detectar camelos",
   "Un punto azul pálido",
-  "No entres dócilmente en esa buena noche"
+  "No entres dócilmente en esa buena noche",
+  "Cartas sobre la educación estética del hombre",
+  "Oda a la alegría",
+  "Comporre per il cinema"
  ],
  "reel": [
   "QuantumFracture",
@@ -260,7 +266,10 @@
   "Answer in Progress",
   "Dr. Becky",
   "Astrum",
-  "Easy German"
+  "Easy German",
+  "Nahre Sol",
+  "Classic FM",
+  "12tone"
  ],
  "libro": [
   "Sapiens",
@@ -359,7 +368,10 @@
   "Un artista del mundo flotante",
   "El mundo y sus demonios",
   "Padres e hijos",
-  "Sin destino"
+  "Sin destino",
+  "En busca de aquel sonido",
+  "Guillermo Tell",
+  "Musicofilia"
  ],
  "pelicula": [
   "La llegada",
@@ -467,7 +479,10 @@
   "84 Charing Cross Road",
   "Good Bye, Lenin!",
   "Bombshell: The Hedy Lamarr Story",
-  "El cielo sobre Berlín"
+  "El cielo sobre Berlín",
+  "Ennio, el maestro",
+  "La leyenda del pianista en el océano",
+  "La misión"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -557,7 +572,10 @@
   "The Story of Maths",
   "Cosmos: A Spacetime Odyssey",
   "Wonders of the Universe",
-  "How the Universe Works"
+  "How the Universe Works",
+  "Sesame Street",
+  "Howard Goodall's Story of Music",
+  "Soundbreaking"
  ],
  "cancion": [
   "Mediterráneo",
@@ -651,7 +669,10 @@
   "Berghain",
   "\"Heroes\"",
   "Himno de la alegría",
-  "Lose Control"
+  "Lose Control",
+  "Gabriel's Oboe",
+  "Nella fantasia",
+  "Tattoo"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -743,7 +764,10 @@
   "Edmond Halley, que nació un 8 de noviembre de 1656, predijo que el cometa visto en 1682 volvería en 1758. Volvió, pero él ya había muerto; desde entonces lleva su nombre.",
   "El Muro de Berlín cayó el 9 de noviembre de 1989 por un despiste: el portavoz Günter Schabowski anunció en una rueda de prensa que la nueva ley de viajes entraba en vigor «inmediatamente», cuando no era así. Esa noche miles de personas fueron a la frontera.",
   "En 1990 la Voyager 1 fotografió la Tierra desde unos 6.000 millones de kilómetros. En la imagen, nuestro planeta ocupa menos de un píxel.",
-  "Hedy Lamarr y George Antheil usaron rollos de pianola para sincronizar los saltos de frecuencia de su invento: había 88 frecuencias, tantas como teclas tiene un piano."
+  "Hedy Lamarr y George Antheil usaron rollos de pianola para sincronizar los saltos de frecuencia de su invento: había 88 frecuencias, tantas como teclas tiene un piano.",
+  "El 10 de noviembre de 1871 el periodista Henry Morton Stanley encontró al explorador David Livingstone en Ujiji, junto al lago Tanganica. Su famoso «¿El doctor Livingstone, supongo?» quizá lo añadió después: la página de su diario de ese día se arrancó.",
+  "Martín Lutero, que nació un 10 de noviembre de 1483, tradujo la Biblia al alemán con palabras de la calle. Su traducción ayudó a fijar el alemán moderno.",
+  "Para el silbido de «Por un puñado de dólares», Morricone contó con Alessandro Alessandroni, que silbaba de oído, y su sonido se convirtió en la marca de los westerns italianos."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -844,7 +868,10 @@
   "Sinestesia",
   "Salto de frecuencia",
   "Año luz",
-  "Pensamiento crítico"
+  "Pensamiento crítico",
+  "Leitmotiv",
+  "Música diegética",
+  "Escala pentatónica"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -928,7 +955,10 @@
   "Bienvenido a mi casa. Entre libremente y por su propia voluntad.",
   "Afirmaciones extraordinarias requieren pruebas extraordinarias.",
   "No entres dócilmente en esa buena noche.",
-  "El tiempo a veces vuela como un pájaro y a veces se arrastra como un gusano."
+  "El tiempo a veces vuela como un pájaro y a veces se arrastra como un gusano.",
+  "El ser humano solo es plenamente humano cuando juega.",
+  "Sin música, la vida sería un error.",
+  "Contra la estupidez, los propios dioses luchan en vano."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1011,7 +1041,10 @@
   "¿Qué se rompe con solo decir su nombre?",
   "¿Qué puede dar la vuelta al mundo sin salir de su esquina?",
   "¿Qué es tuyo pero lo usan más los demás?",
-  "¿Qué se moja mientras seca?"
+  "¿Qué se moja mientras seca?",
+  "¿Qué tiene muchas llaves pero no abre ninguna puerta?",
+  "¿Qué tiene cuerdas pero no se puede atar?",
+  "Si tienes una caja con 3 manzanas y te llevas 2, ¿cuántas tienes?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1095,7 +1128,10 @@
   "¿Qué libro te gustaría leer acompañada de otras personas?",
   "¿Qué muro, de los que llevas dentro, te gustaría ver caer?",
   "Si pudieras mandar un mensaje al espacio, ¿qué dirías?",
-  "¿Qué invento te habría gustado crear a ti?"
+  "¿Qué invento te habría gustado crear a ti?",
+  "Si tu vida fuera una película, ¿qué canción sonaría en los créditos?",
+  "¿Qué música te devuelve a tu infancia en cuanto la oyes?",
+  "¿Qué te habría gustado aprender de niña que todavía estás a tiempo de aprender?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1179,7 +1215,10 @@
   "Edmond Halley",
   "Iván Turguénev",
   "Imre Kertész",
-  "Dylan Thomas"
+  "Dylan Thomas",
+  "Ennio Morricone",
+  "Friedrich Schiller",
+  "Martín Lutero"
  ],
  "planta": [
   "Girasol",
@@ -1263,7 +1302,10 @@
   "Coscoja",
   "Acebuche",
   "Cantueso",
-  "Jara pringosa"
+  "Jara pringosa",
+  "Escaramujo",
+  "Serbal común",
+  "Torvisco"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1356,7 +1398,10 @@
   "Quien algo quiere, algo le cuesta.",
   "Quien tiene un amigo tiene un tesoro.",
   "Mal de muchos, consuelo de tontos.",
-  "A lo hecho, pecho."
+  "A lo hecho, pecho.",
+  "Ande yo caliente y ríase la gente.",
+  "Cada uno es dueño de su silencio y esclavo de sus palabras.",
+  "No hay dos sin tres."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1441,7 +1486,10 @@
   "Ponerse las pilas",
   "Estar como pez en el agua",
   "Tomar el pelo",
-  "Echar balones fuera"
+  "Echar balones fuera",
+  "Sonar a chino",
+  "Irse con la música a otra parte",
+  "Ser música celestial"
  ],
  "palabra": [
   "Arrebol",
@@ -1529,7 +1577,10 @@
   "Mottainai",
   "Mauerspecht",
   "Kummerspeck",
-  "Serendipity"
+  "Serendipity",
+  "Frisson",
+  "Kuchisabishii",
+  "Yoin"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1616,7 +1667,10 @@
   "Apuntar una cosa aprendida",
   "Cinco minutos mirando el cielo",
   "Preguntar «¿cómo lo sé?»",
-  "Una palabra nueva en otro idioma"
+  "Una palabra nueva en otro idioma",
+  "Una pieza entera sin hacer nada más",
+  "Aprender una canción en otro idioma",
+  "Tararear al caminar"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1694,7 +1748,10 @@
   "Cinco cosas que ves",
   "Sonidos del espacio",
   "Paseo bajo las estrellas",
-  "Lluvia nocturna en la ciudad"
+  "Lluvia nocturna en la ciudad",
+  "Bandas sonoras para concentrarse",
+  "Lluvia y piano",
+  "Escucha profunda"
  ],
  "prensa": [
   "La Contra",
@@ -1761,7 +1818,10 @@
   "Rafael Amargo: «Sé muchas cosas y todo tiene un precio o un silencio»",
   "Vicente Luis Mora: «La incomodidad es el estado natural de la literatura»",
   "Rosa María Mateos: «Somos un país con poca cultura geológica»",
-  "Lucía, la salmantina de 23 años que convierte los recuerdos de los mayores en imágenes gracias a la IA"
+  "Lucía, la salmantina de 23 años que convierte los recuerdos de los mayores en imágenes gracias a la IA",
+  "La histórica Imprenta Sur de la Generación del 27 ya está en el Palacio de Valdeflores",
+  "Andrés Neuman, Premio Literario San Clemente",
+  "Un nuevo sonido para Lorca y un reconocimiento a la Granada creativa en los Premios de la Cultura"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1828,6 +1888,9 @@
   "Influencers de la soledad",
   "Gonçalo Tavares: «Si te asaltan en la calle es bueno saber kárate, pero para defendernos en democracia es mejor saber lengua»",
   "¿Qué es un niño? El misterio de la literatura",
-  "Fernández Cubas, exploradora de las grietas"
+  "Fernández Cubas, exploradora de las grietas",
+  "El cine también se pudre: historia de las películas perdidas",
+  "Gaudí y la naturaleza",
+  "La envidia de los intelectuales"
  ]
 }
