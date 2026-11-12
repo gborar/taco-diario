@@ -94,7 +94,10 @@
   "How playing an instrument benefits your brain",
   "Why should you read Kurt Vonnegut?",
   "Kurt Vonnegut on the Shapes of Stories",
-  "Christmas Truce 1914"
+  "Christmas Truce 1914",
+  "The next web",
+  "A Magna Carta for the web",
+  "Smarthistory: Rodin, The Burghers of Calais"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -187,7 +190,10 @@
   "Comporre per il cinema",
   "How to Write With Style",
   "Memorias del subsuelo",
-  "El Discurso de Pushkin"
+  "El Discurso de Pushkin",
+  "WorldWideWeb: Proposal for a HyperText Project",
+  "Respuesta a sor Filotea de la Cruz",
+  "El testamento de Rodin"
  ],
  "reel": [
   "QuantumFracture",
@@ -278,7 +284,10 @@
   "12tone",
   "Ariel Bissett",
   "Pages Unbound",
-  "Better Than Food"
+  "Better Than Food",
+  "Great Art Explained",
+  "Smarthistory",
+  "Polyglot Pablo"
  ],
  "libro": [
   "Sapiens",
@@ -383,7 +392,10 @@
   "Musicofilia",
   "Noches blancas",
   "Matadero cinco",
-  "Aura"
+  "Aura",
+  "Jim Botón y Lucas el maquinista",
+  "Inundación castálida",
+  "El ponche de los deseos"
  ],
  "pelicula": [
   "La llegada",
@@ -497,7 +509,10 @@
   "La misión",
   "Feliz Navidad",
   "Testamento de juventud",
-  "Noches blancas"
+  "Noches blancas",
+  "Camille Claudel",
+  "Alta sociedad",
+  "Momo"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -593,7 +608,10 @@
   "Soundbreaking",
   "Apocalypse: la Primera Guerra Mundial",
   "They Shall Not Grow Old",
-  "Crimen y castigo"
+  "Crimen y castigo",
+  "Juana Inés",
+  "El poder del arte",
+  "Civilisations"
  ],
  "cancion": [
   "Mediterráneo",
@@ -693,7 +711,10 @@
   "Tattoo",
   "Les feuilles mortes",
   "Autumn Leaves",
-  "Le temps de l'amour"
+  "Le temps de l'amour",
+  "Harvest Moon",
+  "Danzas polovtsianas",
+  "Heart of Gold"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -791,7 +812,10 @@
   "Para el silbido de «Por un puñado de dólares», Morricone contó con Alessandro Alessandroni, que silbaba de oído, y su sonido se convirtió en la marca de los westerns italianos.",
   "El armisticio que acabó con la Primera Guerra Mundial se firmó en un vagón de tren en Compiègne a las 5 de la mañana del 11 de noviembre de 1918, pero entró en vigor a las 11: «la hora once del día once del mes once».",
   "El 11 de noviembre se celebra en China el «Día del Soltero» porque la fecha, 11/11, está formada por cuatro unos.",
-  "Dostoievski dictó «El jugador» en 26 días para cumplir un contrato con su editor. Se casó después con la taquígrafa, Anna Snítkina."
+  "Dostoievski dictó «El jugador» en 26 días para cumplir un contrato con su editor. Se casó después con la taquígrafa, Anna Snítkina.",
+  "El 12 de noviembre de 1990, Tim Berners-Lee y Robert Cailliau presentaron en el CERN la propuesta formal de un sistema de hipertexto al que llamaron «WorldWideWeb». La primera página web se publicó al mes siguiente.",
+  "Aleksandr Borodin era químico y descubrió una reacción que aún lleva su nombre. Decía que componía cuando estaba enfermo, porque solo entonces no tenía que ir al laboratorio.",
+  "«El pensador» de Rodin se pensó al principio para representar a Dante meditando su «Divina comedia» en lo alto de la «Puerta del Infierno»."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -898,7 +922,10 @@
   "Escala pentatónica",
   "Veranillo de San Martín",
   "Polifonía literaria",
-  "Anticiclón"
+  "Anticiclón",
+  "Hipertexto",
+  "Combinatoria",
+  "Bajorrelieve"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -988,7 +1015,10 @@
   "Contra la estupidez, los propios dioses luchan en vano.",
   "La belleza salvará el mundo.",
   "Así es la vida.",
-  "Lo que más se teme es dar un paso nuevo, pronunciar una palabra propia."
+  "Lo que más se teme es dar un paso nuevo, pronunciar una palabra propia.",
+  "Hombres necios que acusáis a la mujer sin razón, sin ver que sois la ocasión de lo mismo que culpáis.",
+  "Porque el tiempo es vida. Y la vida reside en el corazón.",
+  "Yo no estimo tesoros ni riquezas; y así, siempre me causa más contento poner riquezas en mi entendimiento que no mi entendimiento en las riquezas."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1077,7 +1107,10 @@
   "Si tienes una caja con 3 manzanas y te llevas 2, ¿cuántas tienes?",
   "Hablo sin boca y oigo sin orejas; no tengo cuerpo, pero el viento y las montañas me despiertan. ¿Qué soy?",
   "Tres médicos dicen que Roberto es su hermano, pero Roberto dice que no tiene hermanos. ¿Quién miente?",
-  "Una madre tiene cinco hijas y cada una tiene un hermano. ¿Cuántos hijos tiene en total?"
+  "Una madre tiene cinco hijas y cada una tiene un hermano. ¿Cuántos hijos tiene en total?",
+  "Tengo hojas sin ser árbol, lomo sin ser animal y te cuento historias sin hablar. ¿Qué soy?",
+  "Se pone en la mesa, se corta y se reparte, pero nunca se come. ¿Qué es?",
+  "En una estantería hay tres tomos de una enciclopedia, en orden, de 100 páginas cada uno. Una polilla empieza en la primera página del tomo 1 y acaba en la última del tomo 3. ¿Cuántas páginas atraviesa?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1167,7 +1200,10 @@
   "¿Qué te habría gustado aprender de niña que todavía estás a tiempo de aprender?",
   "Como San Martín con su capa, ¿con quién compartirías hoy la mitad de lo que tienes?",
   "¿Qué libro difícil te gustaría atreverte a leer este invierno?",
-  "¿Qué harías con un veranillo de tres días para ti sola?"
+  "¿Qué harías con un veranillo de tres días para ti sola?",
+  "Si pudieras convertir una de tus aficiones en una escultura, ¿qué forma tendría?",
+  "¿Qué querías aprender de niña que alguien te dijo que no era para ti?",
+  "¿Qué web o enlace ha cambiado tu vida?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1257,7 +1293,10 @@
   "Martín Lutero",
   "Fiódor Dostoievski",
   "Kurt Vonnegut",
-  "Carlos Fuentes"
+  "Carlos Fuentes",
+  "Sor Juana Inés de la Cruz",
+  "Auguste Rodin",
+  "Aleksandr Borodin"
  ],
  "planta": [
   "Girasol",
@@ -1347,7 +1386,10 @@
   "Torvisco",
   "Acerolo",
   "Labiérnago",
-  "Aladierno"
+  "Aladierno",
+  "Pino carrasco",
+  "Quejigo",
+  "Sabina mora"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1446,7 +1488,10 @@
   "No hay dos sin tres.",
   "El veranillo de San Martín dura tres días y fin.",
   "Por San Martín, trompos al camino.",
-  "Hoy por ti, mañana por mí."
+  "Hoy por ti, mañana por mí.",
+  "Más vale saber que haber.",
+  "De sabios es mudar de opinión.",
+  "El que siembra, recoge."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1537,7 +1582,10 @@
   "Ser música celestial",
   "Hacer de su capa un sayo",
   "Salir por la puerta grande",
-  "Estar entre dos aguas"
+  "Estar entre dos aguas",
+  "Ser un ratón de biblioteca",
+  "Quemarse las pestañas",
+  "Tirar del hilo"
  ],
  "palabra": [
   "Arrebol",
@@ -1631,7 +1679,10 @@
   "Yoin",
   "Ichigo ichie",
   "Weltschmerz",
-  "Vergüenza ajena"
+  "Vergüenza ajena",
+  "Leseratte",
+  "Shoshin",
+  "Hyperlink"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1724,7 +1775,10 @@
   "Tararear al caminar",
   "Compartir una cosa al día",
   "Una página escrita a mano",
-  "Leer un capítulo de un clásico"
+  "Leer un capítulo de un clásico",
+  "Buscar una palabra al día",
+  "Mirar algo diez minutos",
+  "Cerrar pestañas"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1808,7 +1862,10 @@
   "Escucha profunda",
   "Paseo por un bosque en otoño",
   "Lluvia de otoño en un café",
-  "Un minuto de silencio a las once"
+  "Un minuto de silencio a las once",
+  "Taller de escultura",
+  "Jardín del Museo Rodin",
+  "Contar diez respiraciones"
  ],
  "prensa": [
   "La Contra",
@@ -1881,7 +1938,10 @@
   "Un nuevo sonido para Lorca y un reconocimiento a la Granada creativa en los Premios de la Cultura",
   "Una distopía de ciencia ficción escrita por un autor de 81 años gana el premio Booker",
   "«¿Hay conciencia en tu cerebro?»: el materialismo no puede explicarlo todo",
-  "Alejandro Rodríguez de la Peña: «El cristianismo al que se convierte Constantino era una religión griega»"
+  "Alejandro Rodríguez de la Peña: «El cristianismo al que se convierte Constantino era una religión griega»",
+  "Agnieszka Holland, cineasta: «Si perdemos Europa por perezosos o estúpidos, seremos responsables de un peor porvenir para nuestros hijos»",
+  "Arte para liberar «Los frenos» de la mujer: la nueva acción de Rogelio López Cuenca y Elo Vega",
+  "«Detrás del mito»: la mirada inédita de Angelo Novi resucita la trastienda humana de «El bueno, el feo y el malo»"
  ],
  "revista": [
   "Entrevistas largas",
@@ -1954,6 +2014,9 @@
   "La envidia de los intelectuales",
   "La inspiración y el misterio en las grandes obras",
   "Poesía novohispana",
-  "Copi: los años devoran a sus hijos"
+  "Copi: los años devoran a sus hijos",
+  "Las tijeras de Queneau en la Biblioteca de Babel",
+  "Más allá de la historia",
+  "Con mi muerte expío mi culpa"
  ]
 }
