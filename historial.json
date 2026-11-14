@@ -100,7 +100,10 @@
   "Smarthistory: Rodin, The Burghers of Calais",
   "Congratulations, by the way: George Saunders on kindness",
   "PHILOSOPHY – Augustine",
-  "Rossini: La gazza ladra, obertura"
+  "Rossini: La gazza ladra, obertura",
+  "Monet's Water Lilies: Great Art Explained",
+  "Monet, Impression Sunrise",
+  "PHILOSOPHY – Hegel"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -199,7 +202,10 @@
   "El testamento de Rodin",
   "An Apology for Idlers",
   "A Gossip on Romance",
-  "Books Which Have Influenced Me"
+  "Books Which Have Influenced Me",
+  "Diabetes and Insulin",
+  "Around the World in Seventy-Two Days",
+  "Monadología"
  ],
  "reel": [
   "QuantumFracture",
@@ -296,7 +302,10 @@
   "Polyglot Pablo",
   "PolandBananasBooks",
   "Shaun Bythell",
-  "Daunt Books"
+  "Daunt Books",
+  "Art with Flo",
+  "Proko",
+  "Draw with Jazza"
  ],
  "libro": [
   "Sapiens",
@@ -407,7 +416,10 @@
   "El ponche de los deseos",
   "La isla del tesoro",
   "Viaje en burro por las Cevenas",
-  "Confesiones"
+  "Confesiones",
+  "Pippi Calzaslargas",
+  "Los hermanos Corazón de León",
+  "Ronja, la hija del bandolero"
  ],
  "pelicula": [
   "La llegada",
@@ -527,7 +539,10 @@
   "Momo",
   "Tienes un e-mail",
   "La sociedad literaria y el pastel de piel de patata de Guernsey",
-  "Miss Potter"
+  "Miss Potter",
+  "Conociendo a Astrid",
+  "La vuelta al mundo en ochenta días",
+  "Medianoche en París"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -629,7 +644,10 @@
   "Civilisations",
   "Black Books",
   "Mister Rogers' Neighborhood",
-  "La aventura del saber"
+  "La aventura del saber",
+  "Pippi Calzaslargas",
+  "The Joy of Painting",
+  "Sketchbook"
  ],
  "cancion": [
   "Mediterráneo",
@@ -735,7 +753,10 @@
   "Heart of Gold",
   "Francesca",
   "La gazza ladra – obertura",
-  "The Tortured Poets Department"
+  "The Tortured Poets Department",
+  "Fanfare for the Common Man",
+  "Appalachian Spring",
+  "From the Start"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -839,7 +860,10 @@
   "«El pensador» de Rodin se pensó al principio para representar a Dante meditando su «Divina comedia» en lo alto de la «Puerta del Infierno».",
   "Robert Louis Stevenson, que nació el 13 de noviembre de 1850, pasó sus últimos años en Samoa. Allí lo llamaban «Tusitala», que significa «el que cuenta historias».",
   "En sus «Confesiones», san Agustín cuenta asombrado que el obispo Ambrosio leía en silencio, moviendo solo los ojos. En aquella época lo normal era leer en voz alta.",
-  "Rossini dejó de componer óperas a los 37 años, tras «Guillermo Tell», y vivió casi cuarenta años más. Le encantaba cocinar: el «tournedós Rossini» lleva su nombre."
+  "Rossini dejó de componer óperas a los 37 años, tras «Guillermo Tell», y vivió casi cuarenta años más. Le encantaba cocinar: el «tournedós Rossini» lleva su nombre.",
+  "El impresionismo debe su nombre a una burla: en 1874 el crítico Louis Leroy tituló su reseña «Exposición de los impresionistas» por el cuadro «Impresión, sol naciente» de Monet.",
+  "Banting, Best y Collip vendieron la patente de la insulina a la Universidad de Toronto por un dólar cada uno. Banting dijo que la insulina no le pertenecía a él, sino al mundo.",
+  "Nellie Bly dio la vuelta al mundo en 72 días, 6 horas y 11 minutos entre 1889 y 1890, más rápido que el Phileas Fogg de Julio Verne. Viajó sola y con una sola maleta."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -952,7 +976,10 @@
   "Bajorrelieve",
   "Bibliodiversidad",
   "Lectura profunda",
-  "Efecto de la lengua extranjera"
+  "Efecto de la lengua extranjera",
+  "Impresionismo",
+  "Pintura al aire libre",
+  "Insulina"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -1048,7 +1075,10 @@
   "Yo no estimo tesoros ni riquezas; y así, siempre me causa más contento poner riquezas en mi entendimiento que no mi entendimiento en las riquezas.",
   "La actividad extrema, ya sea en la escuela, en la iglesia o en el mercado, es síntoma de falta de vitalidad.",
   "Lo que más lamento en mi vida son mis fallos de amabilidad.",
-  "Tarde te amé, hermosura tan antigua y tan nueva, tarde te amé."
+  "Tarde te amé, hermosura tan antigua y tan nueva, tarde te amé.",
+  "Nunca lo he intentado antes, así que seguro que me sale bien.",
+  "La música es un ejercicio oculto de aritmética del alma, que no sabe que está contando.",
+  "Me gustaría pintar como canta un pájaro."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1143,7 +1173,10 @@
   "En una estantería hay tres tomos de una enciclopedia, en orden, de 100 páginas cada uno. Una polilla empieza en la primera página del tomo 1 y acaba en la última del tomo 3. ¿Cuántas páginas atraviesa?",
   "Oro parece, plata no es. ¿Qué es?",
   "Blanca por dentro, verde por fuera; si quieres que te lo diga, espera. ¿Qué es?",
-  "Un librero quiere colocar 5 libros distintos en una balda. ¿De cuántas formas diferentes puede ordenarlos?"
+  "Un librero quiere colocar 5 libros distintos en una balda. ¿De cuántas formas diferentes puede ordenarlos?",
+  "Si tres pintores pintan tres cuadros en tres horas, ¿cuántos cuadros pintan seis pintores en seis horas?",
+  "¿Qué tiene ojos y no ve, tiene agua y no la bebe, tiene carne y no la come?",
+  "Pippi sale de casa con un número de caramelos. Da la mitad a Tommy, y la mitad de lo que le queda a Annika. Se queda con 5. ¿Cuántos tenía al principio?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1239,7 +1272,10 @@
   "¿Qué web o enlace ha cambiado tu vida?",
   "¿Qué gesto amable de un desconocido recuerdas todavía?",
   "¿Qué librería te gustaría visitar algún día, aunque esté lejos?",
-  "Si tuvieras que regalar hoy un libro a un desconocido, ¿cuál elegirías?"
+  "Si tuvieras que regalar hoy un libro a un desconocido, ¿cuál elegirías?",
+  "Si pudieras pintar un solo momento de tu vida, ¿cuál elegirías?",
+  "¿Qué hacías de niño o de niña que te hacía sentir tan libre como Pippi?",
+  "¿A qué hora del día te parece más bonita la luz donde vives?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1335,7 +1371,10 @@
   "Aleksandr Borodin",
   "Robert Louis Stevenson",
   "San Agustín",
-  "Gioachino Rossini"
+  "Gioachino Rossini",
+  "Astrid Lindgren",
+  "Claude Monet",
+  "Frederick Banting"
  ],
  "planta": [
   "Girasol",
@@ -1431,7 +1470,10 @@
   "Sabina mora",
   "Alcaparra",
   "Tomillo",
-  "Orégano"
+  "Orégano",
+  "Lirio amarillo",
+  "Glicinia",
+  "Capuchina"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1536,7 +1578,10 @@
   "El que siembra, recoge.",
   "Libro cerrado no saca letrado.",
   "De bien nacidos es ser agradecidos.",
-  "Amor con amor se paga."
+  "Amor con amor se paga.",
+  "La cara es el espejo del alma.",
+  "Vísteme despacio, que tengo prisa.",
+  "Quien canta, sus males espanta."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1633,7 +1678,10 @@
   "Tirar del hilo",
   "Ser un libro abierto",
   "Ser un pozo de ciencia",
-  "Tener buena mano"
+  "Tener buena mano",
+  "Ver la vida de color de rosa",
+  "Pintar la mona",
+  "Quedarse en blanco"
  ],
  "palabra": [
   "Arrebol",
@@ -1733,7 +1781,10 @@
   "Hyperlink",
   "Omoiyari",
   "Bogorm",
-  "Caredig"
+  "Caredig",
+  "Augenblick",
+  "Lykke",
+  "Croeso"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1832,7 +1883,10 @@
   "Cerrar pestañas",
   "Un gesto amable anónimo",
   "Pregunta al librero",
-  "Leer sin el móvil cerca"
+  "Leer sin el móvil cerca",
+  "Cinco minutos de cielo",
+  "Dibuja lo que ves",
+  "Pausa activa cada hora"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1922,7 +1976,10 @@
   "Contar diez respiraciones",
   "Pasar las páginas de un libro antiguo",
   "Carta de agradecimiento",
-  "Lectura lenta en voz baja"
+  "Lectura lenta en voz baja",
+  "Jardín de Giverny",
+  "Lluvia sobre un estanque",
+  "Contemplar un cuadro"
  ],
  "prensa": [
   "La Contra",
@@ -2001,7 +2058,10 @@
   "«Detrás del mito»: la mirada inédita de Angelo Novi resucita la trastienda humana de «El bueno, el feo y el malo»",
   "George Saunders, escritor: «Contar historias es una necesidad primordial»",
   "Nos estamos quedando sin palabras: cómo la depuración de la prosa ha simplificado los libros y la literatura",
-  "El Barrio del Buen Leer celebra el Día de las Librerías el próximo 13 de noviembre"
+  "El Barrio del Buen Leer celebra el Día de las Librerías el próximo 13 de noviembre",
+  "Chema Lumbreras pinta la «tierra media» de Gamel Woolsey",
+  "La Guajira celebra el Día del Flamenco a los pies de la Alcazaba con el cante de David de Jacoba y la guitarra de Dani de Morón",
+  "Granada y Jerez alían su patrimonio para reforzar el proyecto de la Capitalidad 2031"
  ],
  "revista": [
   "Entrevistas largas",
@@ -2080,6 +2140,9 @@
   "Con mi muerte expío mi culpa",
   "Silencio, por favor: se lee.",
   "Premio Librería Cultural 2026: el asombroso triunfo de NUMAX",
-  "Mercè Conangla: «La tecnología avanza con rapidez, la conciencia humana, no tanto»"
+  "Mercè Conangla: «La tecnología avanza con rapidez, la conciencia humana, no tanto»",
+  "Borges en su biblioteca",
+  "Ya no quedan apellidos en los portales",
+  "¿Sabes qué inventoras hicieron posibles estos ingenios?"
  ]
 }
