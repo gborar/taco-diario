@@ -103,7 +103,10 @@
   "Rossini: La gazza ladra, obertura",
   "Monet's Water Lilies: Great Art Explained",
   "Monet, Impression Sunrise",
-  "PHILOSOPHY – Hegel"
+  "PHILOSOPHY – Hegel",
+  "Herschel: Sinfonía n.º 8 en do menor",
+  "How to see more and care less: The art of Georgia O'Keeffe",
+  "What Is Dark Matter and Dark Energy?"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -205,7 +208,10 @@
   "Books Which Have Influenced Me",
   "Diabetes and Insulin",
   "Around the World in Seventy-Two Days",
-  "Monadología"
+  "Monadología",
+  "About Myself",
+  "El copo de nieve de seis puntas",
+  "Didáctica magna"
  ],
  "reel": [
   "QuantumFracture",
@@ -305,7 +311,10 @@
   "Daunt Books",
   "Art with Flo",
   "Proko",
-  "Draw with Jazza"
+  "Draw with Jazza",
+  "Cool Worlds",
+  "PBS Space Time",
+  "Astronomía con Javier Armentia"
  ],
  "libro": [
   "Sapiens",
@@ -419,7 +428,10 @@
   "Confesiones",
   "Pippi Calzaslargas",
   "Los hermanos Corazón de León",
-  "Ronja, la hija del bandolero"
+  "Ronja, la hija del bandolero",
+  "La edad de los prodigios",
+  "Orbis Pictus",
+  "El sueño"
  ],
  "pelicula": [
   "La llegada",
@@ -542,7 +554,10 @@
   "Miss Potter",
   "Conociendo a Astrid",
   "La vuelta al mundo en ochenta días",
-  "Medianoche en París"
+  "Medianoche en París",
+  "Georgia O'Keeffe",
+  "Cielo de octubre",
+  "Flamenco, flamenco"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -647,7 +662,10 @@
   "La aventura del saber",
   "Pippi Calzaslargas",
   "The Joy of Painting",
-  "Sketchbook"
+  "Sketchbook",
+  "Rito y geografía del cante",
+  "The Sky at Night",
+  "Paco de Lucía: la búsqueda"
  ],
  "cancion": [
   "Mediterráneo",
@@ -756,7 +774,10 @@
   "The Tortured Poets Department",
   "Fanfare for the Common Man",
   "Appalachian Spring",
-  "From the Start"
+  "From the Start",
+  "Starburster",
+  "Como el agua",
+  "A Sky Full of Stars"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -863,7 +884,10 @@
   "Rossini dejó de componer óperas a los 37 años, tras «Guillermo Tell», y vivió casi cuarenta años más. Le encantaba cocinar: el «tournedós Rossini» lleva su nombre.",
   "El impresionismo debe su nombre a una burla: en 1874 el crítico Louis Leroy tituló su reseña «Exposición de los impresionistas» por el cuadro «Impresión, sol naciente» de Monet.",
   "Banting, Best y Collip vendieron la patente de la insulina a la Universidad de Toronto por un dólar cada uno. Banting dijo que la insulina no le pertenecía a él, sino al mundo.",
-  "Nellie Bly dio la vuelta al mundo en 72 días, 6 horas y 11 minutos entre 1889 y 1890, más rápido que el Phileas Fogg de Julio Verne. Viajó sola y con una sola maleta."
+  "Nellie Bly dio la vuelta al mundo en 72 días, 6 horas y 11 minutos entre 1889 y 1890, más rápido que el Phileas Fogg de Julio Verne. Viajó sola y con una sola maleta.",
+  "William Herschel descubrió Urano el 13 de marzo de 1781 desde el jardín de su casa en Bath, con un telescopio que había construido él mismo. Entonces se ganaba la vida como profesor de música.",
+  "Caroline Herschel fue la primera mujer en cobrar un sueldo como científica: en 1787 el rey Jorge III le asignó 50 libras al año como ayudante de su hermano. Descubrió ocho cometas.",
+  "Herschel descubrió la radiación infrarroja en 1800 al poner termómetros detrás de un prisma: el más caliente estaba justo después del rojo, donde no se veía ningún color."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -979,7 +1003,10 @@
   "Efecto de la lengua extranjera",
   "Impresionismo",
   "Pintura al aire libre",
-  "Insulina"
+  "Insulina",
+  "Órbita elíptica",
+  "Contaminación lumínica",
+  "Pedagogía"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -1078,7 +1105,10 @@
   "Tarde te amé, hermosura tan antigua y tan nueva, tarde te amé.",
   "Nunca lo he intentado antes, así que seguro que me sale bien.",
   "La música es un ejercicio oculto de aritmética del alma, que no sabe que está contando.",
-  "Me gustaría pintar como canta un pájaro."
+  "Me gustaría pintar como canta un pájaro.",
+  "Nadie ve realmente una flor: es tan pequeña que no tenemos tiempo, y ver lleva tiempo, igual que tener un amigo lleva tiempo.",
+  "Buscar y encontrar un método por el que los maestros enseñen menos y los alumnos aprendan más.",
+  "La ciencia natural no consiste en ratificar lo que otros han dicho, sino en buscar las causas de los fenómenos."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1176,7 +1206,10 @@
   "Un librero quiere colocar 5 libros distintos en una balda. ¿De cuántas formas diferentes puede ordenarlos?",
   "Si tres pintores pintan tres cuadros en tres horas, ¿cuántos cuadros pintan seis pintores en seis horas?",
   "¿Qué tiene ojos y no ve, tiene agua y no la bebe, tiene carne y no la come?",
-  "Pippi sale de casa con un número de caramelos. Da la mitad a Tommy, y la mitad de lo que le queda a Annika. Se queda con 5. ¿Cuántos tenía al principio?"
+  "Pippi sale de casa con un número de caramelos. Da la mitad a Tommy, y la mitad de lo que le queda a Annika. Se queda con 5. ¿Cuántos tenía al principio?",
+  "Siempre está en el cielo, cambia de forma cada noche y brilla sin tener luz propia. ¿Qué es?",
+  "Un planeta tarda 84 años en dar la vuelta al Sol. Si alguien naciera allí y viviera 84 años terrestres, ¿cuántos cumpleaños de ese planeta celebraría?",
+  "De noche aparecen sin que nadie las llame, y de día se esconden sin que nadie las robe. ¿Qué son?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1275,7 +1308,10 @@
   "Si tuvieras que regalar hoy un libro a un desconocido, ¿cuál elegirías?",
   "Si pudieras pintar un solo momento de tu vida, ¿cuál elegirías?",
   "¿Qué hacías de niño o de niña que te hacía sentir tan libre como Pippi?",
-  "¿A qué hora del día te parece más bonita la luz donde vives?"
+  "¿A qué hora del día te parece más bonita la luz donde vives?",
+  "Si pudieras mirar por un telescopio cualquier cosa del universo, ¿qué elegirías?",
+  "¿Qué afición dejaste aparcada y te gustaría recuperar, como el autor de «El cielo nocturno»?",
+  "¿Qué flor o qué cosa pequeña mirarías hoy durante un minuto entero?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1374,7 +1410,10 @@
   "Gioachino Rossini",
   "Astrid Lindgren",
   "Claude Monet",
-  "Frederick Banting"
+  "Frederick Banting",
+  "William Herschel",
+  "Georgia O'Keeffe",
+  "Jan Amos Comenio"
  ],
  "planta": [
   "Girasol",
@@ -1473,7 +1512,10 @@
   "Orégano",
   "Lirio amarillo",
   "Glicinia",
-  "Capuchina"
+  "Capuchina",
+  "Estramonio",
+  "Cala",
+  "Amapola oriental"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1581,7 +1623,10 @@
   "Amor con amor se paga.",
   "La cara es el espejo del alma.",
   "Vísteme despacio, que tengo prisa.",
-  "Quien canta, sus males espanta."
+  "Quien canta, sus males espanta.",
+  "Nunca te acostarás sin saber una cosa más.",
+  "Preguntando se llega a Roma.",
+  "Quien no sabe es como quien no ve."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1681,7 +1726,10 @@
   "Tener buena mano",
   "Ver la vida de color de rosa",
   "Pintar la mona",
-  "Quedarse en blanco"
+  "Quedarse en blanco",
+  "Ver las estrellas",
+  "Tener estrella",
+  "Poner por las nubes"
  ],
  "palabra": [
   "Arrebol",
@@ -1784,7 +1832,10 @@
   "Caredig",
   "Augenblick",
   "Lykke",
-  "Croeso"
+  "Croeso",
+  "Hoshizora",
+  "Stjerneskud",
+  "Sêr"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -1886,7 +1937,10 @@
   "Leer sin el móvil cerca",
   "Cinco minutos de cielo",
   "Dibuja lo que ves",
-  "Pausa activa cada hora"
+  "Pausa activa cada hora",
+  "Aprende una constelación",
+  "Explica lo que aprendiste",
+  "Mira una flor un minuto"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -1979,7 +2033,10 @@
   "Lectura lenta en voz baja",
   "Jardín de Giverny",
   "Lluvia sobre un estanque",
-  "Contemplar un cuadro"
+  "Contemplar un cuadro",
+  "Desierto de Nuevo México al atardecer",
+  "Noche de campo con grillos",
+  "Contar estrellas"
  ],
  "prensa": [
   "La Contra",
@@ -2061,7 +2118,10 @@
   "El Barrio del Buen Leer celebra el Día de las Librerías el próximo 13 de noviembre",
   "Chema Lumbreras pinta la «tierra media» de Gamel Woolsey",
   "La Guajira celebra el Día del Flamenco a los pies de la Alcazaba con el cante de David de Jacoba y la guitarra de Dani de Morón",
-  "Granada y Jerez alían su patrimonio para reforzar el proyecto de la Capitalidad 2031"
+  "Granada y Jerez alían su patrimonio para reforzar el proyecto de la Capitalidad 2031",
+  "Carta de amor a Dylan (sea quien sea Dylan)",
+  "El do de pecho que sonaba como un «pollo degollado» y revolucionó la ópera",
+  "De «segurata» de museo a artista mundial del fluorescente: Dan Flavin llega al Guggenheim"
  ],
  "revista": [
   "Entrevistas largas",
@@ -2143,6 +2203,9 @@
   "Mercè Conangla: «La tecnología avanza con rapidez, la conciencia humana, no tanto»",
   "Borges en su biblioteca",
   "Ya no quedan apellidos en los portales",
-  "¿Sabes qué inventoras hicieron posibles estos ingenios?"
+  "¿Sabes qué inventoras hicieron posibles estos ingenios?",
+  "El cielo nocturno",
+  "Leer la Odisea en tiempos iletrados",
+  "Rocío Molina: «Ignorar el flamenco me dio una libertad maravillosa»"
  ]
 }
