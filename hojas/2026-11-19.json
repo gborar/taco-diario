@@ -1,0 +1,397 @@
+{
+ "date": "2026-11-19",
+ "santo": "San Abdías, profeta · Santa Matilde de Hackeborn, virgen",
+ "items": {
+  "video": [
+   "Why do whales sing?",
+   "Stephanie Sardelis · TED-Ed",
+   "Naturaleza · Sonido",
+   "En cinco minutos explica por qué las ballenas se comunican con sonidos (bajo el agua el sonido viaja unas cuatro veces más rápido que en el aire) y cómo se organiza el canto de las jorobadas."
+  ],
+  "articulo": [
+   "Taste for Makers",
+   "Paul Graham · paulgraham.com",
+   "Diseño · Estética",
+   "Graham defiende que el buen gusto no es solo cuestión de opiniones: el buen diseño suele ser sencillo, resolver el problema correcto y aguantar el paso del tiempo. Lo explica con ejemplos de matemáticas, pintura y programación."
+  ],
+  "reel": [
+   "Autoenfoque",
+   "Instagram · TikTok",
+   "autoenfoque diseño",
+   "La diseñadora Elena López explica por qué un cartel se entiende o no, por qué los prospectos usan ciertas tipografías y cómo el diseño cambia decisiones de todos los días.",
+   "https://www.tiktok.com/search?q=autoenfoque%20dise%C3%B1o"
+  ],
+  "prensa": [
+   "De la flecha que truncó unas elecciones al mapa que salvó Londres del cólera: cómo el diseño nos puede cambiar la vida",
+   "Paloma Martínez Varela · elDiario.es",
+   "Diseño",
+   "Entrevista a Elena López, @autoenfoque en redes, por su libro «El diablo se viste de Helvética». Habla de tipografías que evitan errores en los hospitales, de letras pensadas para la dislexia y de por qué el diseño nunca es neutral.",
+   "https://www.eldiario.es/cultura/libros/flecha-trunco-elecciones-mapa-salvo-londres-colera-diseno-cambiar-vida_1_13671936.html"
+  ],
+  "revista": [
+   "Las ballenas no cantaban para nosotros",
+   "María Irastorza · Jot Down",
+   "Naturaleza · Música",
+   "La historia de cómo Roger Payne descubrió que las ballenas jorobadas repiten canciones de hasta media hora, con frases y temas, y del disco de 1970 que llevó esas voces al público y acabó en las campañas contra la caza."
+  ],
+  "libro": [
+   "Un mundo inmenso",
+   "Ed Yong",
+   2022,
+   "Divulgación · Naturaleza",
+   "Un viaje por los sentidos de los animales: cómo ven las abejas, cómo oyen los murciélagos o qué perciben las ballenas. Te cambia la idea de que todos vivimos en el mismo mundo."
+  ],
+  "pelicula": [
+   "Helvetica",
+   "Gary Hustwit",
+   2007,
+   "Documental",
+   "Un documental sobre una sola tipografía, la que está en carteles, logotipos y señales de medio mundo. Diseñadores muy distintos discuten si es perfecta o aburrida, y acabas mirando las letras de la calle con otros ojos."
+  ],
+  "programa": [
+   "99% Invisible",
+   "Roman Mars",
+   2010,
+   "Pódcast",
+   "Un pódcast sobre el diseño que no se ve: por qué las banderas de las ciudades son feas, quién inventó las señales de tráfico o por qué hay pinchos en algunos bancos. Cada episodio cuenta una historia completa."
+  ],
+  "cancion": [
+   "Sailor Song",
+   "Gigi Perez",
+   2024,
+   "Una canción sencilla, casi solo voz y guitarra, que se hizo viral en redes. Fíjate en cómo la voz va creciendo en el estribillo sin que cambie casi nada más."
+  ],
+  "dato": [
+   "Franz Schubert murió el 19 de noviembre de 1828, con solo 31 años. Le dio tiempo a componer más de 600 canciones.",
+   "Música"
+  ],
+  "concepto": [
+   "Canal SOFAR",
+   "Física · Océano",
+   "Es una capa del océano, a unos mil metros de profundidad, donde el sonido viaja más despacio y queda atrapado, como la luz dentro de un cable de fibra óptica. Por eso un ruido de baja frecuencia puede recorrer miles de kilómetros allí abajo. Se cree que algunas ballenas lo aprovechan para comunicarse a enormes distancias."
+  ],
+  "cita": [
+   "Nadie comprende el dolor del otro, nadie la alegría del otro.",
+   "Franz Schubert",
+   "De su diario, el 27 de marzo de 1824."
+  ],
+  "reto": [
+   "Una ballena canta una canción de 20 minutos y la repite sin parar durante 6 horas. ¿Cuántas veces la canta?",
+   "Dieciocho: 6 horas son 360 minutos, y 360 entre 20 es 18."
+  ],
+  "pregunta": "¿Qué objeto bien diseñado usas cada día sin fijarte en él?",
+  "personaje": [
+   "Roger Payne",
+   "1935–2023",
+   "Biólogo",
+   "Con Scott McVay descubrió que las ballenas jorobadas cantan canciones largas y ordenadas. En 1970 publicó el disco «Songs of the Humpback Whale», que puso esas voces en millones de casas y ayudó a impulsar la campaña «Salvad a las ballenas»."
+  ],
+  "planta": [
+   "Posidonia",
+   "Posidonia oceanica",
+   "No es un alga, sino una planta con flores que vive solo en el Mediterráneo. Sus praderas limpian el agua, protegen las playas del oleaje y dan refugio a cientos de especies. Las bolas de fibra que aparecen en la orilla son restos de sus hojas."
+  ],
+  "refran": [
+   "Por el hilo se saca el ovillo.",
+   "Siguiendo un pequeño indicio se puede llegar a entender todo un asunto.",
+   "Follow the thread and you'll find the ball."
+  ],
+  "frase": [
+   "Hacer oídos sordos",
+   "Fingir que no se oye algo o no hacer caso de lo que te dicen.",
+   "Viene de la idea de comportarse como quien no puede oír, aunque sí oye."
+  ],
+  "palabra": [
+   "Kerning",
+   "en",
+   "Ajuste del espacio entre dos letras concretas.",
+   "Es lo que hace que «AV» o «To» no queden separadas por un hueco raro. Los diseñadores lo miran con lupa; casi nadie más lo nota, pero sin él todo se lee peor."
+  ],
+  "habito": [
+   "Escucha un audio a velocidad normal",
+   "Si sueles poner los audios y pódcasts a doble velocidad, prueba uno a su ritmo. Oirás el tono, las pausas y las emociones que se pierden con la prisa."
+  ],
+  "pausa": [
+   "Canto de ballenas",
+   "Meditación",
+   "Escucha unos minutos el canto de las ballenas jorobadas con los ojos cerrados. Respira al ritmo lento de sus frases, que se repiten como olas.",
+   "humpback whale song relaxing"
+  ]
+ },
+ "extras": {
+  "video": [
+   [
+    "Can we learn to talk to sperm whales?",
+    "David Gruber · TED",
+    "Naturaleza · IA",
+    "El biólogo marino presenta el Proyecto CETI, que usa robots e inteligencia artificial para estudiar los «codas», los chasquidos con los que se comunican los cachalotes."
+   ],
+   [
+    "Could an orca give a TED Talk?",
+    "Karen Bakker · TED",
+    "Naturaleza · Tecnología",
+    "Un recorrido por los sonidos que los humanos no oímos, de los ultrasonidos de los murciélagos a los infrasonidos de los pavos reales, y por cómo la tecnología empieza a traducirlos."
+   ]
+  ],
+  "articulo": [
+   [
+    "Ten principles for good design",
+    "Dieter Rams · Vitsœ",
+    "Diseño",
+    "Los diez principios del diseñador alemán que inspiraron a Apple y a medio mundo: el buen diseño es útil, honesto, discreto, duradero y «lo menos diseño posible». Se leen en cinco minutos."
+   ],
+   [
+    "Design and Research",
+    "Paul Graham · paulgraham.com",
+    "Diseño",
+    "La diferencia entre investigar y diseñar: la investigación busca lo verdadero; el diseño, lo que sirve a alguien concreto. Graham propone empezar por un prototipo sencillo para un usuario real e ir mejorándolo."
+   ]
+  ],
+  "reel": [
+   [
+    "Project CETI",
+    "Instagram",
+    "project ceti whales",
+    "El equipo que intenta descifrar la comunicación de los cachalotes enseña grabaciones, imágenes del Caribe y avances del proyecto.",
+    "https://www.tiktok.com/search?q=project%20ceti%20whales"
+   ],
+   [
+    "Jacob Collier",
+    "YouTube · Instagram",
+    "jacob collier harmony",
+    "El músico británico explica armonía de forma muy visual y contagiosa, a veces con un solo acorde o haciendo cantar al público.",
+    "https://www.tiktok.com/search?q=jacob%20collier%20harmony"
+   ]
+  ],
+  "prensa": [
+   [
+    "Salvador Sobral: “Los conciertos son un acto de resistencia hoy en día”",
+    "Sergio Lozano · La Vanguardia",
+    "Música",
+    "El cantante portugués presenta «A flor do recomenço», once canciones nuevas de autores brasileños a las que pone voz, y habla de por qué tocar en directo sigue importando.",
+    "https://www.lavanguardia.com/cultura/20261118/11664664/salvador-sobral-conciertos-son-acto-resistencia-hoy-dia.html"
+   ],
+   [
+    "Antonio Roma no existe, pero va a dar un concierto",
+    "Verónica Figueroa · El País",
+    "Música · IA",
+    "Una pequeña discográfica creó un cantante con inteligencia artificial que tiene más de 100.000 oyentes al mes, y ahora subirá a un escenario interpretado por un joven artista real. Puede requerir suscripción.",
+    "https://elpais.com/cultura/2026-11-17/antonio-roma-no-existe-pero-va-a-dar-un-concierto.html"
+   ]
+  ],
+  "revista": [
+   [
+    "La revolución de las cosas que no se pueden borrar",
+    "Rosa Macua · Yorokobu",
+    "Fotografía · Aesthetic",
+    "Frente a las 47 fotos del mismo café que nadie vuelve a mirar, el auge de la fotografía analógica: carretes, esperas y fotos que no se pueden borrar, y que por eso importan más.",
+    "https://yorokobu.es/fotografia-analogica-2/"
+   ],
+   [
+    "La libertad y sus carceleros",
+    "Jorge Freire · Ethic",
+    "Literatura · Filosofía",
+    "Para Calderón de la Barca, libre es quien manda sobre su propia conciencia. Freire lo explica con Segismundo, de «La vida es sueño», y con el príncipe de «El príncipe constante», que prefiere seguir preso antes que entregar Ceuta.",
+    "https://ethic.es/calderon-de-la-barca-libertad-carceleros"
+   ]
+  ],
+  "libro": [
+   [
+    "El mapa fantasma",
+    "Steven Johnson",
+    2006,
+    "Divulgación · Historia",
+    "La historia del brote de cólera de Londres en 1854 y de cómo el médico John Snow, con un mapa de muertes, descubrió que el culpable era el agua de una fuente. Se lee como una novela de detectives."
+   ],
+   [
+    "Moby Dick",
+    "Herman Melville",
+    1851,
+    "Novela",
+    "Ismael se embarca en un ballenero cuyo capitán persigue obsesionado a una ballena blanca. Es una novela de aventuras, pero también un libro raro y enorme sobre el mar, la obsesión y la naturaleza."
+   ]
+  ],
+  "pelicula": [
+   [
+    "Mi maestro el pulpo",
+    "Pippa Ehrlich y James Reed",
+    2020,
+    "Documental",
+    "Un cineasta sudafricano bucea cada día durante un año en un bosque de algas y se hace amigo de un pulpo. Ganó el Oscar al mejor documental."
+   ],
+   [
+    "Las ballenas de agosto",
+    "Lindsay Anderson",
+    1987,
+    "Drama",
+    "Dos hermanas ancianas, interpretadas por Bette Davis y Lillian Gish, pasan el verano en una casa de una isla de Maine esperando ver pasar las ballenas. Una película lenta y luminosa sobre la vejez."
+   ]
+  ],
+  "programa": [
+   [
+    "Planeta azul II",
+    "BBC · David Attenborough",
+    2017,
+    "Documental",
+    "Siete episodios sobre los océanos, desde los arrecifes hasta las profundidades, con imágenes que no se habían visto nunca. Incluye ballenas, pulpos y peces que usan herramientas."
+   ],
+   [
+    "Twenty Thousand Hertz",
+    "Dallas Taylor",
+    2016,
+    "Pódcast",
+    "Un pódcast sobre la historia de los sonidos que nos rodean: el sonido de arranque de Windows, la sintonía de la NBC o el rugido del león de la Metro."
+   ]
+  ],
+  "cancion": [
+   [
+    "Ave Maria",
+    "Franz Schubert",
+    1825,
+    "En realidad es una canción sobre un poema de Walter Scott, «La dama del lago», y no una oración: una joven pide protección a la Virgen. La melodía larga y tranquila se apoya en un piano que parece un arpa."
+   ],
+   [
+    "Der Lindenbaum",
+    "Franz Schubert",
+    1827,
+    "«El tilo», una de las canciones de «Viaje de invierno». El piano imita el viento entre las hojas y el caminante recuerda el árbol donde soñaba de joven."
+   ]
+  ],
+  "dato": [
+   [
+    "El 19 de noviembre de 1863, Abraham Lincoln pronunció el discurso de Gettysburg. Tenía unas 270 palabras y duró unos dos minutos.",
+    "Historia"
+   ],
+   [
+    "En 1971, Roger Payne y Scott McVay describieron en la revista Science que el canto de las ballenas jorobadas tiene unidades, frases y temas que se repiten en orden.",
+    "Naturaleza · Música"
+   ]
+  ],
+  "concepto": [
+   [
+    "Jerarquía visual",
+    "Diseño",
+    "Es el orden en que el ojo recorre una página o un cartel: primero lo grande, lo oscuro o lo que está arriba, después lo demás. Funciona como un guía que te dice dónde mirar. En un menú de restaurante, por ejemplo, el nombre del plato suele ir más grande que el precio."
+   ],
+   [
+    "Lied",
+    "Música",
+    "Es la canción alemana para voz y piano, con poemas de autores como Goethe o Heine. El piano no acompaña sin más: dibuja el paisaje, el agua o el viento. Schubert fue su gran maestro."
+   ]
+  ],
+  "cita": [
+   [
+    "Menos, pero mejor.",
+    "Dieter Rams",
+    "Su lema como diseñador y título de su libro «Weniger, aber besser» (1995)."
+   ],
+   [
+    "Si puedes diseñar una cosa, puedes diseñarlo todo.",
+    "Massimo Vignelli",
+    "El diseñador italiano, autor del mapa del metro de Nueva York de 1972, lo repetía a menudo; aparece en el documental «Design Is One» (2012)."
+   ]
+  ],
+  "reto": [
+   [
+    "En un coro hay el triple de sopranos que de bajos. Si entre todos son 24 cantantes, ¿cuántos bajos hay?",
+    "Seis: si hay b bajos, hay 3b sopranos, y 4b = 24."
+   ],
+   [
+    "Escribes las notas do, re, mi, fa, sol, la, si una y otra vez en ese orden. ¿Qué nota escribes en el puesto 50?",
+    "Do: 50 entre 7 da 7 vueltas completas y sobra 1, así que es la primera nota."
+   ]
+  ],
+  "pregunta": [
+   "Si pudieras entender el idioma de un animal, ¿cuál elegirías?",
+   "¿Qué te gustaría que tu ciudad diseñara mejor?"
+  ],
+  "personaje": [
+   [
+    "Franz Schubert",
+    "1797–1828",
+    "Compositor",
+    "Vivió casi siempre en Viena, con poco dinero y muchos amigos que organizaban veladas para escuchar su música, las «schubertiadas». Escribió más de 600 canciones, nueve sinfonías y mucha música de cámara antes de morir con 31 años."
+   ],
+   [
+    "John Snow",
+    "1813–1858",
+    "Médico",
+    "En el brote de cólera de Londres de 1854 marcó en un mapa las casas con muertos y vio que se agrupaban alrededor de una fuente de Broad Street. Convenció a las autoridades de quitar la manivela y es uno de los padres de la epidemiología."
+   ]
+  ],
+  "planta": [
+   [
+    "Kelp gigante",
+    "Macrocystis pyrifera",
+    "Un alga parda que forma bosques submarinos frente a las costas frías y puede crecer hasta medio metro al día. Es el bosque de «Mi maestro el pulpo»."
+   ],
+   [
+    "Bambú moso",
+    "Phyllostachys edulis",
+    "Es una hierba gigante, no un árbol, y algunos brotes crecen casi un metro en un día. Con bambú se fabrican flautas como el shakuhachi japonés, que se toca también como forma de meditación."
+   ]
+  ],
+  "refran": [
+   [
+    "El pez grande se come al chico.",
+    "Los poderosos suelen imponerse sobre los débiles.",
+    "Big fish eat little fish."
+   ],
+   [
+    "El buen paño en el arca se vende.",
+    "Lo que es bueno de verdad no necesita mucha publicidad.",
+    "Good wine needs no bush."
+   ]
+  ],
+  "frase": [
+   [
+    "Ser un pez gordo",
+    "Ser una persona importante o con mucho poder.",
+    "Compara a la persona influyente con el pez más grande, el que todos quieren pescar."
+   ],
+   [
+    "Cantar las cuarenta",
+    "Decirle a alguien claramente lo que se piensa, casi siempre para reñirle.",
+    "Viene del tute: quien reúne el rey y el caballo del palo que manda «canta las cuarenta» y se apunta cuarenta tantos."
+   ]
+  ],
+  "palabra": [
+   [
+    "Kotodama",
+    "ja",
+    "«Espíritu de las palabras».",
+    "En la tradición japonesa se cree que las palabras tienen poder propio: decir algo bonito trae cosas buenas, y por eso en las bodas se evitan ciertas palabras."
+   ],
+   [
+    "Cân",
+    "cy",
+    "Canción.",
+    "Gales es famoso por sus coros y por el Eisteddfod, un festival de música y poesía en galés que se celebra desde hace siglos."
+   ]
+  ],
+  "habito": [
+   [
+    "Diez minutos de sonidos naturales",
+    "Escucha diez minutos de lluvia, mar o pájaros sin hacer otra cosa. Ayuda a bajar el ritmo y a descansar la atención."
+   ],
+   [
+    "Fíjate en una tipografía",
+    "Hoy, al pasar por la calle, mira las letras de un cartel o un rótulo y pregúntate qué te transmiten. Es un buen ejercicio para entrenar la mirada."
+   ]
+  ],
+  "pausa": [
+   [
+    "Bosque de kelp",
+    "Aesthetic",
+    "Rayos de sol que atraviesan un bosque submarino de algas gigantes, peces que pasan despacio y el balanceo de las corrientes.",
+    "kelp forest underwater 4k"
+   ],
+   [
+    "Nieve en la ventana",
+    "Pausa",
+    "Mira caer la nieve detrás de una ventana mientras suena «Viaje de invierno» de Schubert. Sin hacer nada más.",
+    "snow falling window ambience"
+   ]
+  ]
+ }
+}
