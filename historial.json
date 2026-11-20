@@ -118,7 +118,10 @@
   "How Far Can We Go? Limits of Humanity",
   "Why do whales sing?",
   "Can we learn to talk to sperm whales?",
-  "Could an orca give a TED Talk?"
+  "Could an orca give a TED Talk?",
+  "The child-driven education",
+  "What do babies think?",
+  "Changing education paradigms"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -235,7 +238,10 @@
   "Cities and Ambition",
   "Taste for Makers",
   "Ten principles for good design",
-  "Design and Research"
+  "Design and Research",
+  "Having Kids",
+  "Fierce Nerds",
+  "The Lifecycle of Software Objects"
  ],
  "reel": [
   "QuantumFracture",
@@ -350,7 +356,10 @@
   "Anton Petrov",
   "Autoenfoque",
   "Project CETI",
-  "Jacob Collier"
+  "Jacob Collier",
+  "Steve Spangler",
+  "SciShow Kids",
+  "The Brain Scoop"
  ],
  "libro": [
   "Sapiens",
@@ -479,7 +488,10 @@
   "La historia de tu vida",
   "Un mundo inmenso",
   "El mapa fantasma",
-  "Moby Dick"
+  "Moby Dick",
+  "El maravilloso viaje de Nils Holgersson",
+  "Centroeuropa",
+  "Las aventuras de Tom Sawyer"
  ],
  "pelicula": [
   "La llegada",
@@ -617,7 +629,10 @@
   "Apolo 13",
   "Helvetica",
   "Mi maestro el pulpo",
-  "Las ballenas de agosto"
+  "Las ballenas de agosto",
+  "Ernest y Célestine",
+  "La tortuga roja",
+  "Ponyo en el acantilado"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -737,7 +752,10 @@
   "Crash Course Astronomy",
   "99% Invisible",
   "Planeta azul II",
-  "Twenty Thousand Hertz"
+  "Twenty Thousand Hertz",
+  "Pocoyó",
+  "Fraggle Rock",
+  "La bola de cristal"
  ],
  "cancion": [
   "Mediterráneo",
@@ -861,7 +879,10 @@
   "Satellite",
   "Sailor Song",
   "Ave Maria",
-  "Der Lindenbaum"
+  "Der Lindenbaum",
+  "Isn't She Lovely",
+  "Santé",
+  "Cantares"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -983,7 +1004,10 @@
   "El Disco de Oro de las Voyager gira a 16 ⅔ revoluciones por minuto, la mitad que un disco LP normal, y viaja con su propia aguja para reproducirlo.",
   "Franz Schubert murió el 19 de noviembre de 1828, con solo 31 años. Le dio tiempo a componer más de 600 canciones.",
   "El 19 de noviembre de 1863, Abraham Lincoln pronunció el discurso de Gettysburg. Tenía unas 270 palabras y duró unos dos minutos.",
-  "En 1971, Roger Payne y Scott McVay describieron en la revista Science que el canto de las ballenas jorobadas tiene unidades, frases y temas que se repiten en orden."
+  "En 1971, Roger Payne y Scott McVay describieron en la revista Science que el canto de las ballenas jorobadas tiene unidades, frases y temas que se repiten en orden.",
+  "El 20 de noviembre de 1989 la ONU aprobó la Convención sobre los Derechos del Niño. Es el tratado de derechos humanos más ratificado del mundo.",
+  "En 1924, Edwin Hubble demostró que Andrómeda no era una nube dentro de nuestra galaxia, sino otra galaxia mucho más lejana. El universo se hizo enorme de golpe.",
+  "«El maravilloso viaje de Nils Holgersson» fue un encargo de los maestros suecos: querían un libro de lectura que enseñara la geografía del país a los niños."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -1114,7 +1138,10 @@
   "Heliopausa",
   "Canal SOFAR",
   "Jerarquía visual",
-  "Lied"
+  "Lied",
+  "Neotenia",
+  "Ley de Hubble",
+  "Juego simbólico"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -1228,7 +1255,10 @@
   "Somos una manera que tiene el cosmos de conocerse a sí mismo.",
   "Nadie comprende el dolor del otro, nadie la alegría del otro.",
   "Menos, pero mejor.",
-  "Si puedes diseñar una cosa, puedes diseñarlo todo."
+  "Si puedes diseñar una cosa, puedes diseñarlo todo.",
+  "Todas las personas mayores fueron primero niños. (Pero pocas lo recuerdan.)",
+  "No tengo talentos especiales, solo soy apasionadamente curioso.",
+  "Equipado con sus cinco sentidos, el ser humano explora el universo que lo rodea y llama a esa aventura ciencia."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1341,7 +1371,10 @@
   "La Voyager 1 viaja a unos 61.000 kilómetros por hora. ¿Cuántos kilómetros recorre en un día?",
   "Una ballena canta una canción de 20 minutos y la repite sin parar durante 6 horas. ¿Cuántas veces la canta?",
   "En un coro hay el triple de sopranos que de bajos. Si entre todos son 24 cantantes, ¿cuántos bajos hay?",
-  "Escribes las notas do, re, mi, fa, sol, la, si una y otra vez en ese orden. ¿Qué nota escribes en el puesto 50?"
+  "Escribes las notas do, re, mi, fa, sol, la, si una y otra vez en ese orden. ¿Qué nota escribes en el puesto 50?",
+  "Una niña tiene 4 años y su madre 28. ¿Cuántos años tendrá la niña cuando su madre tenga exactamente el doble que ella?",
+  "En la tabla de multiplicar del 1 al 10 (diez filas por diez columnas), ¿cuántos resultados son impares?",
+  "Escribe con cifras «once mil once cientos once»."
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1455,7 +1488,10 @@
   "¿Qué mensaje te gustaría que leyera alguien dentro de mil años?",
   "¿Qué objeto bien diseñado usas cada día sin fijarte en él?",
   "Si pudieras entender el idioma de un animal, ¿cuál elegirías?",
-  "¿Qué te gustaría que tu ciudad diseñara mejor?"
+  "¿Qué te gustaría que tu ciudad diseñara mejor?",
+  "¿Qué te fascinaba de pequeña o pequeño que hoy has olvidado?",
+  "¿Qué pregunta te hacías de niña o de niño que todavía no sabes contestar?",
+  "¿Qué juego de la infancia volverías a jugar hoy?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1569,7 +1605,10 @@
   "Marcel Proust",
   "Roger Payne",
   "Franz Schubert",
-  "John Snow"
+  "John Snow",
+  "Selma Lagerlöf",
+  "Edwin Hubble",
+  "Vicente Luis Mora"
  ],
  "planta": [
   "Girasol",
@@ -1683,7 +1722,10 @@
   "Arabidopsis",
   "Posidonia",
   "Kelp gigante",
-  "Bambú moso"
+  "Bambú moso",
+  "Abedul",
+  "Arándano rojo",
+  "Diente de león"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1806,7 +1848,10 @@
   "Noviembre caliente, mayo helado.",
   "Por el hilo se saca el ovillo.",
   "El pez grande se come al chico.",
-  "El buen paño en el arca se vende."
+  "El buen paño en el arca se vende.",
+  "Los niños y los locos dicen las verdades.",
+  "Árbol que crece torcido jamás su tronco endereza.",
+  "Genio y figura hasta la sepultura."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -1921,7 +1966,10 @@
   "Ver la luz",
   "Hacer oídos sordos",
   "Ser un pez gordo",
-  "Cantar las cuarenta"
+  "Cantar las cuarenta",
+  "Como niño con zapatos nuevos",
+  "Ser el ojito derecho",
+  "Estar en pañales"
  ],
  "palabra": [
   "Arrebol",
@@ -2039,7 +2087,10 @@
   "Lucero",
   "Kerning",
   "Kotodama",
-  "Cân"
+  "Cân",
+  "Kindergarten",
+  "Kawaii",
+  "Chiquillada"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -2156,7 +2207,10 @@
   "Escribe una carta sin esperar respuesta",
   "Escucha un audio a velocidad normal",
   "Diez minutos de sonidos naturales",
-  "Fíjate en una tipografía"
+  "Fíjate en una tipografía",
+  "Pregunta «¿por qué?» cinco veces",
+  "Juega diez minutos",
+  "Lee un libro infantil"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -2264,7 +2318,10 @@
   "Perspectiva desde el espacio",
   "Canto de ballenas",
   "Bosque de kelp",
-  "Nieve en la ventana"
+  "Nieve en la ventana",
+  "Vuelo de gansos",
+  "Dibuja con la mano no dominante",
+  "Galaxias del Hubble"
  ],
  "prensa": [
   "La Contra",
@@ -2361,7 +2418,10 @@
   "El alma española de Rilke vibra de nuevo en el Prado",
   "De la flecha que truncó unas elecciones al mapa que salvó Londres del cólera: cómo el diseño nos puede cambiar la vida",
   "Salvador Sobral: “Los conciertos son un acto de resistencia hoy en día”",
-  "Antonio Roma no existe, pero va a dar un concierto"
+  "Antonio Roma no existe, pero va a dar un concierto",
+  "El Hospital Reina Sofía y la Orquesta de Córdoba llevan la música a 13 espacios hospitalarios",
+  "'Ganivet', el documental que imagina un encuentro entre Unamuno y el pensador granadino",
+  "El Bosco y Bruegel se ríen del mundo"
  ],
  "revista": [
   "Entrevistas largas",
@@ -2458,6 +2518,9 @@
   "Los exquisitos del New Yorker condenan a los Javis por no sufrir bajito",
   "Las ballenas no cantaban para nosotros",
   "La revolución de las cosas que no se pueden borrar",
-  "La libertad y sus carceleros"
+  "La libertad y sus carceleros",
+  "Diego Guerrero: «El día que se acaben las preguntas nos habremos acabado nosotros»",
+  "Sunday Blues: la cultura como linimento para el miedo al miedo del siglo XXI",
+  "Lo que pasa por tu cabeza cuando mueves los pies"
  ]
 }

@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-20",
+    "titulo": "El cordobés Vicente Luis Mora, primer español que gana el National Book Award",
+    "resumen": "Vicente Luis Mora (Córdoba, 1970), profesor de la Universidad de Málaga, ha ganado el National Book Award de Estados Unidos en la categoría de literatura traducida por «Centroeuropa», traducida al inglés por Rahul Bery. Es el primer español que lo consigue en los 77 años del premio, uno de los más importantes de las letras estadounidenses. El galardón, de 10.000 dólares, se reparte a partes iguales entre autor y traductor.",
+    "fuente": "Literary Hub · RTVE · Euronews",
+    "url": "https://lithub.com/here-are-the-winners-of-the-2026-national-book-awards",
+    "tema": "Literatura"
+  },
+  {
     "date": "2026-11-19",
     "titulo": "Los «químicos eternos» más tóxicos bajan un 30 % en los ríos de Inglaterra en una década",
     "resumen": "Un informe de la Agencia de Medio Ambiente británica muestra que entre 2016 y 2025 la concentración de PFOS en los ríos ingleses cayó un 30 % y la de PFOA un 29 %, y que el PFOS en los peces de agua dulce bajó un 49 %. Es el efecto de las prohibiciones de esas dos sustancias en 2010 y 2020. Quedan miles de PFAS en uso y algunos sustitutos empiezan a aparecer, así que los expertos piden vigilarlos todos.",
@@ -230,13 +238,5 @@
     "fuente": "EMA, OncLive e Infobae",
     "url": "https://www.ema.europa.eu/en/news/ema-recommends-authorisation-rasonque-metastatic-pancreatic-cancer",
     "tema": "Medicina"
-  },
-  {
-    "date": "2026-10-17",
-    "titulo": "Perseverance bate el récord de distancia recorrida en otro mundo",
-    "resumen": "El 11 de octubre el rover de la NASA superó en Marte los 45,16 km que había acumulado Opportunity. Opportunity tardó casi 15 años en recorrerlos y Perseverance, unos cinco años y medio, gracias a su conducción autónoma (AutoNav). La misión está prorrogada, así que seguirá sumando.",
-    "fuente": "Guinness World Records, PetaPixel e IEEE Spectrum",
-    "url": "https://www.guinnessworldrecords.com/news/2026/10/nasas-perseverance-rover-breaks-the-record-for-longest-road-trip-on-mars",
-    "tema": "Espacio"
   }
 ]
