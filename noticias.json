@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-21",
+    "titulo": "Bután, primer país que gana el Premio Earthshot, por proteger sus bosques en la Constitución",
+    "resumen": "Bután ha ganado el Premio Earthshot 2026 en la categoría «Proteger y restaurar la naturaleza», entregado el 17 de noviembre en Bombay: es la primera vez que lo recibe un país entero. Su Constitución obliga a mantener al menos el 60 % del territorio cubierto de bosque y hoy ronda el 70 %, con más de la mitad del país protegido; esos bosques regulan ríos del Himalaya de los que dependen unos 1.600 millones de personas. Con el millón de libras del premio quiere restaurar 50.000 hectáreas de tierras degradadas antes de 2030.",
+    "fuente": "The Earthshot Prize · Euronews · Mongabay",
+    "url": "https://es.euronews.com/2026/11/17/earthshot-prize-2026-5-soluciones-ganadoras-contra-la-crisis-climatica-en-mumbai",
+    "tema": "Naturaleza"
+  },
+  {
     "date": "2026-11-20",
     "titulo": "El cordobés Vicente Luis Mora, primer español que gana el National Book Award",
     "resumen": "Vicente Luis Mora (Córdoba, 1970), profesor de la Universidad de Málaga, ha ganado el National Book Award de Estados Unidos en la categoría de literatura traducida por «Centroeuropa», traducida al inglés por Rahul Bery. Es el primer español que lo consigue en los 77 años del premio, uno de los más importantes de las letras estadounidenses. El galardón, de 10.000 dólares, se reparte a partes iguales entre autor y traductor.",
@@ -230,13 +238,5 @@
     "fuente": "CBS Colorado, The Prowers Journal y Positive News",
     "url": "https://www.cbsnews.com/colorado/news/largest-wildlife-overpass-north-america-colorado-reduce-wildlife-collisions/",
     "tema": "Naturaleza"
-  },
-  {
-    "date": "2026-10-19",
-    "titulo": "Europa recomienda aprobar el primer fármaco que duplica la supervivencia en cáncer de páncreas metastásico",
-    "resumen": "El comité de la EMA (CHMP) emitió el 15 de octubre una opinión positiva sobre daraxonrasib (Rasonque), una pastilla diaria contra el cáncer de páncreas metastásico tratado previamente. En el ensayo de fase 3 la supervivencia mediana fue de 12,4 meses frente a 6,7 con quimioterapia (HR 0,49). Ahora decidirá la Comisión Europea.",
-    "fuente": "EMA, OncLive e Infobae",
-    "url": "https://www.ema.europa.eu/en/news/ema-recommends-authorisation-rasonque-metastatic-pancreatic-cancer",
-    "tema": "Medicina"
   }
 ]
