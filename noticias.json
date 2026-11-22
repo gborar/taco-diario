@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-22",
+    "titulo": "Nacen ostras salvajes en un estuario de Escocia por primera vez en más de un siglo",
+    "resumen": "Científicos de la Universidad Heriot-Watt han confirmado que las ostras nativas se reproducen de nuevo en el Dornoch Firth, en el norte de Escocia, donde se extinguieron por la pesca a finales del siglo XIX. El proyecto DEEP empezó en 2017 con 300 ostras y ya ha liberado más de 140.000; las crías encontradas han crecido hasta el tamaño de una moneda de 50 peniques. El objetivo es llegar a unos cuatro millones de ostras en 2031.",
+    "fuente": "Heriot-Watt University · The Guardian · STV News",
+    "url": "https://www.hw.ac.uk/news/2026/first-oysters-born-in-dornoch-firth-for-over-100-years",
+    "tema": "Naturaleza"
+  },
+  {
     "date": "2026-11-21",
     "titulo": "Bután, primer país que gana el Premio Earthshot, por proteger sus bosques en la Constitución",
     "resumen": "Bután ha ganado el Premio Earthshot 2026 en la categoría «Proteger y restaurar la naturaleza», entregado el 17 de noviembre en Bombay: es la primera vez que lo recibe un país entero. Su Constitución obliga a mantener al menos el 60 % del territorio cubierto de bosque y hoy ronda el 70 %, con más de la mitad del país protegido; esos bosques regulan ríos del Himalaya de los que dependen unos 1.600 millones de personas. Con el millón de libras del premio quiere restaurar 50.000 hectáreas de tierras degradadas antes de 2030.",
@@ -229,14 +237,6 @@
     "resumen": "Un equipo de Stanford publicó el 14 de octubre en Science Advances que fragmentos de coral coliflor (Pocillopora damicornis) blanqueados se recuperaron por completo en unas siete semanas al estar en contacto con fragmentos sanos de la misma colonia; los que se dejaron solos murieron. Los tejidos se fusionan y forman un puente por el que pasan las algas simbiontes. Por ahora es un experimento de laboratorio con 10 parejas y solo funciona entre clones, pero abre vías para restaurar arrecifes.",
     "fuente": "Stanford (EurekAlert), Euronews y ScienceDaily",
     "url": "https://es.euronews.com/2026/10/15/corales-blanqueados-se-recuperan-en-tiempo-record-al-tocar-clones-sanos",
-    "tema": "Naturaleza"
-  },
-  {
-    "date": "2026-10-20",
-    "titulo": "El mayor paso de fauna de Norteamérica reduce un 91 % los atropellos de animales en Colorado",
-    "resumen": "Antes del paso elevado sobre la autopista I-25, entre Larkspur y Monument, había de media un choque con fauna al día. Unos diez meses después de su apertura en diciembre de 2025, un informe estatal calcula que los atropellos han bajado un 91 %, algo más del 90 % previsto. El sistema combina el paso elevado, cinco pasos inferiores y vallas que guían a ciervos y alces.",
-    "fuente": "CBS Colorado, The Prowers Journal y Positive News",
-    "url": "https://www.cbsnews.com/colorado/news/largest-wildlife-overpass-north-america-colorado-reduce-wildlife-collisions/",
     "tema": "Naturaleza"
   }
 ]
