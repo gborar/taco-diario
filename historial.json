@@ -127,7 +127,10 @@
   "How to grow a forest in your backyard",
   "Music as a language",
   "The power of the pentatonic scale",
-  "How to truly listen"
+  "How to truly listen",
+  "Doodling in Math: Spirals, Fibonacci, and Being a Plant",
+  "The magic of Fibonacci numbers",
+  "Nature by Numbers"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -253,7 +256,10 @@
   "Of Digital Streams, Campfires and Gardens",
   "The Power of Music",
   "Listen to This",
-  "What Is Classical Music?"
+  "What Is Classical Music?",
+  "A Mathematician's Lament",
+  "The Unreasonable Effectiveness of Mathematics in the Natural Sciences",
+  "Cargo Cult Science"
  ],
  "reel": [
   "QuantumFracture",
@@ -377,7 +383,10 @@
   "Huw Richards",
   "TwoSetViolin",
   "Charles Cornell",
-  "Pomplamoose"
+  "Pomplamoose",
+  "Eddie Woo",
+  "Stand-up Maths",
+  "Derivando"
  ],
  "libro": [
   "Sapiens",
@@ -515,7 +524,10 @@
   "Elogio de la sombra",
   "Tu cerebro y la música",
   "El molino del Floss",
-  "Alta fidelidad"
+  "Alta fidelidad",
+  "El diablo de los números",
+  "El hombre que calculaba",
+  "La proporción áurea"
  ],
  "pelicula": [
   "La llegada",
@@ -662,7 +674,10 @@
   "El jardín de las palabras",
   "Sing Street",
   "Once",
-  "Begin Again"
+  "Begin Again",
+  "X+Y",
+  "Donald en el país de las matemáticas",
+  "El pequeño Tate"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -791,7 +806,10 @@
   "El escarabajo verde",
   "This Is Opera",
   "Young People's Concerts",
-  "Jazz"
+  "Jazz",
+  "Más por menos",
+  "Universo matemático",
+  "Fermat's Last Theorem"
  ],
  "cancion": [
   "Mediterráneo",
@@ -924,7 +942,10 @@
   "Juna",
   "Cecilia",
   "Thank You for the Music",
-  "Good Luck, Babe!"
+  "Good Luck, Babe!",
+  "Quédate",
+  "Volando voy",
+  "Tuya"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -1055,7 +1076,10 @@
   "El famoso cuadro de una pipa con la frase «Esto no es una pipa» se llama en realidad «La traición de las imágenes» (1929). René Magritte quería recordar que es una pintura de una pipa: no se puede fumar.",
   "Joaquín Rodrigo, autor del «Concierto de Aranjuez», nació un 22 de noviembre, día de Santa Cecilia, de 1901 en Sagunto. Se quedó ciego a los tres años por una difteria y escribía su música en braille.",
   "Benjamin Britten nació el 22 de noviembre de 1913, día de Santa Cecilia. Años después compuso el «Hymn to St Cecilia» (1942) para coro, con versos de su amigo el poeta W. H. Auden.",
-  "Santa Cecilia es patrona de la música por una frase de una antigua leyenda: mientras sonaban los instrumentos en su boda, ella cantaba a Dios en su corazón. En 1584 fue elegida patrona de la Academia de Música de Roma."
+  "Santa Cecilia es patrona de la música por una frase de una antigua leyenda: mientras sonaban los instrumentos en su boda, ella cantaba a Dios en su corazón. En 1584 fue elegida patrona de la Academia de Música de Roma.",
+  "Manuel de Falla nació en Cádiz el 23 de noviembre de 1876, hace hoy 150 años. Murió en Argentina en 1946 y sus restos descansan en la cripta de la catedral de Cádiz.",
+  "El 23 de noviembre se celebra el Día de Fibonacci porque en inglés la fecha se escribe 11/23, y 1, 1, 2, 3 son los primeros números de su famosa sucesión.",
+  "Alfonso X el Sabio nació el 23 de noviembre de 1221 en Toledo. Bajo su reinado se escribieron en castellano obras de historia, leyes y astronomía, y se compusieron las «Cantigas de Santa María»."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -1195,7 +1219,10 @@
   "Navaja de Hanlon",
   "Oído absoluto",
   "Disonancia",
-  "Armónicos"
+  "Armónicos",
+  "Sucesión de Fibonacci",
+  "Número áureo",
+  "Filotaxis"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -1318,7 +1345,10 @@
   "Quiero que la muerte me encuentre plantando mis coles.",
   "La música expresa lo que no puede decirse y aquello sobre lo que es imposible permanecer en silencio.",
   "Donde hay música no puede haber cosa mala.",
-  "Nunca es demasiado tarde para ser lo que podrías haber sido."
+  "Nunca es demasiado tarde para ser lo que podrías haber sido.",
+  "La filosofía está escrita en ese grandísimo libro que tenemos abierto ante los ojos, el universo, y está escrito en lengua matemática.",
+  "La música no se hace ni debe hacerse jamás para que se comprenda, sino para que se sienta.",
+  "Las matemáticas son la reina de las ciencias."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1440,7 +1470,10 @@
   "En un jardín hay el doble de rosas que de tulipanes y 12 flores en total. ¿Cuántas rosas hay?",
   "Una orquesta de 50 músicos tarda 40 minutos en tocar una sinfonía. ¿Cuánto tardará una orquesta de 100 músicos en tocar la misma sinfonía?",
   "Una canción dura 3 minutos y medio. ¿Cuántas veces puedes escucharla entera en una hora?",
-  "Un piano tiene 88 teclas y 36 son negras. ¿Cuántas son blancas?"
+  "Un piano tiene 88 teclas y 36 son negras. ¿Cuántas son blancas?",
+  "Una escalera tiene 5 peldaños. Puedes subir de uno en uno o de dos en dos, mezclando como quieras. ¿De cuántas formas distintas puedes llegar arriba?",
+  "Cada mes, cada pareja de conejos adulta tiene una pareja de crías, que tarda un mes en ser adulta. Empiezas con una pareja de crías. ¿Cuántas parejas habrá en el sexto mes?",
+  "Divide 21 entre 13 y luego 34 entre 21. ¿A qué número se van acercando los resultados?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1563,7 +1596,10 @@
   "¿Qué te ha robado hoy la atención sin que lo hubieras elegido?",
   "¿Qué canción te devuelve al instante a otra época de tu vida?",
   "Si pudieras tocar un instrumento mañana sin haber estudiado, ¿cuál elegirías?",
-  "¿Qué música pones cuando necesitas concentrarte?"
+  "¿Qué música pones cuando necesitas concentrarte?",
+  "¿Qué patrón de la naturaleza te gustaría entender mejor?",
+  "¿Qué música te recuerda a un lugar concreto?",
+  "¿Qué asignatura te aburría en el colegio y hoy te parece interesante?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1686,7 +1722,10 @@
   "Émilie du Châtelet",
   "George Eliot",
   "Benjamin Britten",
-  "Hoagy Carmichael"
+  "Hoagy Carmichael",
+  "Manuel de Falla",
+  "Leonardo de Pisa (Fibonacci)",
+  "Alfonso X el Sabio"
  ],
  "planta": [
   "Girasol",
@@ -1809,7 +1848,10 @@
   "Laurel",
   "Pícea",
   "Arce sicómoro",
-  "Pernambuco"
+  "Pernambuco",
+  "Romanesco",
+  "Pino piñonero",
+  "Aloe espiral"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1941,7 +1983,10 @@
   "Árbol que nace torcido, jamás su tronco endereza.",
   "Músico pagado no toca buen son.",
   "El que canta, reza dos veces.",
-  "Bien canta Marta cuando está harta."
+  "Bien canta Marta cuando está harta.",
+  "De grano en grano, llena la gallina el buche.",
+  "Poco a poco hila la vieja el copo.",
+  "Quien guarda, halla."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -2065,7 +2110,10 @@
   "Echar raíces",
   "Llevar la batuta",
   "Estar a tono",
-  "Tocar de oído"
+  "Tocar de oído",
+  "Sin ton ni son",
+  "Hacer las cuentas de la lechera",
+  "No dar pie con bola"
  ],
  "palabra": [
   "Arrebol",
@@ -2192,7 +2240,10 @@
   "Karesansui",
   "Earworm",
   "Karaoke",
-  "Eisteddfod"
+  "Eisteddfod",
+  "Googol",
+  "Zugzwang",
+  "Eureka"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -2318,7 +2369,10 @@
   "Haz un rato de aburrimiento a propósito",
   "Canta un rato cada día",
   "Pon música sin letra para concentrarte",
-  "Aprende una canción de memoria cada mes"
+  "Aprende una canción de memoria cada mes",
+  "Calcula de cabeza las cuentas pequeñas",
+  "Busca un patrón en tu paseo",
+  "Escucha una pieza clásica corta cada mañana"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -2435,7 +2489,10 @@
   "Jardinería sin palabras",
   "Escucha consciente",
   "Sala de conciertos vacía",
-  "Piano suave para estudiar"
+  "Piano suave para estudiar",
+  "Espirales de la naturaleza",
+  "Noches en los jardines de España",
+  "Respiración en espiral"
  ],
  "prensa": [
   "La Contra",
@@ -2541,7 +2598,10 @@
   "Los mejores libros del año hasta la fecha: Pynchon, Luis Landero, Isabel Allende y la ópera prima de Almodóvar",
   "Una desconocida ópera de juventud de Bizet vuelve a la vida en el Teatro Cervantes",
   "Almería acoge por primera vez FlamencoEñe, que ofrecerá doce conciertos del 24 al 26 de noviembre",
-  "Investigadores internacionales estudian en la Mezquita de Córdoba los restos de techumbre de madera más antiguos de Europa"
+  "Investigadores internacionales estudian en la Mezquita de Córdoba los restos de techumbre de madera más antiguos de Europa",
+  "La increíble historia del águila culebrera de Doñana que surca el espacio interestelar a bordo de la Voyager 1",
+  "Hidrogenesse y la última aventura electropop de Álvaro Pombo a los 87 años",
+  "Cómo alimentar el cerebro para mejorar el rendimiento académico"
  ],
  "revista": [
   "Entrevistas largas",
@@ -2647,6 +2707,9 @@
   "Salvador Dalí, un caso digno de Freud",
   "Variaciones Hidrogenesse",
   "Cierre de salas de conciertos: cuando una ciudad apaga sus amplificadores",
-  "Sandra Mihanovich: «Tengo una herramienta vocal importante. Me vino puesta, no es mi mérito tenerla»"
+  "Sandra Mihanovich: «Tengo una herramienta vocal importante. Me vino puesta, no es mi mérito tenerla»",
+  "SGAE y la Fundación Archivo Manuel de Falla homenajean a Manuel de Falla con una exposición en Madrid",
+  "Relatos ortográficos: Capitónomos, el poder de las mayúsculas para cambiar el significado de una palabra",
+  "Una exposición recoge la influencia de Manuel de Falla en las artes plásticas"
  ]
 }

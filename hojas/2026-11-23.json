@@ -1,0 +1,398 @@
+{
+ "date": "2026-11-23",
+ "santo": "San Clemente I, papa y mártir · San Columbano, abad",
+ "items": {
+  "video": [
+   "Doodling in Math: Spirals, Fibonacci, and Being a Plant",
+   "Vi Hart · YouTube",
+   "Matemáticas · Naturaleza",
+   "Vi Hart dibuja espirales mientras habla muy deprisa y, casi sin darte cuenta, te explica por qué las piñas, los girasoles y las coliflores cuentan con números de Fibonacci. Divertido, rápido y sorprendente."
+  ],
+  "articulo": [
+   "A Mathematician's Lament",
+   "Paul Lockhart · MAA (Devlin's Angle)",
+   "Matemáticas · Educación",
+   "Un profesor defiende que las matemáticas son un arte, como la música o la pintura, y que el colegio las convierte en una lista de recetas aburridas. Escrito con mucho humor y pasión; cambia la forma de ver las clases de matemáticas."
+  ],
+  "reel": [
+   "Eddie Woo",
+   "YouTube · Instagram · TikTok",
+   "eddie woo maths",
+   "Un profesor de matemáticas australiano que graba sus clases y explica con entusiasmo contagioso desde trigonometría hasta por qué aparecen los números de Fibonacci en la naturaleza.",
+   "https://www.tiktok.com/search?q=eddie%20woo%20maths"
+  ],
+  "prensa": [
+   "La increíble historia del águila culebrera de Doñana que surca el espacio interestelar a bordo de la Voyager 1",
+   "Antonio Martínez Ron · elDiario.es",
+   "Espacio · Naturaleza",
+   "Entre las 115 imágenes del disco de oro de la Voyager 1 hay un águila culebrera fotografiada en Doñana por Josep Ramón Pons en los años setenta. Jon Lomberg, que diseñó el disco con Carl Sagan, cuenta por primera vez cómo la encontró en un libro sobre Doñana en la biblioteca de Cornell: «Esta águila ya ha volado más lejos que cualquier otra ave».",
+   "https://www.eldiario.es/sociedad/increible-historia-aguila-culebrera-donana-surca-espacio-interestelar-bordo-voyager-1_1_13668782.html"
+  ],
+  "revista": [
+   "SGAE y la Fundación Archivo Manuel de Falla homenajean a Manuel de Falla con una exposición en Madrid",
+   "Redacción · Revista Ritmo",
+   "Música · Arte",
+   "Por los 150 años del nacimiento de Falla, la exposición «Manuel de Falla. Una mirada actual» reúne una veintena de obras de artistas como Jaume Plensa, Javier Mariscal, Soledad Sevilla o Eduardo Arroyo inspiradas en su música. Se puede visitar gratis en el Palacio de Longoria de Madrid hasta el 14 de diciembre.",
+   "https://www.ritmo.es/actualidad/sgae-y-la-fundacion-archivo-manuel-de-falla-homenajean-a-manuel-de-falla-con-una-exposicion-en-madrid"
+  ],
+  "libro": [
+   "El diablo de los números",
+   "Hans Magnus Enzensberger",
+   1997,
+   "Novela · Divulgación",
+   "Robert odia las matemáticas hasta que, cada noche, un diablillo se le aparece en sueños y le enseña números primos, Fibonacci o el triángulo de Pascal como si fueran juegos. Para todas las edades."
+  ],
+  "pelicula": [
+   "X+Y",
+   "Morgan Matthews",
+   2014,
+   "Drama",
+   "Un chico con autismo y un enorme talento para las matemáticas viaja a Taiwán para prepararse para la Olimpiada Internacional de Matemáticas. Habla de altas capacidades, de amistad y de aprender a expresar lo que se siente. Se estrenó en algunos países como «A Brilliant Young Mind»."
+  ],
+  "programa": [
+   "Más por menos",
+   "Antonio Pérez Sanz · La 2 (TVE)",
+   1996,
+   "Divulgación matemática",
+   "Una serie española que descubre las matemáticas escondidas en el arte, la arquitectura y la naturaleza: espirales, mosaicos, proporciones. Muy visual y pensada para que cualquiera disfrute con ella."
+  ],
+  "cancion": [
+   "Quédate",
+   "Bizarrap y Quevedo",
+   2022,
+   "La sesión con la que Quevedo, un joven canario, se hizo famoso en todo el mundo. Escucha cómo la base electrónica crece poco a poco hasta el estribillo."
+  ],
+  "dato": [
+   "Manuel de Falla nació en Cádiz el 23 de noviembre de 1876, hace hoy 150 años. Murió en Argentina en 1946 y sus restos descansan en la cripta de la catedral de Cádiz.",
+   "Música · Historia"
+  ],
+  "concepto": [
+   "Sucesión de Fibonacci",
+   "Matemáticas",
+   "Cada número es la suma de los dos anteriores: 1, 1, 2, 3, 5, 8, 13, 21… La propuso Leonardo de Pisa en 1202 con un problema sobre conejos que se reproducen. Aparece en las espirales de piñas y girasoles, y el cociente entre dos números seguidos se acerca a 1,618, el número áureo."
+  ],
+  "cita": [
+   "La filosofía está escrita en ese grandísimo libro que tenemos abierto ante los ojos, el universo, y está escrito en lengua matemática.",
+   "Galileo Galilei",
+   "De «El ensayador» («Il Saggiatore», 1623). Es una versión abreviada del pasaje original."
+  ],
+  "reto": [
+   "Una escalera tiene 5 peldaños. Puedes subir de uno en uno o de dos en dos, mezclando como quieras. ¿De cuántas formas distintas puedes llegar arriba?",
+   "8 formas. Para 1 peldaño hay 1 forma, para 2 hay 2, y cada nuevo peldaño suma las dos anteriores: 1, 2, 3, 5, 8. ¡Es la sucesión de Fibonacci!"
+  ],
+  "pregunta": "¿Qué patrón de la naturaleza te gustaría entender mejor?",
+  "personaje": [
+   "Manuel de Falla",
+   "1876–1946",
+   "Compositor",
+   "Nació en Cádiz un 23 de noviembre. Vivió en París y después en Granada, donde organizó con Lorca el Concurso de Cante Jondo de 1922. Compuso «El amor brujo», «El sombrero de tres picos» y «Noches en los jardines de España»."
+  ],
+  "planta": [
+   "Romanesco",
+   "Brassica oleracea var. botrytis",
+   "Una variedad de coliflor verde con forma de pequeñas pirámides en espiral que se repiten a escalas cada vez más pequeñas, como un fractal. Si cuentas sus espirales, suelen salir números de Fibonacci."
+  ],
+  "refran": [
+   "De grano en grano, llena la gallina el buche.",
+   "Con constancia, poco a poco, se consigue mucho.",
+   "Little by little, the bird builds its nest."
+  ],
+  "frase": [
+   "Sin ton ni son",
+   "Sin motivo ni orden, de cualquier manera.",
+   "Viene de la música: el «ton» (tono) y el «son» (sonido) son lo que da sentido a una melodía. Sin ellos, solo hay ruido."
+  ],
+  "palabra": [
+   "Googol",
+   "en",
+   "El número 1 seguido de cien ceros.",
+   "Lo bautizó hacia 1920 Milton Sirotta, un niño de nueve años, sobrino del matemático Edward Kasner. De una versión mal escrita de esta palabra viene el nombre de Google."
+  ],
+  "habito": [
+   "Calcula de cabeza las cuentas pequeñas",
+   "Sumar la compra, repartir una cuenta o calcular una propina sin el móvil mantiene ágil la mente y te da seguridad con los números."
+  ],
+  "pausa": [
+   "Espirales de la naturaleza",
+   "Aesthetic",
+   "Girasoles, piñas, conchas y galaxias: un recorrido tranquilo por las espirales que se repiten en todas partes.",
+   "fibonacci spirals nature 4k"
+  ]
+ },
+ "extras": {
+  "video": [
+   [
+    "The magic of Fibonacci numbers",
+    "Arthur Benjamin · TED",
+    "Matemáticas",
+    "En seis minutos, el matemático y mago Arthur Benjamin demuestra con dibujos de cuadrados por qué los números de Fibonacci esconden patrones preciosos. Termina con una idea: las matemáticas también se estudian porque son bonitas."
+   ],
+   [
+    "Nature by Numbers",
+    "Cristóbal Vila · Vimeo",
+    "Matemáticas · Animación",
+    "Un cortometraje de animación del artista zaragozano Cristóbal Vila (2010) que muestra, sin palabras y con música suave, cómo Fibonacci y el número áureo dan forma a conchas, girasoles y alas de libélula."
+   ]
+  ],
+  "articulo": [
+   [
+    "The Unreasonable Effectiveness of Mathematics in the Natural Sciences",
+    "Eugene Wigner · Communications on Pure and Applied Mathematics",
+    "Matemáticas · Física",
+    "El físico Eugene Wigner se pregunta en 1960 por qué unas matemáticas inventadas por pura curiosidad sirven luego para describir el universo con tanta precisión. Un clásico que sigue sin respuesta definitiva."
+   ],
+   [
+    "Cargo Cult Science",
+    "Richard Feynman · Caltech",
+    "Ciencia · Pensamiento",
+    "El discurso de graduación de Feynman en 1974: la ciencia de verdad exige no engañarse a uno mismo, «y tú eres la persona más fácil de engañar». Una lección de honestidad intelectual."
+   ]
+  ],
+  "reel": [
+   [
+    "Stand-up Maths",
+    "YouTube",
+    "stand-up maths matt parker",
+    "El matemático y humorista australiano Matt Parker explica problemas curiosos con experimentos caseros, chistes y mucha paciencia.",
+    "https://www.tiktok.com/search?q=stand-up%20maths%20matt%20parker"
+   ],
+   [
+    "Derivando",
+    "YouTube",
+    "derivando eduardo saenz de cabezon",
+    "El matemático español Eduardo Sáenz de Cabezón cuenta curiosidades matemáticas con humor y en español, desde el infinito hasta los números primos.",
+    "https://www.tiktok.com/search?q=derivando%20eduardo%20saenz%20de%20cabezon"
+   ]
+  ],
+  "prensa": [
+   [
+    "Hidrogenesse y la última aventura electropop de Álvaro Pombo a los 87 años",
+    "David Saavedra · El Mundo (La Lectura)",
+    "Música · Poesía",
+    "Un reportaje sobre el dúo Hidrogenesse y su disco con poemas de Álvaro Pombo, que define como una pareja sentimental y artística difícil de etiquetar desde hace tres décadas. Puede requerir suscripción.",
+    "https://www.elmundo.es/la-lectura/2026/11/19/6aeb573efdddff27118b4598.html"
+   ],
+   [
+    "Cómo alimentar el cerebro para mejorar el rendimiento académico",
+    "Europa Press · El Confidencial",
+    "Salud · Aprendizaje",
+    "Una pieza sobre un nuevo estudio que relaciona la alimentación con el rendimiento académico, partiendo de que el cerebro es un órgano muy activo desde el punto de vista biológico y metabólico.",
+    "https://www.elconfidencial.com/salud/2026-11-17/como-alimentar-el-cerebro-para-mejorar-el-rendimiento-academico_4466693"
+   ]
+  ],
+  "revista": [
+   [
+    "Relatos ortográficos: Capitónomos, el poder de las mayúsculas para cambiar el significado de una palabra",
+    "Mariángeles García · Yorokobu",
+    "Lengua · Humor",
+    "Un relato breve sobre Marco, un chico que lo escribe todo en mayúsculas, para explicar los capitónomos: palabras que cambian de significado según lleven mayúscula o no. Requiere suscripción.",
+    "https://yorokobu.es/relatos-ortograficos-capitonomos"
+   ],
+   [
+    "Una exposición recoge la influencia de Manuel de Falla en las artes plásticas",
+    "Redacción · Platea Magazine",
+    "Música · Arte",
+    "La revista de ópera y música clásica repasa la muestra de la SGAE por el 150 aniversario de Falla y el recital de la pianista japonesa Azumi Nishizawa con la «Danza ritual del fuego».",
+    "https://www.plateamagazine.com/noticias/20682-una-exposicion-recoge-la-influencia-de-manuel-de-falla-en-las-artes-plasticas"
+   ]
+  ],
+  "libro": [
+   [
+    "El hombre que calculaba",
+    "Malba Tahan",
+    1938,
+    "Novela",
+    "Un calculista persa recorre Bagdad resolviendo problemas de matemáticas que surgen en la vida diaria, como repartir 35 camellos entre tres hermanos. Lo escribió el profesor brasileño Júlio César de Mello e Souza con seudónimo."
+   ],
+   [
+    "La proporción áurea",
+    "Mario Livio",
+    2002,
+    "Ensayo",
+    "El astrofísico Mario Livio cuenta la historia del número 1,618 y separa lo que es cierto de lo que es mito: no todo lo bonito sigue la proporción áurea."
+   ]
+  ],
+  "pelicula": [
+   [
+    "Donald en el país de las matemáticas",
+    "Hamilton Luske",
+    1959,
+    "Animación",
+    "Un cortometraje de Disney de 27 minutos en el que el pato Donald descubre las matemáticas en la música, el billar, la naturaleza y la arquitectura. Fue nominado al Óscar."
+   ],
+   [
+    "El pequeño Tate",
+    "Jodie Foster",
+    1991,
+    "Drama",
+    "Un niño de siete años superdotado vive entre su madre, que quiere que sea feliz, y una escuela para niños brillantes que quiere que destaque. Una mirada tierna a las altas capacidades."
+   ]
+  ],
+  "programa": [
+   [
+    "Universo matemático",
+    "Antonio Pérez Sanz · La 2 (TVE)",
+    2000,
+    "Documental",
+    "Cada capítulo cuenta la vida de un gran matemático, de Pitágoras a Gauss, y cómo sus ideas cambiaron el mundo."
+   ],
+   [
+    "Fermat's Last Theorem",
+    "Simon Singh y John Lynch · BBC Horizon",
+    1996,
+    "Documental",
+    "Un documental de 45 minutos sobre Andrew Wiles, el matemático que dedicó siete años en secreto a demostrar el último teorema de Fermat, un problema abierto durante más de 350 años. Emocionante incluso sin saber matemáticas."
+   ]
+  ],
+  "cancion": [
+   [
+    "Volando voy",
+    "Camarón de la Isla",
+    1979,
+    "Una rumba alegre compuesta por Kiko Veneno para el disco «La leyenda del tiempo». Escucha cómo se mezcla el flamenco con instrumentos de rock."
+   ],
+   [
+    "Tuya",
+    "Rosalía",
+    2023,
+    "Rosalía mezcla aquí el reguetón con sonidos inspirados en Japón. Escucha los coros y el ritmo cortado del estribillo."
+   ]
+  ],
+  "dato": [
+   [
+    "El 23 de noviembre se celebra el Día de Fibonacci porque en inglés la fecha se escribe 11/23, y 1, 1, 2, 3 son los primeros números de su famosa sucesión.",
+    "Matemáticas"
+   ],
+   [
+    "Alfonso X el Sabio nació el 23 de noviembre de 1221 en Toledo. Bajo su reinado se escribieron en castellano obras de historia, leyes y astronomía, y se compusieron las «Cantigas de Santa María».",
+    "Historia"
+   ]
+  ],
+  "concepto": [
+   [
+    "Número áureo",
+    "Matemáticas",
+    "Es 1,618…, el número que aparece al dividir una línea en dos partes de forma que la parte grande es a la pequeña como la línea entera es a la grande. Se le ha atribuido mucha magia, pero no todo lo que se dice de él es cierto."
+   ],
+   [
+    "Filotaxis",
+    "Botánica",
+    "Es la forma en que se ordenan las hojas, semillas o pétalos en una planta. Muchas siguen un ángulo de unos 137,5 grados entre una hoja y la siguiente, el ángulo áureo, que les permite aprovechar al máximo el espacio y la luz."
+   ]
+  ],
+  "cita": [
+   [
+    "La música no se hace ni debe hacerse jamás para que se comprenda, sino para que se sienta.",
+    "Manuel de Falla (atribuida)",
+    "Se le atribuye con frecuencia, pero no he podido localizar en qué texto o entrevista la dijo."
+   ],
+   [
+    "Las matemáticas son la reina de las ciencias.",
+    "Carl Friedrich Gauss",
+    "Según su amigo y biógrafo Wolfgang Sartorius von Waltershausen, que la recogió en «Gauss zum Gedächtniss» (1856)."
+   ]
+  ],
+  "reto": [
+   [
+    "Cada mes, cada pareja de conejos adulta tiene una pareja de crías, que tarda un mes en ser adulta. Empiezas con una pareja de crías. ¿Cuántas parejas habrá en el sexto mes?",
+    "8 parejas. Mes a mes: 1, 1, 2, 3, 5, 8. Es el problema con el que Fibonacci presentó su sucesión en 1202."
+   ],
+   [
+    "Divide 21 entre 13 y luego 34 entre 21. ¿A qué número se van acercando los resultados?",
+    "A 1,618…, el número áureo. 21 ÷ 13 ≈ 1,615 y 34 ÷ 21 ≈ 1,619. Cuanto más avanzas en la sucesión de Fibonacci, más se acerca."
+   ]
+  ],
+  "pregunta": [
+   "¿Qué música te recuerda a un lugar concreto?",
+   "¿Qué asignatura te aburría en el colegio y hoy te parece interesante?"
+  ],
+  "personaje": [
+   [
+    "Leonardo de Pisa (Fibonacci)",
+    "c. 1170–c. 1250",
+    "Matemático",
+    "Aprendió los números indoarábigos de niño en el norte de África, donde trabajaba su padre, y los dio a conocer en Europa con su «Liber Abaci» (1202). Gracias a él dejamos de calcular con números romanos."
+   ],
+   [
+    "Alfonso X el Sabio",
+    "1221–1284",
+    "Rey de Castilla",
+    "Nació un 23 de noviembre en Toledo. Reunió a sabios cristianos, judíos y musulmanes para traducir y escribir libros de ciencia, historia y leyes, y compuso las «Cantigas de Santa María»."
+   ]
+  ],
+  "planta": [
+   [
+    "Pino piñonero",
+    "Pinus pinea",
+    "El pino de los piñones, típico de la costa andaluza. Si miras la base de una piña, verás dos familias de espirales que giran en sentidos contrarios; normalmente son 8 y 13, dos números de Fibonacci."
+   ],
+   [
+    "Aloe espiral",
+    "Aloe polyphylla",
+    "Una planta de las montañas de Lesoto cuyas hojas crecen formando una espiral perfecta. Es muy apreciada por los jardineros por su forma geométrica."
+   ]
+  ],
+  "refran": [
+   [
+    "Poco a poco hila la vieja el copo.",
+    "Con paciencia y constancia se termina cualquier trabajo.",
+    "Slow and steady wins the race."
+   ],
+   [
+    "Quien guarda, halla.",
+    "Quien ahorra o conserva las cosas, las encuentra cuando las necesita.",
+    "Waste not, want not."
+   ]
+  ],
+  "frase": [
+   [
+    "Hacer las cuentas de la lechera",
+    "Hacer planes demasiado optimistas que dependen de algo que aún no se tiene.",
+    "Viene de una fábula en la que una lechera, camino del mercado, imagina todo lo que comprará con lo que gane, tropieza y se le cae el cántaro."
+   ],
+   [
+    "No dar pie con bola",
+    "Equivocarse una y otra vez, no acertar en nada.",
+    "Su origen no está claro; se suele relacionar con juegos de pelota o de bolos en los que no se consigue acertar."
+   ]
+  ],
+  "palabra": [
+   [
+    "Zugzwang",
+    "de",
+    "Situación en la que cualquier movimiento que hagas empeora tu posición, pero estás obligado a mover.",
+    "Viene del ajedrez y significa literalmente «obligación de jugar». Hoy se usa también para hablar de decisiones difíciles en la vida."
+   ],
+   [
+    "Eureka",
+    "en",
+    "Exclamación de alegría al encontrar por fin la solución a algo.",
+    "Viene del griego «¡Lo he encontrado!». Según la leyenda, Arquímedes la gritó al descubrir en el baño cómo medir el volumen de una corona."
+   ]
+  ],
+  "habito": [
+   [
+    "Busca un patrón en tu paseo",
+    "Fíjate en una cosa que se repita: hojas, baldosas, ventanas o nubes. Entrenar la mirada para encontrar patrones hace los paseos más interesantes y mejora la atención."
+   ],
+   [
+    "Escucha una pieza clásica corta cada mañana",
+    "Cinco minutos de música, como una danza de Falla, pueden marcar un comienzo tranquilo del día y ampliar poco a poco tus gustos musicales."
+   ]
+  ],
+  "pausa": [
+   [
+    "Noches en los jardines de España",
+    "Pausa",
+    "Escucha con calma la primera parte, «En el Generalife», de la obra de Falla para piano y orquesta. Imagina los jardines de la Alhambra de noche.",
+    "noches en los jardines de españa falla generalife"
+   ],
+   [
+    "Respiración en espiral",
+    "Meditación",
+    "Siéntate cómodamente e imagina que tu respiración dibuja una espiral que se abre al inspirar y se cierra al soltar el aire. Repite durante cinco minutos.",
+    null
+   ]
+  ]
+ }
+}
