@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-24",
+    "titulo": "Aprobado el primer tratamiento hormonal nuevo en más de 20 años para el cáncer de mama en fase temprana",
+    "resumen": "La agencia estadounidense del medicamento (FDA) aprobó el 23 de noviembre el giredestrant (Wilserdly), una pastilla diaria para después de la cirugía en el cáncer de mama con receptores de estrógeno positivos y HER2 negativo, el tipo más frecuente. En el ensayo lidERA, con 4.170 pacientes, redujo un 30 % el riesgo de que el cáncer volviera o de muerte frente a la terapia hormonal habitual: a los tres años, el 92,4 % seguía libre de cáncer invasivo frente al 89,6 %. Los datos de supervivencia global aún no están maduros.",
+    "fuente": "FDA · Genentech · The ASCO Post · Medscape",
+    "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-hormone-therapy-early-stage-breast-cancer-more-20-years",
+    "tema": "Medicina"
+  },
+  {
     "date": "2026-11-23",
     "titulo": "Descubren frente a Tenerife la población más densa de coral candelabro conocida en el Atlántico",
     "resumen": "Un equipo del Instituto Español de Oceanografía (IEO-CSIC) ha documentado frente a la costa sureste de Tenerife 190 colonias del coral Dendrophyllia ramea en apenas 1,8 kilómetros de fondo, entre 92 y 108 metros de profundidad. En algunos puntos hay hasta 9,3 colonias por metro cuadrado, la densidad más alta registrada para la especie en el Atlántico, y el 58 % de las colonias supera los 20 centímetros de ancho. Los autores piden tener en cuenta este «bosque submarino» antes de planificar parques eólicos marinos cercanos.",
@@ -229,14 +237,6 @@
     "resumen": "Seis polluelos de torillo andaluz nacieron el 11 y el 12 de octubre en el Zoobotánico de Jerez, y un séptimo huevo sigue incubándose. Los padres forman parte de las 18 aves llegadas de Marruecos en septiembre para un programa de cría que busca devolver la especie, desaparecida en España hace unos 45 años, al litoral andaluz.",
     "fuente": "Junta de Andalucía, Andalucía Información, Viva Jerez y COPE",
     "url": "https://www.andaluciainformacion.es/articulo/jerez/nacen-zoo-jerez-seis-torillos-andaluces-especie-extinguida-espana/202610201551113512334.html",
-    "tema": "Naturaleza"
-  },
-  {
-    "date": "2026-10-22",
-    "titulo": "Nace una alianza de más de 500 millones de dólares para rescatar las especies al borde de la extinción",
-    "resumen": "Nueve fundaciones y organizaciones, entre ellas Re:wild, Rainforest Trust y el Bezos Earth Fund, presentaron el 16 de octubre en la cumbre de biodiversidad COP17 de Ereván la Species Recovery Alliance, con más de 500 millones de dólares para los próximos cinco años. Financiará cría en cautividad, reintroducciones, rescate genético y control de especies invasoras para especies extintas en estado silvestre o en peligro. Más de 31.000 especies están en las categorías más amenazadas de la Lista Roja de la UICN.",
-    "fuente": "Re:wild, Armenpress y Fortune",
-    "url": "https://www.rewild.org/press/species-recovery-alliance",
     "tema": "Naturaleza"
   }
 ]

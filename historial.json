@@ -130,7 +130,10 @@
   "How to truly listen",
   "Doodling in Math: Spirals, Fibonacci, and Being a Plant",
   "The magic of Fibonacci numbers",
-  "Nature by Numbers"
+  "Nature by Numbers",
+  "The search for humanity's roots",
+  "The universe is queerer than we can suppose",
+  "A dig for humanity's origins"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -259,7 +262,10 @@
   "What Is Classical Music?",
   "A Mathematician's Lament",
   "The Unreasonable Effectiveness of Mathematics in the Natural Sciences",
-  "Cargo Cult Science"
+  "Cargo Cult Science",
+  "Nothing in Biology Makes Sense Except in the Light of Evolution",
+  "Evolution as Fact and Theory",
+  "The Median Isn't the Message"
  ],
  "reel": [
   "QuantumFracture",
@@ -386,7 +392,10 @@
   "Pomplamoose",
   "Eddie Woo",
   "Stand-up Maths",
-  "Derivando"
+  "Derivando",
+  "True Facts (Ze Frank)",
+  "Deep Look",
+  "Date un Voltio"
  ],
  "libro": [
   "Sapiens",
@@ -527,7 +536,10 @@
   "Alta fidelidad",
   "El diablo de los números",
   "El hombre que calculaba",
-  "La proporción áurea"
+  "La proporción áurea",
+  "El origen de las especies",
+  "El viaje del Beagle",
+  "La especie elegida"
  ],
  "pelicula": [
   "La llegada",
@@ -677,7 +689,10 @@
   "Begin Again",
   "X+Y",
   "Donald en el país de las matemáticas",
-  "El pequeño Tate"
+  "El pequeño Tate",
+  "La duda de Darwin",
+  "En busca del valle encantado",
+  "Dersu Uzala"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -809,7 +824,10 @@
   "Jazz",
   "Más por menos",
   "Universo matemático",
-  "Fermat's Last Theorem"
+  "Fermat's Last Theorem",
+  "La vida en la Tierra",
+  "Caminando entre dinosaurios",
+  "Tu pez interior"
  ],
  "cancion": [
   "Mediterráneo",
@@ -945,7 +963,10 @@
   "Good Luck, Babe!",
   "Quédate",
   "Volando voy",
-  "Tuya"
+  "Tuya",
+  "Lucy in the Sky with Diamonds",
+  "What a Wonderful World",
+  "Anti-Hero"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -1079,7 +1100,10 @@
   "Santa Cecilia es patrona de la música por una frase de una antigua leyenda: mientras sonaban los instrumentos en su boda, ella cantaba a Dios en su corazón. En 1584 fue elegida patrona de la Academia de Música de Roma.",
   "Manuel de Falla nació en Cádiz el 23 de noviembre de 1876, hace hoy 150 años. Murió en Argentina en 1946 y sus restos descansan en la cripta de la catedral de Cádiz.",
   "El 23 de noviembre se celebra el Día de Fibonacci porque en inglés la fecha se escribe 11/23, y 1, 1, 2, 3 son los primeros números de su famosa sucesión.",
-  "Alfonso X el Sabio nació el 23 de noviembre de 1221 en Toledo. Bajo su reinado se escribieron en castellano obras de historia, leyes y astronomía, y se compusieron las «Cantigas de Santa María»."
+  "Alfonso X el Sabio nació el 23 de noviembre de 1221 en Toledo. Bajo su reinado se escribieron en castellano obras de historia, leyes y astronomía, y se compusieron las «Cantigas de Santa María».",
+  "El esqueleto de Lucy, de hace unos 3,2 millones de años, se encontró en Etiopía el 24 de noviembre de 1974. Se llama así porque esa noche, en el campamento, sonaba una y otra vez «Lucy in the Sky with Diamonds» de los Beatles.",
+  "La primera edición de «El origen de las especies» se puso a la venta el 24 de noviembre de 1859 con 1.250 ejemplares, y las librerías los pidieron todos ese mismo día.",
+  "El viaje del Beagle iba a durar dos años y duró casi cinco, de 1831 a 1836. Darwin, que se mareaba muchísimo en el mar, pasó la mayor parte del tiempo en tierra explorando."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -1222,7 +1246,10 @@
   "Armónicos",
   "Sucesión de Fibonacci",
   "Número áureo",
-  "Filotaxis"
+  "Filotaxis",
+  "Selección natural",
+  "Exaptación",
+  "Fósil viviente"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -1348,7 +1375,10 @@
   "Nunca es demasiado tarde para ser lo que podrías haber sido.",
   "La filosofía está escrita en ese grandísimo libro que tenemos abierto ante los ojos, el universo, y está escrito en lengua matemática.",
   "La música no se hace ni debe hacerse jamás para que se comprenda, sino para que se sienta.",
-  "Las matemáticas son la reina de las ciencias."
+  "Las matemáticas son la reina de las ciencias.",
+  "Hay grandeza en esta visión de la vida.",
+  "Nada tiene sentido en biología si no es a la luz de la evolución.",
+  "No es la especie más fuerte la que sobrevive, sino la que mejor se adapta al cambio."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1473,7 +1503,10 @@
   "Un piano tiene 88 teclas y 36 son negras. ¿Cuántas son blancas?",
   "Una escalera tiene 5 peldaños. Puedes subir de uno en uno o de dos en dos, mezclando como quieras. ¿De cuántas formas distintas puedes llegar arriba?",
   "Cada mes, cada pareja de conejos adulta tiene una pareja de crías, que tarda un mes en ser adulta. Empiezas con una pareja de crías. ¿Cuántas parejas habrá en el sexto mes?",
-  "Divide 21 entre 13 y luego 34 entre 21. ¿A qué número se van acercando los resultados?"
+  "Divide 21 entre 13 y luego 34 entre 21. ¿A qué número se van acercando los resultados?",
+  "¿Qué fue antes, el huevo o la gallina?",
+  "Una bacteria se divide en dos cada 20 minutos. Si a las 12:00 tienes una, ¿cuántas habrá a las 13:00?",
+  "En una isla hay pinzones de pico grande y de pico pequeño. Una sequía hace que solo queden semillas muy duras. ¿Cuáles tendrán más crías al año siguiente?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1599,7 +1632,10 @@
   "¿Qué música pones cuando necesitas concentrarte?",
   "¿Qué patrón de la naturaleza te gustaría entender mejor?",
   "¿Qué música te recuerda a un lugar concreto?",
-  "¿Qué asignatura te aburría en el colegio y hoy te parece interesante?"
+  "¿Qué asignatura te aburría en el colegio y hoy te parece interesante?",
+  "¿Qué rasgo crees que heredaste y cuál has aprendido tú?",
+  "Si pudieras ver un animal extinguido vivo durante un día, ¿cuál elegirías?",
+  "¿En qué has cambiado más en los últimos diez años?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1725,7 +1761,10 @@
   "Hoagy Carmichael",
   "Manuel de Falla",
   "Leonardo de Pisa (Fibonacci)",
-  "Alfonso X el Sabio"
+  "Alfonso X el Sabio",
+  "Charles Darwin",
+  "Baruch Spinoza",
+  "Henri de Toulouse-Lautrec"
  ],
  "planta": [
   "Girasol",
@@ -1851,7 +1890,10 @@
   "Pernambuco",
   "Romanesco",
   "Pino piñonero",
-  "Aloe espiral"
+  "Aloe espiral",
+  "Orquídea de Darwin",
+  "Wollemia",
+  "Equiseto"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -1986,7 +2028,10 @@
   "Bien canta Marta cuando está harta.",
   "De grano en grano, llena la gallina el buche.",
   "Poco a poco hila la vieja el copo.",
-  "Quien guarda, halla."
+  "Quien guarda, halla.",
+  "Quien a los suyos parece, honra merece.",
+  "Hijo de gato, ratones mata.",
+  "Lo que se hereda no se hurta."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -2113,7 +2158,10 @@
   "Tocar de oído",
   "Sin ton ni son",
   "Hacer las cuentas de la lechera",
-  "No dar pie con bola"
+  "No dar pie con bola",
+  "Ser un bicho raro",
+  "Estar en su salsa",
+  "La ley del más fuerte"
  ],
  "palabra": [
   "Arrebol",
@@ -2243,7 +2291,10 @@
   "Eisteddfod",
   "Googol",
   "Zugzwang",
-  "Eureka"
+  "Eureka",
+  "Numinous",
+  "Desabafar",
+  "Ukiyo"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -2372,7 +2423,10 @@
   "Aprende una canción de memoria cada mes",
   "Calcula de cabeza las cuentas pequeñas",
   "Busca un patrón en tu paseo",
-  "Escucha una pieza clásica corta cada mañana"
+  "Escucha una pieza clásica corta cada mañana",
+  "Lleva un cuaderno de observaciones",
+  "Da un paseo para pensar",
+  "Pregúntate «¿por qué será así?» una vez al día"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -2492,7 +2546,10 @@
   "Piano suave para estudiar",
   "Espirales de la naturaleza",
   "Noches en los jardines de España",
-  "Respiración en espiral"
+  "Respiración en espiral",
+  "Islas Galápagos",
+  "Paseo del pensamiento",
+  "Gabinete de curiosidades"
  ],
  "prensa": [
   "La Contra",
@@ -2601,7 +2658,10 @@
   "Investigadores internacionales estudian en la Mezquita de Córdoba los restos de techumbre de madera más antiguos de Europa",
   "La increíble historia del águila culebrera de Doñana que surca el espacio interestelar a bordo de la Voyager 1",
   "Hidrogenesse y la última aventura electropop de Álvaro Pombo a los 87 años",
-  "Cómo alimentar el cerebro para mejorar el rendimiento académico"
+  "Cómo alimentar el cerebro para mejorar el rendimiento académico",
+  "La huella gaditana de Manuel de Falla",
+  "La Orquesta Joven de Andalucía vuelve al Festival de Cádiz con 'Constelación Falla'",
+  "Javier Perianes rinde tributo a Falla en el Maestranza a las puertas de su 150 aniversario"
  ],
  "revista": [
   "Entrevistas largas",
@@ -2710,6 +2770,9 @@
   "Sandra Mihanovich: «Tengo una herramienta vocal importante. Me vino puesta, no es mi mérito tenerla»",
   "SGAE y la Fundación Archivo Manuel de Falla homenajean a Manuel de Falla con una exposición en Madrid",
   "Relatos ortográficos: Capitónomos, el poder de las mayúsculas para cambiar el significado de una palabra",
-  "Una exposición recoge la influencia de Manuel de Falla en las artes plásticas"
+  "Una exposición recoge la influencia de Manuel de Falla en las artes plásticas",
+  "La materia común de la literatura y la filosofía",
+  "Borja Milá: «Hay muchas especies de aves que no van a poder adaptarse a tiempo al cambio climático»",
+  "Institut Pere Mata, el manicomio que quiso curar con belleza"
  ]
 }
