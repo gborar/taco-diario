@@ -133,7 +133,10 @@
   "Nature by Numbers",
   "The search for humanity's roots",
   "The universe is queerer than we can suppose",
-  "A dig for humanity's origins"
+  "A dig for humanity's origins",
+  "Why should you read Dante's Divine Comedy?",
+  "What makes a poem … a poem?",
+  "Why should you read Shakespeare's The Tempest?"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -265,7 +268,10 @@
   "Cargo Cult Science",
   "Nothing in Biology Makes Sense Except in the Light of Evolution",
   "Evolution as Fact and Theory",
-  "The Median Isn't the Message"
+  "The Median Isn't the Message",
+  "Arte nuevo de hacer comedias en este tiempo",
+  "The Joy of Reading and Writing: Superman and Me",
+  "Staying Awake: Notes on the Alleged Decline of Reading"
  ],
  "reel": [
   "QuantumFracture",
@@ -395,7 +401,10 @@
   "Derivando",
   "True Facts (Ze Frank)",
   "Deep Look",
-  "Date un Voltio"
+  "Date un Voltio",
+  "Academia Play",
+  "Jabiertzo",
+  "Memorias de Pez"
  ],
  "libro": [
   "Sapiens",
@@ -539,7 +548,10 @@
   "La proporción áurea",
   "El origen de las especies",
   "El viaje del Beagle",
-  "La especie elegida"
+  "La especie elegida",
+  "El perro del hortelano",
+  "La dama boba",
+  "Una historia de la lectura"
  ],
  "pelicula": [
   "La llegada",
@@ -692,7 +704,10 @@
   "El pequeño Tate",
   "La duda de Darwin",
   "En busca del valle encantado",
-  "Dersu Uzala"
+  "Dersu Uzala",
+  "Lope",
+  "El perro del hortelano",
+  "Shakespeare in Love"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -827,7 +842,10 @@
   "Fermat's Last Theorem",
   "La vida en la Tierra",
   "Caminando entre dinosaurios",
-  "Tu pez interior"
+  "Tu pez interior",
+  "Shakespeare Uncovered",
+  "Un país en la mochila",
+  "Upstart Crow"
  ],
  "cancion": [
   "Mediterráneo",
@@ -966,7 +984,10 @@
   "Tuya",
   "Lucy in the Sky with Diamonds",
   "What a Wonderful World",
-  "Anti-Hero"
+  "Anti-Hero",
+  "Te guardo",
+  "Pongamos que hablo de Madrid",
+  "Ingobernable"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -1103,7 +1124,10 @@
   "Alfonso X el Sabio nació el 23 de noviembre de 1221 en Toledo. Bajo su reinado se escribieron en castellano obras de historia, leyes y astronomía, y se compusieron las «Cantigas de Santa María».",
   "El esqueleto de Lucy, de hace unos 3,2 millones de años, se encontró en Etiopía el 24 de noviembre de 1974. Se llama así porque esa noche, en el campamento, sonaba una y otra vez «Lucy in the Sky with Diamonds» de los Beatles.",
   "La primera edición de «El origen de las especies» se puso a la venta el 24 de noviembre de 1859 con 1.250 ejemplares, y las librerías los pidieron todos ese mismo día.",
-  "El viaje del Beagle iba a durar dos años y duró casi cinco, de 1831 a 1836. Darwin, que se mareaba muchísimo en el mar, pasó la mayor parte del tiempo en tierra explorando."
+  "El viaje del Beagle iba a durar dos años y duró casi cinco, de 1831 a 1836. Darwin, que se mareaba muchísimo en el mar, pasó la mayor parte del tiempo en tierra explorando.",
+  "Lope de Vega nació en Madrid el 25 de noviembre de 1562. Su amigo Pérez de Montalbán le atribuyó unas 1.800 comedias; hoy se conservan alrededor de 400, que siguen siendo muchísimas. Cervantes lo llamó «monstruo de naturaleza».",
+  "La Biblioteca Nacional de España nació en 1712, cuando Felipe V fundó la Real Biblioteca Pública en Madrid. Hoy guarda millones de libros, mapas, grabados y manuscritos, entre ellos autógrafos de Lope de Vega.",
+  "Los fuegos artificiales que giran se llaman en inglés «Catherine wheel», rueda de Catalina, por la leyenda de santa Catalina de Alejandría, a la que quisieron martirizar en una rueda con pinchos que se rompió al tocarla."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -1249,7 +1273,10 @@
   "Filotaxis",
   "Selección natural",
   "Exaptación",
-  "Fósil viviente"
+  "Fósil viviente",
+  "Comedia nueva",
+  "Siglo de Oro",
+  "Aprendizaje intercalado"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -1378,7 +1405,10 @@
   "Las matemáticas son la reina de las ciencias.",
   "Hay grandeza en esta visión de la vida.",
   "Nada tiene sentido en biología si no es a la luz de la evolución.",
-  "No es la especie más fuerte la que sobrevive, sino la que mejor se adapta al cambio."
+  "No es la especie más fuerte la que sobrevive, sino la que mejor se adapta al cambio.",
+  "Esto es amor: quien lo probó lo sabe.",
+  "A mis soledades voy, de mis soledades vengo, porque para andar conmigo me bastan mis pensamientos.",
+  "El monstruo de naturaleza, el gran Lope de Vega."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1506,7 +1536,10 @@
   "Divide 21 entre 13 y luego 34 entre 21. ¿A qué número se van acercando los resultados?",
   "¿Qué fue antes, el huevo o la gallina?",
   "Una bacteria se divide en dos cada 20 minutos. Si a las 12:00 tienes una, ¿cuántas habrá a las 13:00?",
-  "En una isla hay pinzones de pico grande y de pico pequeño. Una sequía hace que solo queden semillas muy duras. ¿Cuáles tendrán más crías al año siguiente?"
+  "En una isla hay pinzones de pico grande y de pico pequeño. Una sequía hace que solo queden semillas muy duras. ¿Cuáles tendrán más crías al año siguiente?",
+  "Lope escribió un soneto cuyo tema es cómo se escribe un soneto. ¿Cómo empieza?",
+  "¿Cuántos versos tiene un soneto y cómo se reparten?",
+  "Si lees 20 páginas al día, ¿cuántos libros de 300 páginas lees en un año?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1635,7 +1668,10 @@
   "¿Qué asignatura te aburría en el colegio y hoy te parece interesante?",
   "¿Qué rasgo crees que heredaste y cuál has aprendido tú?",
   "Si pudieras ver un animal extinguido vivo durante un día, ¿cuál elegirías?",
-  "¿En qué has cambiado más en los últimos diez años?"
+  "¿En qué has cambiado más en los últimos diez años?",
+  "¿Qué frase de un libro te sabes de memoria y por qué se te quedó?",
+  "Si tu vida fuera una comedia de enredo, ¿quién haría de criado gracioso?",
+  "¿Qué verso o letra de canción te viene a la cabeza cuando estás contento?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1764,7 +1800,10 @@
   "Alfonso X el Sabio",
   "Charles Darwin",
   "Baruch Spinoza",
-  "Henri de Toulouse-Lautrec"
+  "Henri de Toulouse-Lautrec",
+  "Lope de Vega",
+  "Catalina de Alejandría",
+  "María de Zayas"
  ],
  "planta": [
   "Girasol",
@@ -1893,7 +1932,10 @@
   "Aloe espiral",
   "Orquídea de Darwin",
   "Wollemia",
-  "Equiseto"
+  "Equiseto",
+  "Arrayán",
+  "Magnolia",
+  "Celinda"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -2031,7 +2073,10 @@
   "Quien guarda, halla.",
   "Quien a los suyos parece, honra merece.",
   "Hijo de gato, ratones mata.",
-  "Lo que se hereda no se hurta."
+  "Lo que se hereda no se hurta.",
+  "De poetas y de locos todos tenemos un poco.",
+  "Hombre prevenido vale por dos.",
+  "Las palabras se las lleva el viento."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -2161,7 +2206,10 @@
   "No dar pie con bola",
   "Ser un bicho raro",
   "Estar en su salsa",
-  "La ley del más fuerte"
+  "La ley del más fuerte",
+  "Ser de capa y espada",
+  "Tener don de gentes",
+  "Ser el alma de la fiesta"
  ],
  "palabra": [
   "Arrebol",
@@ -2294,7 +2342,10 @@
   "Eureka",
   "Numinous",
   "Desabafar",
-  "Ukiyo"
+  "Ukiyo",
+  "Alfarrabista",
+  "Læselyst",
+  "Llyfrbryf"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -2426,7 +2477,10 @@
   "Escucha una pieza clásica corta cada mañana",
   "Lleva un cuaderno de observaciones",
   "Da un paseo para pensar",
-  "Pregúntate «¿por qué será así?» una vez al día"
+  "Pregúntate «¿por qué será así?» una vez al día",
+  "Lee veinte minutos cada día",
+  "Escribe en los márgenes",
+  "Lleva siempre un libro encima"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -2549,7 +2603,10 @@
   "Respiración en espiral",
   "Islas Galápagos",
   "Paseo del pensamiento",
-  "Gabinete de curiosidades"
+  "Gabinete de curiosidades",
+  "Long Room del Trinity College",
+  "Lluvia en la biblioteca",
+  "Escribe un soneto"
  ],
  "prensa": [
   "La Contra",
@@ -2661,7 +2718,10 @@
   "Cómo alimentar el cerebro para mejorar el rendimiento académico",
   "La huella gaditana de Manuel de Falla",
   "La Orquesta Joven de Andalucía vuelve al Festival de Cádiz con 'Constelación Falla'",
-  "Javier Perianes rinde tributo a Falla en el Maestranza a las puertas de su 150 aniversario"
+  "Javier Perianes rinde tributo a Falla en el Maestranza a las puertas de su 150 aniversario",
+  "La RAE viaja a la Mezquita-Catedral de Córdoba para homenajear a Góngora y la historia literaria de la ciudad",
+  "La RAE se lleva su pompa a la mezquita-catedral de Córdoba",
+  "La RAE reúne en la Mezquita-Catedral de Córdoba a 21 académicos en un pleno extraordinario dedicado a Góngora"
  ],
  "revista": [
   "Entrevistas largas",
@@ -2773,6 +2833,9 @@
   "Una exposición recoge la influencia de Manuel de Falla en las artes plásticas",
   "La materia común de la literatura y la filosofía",
   "Borja Milá: «Hay muchas especies de aves que no van a poder adaptarse a tiempo al cambio climático»",
-  "Institut Pere Mata, el manicomio que quiso curar con belleza"
+  "Institut Pere Mata, el manicomio que quiso curar con belleza",
+  "Brais Suárez: «Aquella Rusia ya no existe»",
+  "Los viajes de Hilario",
+  "Los libros de la semana #218"
  ]
 }

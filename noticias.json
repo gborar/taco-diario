@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-25",
+    "titulo": "Los mosquitos con Wolbachia reducen un 69 % los contagios de dengue y chikungunya en niños de Belo Horizonte",
+    "resumen": "Un ensayo con 5.757 niños de 6 a 11 años en 58 zonas de Belo Horizonte (Brasil), seguido entre 2020 y 2024, encontró un 68,6 % menos de infecciones por arbovirus donde se soltaron mosquitos con la bacteria Wolbachia: −68,5 % de dengue y −73,3 % de chikungunya, incluso durante la epidemia récord de 2024. Es la primera prueba de este tipo en una gran ciudad; los resultados se presentaron el 21 de noviembre en el congreso de la ASTMH y aún no están revisados por pares.",
+    "fuente": "Fiocruz · Emory University (EurekAlert)",
+    "url": "https://www.eurekalert.org/news-releases/1152851",
+    "tema": "Salud"
+  },
+  {
     "date": "2026-11-24",
     "titulo": "Aprobado el primer tratamiento hormonal nuevo en más de 20 años para el cáncer de mama en fase temprana",
     "resumen": "La agencia estadounidense del medicamento (FDA) aprobó el 23 de noviembre el giredestrant (Wilserdly), una pastilla diaria para después de la cirugía en el cáncer de mama con receptores de estrógeno positivos y HER2 negativo, el tipo más frecuente. En el ensayo lidERA, con 4.170 pacientes, redujo un 30 % el riesgo de que el cáncer volviera o de muerte frente a la terapia hormonal habitual: a los tres años, el 92,4 % seguía libre de cáncer invasivo frente al 89,6 %. Los datos de supervivencia global aún no están maduros.",
@@ -230,13 +238,5 @@
     "fuente": "GSK, NEJM, Pharmacy Times y New Atlas",
     "url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-the-us-for-the-treatment-of-chronic-hepatitis-b-chb/",
     "tema": "Medicina"
-  },
-  {
-    "date": "2026-10-23",
-    "titulo": "Nacen en Jerez los primeros torillos andaluces, un ave extinguida en España",
-    "resumen": "Seis polluelos de torillo andaluz nacieron el 11 y el 12 de octubre en el Zoobotánico de Jerez, y un séptimo huevo sigue incubándose. Los padres forman parte de las 18 aves llegadas de Marruecos en septiembre para un programa de cría que busca devolver la especie, desaparecida en España hace unos 45 años, al litoral andaluz.",
-    "fuente": "Junta de Andalucía, Andalucía Información, Viva Jerez y COPE",
-    "url": "https://www.andaluciainformacion.es/articulo/jerez/nacen-zoo-jerez-seis-torillos-andaluces-especie-extinguida-espana/202610201551113512334.html",
-    "tema": "Naturaleza"
   }
 ]
