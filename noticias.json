@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-26",
+    "titulo": "Vacunar a pueblos enteros contra la malaria reduce un 70 % las infecciones en Gambia",
+    "resumen": "Un ensayo publicado en The Lancet el 19 de noviembre ofreció la vacuna R21 a todos los habitantes de 54 aldeas de Gambia y Burkina Faso, desde los 5 meses de edad, antes de la temporada de lluvias de 2024. Las probabilidades de infección bajaron un 70 % en Gambia y un 25 % en Burkina Faso, y los casos de malaria clínica, un 47 % y un 30 %. La vacuna fue segura y el estudio, coordinado por la London School of Hygiene & Tropical Medicine, sigue en marcha para medir cuánto dura la protección.",
+    "fuente": "The Lancet · London School of Hygiene & Tropical Medicine",
+    "url": "https://www.lshtm.ac.uk/newsevents/news/2026/vaccinating-entire-communities-could-help-reduce-malaria-infections-study",
+    "tema": "Salud"
+  },
+  {
     "date": "2026-11-25",
     "titulo": "Los mosquitos con Wolbachia reducen un 69 % los contagios de dengue y chikungunya en niños de Belo Horizonte",
     "resumen": "Un ensayo con 5.757 niños de 6 a 11 años en 58 zonas de Belo Horizonte (Brasil), seguido entre 2020 y 2024, encontró un 68,6 % menos de infecciones por arbovirus donde se soltaron mosquitos con la bacteria Wolbachia: −68,5 % de dengue y −73,3 % de chikungunya, incluso durante la epidemia récord de 2024. Es la primera prueba de este tipo en una gran ciudad; los resultados se presentaron el 21 de noviembre en el congreso de la ASTMH y aún no están revisados por pares.",
@@ -230,13 +238,5 @@
     "fuente": "National Park Service, EarthSky y ABC News",
     "url": "https://www.nps.gov/chir/learn/news/chiricahua-national-monument-becomes-america-s-newest-national-park.htm",
     "tema": "Naturaleza"
-  },
-  {
-    "date": "2026-10-24",
-    "titulo": "Aprobado el primer fármaco que logra una «cura funcional» de la hepatitis B en uno de cada cinco pacientes",
-    "resumen": "La FDA aprobó el 20 de octubre el bepirovirsen (Hibsago, de GSK), el primer fármaco antisentido contra la hepatitis B crónica. En los ensayos de fase 3 B-Well, publicados en NEJM, el 19 % de los pacientes (233 de 1.220) mantenía el virus controlado seis meses después de dejar todo tratamiento, frente a ninguno con placebo. Se usa junto a los antivirales habituales en adultos sin cirrosis.",
-    "fuente": "GSK, NEJM, Pharmacy Times y New Atlas",
-    "url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-the-us-for-the-treatment-of-chronic-hepatitis-b-chb/",
-    "tema": "Medicina"
   }
 ]
