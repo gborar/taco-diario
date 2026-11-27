@@ -139,7 +139,10 @@
   "Why should you read Shakespeare's The Tempest?",
   "\"Jabberwocky\": One of literature's best bits of nonsense",
   "Why should you read \"Fahrenheit 451\"?",
-  "The Opposites Game"
+  "The Opposites Game",
+  "Malala Yousafzai, Nobel Lecture",
+  "Olga Tokarczuk, Nobel Lecture",
+  "Bob Dylan, Nobel Lecture"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -277,7 +280,10 @@
   "Staying Awake: Notes on the Alleged Decline of Reading",
   "Alice's Adventures Under Ground",
   "The Annotated Alice (introducción)",
-  "Doublets: A Word-Puzzle"
+  "Doublets: A Word-Puzzle",
+  "Alfred Nobel's will",
+  "Diary of a Pakistani schoolgirl",
+  "Observationer om twänne beständiga grader på en thermometer"
  ],
  "reel": [
   "QuantumFracture",
@@ -413,7 +419,10 @@
   "Memorias de Pez",
   "CuriosaMente",
   "toldinstone",
-  "BBC Learning English"
+  "BBC Learning English",
+  "Unicoos",
+  "Khan Academy en Español",
+  "Profe Alex"
  ],
  "libro": [
   "Sapiens",
@@ -563,7 +572,10 @@
   "Una historia de la lectura",
   "Alicia en el país de las maravillas",
   "A través del espejo y lo que Alicia encontró allí",
-  "Carlitos y Snoopy. La felicidad es un cachorro calentito"
+  "Carlitos y Snoopy. La felicidad es un cachorro calentito",
+  "El maestro ignorante",
+  "Carta a una maestra",
+  "Pedagogía del oprimido"
  ],
  "pelicula": [
   "La llegada",
@@ -722,7 +734,10 @@
   "Shakespeare in Love",
   "Alicia en el país de las maravillas",
   "Carlitos y Snoopy: la película de Peanuts",
-  "Miffy y sus amigos"
+  "Miffy y sus amigos",
+  "Profesor Holland",
+  "Escritores de la libertad",
+  "Profesor Lazhar"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -863,7 +878,10 @@
   "Upstart Crow",
   "A Charlie Brown Christmas",
   "Snoopy en el espacio",
-  "The Snoopy Show"
+  "The Snoopy Show",
+  "Derry Girls",
+  "El joven Sheldon",
+  "Prodigios"
  ],
  "cancion": [
   "Mediterráneo",
@@ -1008,7 +1026,10 @@
   "Ingobernable",
   "Walk Like an Egyptian",
   "Linus and Lucy",
-  "Christmas Time Is Here"
+  "Christmas Time Is Here",
+  "De todas las flores",
+  "To Sir with Love",
+  "Labour"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -1151,7 +1172,10 @@
   "Los fuegos artificiales que giran se llaman en inglés «Catherine wheel», rueda de Catalina, por la leyenda de santa Catalina de Alejandría, a la que quisieron martirizar en una rueda con pinchos que se rompió al tocarla.",
   "Lewis Carroll se llamaba en realidad Charles Lutwidge Dodgson y era profesor de matemáticas en Oxford. Inventó la historia de Alicia en 1862, durante un paseo en barca, para entretener a las tres hermanas Liddell; una de ellas, Alice, le pidió que se la escribiera.",
   "Charles M. Schulz, el creador de Snoopy y Carlitos, nació el 26 de noviembre de 1922 y dibujó él solo la tira de Peanuts durante casi 50 años, unas 17.900 tiras, sin ayudantes.",
-  "El primer manuscrito de «Alicia» se titulaba «Las aventuras de Alicia bajo tierra». Carroll lo escribió a mano, lo ilustró él mismo y se lo regaló a Alice Liddell el 26 de noviembre de 1864, un año antes de que se publicara el libro."
+  "El primer manuscrito de «Alicia» se titulaba «Las aventuras de Alicia bajo tierra». Carroll lo escribió a mano, lo ilustró él mismo y se lo regaló a Alice Liddell el 26 de noviembre de 1864, un año antes de que se publicara el libro.",
+  "Alfred Nobel, el inventor de la dinamita, firmó su testamento el 27 de noviembre de 1895 en París. Dejó en torno al 94 % de su fortuna para crear los premios que llevan su nombre. Los primeros se entregaron en 1901, cinco años después de su muerte.",
+  "Anders Celsius nació en Uppsala, Suecia, el 27 de noviembre de 1701. Además de su escala de temperatura, participó en una expedición a Laponia que confirmó que la Tierra está algo achatada por los polos.",
+  "El 27 de noviembre se celebra en España el Día del Maestro, ligado a san José de Calasanz, patrón de los maestros, que fundó en Roma en 1597 la que se considera la primera escuela pública gratuita de Europa."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -1303,7 +1327,10 @@
   "Aprendizaje intercalado",
   "Literatura del disparate",
   "Palabra maleta",
-  "Silogismo"
+  "Silogismo",
+  "Escala Celsius",
+  "Práctica deliberada",
+  "Punto fijo"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -1438,7 +1465,10 @@
   "El monstruo de naturaleza, el gran Lope de Vega.",
   "¿Y de qué sirve un libro sin dibujos ni conversaciones?",
   "Eso depende en gran parte de adónde quieras llegar.",
-  "La felicidad es un cachorro calentito."
+  "La felicidad es un cachorro calentito.",
+  "Un niño, un profesor, un libro y un lápiz pueden cambiar el mundo.",
+  "A quienes durante el año anterior hayan conferido el mayor beneficio a la humanidad.",
+  "El arte supremo del maestro es despertar el placer de la expresión creativa y del conocimiento."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1572,7 +1602,10 @@
   "Si lees 20 páginas al día, ¿cuántos libros de 300 páginas lees en un año?",
   "¿En qué se parece un cuervo a un escritorio?",
   "Convierte HEAD en TAIL cambiando una sola letra cada vez y formando siempre palabras inglesas.",
-  "Alicia bebe una poción y encoge hasta medir 25 centímetros. Si antes medía 1,25 metros, ¿cuántas veces más pequeña es?"
+  "Alicia bebe una poción y encoge hasta medir 25 centímetros. Si antes medía 1,25 metros, ¿cuántas veces más pequeña es?",
+  "¿A qué temperatura marcan lo mismo un termómetro Celsius y uno Fahrenheit?",
+  "Si tienes 37 °C de temperatura, ¿cuántos grados Fahrenheit son?",
+  "Nobel murió en 1896 y los primeros premios se dieron en 1901. Si este año se cumplen 125 de los primeros premios, ¿en qué año estamos?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1707,7 +1740,10 @@
   "¿Qué verso o letra de canción te viene a la cabeza cuando estás contento?",
   "Si pudieras encoger o crecer a voluntad durante un día, ¿qué harías?",
   "¿Qué objeto tuyo te gustaría que alguien encontrara dentro de mil años?",
-  "¿Qué personaje de cómic o de dibujos te acompañó de niño?"
+  "¿Qué personaje de cómic o de dibujos te acompañó de niño?",
+  "Si pudieras crear un premio para reconocer algo que nadie premia, ¿qué premiarías?",
+  "¿Qué profesor o profesora recuerdas por cómo te hacía sentir?",
+  "¿Qué te gustaría aprender si tuvieras un año entero sin obligaciones?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1842,7 +1878,10 @@
   "María de Zayas",
   "Lewis Carroll",
   "Charles M. Schulz",
-  "Alice Liddell"
+  "Alice Liddell",
+  "Alfred Nobel",
+  "Anders Celsius",
+  "Bertha von Suttner"
  ],
  "planta": [
   "Girasol",
@@ -1977,7 +2016,10 @@
   "Celinda",
   "Aciano",
   "Seta matamoscas",
-  "Margarita"
+  "Margarita",
+  "Linnea",
+  "Edelweiss",
+  "Nomeolvides"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -2121,7 +2163,10 @@
   "Las palabras se las lleva el viento.",
   "La curiosidad mató al gato.",
   "Quien pregunta no yerra.",
-  "No hay que buscarle tres pies al gato."
+  "No hay que buscarle tres pies al gato.",
+  "El maestro Ciruela, que no sabía leer y puso escuela.",
+  "Equivocándose se aprende.",
+  "Lo que bien se aprende, nunca se olvida."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -2257,7 +2302,10 @@
   "Ser el alma de la fiesta",
   "Estar como una cabra",
   "Ser una caja de sorpresas",
-  "Perder el hilo"
+  "Perder el hilo",
+  "Sentar cátedra",
+  "Aprender la lección",
+  "Estar al rojo vivo"
  ],
  "palabra": [
   "Arrebol",
@@ -2396,7 +2444,10 @@
   "Llyfrbryf",
   "Galimatías",
   "Chortle",
-  "Wunderkammer"
+  "Wunderkammer",
+  "Sensei",
+  "Bildung",
+  "Athro"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -2534,7 +2585,10 @@
   "Lleva siempre un libro encima",
   "Haz una pregunta nueva cada día",
   "Juega con las palabras",
-  "Dibuja lo que lees"
+  "Dibuja lo que lees",
+  "Escríbele a un maestro que te marcó",
+  "Enseña lo que aprendes",
+  "Pregunta sin miedo"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -2663,7 +2717,10 @@
   "Escribe un soneto",
   "Merienda de no-cumpleaños",
   "Christ Church, Oxford",
-  "Encoge y crece"
+  "Encoge y crece",
+  "Ayuntamiento de Estocolmo",
+  "Lluvia en un aula antigua",
+  "Tu testamento de ideas"
  ],
  "prensa": [
   "La Contra",
@@ -2781,7 +2838,10 @@
   "La RAE reúne en la Mezquita-Catedral de Córdoba a 21 académicos en un pleno extraordinario dedicado a Góngora",
   "Los poemas escondidos de Benítez Carrasco encuentran su sitio en la Casa de los Tiros",
   "Ocho voces para soplar cien velas: Córdoba celebra el centenario de la Fiesta del Libro con una lectura colectiva",
-  "El CAL propone una cita con la poesía de la mano de Juan Antonio Bernier y su obra 'En la noche mediante'"
+  "El CAL propone una cita con la poesía de la mano de Juan Antonio Bernier y su obra 'En la noche mediante'",
+  "Lucy Vincent, neurobióloga: «El amor es algo que tiene una duración limitada por su papel biológico»",
+  "'Presentes', del valenciano Paco Cerdà, Premio Jacques Delors del Libro Europeo 2026",
+  "El valor de conectar la ciencia"
  ],
  "revista": [
   "Entrevistas largas",
@@ -2899,6 +2959,9 @@
   "Los libros de la semana #218",
   "El divulgador histórico, sentido y sensibilidad",
   "Los cómics de Mercurio #20",
-  "Iván Vargas: «Tengo la sensación de que Onésimo sigue regateando»"
+  "Iván Vargas: «Tengo la sensación de que Onésimo sigue regateando»",
+  "Noviembre dorado, reconciliación",
+  "Literatura e Inteligencia Artificial: Donde la IA trabaja",
+  "Las letras del Cine Imperial: creatividad en OFFF Sevilla"
  ]
 }

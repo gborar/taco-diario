@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-27",
+    "titulo": "El valenciano Paco Cerdà gana el Premio Jacques Delors del Libro Europeo con «Presentes»",
+    "resumen": "Un jurado de periodistas literarios europeos, reunido en Bruselas y presidido por Laurent Gaudé, premió el 24 de noviembre «Presentes» (Alfaguara), la novela de no ficción de Paco Cerdà sobre la memoria de la posguerra española. Cerdà es el tercer español que lo gana, tras Eduardo Mendoza (2013) y Javier Cercas, y recibirá el premio el 9 de diciembre en el Parlamento Europeo. El libro, que ya obtuvo el Premio Nacional de Narrativa, se ha publicado en catorce países.",
+    "fuente": "La Voz de Galicia · La Vanguardia",
+    "url": "https://www.lavozdegalicia.es/noticia/cultura/2026/11/24/valenciano-paco-cerda-premio-jacques-delors-libro-europeo-2026-novelapresentes/00031795536970597717810.htm",
+    "tema": "Literatura"
+  },
+  {
     "date": "2026-11-26",
     "titulo": "Vacunar a pueblos enteros contra la malaria reduce un 70 % las infecciones en Gambia",
     "resumen": "Un ensayo publicado en The Lancet el 19 de noviembre ofreció la vacuna R21 a todos los habitantes de 54 aldeas de Gambia y Burkina Faso, desde los 5 meses de edad, antes de la temporada de lluvias de 2024. Las probabilidades de infección bajaron un 70 % en Gambia y un 25 % en Burkina Faso, y los casos de malaria clínica, un 47 % y un 30 %. La vacuna fue segura y el estudio, coordinado por la London School of Hygiene & Tropical Medicine, sigue en marcha para medir cuánto dura la protección.",
@@ -230,13 +238,5 @@
     "fuente": "ESA, Caltech y Phys.org",
     "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet",
     "tema": "Espacio"
-  },
-  {
-    "date": "2026-10-25",
-    "titulo": "Chiricahua se convierte en el parque nacional número 64 de Estados Unidos",
-    "resumen": "El 20 de octubre se firmó la ley que convierte el monumento nacional de Chiricahua, en el sureste de Arizona, en el parque nacional más nuevo del país, el cuarto de Arizona. Protegido desde 1924, es famoso por sus torres de roca volcánica formadas hace unos 27 millones de años. El cambio de categoría no altera sus límites ni su gestión, pero le da el máximo nivel de reconocimiento del sistema de parques.",
-    "fuente": "National Park Service, EarthSky y ABC News",
-    "url": "https://www.nps.gov/chir/learn/news/chiricahua-national-monument-becomes-america-s-newest-national-park.htm",
-    "tema": "Naturaleza"
   }
 ]
