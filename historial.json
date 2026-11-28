@@ -142,7 +142,10 @@
   "The Opposites Game",
   "Malala Yousafzai, Nobel Lecture",
   "Olga Tokarczuk, Nobel Lecture",
-  "Bob Dylan, Nobel Lecture"
+  "Bob Dylan, Nobel Lecture",
+  "How Magellan circumnavigated the globe",
+  "500 años de la primera vuelta al mundo (2): El gran viaje de Magallanes y de Elcano",
+  "Voyages of Discovery: Circumnavigation"
  ],
  "articulo": [
   "Centaurs and Cyborgs on the Jagged Frontier",
@@ -283,7 +286,10 @@
   "Doublets: A Word-Puzzle",
   "Alfred Nobel's will",
   "Diary of a Pakistani schoolgirl",
-  "Observationer om twänne beständiga grader på en thermometer"
+  "Observationer om twänne beständiga grader på en thermometer",
+  "Auguries of Innocence",
+  "Who is William Blake?",
+  "The Marriage of Heaven and Hell"
  ],
  "reel": [
   "QuantumFracture",
@@ -422,7 +428,10 @@
   "BBC Learning English",
   "Unicoos",
   "Khan Academy en Español",
-  "Profe Alex"
+  "Profe Alex",
+  "Lab RTVE: Elcano, la primera vuelta al mundo",
+  "The Tate",
+  "Historia National Geographic"
  ],
  "libro": [
   "Sapiens",
@@ -575,7 +584,10 @@
   "Carlitos y Snoopy. La felicidad es un cachorro calentito",
   "El maestro ignorante",
   "Carta a una maestra",
-  "Pedagogía del oprimido"
+  "Pedagogía del oprimido",
+  "Canciones de inocencia y de experiencia",
+  "Magallanes. El hombre y su gesta",
+  "Tristes trópicos"
  ],
  "pelicula": [
   "La llegada",
@@ -737,7 +749,10 @@
   "Miffy y sus amigos",
   "Profesor Holland",
   "Escritores de la libertad",
-  "Profesor Lazhar"
+  "Profesor Lazhar",
+  "Elcano y Magallanes: la primera vuelta al mundo",
+  "Kon-Tiki",
+  "La vida de Pi"
  ],
  "programa": [
   "Cosmos: un viaje personal",
@@ -881,7 +896,10 @@
   "The Snoopy Show",
   "Derry Girls",
   "El joven Sheldon",
-  "Prodigios"
+  "Prodigios",
+  "Sin límites",
+  "El viaje más largo",
+  "Voyages of Discovery"
  ],
  "cancion": [
   "Mediterráneo",
@@ -1029,7 +1047,10 @@
   "Christmas Time Is Here",
   "De todas las flores",
   "To Sir with Love",
-  "Labour"
+  "Labour",
+  "Jerusalem",
+  "Beyond the Sea",
+  "Sailing"
  ],
  "dato": [
   "El pulpo tiene tres corazones y sangre azul: transporta el oxígeno con hemocianina, que lleva cobre en lugar de hierro.",
@@ -1175,7 +1196,10 @@
   "El primer manuscrito de «Alicia» se titulaba «Las aventuras de Alicia bajo tierra». Carroll lo escribió a mano, lo ilustró él mismo y se lo regaló a Alice Liddell el 26 de noviembre de 1864, un año antes de que se publicara el libro.",
   "Alfred Nobel, el inventor de la dinamita, firmó su testamento el 27 de noviembre de 1895 en París. Dejó en torno al 94 % de su fortuna para crear los premios que llevan su nombre. Los primeros se entregaron en 1901, cinco años después de su muerte.",
   "Anders Celsius nació en Uppsala, Suecia, el 27 de noviembre de 1701. Además de su escala de temperatura, participó en una expedición a Laponia que confirmó que la Tierra está algo achatada por los polos.",
-  "El 27 de noviembre se celebra en España el Día del Maestro, ligado a san José de Calasanz, patrón de los maestros, que fundó en Roma en 1597 la que se considera la primera escuela pública gratuita de Europa."
+  "El 27 de noviembre se celebra en España el Día del Maestro, ligado a san José de Calasanz, patrón de los maestros, que fundó en Roma en 1597 la que se considera la primera escuela pública gratuita de Europa.",
+  "El 28 de noviembre de 1520, tras 38 días cruzando el estrecho que hoy lleva su nombre, la flota de Magallanes salió a un océano tan tranquilo que lo llamaron «Mar Pacífico». Tardaron más de tres meses en cruzarlo y casi no encontraron tierra.",
+  "William Blake nació en Londres el 28 de noviembre de 1757. Decía que desde niño veía ángeles en los árboles de Peckham Rye, y casi toda su vida vivió con poco dinero, grabando para otros.",
+  "De los unos 240 hombres que salieron de Sanlúcar en 1519, solo 18 volvieron en la Victoria con Elcano en 1522. Antonio Pigafetta, uno de ellos, escribió la crónica que nos permite conocer el viaje."
  ],
  "concepto": [
   "Superposición cuántica",
@@ -1330,7 +1354,10 @@
   "Silogismo",
   "Escala Celsius",
   "Práctica deliberada",
-  "Punto fijo"
+  "Punto fijo",
+  "Línea internacional de cambio de fecha",
+  "Estructuralismo",
+  "Navegación por estima"
  ],
  "cita": [
   "Caminante, no hay camino, se hace camino al andar.",
@@ -1468,7 +1495,10 @@
   "La felicidad es un cachorro calentito.",
   "Un niño, un profesor, un libro y un lápiz pueden cambiar el mundo.",
   "A quienes durante el año anterior hayan conferido el mayor beneficio a la humanidad.",
-  "El arte supremo del maestro es despertar el placer de la expresión creativa y del conocimiento."
+  "El arte supremo del maestro es despertar el placer de la expresión creativa y del conocimiento.",
+  "Ver el mundo en un grano de arena y el cielo en una flor silvestre.",
+  "Si las puertas de la percepción se depurasen, todo aparecería ante el hombre tal cual es: infinito.",
+  "El sabio no es el que da las respuestas verdaderas, sino el que plantea las preguntas verdaderas."
  ],
  "reto": [
   "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1 € más que la pelota. ¿Cuánto cuesta la pelota?",
@@ -1605,7 +1635,10 @@
   "Alicia bebe una poción y encoge hasta medir 25 centímetros. Si antes medía 1,25 metros, ¿cuántas veces más pequeña es?",
   "¿A qué temperatura marcan lo mismo un termómetro Celsius y uno Fahrenheit?",
   "Si tienes 37 °C de temperatura, ¿cuántos grados Fahrenheit son?",
-  "Nobel murió en 1896 y los primeros premios se dieron en 1901. Si este año se cumplen 125 de los primeros premios, ¿en qué año estamos?"
+  "Nobel murió en 1896 y los primeros premios se dieron en 1901. Si este año se cumplen 125 de los primeros premios, ¿en qué año estamos?",
+  "Cuando la Victoria llegó a las islas de Cabo Verde en 1522, el diario de a bordo decía miércoles, pero en tierra era jueves. ¿Por qué?",
+  "Salieron cinco naves y volvió una. ¿Qué porcentaje de la flota regresó?",
+  "En el poema «The Tyger», Blake pregunta quién hizo al tigre. ¿Qué otro animal aparece en un poema que hace pareja con este?"
  ],
  "pregunta": [
   "¿Qué opinión tuya ha cambiado más en los últimos cinco años, y qué la hizo cambiar?",
@@ -1743,7 +1776,10 @@
   "¿Qué personaje de cómic o de dibujos te acompañó de niño?",
   "Si pudieras crear un premio para reconocer algo que nadie premia, ¿qué premiarías?",
   "¿Qué profesor o profesora recuerdas por cómo te hacía sentir?",
-  "¿Qué te gustaría aprender si tuvieras un año entero sin obligaciones?"
+  "¿Qué te gustaría aprender si tuvieras un año entero sin obligaciones?",
+  "Si tuvieras que dar la vuelta al mundo con lo que cabe en una mochila, ¿qué tres cosas llevarías?",
+  "¿Qué detalle pequeño de tu día de hoy te ha parecido bonito?",
+  "¿A qué lugar del mundo irías aunque tardaras tres meses en llegar?"
  ],
  "personaje": [
   "Santiago Ramón y Cajal",
@@ -1881,7 +1917,10 @@
   "Alice Liddell",
   "Alfred Nobel",
   "Anders Celsius",
-  "Bertha von Suttner"
+  "Bertha von Suttner",
+  "William Blake",
+  "Antonio Pigafetta",
+  "Claude Lévi-Strauss"
  ],
  "planta": [
   "Girasol",
@@ -2019,7 +2058,10 @@
   "Margarita",
   "Linnea",
   "Edelweiss",
-  "Nomeolvides"
+  "Nomeolvides",
+  "Clavo",
+  "Nuez moscada",
+  "Canelo de Ceilán"
  ],
  "refran": [
   "A quien madruga, Dios le ayuda.",
@@ -2166,7 +2208,10 @@
   "No hay que buscarle tres pies al gato.",
   "El maestro Ciruela, que no sabía leer y puso escuela.",
   "Equivocándose se aprende.",
-  "Lo que bien se aprende, nunca se olvida."
+  "Lo que bien se aprende, nunca se olvida.",
+  "Quien no se arriesga no pasa la mar.",
+  "Mar en calma no hace buen marinero.",
+  "A barco nuevo, capitán viejo."
  ],
  "frase": [
   "Irse por los cerros de Úbeda",
@@ -2305,7 +2350,10 @@
   "Perder el hilo",
   "Sentar cátedra",
   "Aprender la lección",
-  "Estar al rojo vivo"
+  "Estar al rojo vivo",
+  "Llegar a buen puerto",
+  "Cambiar de rumbo",
+  "Hacer aguas"
  ],
  "palabra": [
   "Arrebol",
@@ -2447,7 +2495,10 @@
   "Wunderkammer",
   "Sensei",
   "Bildung",
-  "Athro"
+  "Athro",
+  "Havblik",
+  "Maresia",
+  "Singladura"
  ],
  "habito": [
   "Camina 10 minutos después de comer",
@@ -2588,7 +2639,10 @@
   "Dibuja lo que lees",
   "Escríbele a un maestro que te marcó",
   "Enseña lo que aprendes",
-  "Pregunta sin miedo"
+  "Pregunta sin miedo",
+  "Mira algo pequeño durante un minuto",
+  "Lleva un cuaderno de bitácora",
+  "Recita un poema en voz alta"
  ],
  "pausa": [
   "Tres respiraciones conscientes",
@@ -2720,7 +2774,10 @@
   "Encoge y crece",
   "Ayuntamiento de Estocolmo",
   "Lluvia en un aula antigua",
-  "Tu testamento de ideas"
+  "Tu testamento de ideas",
+  "Estrecho de Magallanes",
+  "Barco de madera en alta mar",
+  "Un grano de arena"
  ],
  "prensa": [
   "La Contra",
@@ -2841,7 +2898,10 @@
   "El CAL propone una cita con la poesía de la mano de Juan Antonio Bernier y su obra 'En la noche mediante'",
   "Lucy Vincent, neurobióloga: «El amor es algo que tiene una duración limitada por su papel biológico»",
   "'Presentes', del valenciano Paco Cerdà, Premio Jacques Delors del Libro Europeo 2026",
-  "El valor de conectar la ciencia"
+  "El valor de conectar la ciencia",
+  "'Después de Elena' conquista el Colón de Oro y firma un doblete en el cierre de la 52 edición del Festival de Huelva",
+  "'Después de Elena' se alza con Colón de Oro de la 52 edición del Festival de Huelva",
+  "La Cubana cocina en Málaga su disparatado melodrama culinario"
  ],
  "revista": [
   "Entrevistas largas",
@@ -2962,6 +3022,9 @@
   "Iván Vargas: «Tengo la sensación de que Onésimo sigue regateando»",
   "Noviembre dorado, reconciliación",
   "Literatura e Inteligencia Artificial: Donde la IA trabaja",
-  "Las letras del Cine Imperial: creatividad en OFFF Sevilla"
+  "Las letras del Cine Imperial: creatividad en OFFF Sevilla",
+  "Pedro Narcob: «Lo que me fascina es contar historias»",
+  "Los libros de la semana #219",
+  "La elección"
  ]
 }

@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-28",
+    "titulo": "La sonda europea y japonesa BepiColombo entra en órbita de Mercurio tras ocho años de viaje",
+    "resumen": "El 21 de noviembre BepiColombo, misión de la ESA y la agencia japonesa JAXA lanzada en 2018, se convirtió en la segunda nave que orbita Mercurio, después de la MESSENGER de la NASA. Llegó usando por primera vez en otro planeta una captura de baja velocidad y, pese a un fallo de software que cortó antes de tiempo el encendido de los motores, quedó en una órbita estable. Sus dos sondas se separarán el 9 de diciembre y la fase científica empezará en abril de 2027.",
+    "fuente": "ESA · Nature",
+    "url": "https://www.esa.int/articles/about-us/directorates/operations/bepicolombo-safely-in-mercury-orbit-despite-unexpected-challenge",
+    "tema": "Espacio"
+  },
+  {
     "date": "2026-11-27",
     "titulo": "El valenciano Paco Cerdà gana el Premio Jacques Delors del Libro Europeo con «Presentes»",
     "resumen": "Un jurado de periodistas literarios europeos, reunido en Bruselas y presidido por Laurent Gaudé, premió el 24 de noviembre «Presentes» (Alfaguara), la novela de no ficción de Paco Cerdà sobre la memoria de la posguerra española. Cerdà es el tercer español que lo gana, tras Eduardo Mendoza (2013) y Javier Cercas, y recibirá el premio el 9 de diciembre en el Parlamento Europeo. El libro, que ya obtuvo el Premio Nacional de Narrativa, se ha publicado en catorce países.",
@@ -230,13 +238,5 @@
     "fuente": "CP24, PETA UK y Vegan Food & Living",
     "url": "https://www.cp24.com/news/world/2026/10/23/denmark-drops-the-curtain-on-mink-farming/",
     "tema": "Naturaleza"
-  },
-  {
-    "date": "2026-10-26",
-    "titulo": "El telescopio Euclid descubre su primer cometa a 1.300 millones de kilómetros",
-    "resumen": "La ESA anunció que Euclid, diseñado para cartografiar galaxias lejanas, ha encontrado un cometa desconocido, C/2026 S1 (Euclid), en imágenes tomadas entre el 16 y el 24 de septiembre. Lo detectó Mikko Pöntinen, de la Universidad de Helsinki, con un programa que él mismo desarrolló para encontrar objetos en movimiento, y el Minor Planet Center lo confirmó el 8 de octubre. Sigue una órbita que tarda miles de años en completar.",
-    "fuente": "ESA, Caltech y Phys.org",
-    "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet",
-    "tema": "Espacio"
   }
 ]
